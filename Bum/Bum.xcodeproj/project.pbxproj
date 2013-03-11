@@ -190,6 +190,7 @@
 		775AC60D16ED579000FA3049 /* RenderComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 775AC60416ED579000FA3049 /* RenderComponent.m */; };
 		775AC60E16ED579000FA3049 /* HealthComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 775AC60616ED579000FA3049 /* HealthComponent.m */; };
 		775AC61416ED5BE300FA3049 /* GameplayLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 775AC61316ED5BE300FA3049 /* GameplayLayer.mm */; };
+		775AC61716ED611D00FA3049 /* MovementComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 775AC61616ED611D00FA3049 /* MovementComponent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -572,6 +573,8 @@
 		775AC60616ED579000FA3049 /* HealthComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HealthComponent.m; sourceTree = "<group>"; };
 		775AC61216ED5BE300FA3049 /* GameplayLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameplayLayer.h; sourceTree = "<group>"; };
 		775AC61316ED5BE300FA3049 /* GameplayLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameplayLayer.mm; sourceTree = "<group>"; };
+		775AC61516ED611D00FA3049 /* MovementComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovementComponent.h; sourceTree = "<group>"; };
+		775AC61616ED611D00FA3049 /* MovementComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovementComponent.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1207,6 +1210,8 @@
 				775AC60416ED579000FA3049 /* RenderComponent.m */,
 				775AC60516ED579000FA3049 /* HealthComponent.h */,
 				775AC60616ED579000FA3049 /* HealthComponent.m */,
+				775AC61516ED611D00FA3049 /* MovementComponent.h */,
+				775AC61616ED611D00FA3049 /* MovementComponent.m */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -1445,6 +1450,7 @@
 				775AC60D16ED579000FA3049 /* RenderComponent.m in Sources */,
 				775AC60E16ED579000FA3049 /* HealthComponent.m in Sources */,
 				775AC61416ED5BE300FA3049 /* GameplayLayer.mm in Sources */,
+				775AC61716ED611D00FA3049 /* MovementComponent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
