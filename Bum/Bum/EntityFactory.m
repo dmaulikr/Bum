@@ -26,9 +26,9 @@
     return self;
 }
 
-- (Entity *)createHumanPlayerWithFrameName:(NSString *)frameName
+- (Entity *)createHumanPlayer
 {
-    CCSprite * sprite = [[CCSprite alloc] initWithSpriteFrameName:frameName];
+    CCSprite * sprite = [[CCSprite alloc] initWithSpriteFrameName:@""];
     [_batchNode addChild:sprite];
     
     Entity * entity = [_entityManager createEntity];

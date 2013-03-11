@@ -13,6 +13,7 @@
 #import "AppDelegate.h"
 
 #import "PhysicsSprite.h"
+#import "GameplayLayer.h"
 
 enum {
 	kTagParentNode = 1,
@@ -103,39 +104,51 @@ enum {
 	[CCMenuItemFont setFontSize:22];
 	
 	// Reset Button
-	CCMenuItemLabel *reset = [CCMenuItemFont itemWithString:@"Reset" block:^(id sender){
-		[[CCDirector sharedDirector] replaceScene: [HelloWorldLayer scene]];
-	}];
+//	CCMenuItemLabel *reset = [CCMenuItemFont itemWithString:@"Reset" block:^(id sender){
+//		[[CCDirector sharedDirector] replaceScene: [HelloWorldLayer scene]];
+//	}];
+//
+//	// Achievement Menu Item using blocks
+//	CCMenuItem *itemAchievement = [CCMenuItemFont itemWithString:@"Achievements" block:^(id sender) {
+//		
+//		
+//		GKAchievementViewController *achivementViewController = [[GKAchievementViewController alloc] init];
+//		achivementViewController.achievementDelegate = self;
+//		
+//		AppController *app = (AppController*) [[UIApplication sharedApplication] delegate];
+//		
+//		[[app navController] presentModalViewController:achivementViewController animated:YES];
+//		
+//		[achivementViewController release];
+//	}];
+//	
+//	// Leaderboard Menu Item using blocks
+//	CCMenuItem *itemLeaderboard = [CCMenuItemFont itemWithString:@"Leaderboard" block:^(id sender) {
+//		
+//		
+//		GKLeaderboardViewController *leaderboardViewController = [[GKLeaderboardViewController alloc] init];
+//		leaderboardViewController.leaderboardDelegate = self;
+//		
+//		AppController *app = (AppController*) [[UIApplication sharedApplication] delegate];
+//		
+//		[[app navController] presentModalViewController:leaderboardViewController animated:YES];
+//		
+//		[leaderboardViewController release];
+//	}];
+    
+    CCMenuItem *itemGameplay = [CCMenuItemFont itemWithString:@"Play" block:^(id sender) {
+        
+        CCScene *scene = [CCScene node];
+        GameplayLayer *layer = [[GameplayLayer alloc] init];
+        [scene addChild: layer];
+        
+        [[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:1.0
+                                                                                     scene:scene
+                                                                                 withColor:ccBLACK]];
+        
+    }];
 	
-	// Achievement Menu Item using blocks
-	CCMenuItem *itemAchievement = [CCMenuItemFont itemWithString:@"Achievements" block:^(id sender) {
-		
-		
-		GKAchievementViewController *achivementViewController = [[GKAchievementViewController alloc] init];
-		achivementViewController.achievementDelegate = self;
-		
-		AppController *app = (AppController*) [[UIApplication sharedApplication] delegate];
-		
-		[[app navController] presentModalViewController:achivementViewController animated:YES];
-		
-		[achivementViewController release];
-	}];
-	
-	// Leaderboard Menu Item using blocks
-	CCMenuItem *itemLeaderboard = [CCMenuItemFont itemWithString:@"Leaderboard" block:^(id sender) {
-		
-		
-		GKLeaderboardViewController *leaderboardViewController = [[GKLeaderboardViewController alloc] init];
-		leaderboardViewController.leaderboardDelegate = self;
-		
-		AppController *app = (AppController*) [[UIApplication sharedApplication] delegate];
-		
-		[[app navController] presentModalViewController:leaderboardViewController animated:YES];
-		
-		[leaderboardViewController release];
-	}];
-	
-	CCMenu *menu = [CCMenu menuWithItems:itemAchievement, itemLeaderboard, reset, nil];
+	CCMenu *menu = [CCMenu menuWithItems:itemGameplay, nil];
 	
 	[menu alignItemsVertically];
 	

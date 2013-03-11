@@ -189,6 +189,7 @@
 		775AC60C16ED579000FA3049 /* Component.m in Sources */ = {isa = PBXBuildFile; fileRef = 775AC60216ED579000FA3049 /* Component.m */; };
 		775AC60D16ED579000FA3049 /* RenderComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 775AC60416ED579000FA3049 /* RenderComponent.m */; };
 		775AC60E16ED579000FA3049 /* HealthComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 775AC60616ED579000FA3049 /* HealthComponent.m */; };
+		775AC61416ED5BE300FA3049 /* GameplayLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 775AC61316ED5BE300FA3049 /* GameplayLayer.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -569,6 +570,8 @@
 		775AC60416ED579000FA3049 /* RenderComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RenderComponent.m; sourceTree = "<group>"; };
 		775AC60516ED579000FA3049 /* HealthComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthComponent.h; sourceTree = "<group>"; };
 		775AC60616ED579000FA3049 /* HealthComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HealthComponent.m; sourceTree = "<group>"; };
+		775AC61216ED5BE300FA3049 /* GameplayLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameplayLayer.h; sourceTree = "<group>"; };
+		775AC61316ED5BE300FA3049 /* GameplayLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameplayLayer.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -634,6 +637,8 @@
 				775AC5E516ED56BB00FA3049 /* HelloWorldLayer.mm */,
 				775AC5E716ED56BB00FA3049 /* IntroLayer.h */,
 				775AC5E816ED56BB00FA3049 /* IntroLayer.mm */,
+				775AC61216ED5BE300FA3049 /* GameplayLayer.h */,
+				775AC61316ED5BE300FA3049 /* GameplayLayer.mm */,
 				775AC5EA16ED56BB00FA3049 /* GLES-Render.h */,
 				775AC5EB16ED56BB00FA3049 /* GLES-Render.mm */,
 				775AC5ED16ED56BB00FA3049 /* PhysicsSprite.h */,
@@ -1439,6 +1444,7 @@
 				775AC60C16ED579000FA3049 /* Component.m in Sources */,
 				775AC60D16ED579000FA3049 /* RenderComponent.m in Sources */,
 				775AC60E16ED579000FA3049 /* HealthComponent.m in Sources */,
+				775AC61416ED5BE300FA3049 /* GameplayLayer.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
