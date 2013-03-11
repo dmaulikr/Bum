@@ -181,6 +181,14 @@
 		775AC5EC16ED56BB00FA3049 /* GLES-Render.mm in Sources */ = {isa = PBXBuildFile; fileRef = 775AC5EB16ED56BB00FA3049 /* GLES-Render.mm */; };
 		775AC5EF16ED56BB00FA3049 /* PhysicsSprite.mm in Sources */ = {isa = PBXBuildFile; fileRef = 775AC5EE16ED56BB00FA3049 /* PhysicsSprite.mm */; };
 		775AC5F116ED56BB00FA3049 /* blocks.png in Resources */ = {isa = PBXBuildFile; fileRef = 775AC5F016ED56BB00FA3049 /* blocks.png */; };
+		775AC60716ED579000FA3049 /* Entity.m in Sources */ = {isa = PBXBuildFile; fileRef = 775AC5F816ED579000FA3049 /* Entity.m */; };
+		775AC60816ED579000FA3049 /* EntityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 775AC5FA16ED579000FA3049 /* EntityManager.m */; };
+		775AC60916ED579000FA3049 /* EntityFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 775AC5FC16ED579000FA3049 /* EntityFactory.m */; };
+		775AC60A16ED579000FA3049 /* System.m in Sources */ = {isa = PBXBuildFile; fileRef = 775AC5FE16ED579000FA3049 /* System.m */; };
+		775AC60B16ED579000FA3049 /* HealthSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 775AC60016ED579000FA3049 /* HealthSystem.m */; };
+		775AC60C16ED579000FA3049 /* Component.m in Sources */ = {isa = PBXBuildFile; fileRef = 775AC60216ED579000FA3049 /* Component.m */; };
+		775AC60D16ED579000FA3049 /* RenderComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 775AC60416ED579000FA3049 /* RenderComponent.m */; };
+		775AC60E16ED579000FA3049 /* HealthComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 775AC60616ED579000FA3049 /* HealthComponent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -545,6 +553,22 @@
 		775AC5ED16ED56BB00FA3049 /* PhysicsSprite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhysicsSprite.h; sourceTree = "<group>"; };
 		775AC5EE16ED56BB00FA3049 /* PhysicsSprite.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PhysicsSprite.mm; sourceTree = "<group>"; };
 		775AC5F016ED56BB00FA3049 /* blocks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blocks.png; path = Resources/blocks.png; sourceTree = "<group>"; };
+		775AC5F716ED579000FA3049 /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
+		775AC5F816ED579000FA3049 /* Entity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entity.m; sourceTree = "<group>"; };
+		775AC5F916ED579000FA3049 /* EntityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntityManager.h; sourceTree = "<group>"; };
+		775AC5FA16ED579000FA3049 /* EntityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntityManager.m; sourceTree = "<group>"; };
+		775AC5FB16ED579000FA3049 /* EntityFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntityFactory.h; sourceTree = "<group>"; };
+		775AC5FC16ED579000FA3049 /* EntityFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntityFactory.m; sourceTree = "<group>"; };
+		775AC5FD16ED579000FA3049 /* System.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = System.h; sourceTree = "<group>"; };
+		775AC5FE16ED579000FA3049 /* System.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = System.m; sourceTree = "<group>"; };
+		775AC5FF16ED579000FA3049 /* HealthSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthSystem.h; sourceTree = "<group>"; };
+		775AC60016ED579000FA3049 /* HealthSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HealthSystem.m; sourceTree = "<group>"; };
+		775AC60116ED579000FA3049 /* Component.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Component.h; sourceTree = "<group>"; };
+		775AC60216ED579000FA3049 /* Component.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Component.m; sourceTree = "<group>"; };
+		775AC60316ED579000FA3049 /* RenderComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderComponent.h; sourceTree = "<group>"; };
+		775AC60416ED579000FA3049 /* RenderComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RenderComponent.m; sourceTree = "<group>"; };
+		775AC60516ED579000FA3049 /* HealthComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthComponent.h; sourceTree = "<group>"; };
+		775AC60616ED579000FA3049 /* HealthComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HealthComponent.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -603,6 +627,7 @@
 		775AC3D616ED56B900FA3049 /* Bum */ = {
 			isa = PBXGroup;
 			children = (
+				775AC60F16ED579900FA3049 /* Component Framework */,
 				775AC5E116ED56BB00FA3049 /* AppDelegate.h */,
 				775AC5E216ED56BB00FA3049 /* AppDelegate.mm */,
 				775AC5E416ED56BB00FA3049 /* HelloWorldLayer.h */,
@@ -1142,6 +1167,45 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		775AC60F16ED579900FA3049 /* Component Framework */ = {
+			isa = PBXGroup;
+			children = (
+				775AC61116ED57FA00FA3049 /* Components */,
+				775AC61016ED57ED00FA3049 /* Systems */,
+				775AC5F716ED579000FA3049 /* Entity.h */,
+				775AC5F816ED579000FA3049 /* Entity.m */,
+				775AC5F916ED579000FA3049 /* EntityManager.h */,
+				775AC5FA16ED579000FA3049 /* EntityManager.m */,
+				775AC5FB16ED579000FA3049 /* EntityFactory.h */,
+				775AC5FC16ED579000FA3049 /* EntityFactory.m */,
+			);
+			name = "Component Framework";
+			sourceTree = "<group>";
+		};
+		775AC61016ED57ED00FA3049 /* Systems */ = {
+			isa = PBXGroup;
+			children = (
+				775AC5FD16ED579000FA3049 /* System.h */,
+				775AC5FE16ED579000FA3049 /* System.m */,
+				775AC5FF16ED579000FA3049 /* HealthSystem.h */,
+				775AC60016ED579000FA3049 /* HealthSystem.m */,
+			);
+			name = Systems;
+			sourceTree = "<group>";
+		};
+		775AC61116ED57FA00FA3049 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				775AC60116ED579000FA3049 /* Component.h */,
+				775AC60216ED579000FA3049 /* Component.m */,
+				775AC60316ED579000FA3049 /* RenderComponent.h */,
+				775AC60416ED579000FA3049 /* RenderComponent.m */,
+				775AC60516ED579000FA3049 /* HealthComponent.h */,
+				775AC60616ED579000FA3049 /* HealthComponent.m */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1367,6 +1431,14 @@
 				775AC5E916ED56BB00FA3049 /* IntroLayer.mm in Sources */,
 				775AC5EC16ED56BB00FA3049 /* GLES-Render.mm in Sources */,
 				775AC5EF16ED56BB00FA3049 /* PhysicsSprite.mm in Sources */,
+				775AC60716ED579000FA3049 /* Entity.m in Sources */,
+				775AC60816ED579000FA3049 /* EntityManager.m in Sources */,
+				775AC60916ED579000FA3049 /* EntityFactory.m in Sources */,
+				775AC60A16ED579000FA3049 /* System.m in Sources */,
+				775AC60B16ED579000FA3049 /* HealthSystem.m in Sources */,
+				775AC60C16ED579000FA3049 /* Component.m in Sources */,
+				775AC60D16ED579000FA3049 /* RenderComponent.m in Sources */,
+				775AC60E16ED579000FA3049 /* HealthComponent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
