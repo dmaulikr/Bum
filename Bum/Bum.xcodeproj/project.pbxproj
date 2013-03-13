@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7724FCAB16F1002900081714 /* MovementSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7724FCAA16F1002900081714 /* MovementSystem.m */; };
+		7724FCAB16F1002900081714 /* MovementSystem.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7724FCAA16F1002900081714 /* MovementSystem.mm */; };
 		7724FCFB16F1219D00081714 /* bum-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7724FCF716F1219D00081714 /* bum-hd.plist */; };
 		7724FCFC16F1219D00081714 /* bum-hd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 7724FCF816F1219D00081714 /* bum-hd.pvr.ccz */; };
 		7724FCFD16F1219D00081714 /* bum.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7724FCF916F1219D00081714 /* bum.plist */; };
@@ -188,19 +188,19 @@
 		775AC5F116ED56BB00FA3049 /* blocks.png in Resources */ = {isa = PBXBuildFile; fileRef = 775AC5F016ED56BB00FA3049 /* blocks.png */; };
 		775AC60716ED579000FA3049 /* Entity.m in Sources */ = {isa = PBXBuildFile; fileRef = 775AC5F816ED579000FA3049 /* Entity.m */; };
 		775AC60816ED579000FA3049 /* EntityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 775AC5FA16ED579000FA3049 /* EntityManager.m */; };
-		775AC60916ED579000FA3049 /* EntityFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 775AC5FC16ED579000FA3049 /* EntityFactory.m */; };
+		775AC60916ED579000FA3049 /* EntityFactory.mm in Sources */ = {isa = PBXBuildFile; fileRef = 775AC5FC16ED579000FA3049 /* EntityFactory.mm */; };
 		775AC60A16ED579000FA3049 /* System.m in Sources */ = {isa = PBXBuildFile; fileRef = 775AC5FE16ED579000FA3049 /* System.m */; };
 		775AC60B16ED579000FA3049 /* HealthSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 775AC60016ED579000FA3049 /* HealthSystem.m */; };
 		775AC60C16ED579000FA3049 /* Component.m in Sources */ = {isa = PBXBuildFile; fileRef = 775AC60216ED579000FA3049 /* Component.m */; };
 		775AC60D16ED579000FA3049 /* RenderComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 775AC60416ED579000FA3049 /* RenderComponent.m */; };
 		775AC60E16ED579000FA3049 /* HealthComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 775AC60616ED579000FA3049 /* HealthComponent.m */; };
 		775AC61416ED5BE300FA3049 /* GameplayLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 775AC61316ED5BE300FA3049 /* GameplayLayer.mm */; };
-		775AC61716ED611D00FA3049 /* MovementComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 775AC61616ED611D00FA3049 /* MovementComponent.m */; };
+		775AC61716ED611D00FA3049 /* MovementComponent.mm in Sources */ = {isa = PBXBuildFile; fileRef = 775AC61616ED611D00FA3049 /* MovementComponent.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7724FCA916F1002900081714 /* MovementSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovementSystem.h; sourceTree = "<group>"; };
-		7724FCAA16F1002900081714 /* MovementSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovementSystem.m; sourceTree = "<group>"; };
+		7724FCAA16F1002900081714 /* MovementSystem.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MovementSystem.mm; sourceTree = "<group>"; };
 		7724FCF716F1219D00081714 /* bum-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "bum-hd.plist"; path = "../../Assets/artwork/bum-hd.plist"; sourceTree = "<group>"; };
 		7724FCF816F1219D00081714 /* bum-hd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = "bum-hd.pvr.ccz"; path = "../../Assets/artwork/bum-hd.pvr.ccz"; sourceTree = "<group>"; };
 		7724FCF916F1219D00081714 /* bum.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = bum.plist; path = ../../Assets/artwork/bum.plist; sourceTree = "<group>"; };
@@ -571,7 +571,7 @@
 		775AC5F916ED579000FA3049 /* EntityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntityManager.h; sourceTree = "<group>"; };
 		775AC5FA16ED579000FA3049 /* EntityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntityManager.m; sourceTree = "<group>"; };
 		775AC5FB16ED579000FA3049 /* EntityFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntityFactory.h; sourceTree = "<group>"; };
-		775AC5FC16ED579000FA3049 /* EntityFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntityFactory.m; sourceTree = "<group>"; };
+		775AC5FC16ED579000FA3049 /* EntityFactory.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EntityFactory.mm; sourceTree = "<group>"; };
 		775AC5FD16ED579000FA3049 /* System.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = System.h; sourceTree = "<group>"; };
 		775AC5FE16ED579000FA3049 /* System.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = System.m; sourceTree = "<group>"; };
 		775AC5FF16ED579000FA3049 /* HealthSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthSystem.h; sourceTree = "<group>"; };
@@ -585,7 +585,7 @@
 		775AC61216ED5BE300FA3049 /* GameplayLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameplayLayer.h; sourceTree = "<group>"; };
 		775AC61316ED5BE300FA3049 /* GameplayLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameplayLayer.mm; sourceTree = "<group>"; };
 		775AC61516ED611D00FA3049 /* MovementComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovementComponent.h; sourceTree = "<group>"; };
-		775AC61616ED611D00FA3049 /* MovementComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovementComponent.m; sourceTree = "<group>"; };
+		775AC61616ED611D00FA3049 /* MovementComponent.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MovementComponent.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -655,7 +655,7 @@
 		775AC3D616ED56B900FA3049 /* Bum */ = {
 			isa = PBXGroup;
 			children = (
-				775AC60F16ED579900FA3049 /* Component Framework */,
+				775AC60F16ED579900FA3049 /* Entity Framework */,
 				775AC5E116ED56BB00FA3049 /* AppDelegate.h */,
 				775AC5E216ED56BB00FA3049 /* AppDelegate.mm */,
 				775AC5E416ED56BB00FA3049 /* HelloWorldLayer.h */,
@@ -1198,7 +1198,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		775AC60F16ED579900FA3049 /* Component Framework */ = {
+		775AC60F16ED579900FA3049 /* Entity Framework */ = {
 			isa = PBXGroup;
 			children = (
 				775AC61116ED57FA00FA3049 /* Components */,
@@ -1208,9 +1208,9 @@
 				775AC5F916ED579000FA3049 /* EntityManager.h */,
 				775AC5FA16ED579000FA3049 /* EntityManager.m */,
 				775AC5FB16ED579000FA3049 /* EntityFactory.h */,
-				775AC5FC16ED579000FA3049 /* EntityFactory.m */,
+				775AC5FC16ED579000FA3049 /* EntityFactory.mm */,
 			);
-			name = "Component Framework";
+			name = "Entity Framework";
 			sourceTree = "<group>";
 		};
 		775AC61016ED57ED00FA3049 /* Systems */ = {
@@ -1221,7 +1221,7 @@
 				775AC5FF16ED579000FA3049 /* HealthSystem.h */,
 				775AC60016ED579000FA3049 /* HealthSystem.m */,
 				7724FCA916F1002900081714 /* MovementSystem.h */,
-				7724FCAA16F1002900081714 /* MovementSystem.m */,
+				7724FCAA16F1002900081714 /* MovementSystem.mm */,
 			);
 			name = Systems;
 			sourceTree = "<group>";
@@ -1236,7 +1236,7 @@
 				775AC60516ED579000FA3049 /* HealthComponent.h */,
 				775AC60616ED579000FA3049 /* HealthComponent.m */,
 				775AC61516ED611D00FA3049 /* MovementComponent.h */,
-				775AC61616ED611D00FA3049 /* MovementComponent.m */,
+				775AC61616ED611D00FA3049 /* MovementComponent.mm */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -1472,15 +1472,15 @@
 				775AC5EF16ED56BB00FA3049 /* PhysicsSprite.mm in Sources */,
 				775AC60716ED579000FA3049 /* Entity.m in Sources */,
 				775AC60816ED579000FA3049 /* EntityManager.m in Sources */,
-				775AC60916ED579000FA3049 /* EntityFactory.m in Sources */,
+				775AC60916ED579000FA3049 /* EntityFactory.mm in Sources */,
 				775AC60A16ED579000FA3049 /* System.m in Sources */,
 				775AC60B16ED579000FA3049 /* HealthSystem.m in Sources */,
 				775AC60C16ED579000FA3049 /* Component.m in Sources */,
 				775AC60D16ED579000FA3049 /* RenderComponent.m in Sources */,
 				775AC60E16ED579000FA3049 /* HealthComponent.m in Sources */,
 				775AC61416ED5BE300FA3049 /* GameplayLayer.mm in Sources */,
-				775AC61716ED611D00FA3049 /* MovementComponent.m in Sources */,
-				7724FCAB16F1002900081714 /* MovementSystem.m in Sources */,
+				775AC61716ED611D00FA3049 /* MovementComponent.mm in Sources */,
+				7724FCAB16F1002900081714 /* MovementSystem.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

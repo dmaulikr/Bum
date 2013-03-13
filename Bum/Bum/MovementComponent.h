@@ -9,10 +9,13 @@
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 #import "Component.h"
+#import "Box2D.h"
 
 @interface MovementComponent : Component {
     
 }
+
+@property (nonatomic) b2Body *body;
 
 @property (nonatomic) CGPoint target;
 
@@ -22,6 +25,6 @@
 @property (nonatomic) float maxVelocity;
 @property (nonatomic) float maxAcceleration;
 
-- (id)initWithTarget:(CGPoint)position maxVelocity:(float)velocity maxAcceleration:(float)accel;
+- (id)initWithBody:(b2Body *)body target:(CGPoint)position maxVelocity:(float)velocity maxAcceleration:(float)accel;
 
 @end

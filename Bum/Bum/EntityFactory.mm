@@ -11,6 +11,8 @@
 #import "EntityManager.h"
 #import "RenderComponent.h"
 #import "HealthComponent.h"
+#import "MovementComponent.h"
+#import "PhysicsSprite.h"
 
 @implementation EntityFactory {
     EntityManager * _entityManager;
@@ -28,12 +30,13 @@
 
 - (Entity *)createHumanPlayer
 {
-    CCSprite * sprite = [[CCSprite alloc] initWithSpriteFrameName:@"bum_run.png"];
-    [_batchNode addChild:sprite];
-    
+    PhysicsSprite * sprite = [[PhysicsSprite alloc] initWithSpriteFrameName:@"bum_run.png"];    
     Entity * entity = [_entityManager createEntity];
     [_entityManager addComponent:[[RenderComponent alloc] initWithNode:sprite] toEntity:entity];
     [_entityManager addComponent:[[HealthComponent alloc] initWithCurrentHP:200 maxHP:200] toEntity:entity];
+    
+    b2Body *bumBody = nil;
+    [_entityManager addComponent:[[MovementComponent alloc] initWithBody:bumBody target:CGPointZero maxVelocity:100.f maxAcceleration:100.f] toEntity:entity];
     return entity;
 }
 

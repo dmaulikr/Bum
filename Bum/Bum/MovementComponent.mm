@@ -11,9 +11,10 @@
 
 @implementation MovementComponent
 
-- (id)initWithTarget:(CGPoint)position maxVelocity:(float)velocity maxAcceleration:(float)accel
+- (id)initWithBody:(b2Body *)body target:(CGPoint)position maxVelocity:(float)velocity maxAcceleration:(float)accel
 {
     if (self = [super init]) {
+        self.body = body;
         self.target = position;
         self.maxVelocity = velocity;
         self.maxAcceleration = accel;

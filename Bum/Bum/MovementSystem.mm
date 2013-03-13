@@ -26,6 +26,11 @@
         CGPoint vector = ccpSub(move.target, render.node.position);
         float distance = ccpLength(vector);
         
+        // stop moving after small distances
+        if (distance < 0.1) {
+            render.node.position = move.target;
+            return;
+        }
         
     }
 }
