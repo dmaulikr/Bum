@@ -16,7 +16,7 @@
 
 - (id)initWithEntityManager:(EntityManager *)entityManager batchNode:(CCSpriteBatchNode *)batchNode;
 
-- (Entity *)createHumanPlayerWithFrameName:(NSString *)frameName;
+- (Entity *)createHumanPlayer;
 - (Entity *)createAIPlayer;
 - (Entity *)createQuirkMonster;
 

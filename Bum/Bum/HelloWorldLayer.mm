@@ -94,8 +94,6 @@ enum {
 	
 	delete m_debugDraw;
 	m_debugDraw = NULL;
-	
-	[super dealloc];
 }	
 
 -(void) createMenu

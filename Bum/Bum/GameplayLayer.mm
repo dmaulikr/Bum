@@ -33,6 +33,23 @@ typedef enum {
 
 @implementation GameplayLayer
 
+// Helper class method that creates a Scene with the HelloWorldLayer as the only child.
++(CCScene *) scene
+{
+	// 'scene' is an autorelease object.
+	CCScene *scene = [CCScene node];
+	
+	// 'layer' is an autorelease object.
+	GameplayLayer *layer = [GameplayLayer node];
+	
+	// add layer as a child to scene
+	[scene addChild: layer];
+	
+	// return the scene
+	return scene;
+}
+
+
 
 - (id)init
 {
@@ -46,15 +63,15 @@ typedef enum {
 
 - (void)setup
 {
-//    [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"characters.plist"];
-//    [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"backgrounds.plist"];
-//    
+    [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"bum.plist"];
+    
 //    CCSprite *background = [CCSprite spriteWithSpriteFrameName:@"background.png"];
 //    background.position = ccp(background.contentSize.width * .5, background.contentSize.height * .5);
 //    [self addChild:background z:DepthLevelBackground];
-//    
-//    _batchNode = [CCSpriteBatchNode batchNodeWithFile:@"characters.png"];
-//    [self addChild:_batchNode z:DepthLevelCharacters];
+    
+    _batchNode = [CCSpriteBatchNode batchNodeWithFile:@"bum.pvr.ccz"];
+    [self addChild:_batchNode z:DepthLevelCharacters];
+    
     
     [self scheduleUpdate];
 }
@@ -73,7 +90,7 @@ typedef enum {
     _player = [_entityFactory createHumanPlayer];
     RenderComponent * humanRender = _player.render;
     if (humanRender) {
-        humanRender.node.position = ccp(humanRender.node.contentSize.width/2 + inset, winSize.height/4);
+        humanRender.node.position = ccp(humanRender.node.contentSize.width/2 + inset, winSize.height / 4 );
     }
     
     _enemy = [_entityFactory createAIPlayer];

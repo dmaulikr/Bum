@@ -28,7 +28,7 @@
 
 - (Entity *)createHumanPlayer
 {
-    CCSprite * sprite = [[CCSprite alloc] initWithSpriteFrameName:@""];
+    CCSprite * sprite = [[CCSprite alloc] initWithSpriteFrameName:@"bum_run.png"];
     [_batchNode addChild:sprite];
     
     Entity * entity = [_entityManager createEntity];
@@ -40,7 +40,7 @@
 
 - (Entity *)createAIPlayer
 {
-    CCSprite * sprite = [[CCSprite alloc] initWithSpriteFrameName:@"Enemy Bug.png"];
+    CCSprite * sprite = [[CCSprite alloc] initWithSpriteFrameName:@"interim_badguy.png"];
     [_batchNode addChild:sprite];
     
     Entity * entity = [_entityManager createEntity];
