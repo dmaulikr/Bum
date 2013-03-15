@@ -12,7 +12,7 @@
 #import "RenderComponent.h"
 #import "HealthComponent.h"
 #import "MovementComponent.h"
-#import "PhysicsSprite.h"
+#import "ActionComponent.h"
 
 @implementation EntityFactory {
     EntityManager * _entityManager;
@@ -30,13 +30,53 @@
 
 - (Entity *)createHumanPlayer
 {
-    PhysicsSprite * sprite = [[PhysicsSprite alloc] initWithSpriteFrameName:@"bum_run.png"];    
+    CCSprite * sprite = [[CCSprite alloc] initWithSpriteFrameName:@"bum_run.png"];
+    [_batchNode addChild:sprite];
+    
     Entity * entity = [_entityManager createEntity];
-    [_entityManager addComponent:[[RenderComponent alloc] initWithNode:sprite] toEntity:entity];
+    [_entityManager addComponent:[[RenderComponent alloc] initWithNode:sprite centerToSides:127.f centerToBottom:149.f] toEntity:entity];
     [_entityManager addComponent:[[HealthComponent alloc] initWithCurrentHP:200 maxHP:200] toEntity:entity];
     
-    b2Body *bumBody = nil;
-    [_entityManager addComponent:[[MovementComponent alloc] initWithBody:bumBody target:CGPointZero maxVelocity:100.f maxAcceleration:100.f] toEntity:entity];
+    
+    // Animation
+    ActionComponent *actionComp = [[ActionComponent alloc] initWithActionState:ActionStateIdle];
+ 
+    // idle
+    CCArray *idleFrames = [CCArray arrayWithCapacity:1];
+    
+    CCSpriteFrame *frame = [[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"bum_throw.png"];
+    [idleFrames addObject:frame];
+    
+    CCAnimation *idleAnimation = [CCAnimation animationWithSpriteFrames:[idleFrames getNSArray] delay:1.0/12.0];
+    actionComp.idleAction = [CCRepeatForever actionWithAction:[CCAnimate actionWithAnimation:idleAnimation]];
+    
+    
+    // run
+    CCArray *runFrames = [CCArray arrayWithCapacity:1];
+    
+    frame = [[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"bum_run.png"];
+    [runFrames addObject:frame];
+    
+    CCAnimation *runAnimation = [CCAnimation animationWithSpriteFrames:[runFrames getNSArray] delay:1.0/12.0];
+    actionComp.walkAction = [CCRepeatForever actionWithAction:[CCAnimate actionWithAnimation:runAnimation]];
+    
+    
+    // attack
+    CCArray *attackFrames = [CCArray arrayWithCapacity:1];
+    
+    frame = [[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"bum_throw.png"];
+    [attackFrames addObject:frame];
+    
+    CCAnimation *attackAnimation = [CCAnimation animationWithSpriteFrames:[attackFrames getNSArray] delay:1.0/12.0];
+    actionComp.walkAction = [CCRepeatForever actionWithAction:[CCAnimate actionWithAnimation:attackAnimation]];
+    
+    
+    // finally add the action component to the manager
+    [_entityManager addComponent:actionComp toEntity:entity];
+    
+    
+    // Movement
+    [_entityManager addComponent:[[MovementComponent alloc] initWithMaxVelocity:100.f maxAcceleration:100.f] toEntity:entity];
     return entity;
 }
 
@@ -47,20 +87,8 @@
     [_batchNode addChild:sprite];
     
     Entity * entity = [_entityManager createEntity];
-    [_entityManager addComponent:[[RenderComponent alloc] initWithNode:sprite] toEntity:entity];
+    [_entityManager addComponent:[[RenderComponent alloc] initWithNode:sprite centerToSides:80.f centerToBottom:151.f] toEntity:entity];
     [_entityManager addComponent:[[HealthComponent alloc] initWithCurrentHP:200 maxHP:200] toEntity:entity];
-    return entity;
-}
-
-
-- (Entity *)createQuirkMonster
-{
-    CCSprite * sprite = [[CCSprite alloc] initWithSpriteFrameName:@"quirk1.png"];
-    [_batchNode addChild:sprite];
-    
-    Entity * entity = [_entityManager createEntity];
-    [_entityManager addComponent:[[RenderComponent alloc] initWithNode:sprite] toEntity:entity];
-    [_entityManager addComponent:[[HealthComponent alloc] initWithCurrentHP:5 maxHP:5] toEntity:entity];
     return entity;
 }
 

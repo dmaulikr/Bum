@@ -18,6 +18,5 @@
 
 - (Entity *)createHumanPlayer;
 - (Entity *)createAIPlayer;
-- (Entity *)createQuirkMonster;
 
 @end

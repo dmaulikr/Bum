@@ -186,7 +186,7 @@
 		775AC5EC16ED56BB00FA3049 /* GLES-Render.mm in Sources */ = {isa = PBXBuildFile; fileRef = 775AC5EB16ED56BB00FA3049 /* GLES-Render.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		775AC5EF16ED56BB00FA3049 /* PhysicsSprite.mm in Sources */ = {isa = PBXBuildFile; fileRef = 775AC5EE16ED56BB00FA3049 /* PhysicsSprite.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		775AC5F116ED56BB00FA3049 /* blocks.png in Resources */ = {isa = PBXBuildFile; fileRef = 775AC5F016ED56BB00FA3049 /* blocks.png */; };
-		775AC60716ED579000FA3049 /* Entity.m in Sources */ = {isa = PBXBuildFile; fileRef = 775AC5F816ED579000FA3049 /* Entity.m */; };
+		775AC60716ED579000FA3049 /* Entity.mm in Sources */ = {isa = PBXBuildFile; fileRef = 775AC5F816ED579000FA3049 /* Entity.mm */; };
 		775AC60816ED579000FA3049 /* EntityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 775AC5FA16ED579000FA3049 /* EntityManager.m */; };
 		775AC60916ED579000FA3049 /* EntityFactory.mm in Sources */ = {isa = PBXBuildFile; fileRef = 775AC5FC16ED579000FA3049 /* EntityFactory.mm */; };
 		775AC60A16ED579000FA3049 /* System.m in Sources */ = {isa = PBXBuildFile; fileRef = 775AC5FE16ED579000FA3049 /* System.m */; };
@@ -196,6 +196,13 @@
 		775AC60E16ED579000FA3049 /* HealthComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 775AC60616ED579000FA3049 /* HealthComponent.m */; };
 		775AC61416ED5BE300FA3049 /* GameplayLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 775AC61316ED5BE300FA3049 /* GameplayLayer.mm */; };
 		775AC61716ED611D00FA3049 /* MovementComponent.mm in Sources */ = {isa = PBXBuildFile; fileRef = 775AC61616ED611D00FA3049 /* MovementComponent.mm */; };
+		77FD771816F38866008CA710 /* GameplayScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FD771716F38866008CA710 /* GameplayScene.m */; };
+		77FD771B16F388D5008CA710 /* HUDLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FD771A16F388D4008CA710 /* HUDLayer.m */; };
+		77FD771F16F38E92008CA710 /* pd_tilemap.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 77FD771D16F38E92008CA710 /* pd_tilemap.tmx */; };
+		77FD772016F38E92008CA710 /* pd_tiles.png in Resources */ = {isa = PBXBuildFile; fileRef = 77FD771E16F38E92008CA710 /* pd_tiles.png */; };
+		77FD772216F3900E008CA710 /* pd_tiles-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 77FD772116F3900E008CA710 /* pd_tiles-hd.png */; };
+		77FD772616F394B7008CA710 /* ActionComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FD772516F394B7008CA710 /* ActionComponent.m */; };
+		77FD772916F3983B008CA710 /* ActionSystem.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77FD772816F3983B008CA710 /* ActionSystem.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -567,7 +574,7 @@
 		775AC5EE16ED56BB00FA3049 /* PhysicsSprite.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PhysicsSprite.mm; sourceTree = "<group>"; };
 		775AC5F016ED56BB00FA3049 /* blocks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blocks.png; path = Resources/blocks.png; sourceTree = "<group>"; };
 		775AC5F716ED579000FA3049 /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
-		775AC5F816ED579000FA3049 /* Entity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entity.m; sourceTree = "<group>"; };
+		775AC5F816ED579000FA3049 /* Entity.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Entity.mm; sourceTree = "<group>"; };
 		775AC5F916ED579000FA3049 /* EntityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntityManager.h; sourceTree = "<group>"; };
 		775AC5FA16ED579000FA3049 /* EntityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntityManager.m; sourceTree = "<group>"; };
 		775AC5FB16ED579000FA3049 /* EntityFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntityFactory.h; sourceTree = "<group>"; };
@@ -586,6 +593,18 @@
 		775AC61316ED5BE300FA3049 /* GameplayLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameplayLayer.mm; sourceTree = "<group>"; };
 		775AC61516ED611D00FA3049 /* MovementComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovementComponent.h; sourceTree = "<group>"; };
 		775AC61616ED611D00FA3049 /* MovementComponent.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MovementComponent.mm; sourceTree = "<group>"; };
+		77FD771616F38866008CA710 /* GameplayScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameplayScene.h; sourceTree = "<group>"; };
+		77FD771716F38866008CA710 /* GameplayScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameplayScene.m; sourceTree = "<group>"; };
+		77FD771916F388D4008CA710 /* HUDLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUDLayer.h; sourceTree = "<group>"; };
+		77FD771A16F388D4008CA710 /* HUDLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUDLayer.m; sourceTree = "<group>"; };
+		77FD771D16F38E92008CA710 /* pd_tilemap.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = pd_tilemap.tmx; path = ../../Assets/pd_resources/Sprites/pd_tilemap.tmx; sourceTree = "<group>"; };
+		77FD771E16F38E92008CA710 /* pd_tiles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pd_tiles.png; path = ../../Assets/pd_resources/Sprites/pd_tiles.png; sourceTree = "<group>"; };
+		77FD772116F3900E008CA710 /* pd_tiles-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pd_tiles-hd.png"; path = "../../Assets/pd_resources/Sprites/pd_tiles-hd.png"; sourceTree = "<group>"; };
+		77FD772316F391A1008CA710 /* Defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
+		77FD772416F394B7008CA710 /* ActionComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionComponent.h; sourceTree = "<group>"; };
+		77FD772516F394B7008CA710 /* ActionComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionComponent.m; sourceTree = "<group>"; };
+		77FD772716F3983B008CA710 /* ActionSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSystem.h; sourceTree = "<group>"; };
+		77FD772816F3983B008CA710 /* ActionSystem.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ActionSystem.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -611,6 +630,7 @@
 		7724FCAC16F1058800081714 /* Art */ = {
 			isa = PBXGroup;
 			children = (
+				77FD771C16F38E8B008CA710 /* Tileset */,
 				7724FCF716F1219D00081714 /* bum-hd.plist */,
 				7724FCF816F1219D00081714 /* bum-hd.pvr.ccz */,
 				7724FCF916F1219D00081714 /* bum.plist */,
@@ -656,14 +676,19 @@
 			isa = PBXGroup;
 			children = (
 				775AC60F16ED579900FA3049 /* Entity Framework */,
+				77FD772316F391A1008CA710 /* Defines.h */,
 				775AC5E116ED56BB00FA3049 /* AppDelegate.h */,
 				775AC5E216ED56BB00FA3049 /* AppDelegate.mm */,
 				775AC5E416ED56BB00FA3049 /* HelloWorldLayer.h */,
 				775AC5E516ED56BB00FA3049 /* HelloWorldLayer.mm */,
 				775AC5E716ED56BB00FA3049 /* IntroLayer.h */,
 				775AC5E816ED56BB00FA3049 /* IntroLayer.mm */,
+				77FD771616F38866008CA710 /* GameplayScene.h */,
+				77FD771716F38866008CA710 /* GameplayScene.m */,
 				775AC61216ED5BE300FA3049 /* GameplayLayer.h */,
 				775AC61316ED5BE300FA3049 /* GameplayLayer.mm */,
+				77FD771916F388D4008CA710 /* HUDLayer.h */,
+				77FD771A16F388D4008CA710 /* HUDLayer.m */,
 				775AC5EA16ED56BB00FA3049 /* GLES-Render.h */,
 				775AC5EB16ED56BB00FA3049 /* GLES-Render.mm */,
 				775AC5ED16ED56BB00FA3049 /* PhysicsSprite.h */,
@@ -1204,7 +1229,7 @@
 				775AC61116ED57FA00FA3049 /* Components */,
 				775AC61016ED57ED00FA3049 /* Systems */,
 				775AC5F716ED579000FA3049 /* Entity.h */,
-				775AC5F816ED579000FA3049 /* Entity.m */,
+				775AC5F816ED579000FA3049 /* Entity.mm */,
 				775AC5F916ED579000FA3049 /* EntityManager.h */,
 				775AC5FA16ED579000FA3049 /* EntityManager.m */,
 				775AC5FB16ED579000FA3049 /* EntityFactory.h */,
@@ -1222,6 +1247,8 @@
 				775AC60016ED579000FA3049 /* HealthSystem.m */,
 				7724FCA916F1002900081714 /* MovementSystem.h */,
 				7724FCAA16F1002900081714 /* MovementSystem.mm */,
+				77FD772716F3983B008CA710 /* ActionSystem.h */,
+				77FD772816F3983B008CA710 /* ActionSystem.mm */,
 			);
 			name = Systems;
 			sourceTree = "<group>";
@@ -1237,8 +1264,20 @@
 				775AC60616ED579000FA3049 /* HealthComponent.m */,
 				775AC61516ED611D00FA3049 /* MovementComponent.h */,
 				775AC61616ED611D00FA3049 /* MovementComponent.mm */,
+				77FD772416F394B7008CA710 /* ActionComponent.h */,
+				77FD772516F394B7008CA710 /* ActionComponent.m */,
 			);
 			name = Components;
+			sourceTree = "<group>";
+		};
+		77FD771C16F38E8B008CA710 /* Tileset */ = {
+			isa = PBXGroup;
+			children = (
+				77FD771D16F38E92008CA710 /* pd_tilemap.tmx */,
+				77FD772116F3900E008CA710 /* pd_tiles-hd.png */,
+				77FD771E16F38E92008CA710 /* pd_tiles.png */,
+			);
+			name = Tileset;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1309,6 +1348,9 @@
 				7724FCFC16F1219D00081714 /* bum-hd.pvr.ccz in Resources */,
 				7724FCFD16F1219D00081714 /* bum.plist in Resources */,
 				7724FCFE16F1219D00081714 /* bum.pvr.ccz in Resources */,
+				77FD771F16F38E92008CA710 /* pd_tilemap.tmx in Resources */,
+				77FD772016F38E92008CA710 /* pd_tiles.png in Resources */,
+				77FD772216F3900E008CA710 /* pd_tiles-hd.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1470,7 +1512,7 @@
 				775AC5E916ED56BB00FA3049 /* IntroLayer.mm in Sources */,
 				775AC5EC16ED56BB00FA3049 /* GLES-Render.mm in Sources */,
 				775AC5EF16ED56BB00FA3049 /* PhysicsSprite.mm in Sources */,
-				775AC60716ED579000FA3049 /* Entity.m in Sources */,
+				775AC60716ED579000FA3049 /* Entity.mm in Sources */,
 				775AC60816ED579000FA3049 /* EntityManager.m in Sources */,
 				775AC60916ED579000FA3049 /* EntityFactory.mm in Sources */,
 				775AC60A16ED579000FA3049 /* System.m in Sources */,
@@ -1481,6 +1523,10 @@
 				775AC61416ED5BE300FA3049 /* GameplayLayer.mm in Sources */,
 				775AC61716ED611D00FA3049 /* MovementComponent.mm in Sources */,
 				7724FCAB16F1002900081714 /* MovementSystem.mm in Sources */,
+				77FD771816F38866008CA710 /* GameplayScene.m in Sources */,
+				77FD771B16F388D5008CA710 /* HUDLayer.m in Sources */,
+				77FD772616F394B7008CA710 /* ActionComponent.m in Sources */,
+				77FD772916F3983B008CA710 /* ActionSystem.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

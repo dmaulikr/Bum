@@ -7,17 +7,16 @@
 //
 
 #import "MovementComponent.h"
-
+#import "Box2D.h"
 
 @implementation MovementComponent
 
-- (id)initWithBody:(b2Body *)body target:(CGPoint)position maxVelocity:(float)velocity maxAcceleration:(float)accel
+- (id)initWithMaxVelocity:(float)velocity maxAcceleration:(float)accel
 {
     if (self = [super init]) {
-        self.body = body;
-        self.target = position;
         self.maxVelocity = velocity;
         self.maxAcceleration = accel;
+        self.target = CGPointZero;
         self.velocity = CGPointZero;
         self.acceleration = CGPointZero;
     }

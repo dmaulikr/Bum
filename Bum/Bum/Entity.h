@@ -11,6 +11,7 @@
 @class Component;
 @class EntityManager;
 @class RenderComponent;
+@class MovementComponent;
 @interface Entity : NSObject {
     EntityManager *_entityManager;
 }
@@ -20,5 +21,6 @@
 - (id)initWithID:(uint32_t)entityID entityManager:(EntityManager *)entityManager;
 
 - (RenderComponent *)render;
+- (MovementComponent *)movement;
 
 @end

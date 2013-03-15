@@ -11,10 +11,12 @@
 
 @implementation RenderComponent
 
-- (id)initWithNode:(CCSprite *)node
+- (id)initWithNode:(CCSprite *)node centerToSides:(float)centerToSides centerToBottom:(float)centerToBottom
 {
     if (self = [super init]) {
         _node = node;
+        _centerToSides = centerToSides;
+        _centerToBottom = centerToBottom;
     }
     return self;
 }

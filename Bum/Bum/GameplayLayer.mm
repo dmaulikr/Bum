@@ -11,9 +11,11 @@
 #import "EntityFactory.h"
 #import "HealthSystem.h"
 #import "RenderComponent.h"
+#import "MovementComponent.h"
 #import "MovementSystem.h"
 #import "Box2D.h"
 #import "GLES-Render.h"
+#import "ActionSystem.h"
 
 typedef enum {
     DepthLevelBackground = 0,
@@ -24,6 +26,7 @@ typedef enum {
     
     // cocos2d
     CCSpriteBatchNode *_batchNode;
+    CCTMXTiledMap *_tileMap;
     
     // box2d
     b2World* world;
@@ -35,6 +38,7 @@ typedef enum {
     
     HealthSystem *_healthSystem;
     MovementSystem *_movementSystem;
+    ActionSystem *_actionSystem;
     
     Entity * _player;
     Entity * _enemy;
@@ -43,23 +47,6 @@ typedef enum {
 @end
 
 @implementation GameplayLayer
-
-// Helper class method that creates a Scene with the HelloWorldLayer as the only child.
-+(CCScene *) scene
-{
-	// 'scene' is an autorelease object.
-	CCScene *scene = [CCScene node];
-	
-	// 'layer' is an autorelease object.
-	GameplayLayer *layer = [GameplayLayer node];
-	
-	// add layer as a child to scene
-	[scene addChild: layer];
-	
-	// return the scene
-	return scene;
-}
-
 
 
 - (id)init
@@ -85,8 +72,21 @@ typedef enum {
     _batchNode = [CCSpriteBatchNode batchNodeWithFile:@"bum.pvr.ccz"];
     [self addChild:_batchNode z:DepthLevelCharacters];
     
-    [self initPhysics];
+    [self initTileMap];
+//    [self initPhysics];
     [self scheduleUpdate];
+}
+
+
+- (void)initTileMap
+{
+    _tileMap = [[CCTMXTiledMap alloc] initWithTMXFile:@"pd_tilemap.tmx"];
+    for (CCTMXLayer *child in [_tileMap children]) {
+        // This method ensures that anti-aliasing is turned off for all the textures used in the tiled map,
+        // so that you can retain the pixel-like style of the textures even when the map is scaled.
+        [[child texture] setAliasTexParameters];
+    }
+    [self addChild:_tileMap z:-6];
 }
 
 
@@ -157,17 +157,25 @@ typedef enum {
     
     _healthSystem = [[HealthSystem alloc] initWithEntityManager:_entityManager entityFactory:_entityFactory];
     _movementSystem = [[MovementSystem alloc] initWithEntityManager:_entityManager entityFactory:_entityFactory];
+    _actionSystem = [[ActionSystem alloc] initWithEntityManager:_entityManager entityFactory:_entityFactory];
     
     _player = [_entityFactory createHumanPlayer];
-    
     RenderComponent * humanRender = _player.render;
-    CGPoint humanStartPoint = ccp(humanRender.node.contentSize.width/2 + inset, winSize.height/4);
-    humanRender.node.position = humanStartPoint;
+    MovementComponent *movement = _player.movement;
+    
+    CGPoint humanStartPoint = ccp(humanRender.node.contentSize.width/2 + inset, humanRender.centerToBottom);
+    if (humanRender) {
+        humanRender.node.position = humanStartPoint;
+    }
+    
+    if (movement) {
+        movement.target = humanStartPoint;
+    }
     
     _enemy = [_entityFactory createAIPlayer];
     RenderComponent *aiRenderer = _enemy.render;
     if (aiRenderer) {
-        aiRenderer.node.position = ccp(winSize.width - aiRenderer.node.contentSize.width/2 - inset, winSize.height/4);
+        aiRenderer.node.position = ccp(winSize.width - aiRenderer.node.contentSize.width/2 - inset, aiRenderer.centerToBottom);
     }
 }
 
@@ -184,11 +192,12 @@ typedef enum {
 	
 	// Instruct the world to perform a single step of simulation. It is
 	// generally best to keep the time step and iterations fixed.
-	world->Step(dt, velocityIterations, positionIterations);
+//	world->Step(dt, velocityIterations, positionIterations);
     
     
     [_movementSystem update:dt];
     [_healthSystem update:dt];
+    [_actionSystem update:dt];
 }
 
 - (void)draw

@@ -15,7 +15,10 @@
 }
 
 @property (strong, nonatomic, readonly) CCSprite *node;
+@property (nonatomic, assign) float centerToSides;
+@property (nonatomic, assign) float centerToBottom;
+@property (nonatomic) ActionState actionState;
 
-- (id)initWithNode:(CCSprite *)node;
+- (id)initWithNode:(CCSprite *)node centerToSides:(float)centerToSides centerToBottom:(float)centerToBottom;
 
 @end
