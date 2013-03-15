@@ -31,6 +31,7 @@
             
             // mark dead
             health.isAlive = FALSE;
+            render.actionState = ActionStateKnockedOut;
             
             // 4
             if (render) {

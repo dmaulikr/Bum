@@ -203,6 +203,9 @@
 		77FD772216F3900E008CA710 /* pd_tiles-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 77FD772116F3900E008CA710 /* pd_tiles-hd.png */; };
 		77FD772616F394B7008CA710 /* ActionComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FD772516F394B7008CA710 /* ActionComponent.m */; };
 		77FD772916F3983B008CA710 /* ActionSystem.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77FD772816F3983B008CA710 /* ActionSystem.mm */; };
+		77FD772D16F3C756008CA710 /* SimpleDPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FD772C16F3C756008CA710 /* SimpleDPad.m */; };
+		77FD773016F3CE22008CA710 /* pd_dpad-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 77FD772E16F3CE22008CA710 /* pd_dpad-hd.png */; };
+		77FD773116F3CE22008CA710 /* pd_dpad.png in Resources */ = {isa = PBXBuildFile; fileRef = 77FD772F16F3CE22008CA710 /* pd_dpad.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -605,6 +608,10 @@
 		77FD772516F394B7008CA710 /* ActionComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionComponent.m; sourceTree = "<group>"; };
 		77FD772716F3983B008CA710 /* ActionSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSystem.h; sourceTree = "<group>"; };
 		77FD772816F3983B008CA710 /* ActionSystem.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ActionSystem.mm; sourceTree = "<group>"; };
+		77FD772B16F3C756008CA710 /* SimpleDPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleDPad.h; sourceTree = "<group>"; };
+		77FD772C16F3C756008CA710 /* SimpleDPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleDPad.m; sourceTree = "<group>"; };
+		77FD772E16F3CE22008CA710 /* pd_dpad-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pd_dpad-hd.png"; path = "../../Assets/pd_resources/Sprites/pd_dpad-hd.png"; sourceTree = "<group>"; };
+		77FD772F16F3CE22008CA710 /* pd_dpad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pd_dpad.png; path = ../../Assets/pd_resources/Sprites/pd_dpad.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -630,6 +637,8 @@
 		7724FCAC16F1058800081714 /* Art */ = {
 			isa = PBXGroup;
 			children = (
+				77FD772E16F3CE22008CA710 /* pd_dpad-hd.png */,
+				77FD772F16F3CE22008CA710 /* pd_dpad.png */,
 				77FD771C16F38E8B008CA710 /* Tileset */,
 				7724FCF716F1219D00081714 /* bum-hd.plist */,
 				7724FCF816F1219D00081714 /* bum-hd.pvr.ccz */,
@@ -683,12 +692,7 @@
 				775AC5E516ED56BB00FA3049 /* HelloWorldLayer.mm */,
 				775AC5E716ED56BB00FA3049 /* IntroLayer.h */,
 				775AC5E816ED56BB00FA3049 /* IntroLayer.mm */,
-				77FD771616F38866008CA710 /* GameplayScene.h */,
-				77FD771716F38866008CA710 /* GameplayScene.m */,
-				775AC61216ED5BE300FA3049 /* GameplayLayer.h */,
-				775AC61316ED5BE300FA3049 /* GameplayLayer.mm */,
-				77FD771916F388D4008CA710 /* HUDLayer.h */,
-				77FD771A16F388D4008CA710 /* HUDLayer.m */,
+				77FD772A16F3C71D008CA710 /* Gameplay */,
 				775AC5EA16ED56BB00FA3049 /* GLES-Render.h */,
 				775AC5EB16ED56BB00FA3049 /* GLES-Render.mm */,
 				775AC5ED16ED56BB00FA3049 /* PhysicsSprite.h */,
@@ -1280,6 +1284,21 @@
 			name = Tileset;
 			sourceTree = "<group>";
 		};
+		77FD772A16F3C71D008CA710 /* Gameplay */ = {
+			isa = PBXGroup;
+			children = (
+				77FD771616F38866008CA710 /* GameplayScene.h */,
+				77FD771716F38866008CA710 /* GameplayScene.m */,
+				775AC61216ED5BE300FA3049 /* GameplayLayer.h */,
+				775AC61316ED5BE300FA3049 /* GameplayLayer.mm */,
+				77FD771916F388D4008CA710 /* HUDLayer.h */,
+				77FD771A16F388D4008CA710 /* HUDLayer.m */,
+				77FD772B16F3C756008CA710 /* SimpleDPad.h */,
+				77FD772C16F3C756008CA710 /* SimpleDPad.m */,
+			);
+			name = Gameplay;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1351,6 +1370,8 @@
 				77FD771F16F38E92008CA710 /* pd_tilemap.tmx in Resources */,
 				77FD772016F38E92008CA710 /* pd_tiles.png in Resources */,
 				77FD772216F3900E008CA710 /* pd_tiles-hd.png in Resources */,
+				77FD773016F3CE22008CA710 /* pd_dpad-hd.png in Resources */,
+				77FD773116F3CE22008CA710 /* pd_dpad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1527,6 +1548,7 @@
 				77FD771B16F388D5008CA710 /* HUDLayer.m in Sources */,
 				77FD772616F394B7008CA710 /* ActionComponent.m in Sources */,
 				77FD772916F3983B008CA710 /* ActionSystem.mm in Sources */,
+				77FD772D16F3C756008CA710 /* SimpleDPad.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
