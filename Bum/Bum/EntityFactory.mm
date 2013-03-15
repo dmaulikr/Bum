@@ -68,7 +68,7 @@
     [attackFrames addObject:frame];
     
     CCAnimation *attackAnimation = [CCAnimation animationWithSpriteFrames:[attackFrames getNSArray] delay:1.0/12.0];
-    actionComp.walkAction = [CCRepeatForever actionWithAction:[CCAnimate actionWithAnimation:attackAnimation]];
+    actionComp.attackAction = [CCRepeatForever actionWithAction:[CCAnimate actionWithAnimation:attackAnimation]];
     
     
     // finally add the action component to the manager

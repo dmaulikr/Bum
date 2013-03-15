@@ -16,9 +16,11 @@
 #import "Box2D.h"
 #import "GLES-Render.h"
 #import "ActionSystem.h"
+#import "ActionComponent.h"
 
 typedef enum {
     DepthLevelBackground = 0,
+    DepthLevelMainMap,
     DepthLevelCharacters
 } DepthLevel;
 
@@ -69,6 +71,8 @@ typedef enum {
 //    background.position = ccp(background.contentSize.width * .5, background.contentSize.height * .5);
 //    [self addChild:background z:DepthLevelBackground];
     
+    self.isTouchEnabled = YES;
+    
     _batchNode = [CCSpriteBatchNode batchNodeWithFile:@"bum.pvr.ccz"];
     [self addChild:_batchNode z:DepthLevelCharacters];
     
@@ -86,7 +90,7 @@ typedef enum {
         // so that you can retain the pixel-like style of the textures even when the map is scaled.
         [[child texture] setAliasTexParameters];
     }
-    [self addChild:_tileMap z:-6];
+    [self addChild:_tileMap z:DepthLevelMainMap];
 }
 
 
@@ -149,9 +153,6 @@ typedef enum {
 
 - (void)addPlayers
 {
-    CGSize winSize = [CCDirector sharedDirector].winSize;
-    CGFloat inset = winSize.width * .1;
-    
     _entityManager = [[EntityManager alloc] init];
     _entityFactory = [[EntityFactory alloc] initWithEntityManager:_entityManager batchNode:_batchNode];
     
@@ -159,23 +160,32 @@ typedef enum {
     _movementSystem = [[MovementSystem alloc] initWithEntityManager:_entityManager entityFactory:_entityFactory];
     _actionSystem = [[ActionSystem alloc] initWithEntityManager:_entityManager entityFactory:_entityFactory];
     
+    [self addHero];
+    [self addEnemy];
+}
+
+
+- (void)addHero
+{
     _player = [_entityFactory createHumanPlayer];
     RenderComponent * humanRender = _player.render;
     MovementComponent *movement = _player.movement;
     
-    CGPoint humanStartPoint = ccp(humanRender.node.contentSize.width/2 + inset, humanRender.centerToBottom);
+    CGPoint humanStartPoint = ccp(humanRender.centerToSides, humanRender.centerToBottom);
     if (humanRender) {
         humanRender.node.position = humanStartPoint;
     }
-    
     if (movement) {
         movement.target = humanStartPoint;
     }
-    
+}
+
+- (void)addEnemy
+{
     _enemy = [_entityFactory createAIPlayer];
     RenderComponent *aiRenderer = _enemy.render;
     if (aiRenderer) {
-        aiRenderer.node.position = ccp(winSize.width - aiRenderer.node.contentSize.width/2 - inset, aiRenderer.centerToBottom);
+        aiRenderer.node.position = ccp(SCREEN.width, aiRenderer.centerToBottom);
     }
 }
 
@@ -187,8 +197,8 @@ typedef enum {
 	//You need to make an informed choice, the following URL is useful
 	//http://gafferongames.com/game-physics/fix-your-timestep/
 	
-	int32 velocityIterations = 8;
-	int32 positionIterations = 1;
+//	int32 velocityIterations = 8;
+//	int32 positionIterations = 1;
 	
 	// Instruct the world to perform a single step of simulation. It is
 	// generally best to keep the time step and iterations fixed.
@@ -203,6 +213,18 @@ typedef enum {
 - (void)draw
 {
     [_healthSystem draw];
+}
+
+- (void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    ActionComponent *action = (ActionComponent *)[_entityManager getComponentOfClass:[ActionComponent class] forEntity:_player];
+    action.actionState = ActionStateWalk;
+}
+
+- (void)ccTouchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    ActionComponent *action = (ActionComponent *)[_entityManager getComponentOfClass:[ActionComponent class] forEntity:_player];
+    action.actionState = ActionStateIdle;
 }
 
 
