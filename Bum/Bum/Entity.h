@@ -10,8 +10,7 @@
 
 @class Component;
 @class EntityManager;
-@class RenderComponent;
-@class MovementComponent;
+
 @interface Entity : NSObject {
     EntityManager *_entityManager;
 }
@@ -19,8 +18,5 @@
 @property (readonly, nonatomic) uint32_t entityID;
 
 - (id)initWithID:(uint32_t)entityID entityManager:(EntityManager *)entityManager;
-
-- (RenderComponent *)render;
-- (MovementComponent *)movement;
 
 @end

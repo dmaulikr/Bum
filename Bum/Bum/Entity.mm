@@ -9,8 +9,6 @@
 #import "Entity.h"
 #import "Component.h"
 #import "EntityManager.h"
-#import "RenderComponent.h"
-#import "MovementComponent.h"
 
 @implementation Entity
 
@@ -24,16 +22,5 @@
     }
     return self;
 }
-
-- (RenderComponent *)render
-{
-    return (RenderComponent *) [_entityManager getComponentOfClass:[RenderComponent class] forEntity:self];
-}
-
-- (MovementComponent *)movement
-{
-    return (MovementComponent *) [_entityManager getComponentOfClass:[MovementComponent class] forEntity:self];
-}
-
 
 @end

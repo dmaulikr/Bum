@@ -8,9 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
+#import "HUDLayer.h"
 
 @interface GameplayLayer : CCLayer {
     
 }
+
+@property (nonatomic,unsafe_unretained) HUDLayer *hud;
 
 @end

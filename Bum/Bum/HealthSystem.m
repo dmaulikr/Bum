@@ -49,6 +49,7 @@
     }    
 }
 
+
 - (void)draw {
     NSArray * entities = [self.entityManager getAllEntitiesPosessingComponentOfClass:[HealthComponent class]];
     for (Entity * entity in entities) {

@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Entity.h"
-#import "Component.h"
 
+@class Component;
+@class Entity;
 @interface EntityManager : NSObject
 
 - (uint32_t) generateNewEid;

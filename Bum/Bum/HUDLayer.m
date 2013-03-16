@@ -11,7 +11,6 @@
 
 
 @interface HUDLayer () {
-    SimpleDPad *_dPad;
 }
 
 @end

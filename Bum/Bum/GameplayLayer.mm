@@ -17,6 +17,7 @@
 #import "GLES-Render.h"
 #import "ActionSystem.h"
 #import "ActionComponent.h"
+#import "SimpleDPad.h"
 
 typedef enum {
     DepthLevelBackground = 0,
@@ -55,30 +56,42 @@ typedef enum {
 {
     if (self = [super init]) {
         [self setup];
-        [self addPlayers];
+        [self createGameObjects];
     }
     return self;
 }
 
 
+- (void)setHud:(HUDLayer *)hud
+{
+    if (_hud) {
+        _hud.dPad.delegate = nil;
+    }
+    
+    _hud = hud;
+    _hud.dPad.delegate = _movementSystem;
+}
+
+
 - (void)setup
 {
-    
-    
     [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"bum.plist"];
-    
-//    CCSprite *background = [CCSprite spriteWithSpriteFrameName:@"background.png"];
-//    background.position = ccp(background.contentSize.width * .5, background.contentSize.height * .5);
-//    [self addChild:background z:DepthLevelBackground];
-    
-    self.isTouchEnabled = YES;
     
     _batchNode = [CCSpriteBatchNode batchNodeWithFile:@"bum.pvr.ccz"];
     [self addChild:_batchNode z:DepthLevelCharacters];
     
+    [self initBackground];
     [self initTileMap];
 //    [self initPhysics];
     [self scheduleUpdate];
+}
+
+
+- (void)initBackground
+{
+//    CCSprite *background = [CCSprite spriteWithSpriteFrameName:@"background.png"];
+//    background.position = ccp(background.contentSize.width * .5, background.contentSize.height * .5);
+//    [self addChild:background z:DepthLevelBackground];
 }
 
 
@@ -151,17 +164,24 @@ typedef enum {
 }
 
 
-- (void)addPlayers
+- (void)createGameObjects
 {
     _entityManager = [[EntityManager alloc] init];
     _entityFactory = [[EntityFactory alloc] initWithEntityManager:_entityManager batchNode:_batchNode];
     
-    _healthSystem = [[HealthSystem alloc] initWithEntityManager:_entityManager entityFactory:_entityFactory];
-    _movementSystem = [[MovementSystem alloc] initWithEntityManager:_entityManager entityFactory:_entityFactory];
-    _actionSystem = [[ActionSystem alloc] initWithEntityManager:_entityManager entityFactory:_entityFactory];
-    
+    [self createGameSystems];
     [self addHero];
     [self addEnemy];
+}
+
+- (void)createGameSystems
+{
+    _healthSystem = [[HealthSystem alloc] initWithEntityManager:_entityManager entityFactory:_entityFactory];
+    
+    _movementSystem = [[MovementSystem alloc] initWithEntityManager:_entityManager entityFactory:_entityFactory];
+    _movementSystem.tileMap = _tileMap;
+    
+    _actionSystem = [[ActionSystem alloc] initWithEntityManager:_entityManager entityFactory:_entityFactory];
 }
 
 
@@ -213,18 +233,6 @@ typedef enum {
 - (void)draw
 {
     [_healthSystem draw];
-}
-
-- (void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
-{
-    ActionComponent *action = (ActionComponent *)[_entityManager getComponentOfClass:[ActionComponent class] forEntity:_player];
-    action.actionState = ActionStateWalk;
-}
-
-- (void)ccTouchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
-{
-    ActionComponent *action = (ActionComponent *)[_entityManager getComponentOfClass:[ActionComponent class] forEntity:_player];
-    action.actionState = ActionStateIdle;
 }
 
 

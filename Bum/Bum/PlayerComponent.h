@@ -1,5 +1,5 @@
 //
-//  HUDLayer.h
+//  PlayerComponent.h
 //  Bum
 //
 //  Created by Grant Davis on 3/15/13.
@@ -8,11 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
+#import "Component.h"
 
-@class SimpleDPad;
-@interface HUDLayer : CCLayer {
+@interface PlayerComponent : Component {
     
 }
-@property (nonatomic, readonly) SimpleDPad *dPad;
 
 @end

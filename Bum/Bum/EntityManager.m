@@ -7,6 +7,8 @@
 //
 
 #import "EntityManager.h"
+#import "Entity.h"
+#import "Component.h"
 
 @implementation EntityManager {
     NSMutableArray * _entities;

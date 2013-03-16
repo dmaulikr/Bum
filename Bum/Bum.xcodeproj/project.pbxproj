@@ -206,6 +206,8 @@
 		77FD772D16F3C756008CA710 /* SimpleDPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FD772C16F3C756008CA710 /* SimpleDPad.m */; };
 		77FD773016F3CE22008CA710 /* pd_dpad-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 77FD772E16F3CE22008CA710 /* pd_dpad-hd.png */; };
 		77FD773116F3CE22008CA710 /* pd_dpad.png in Resources */ = {isa = PBXBuildFile; fileRef = 77FD772F16F3CE22008CA710 /* pd_dpad.png */; };
+		77FD773416F3DC11008CA710 /* PlayerComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FD773316F3DC10008CA710 /* PlayerComponent.m */; };
+		77FD773716F3DDB1008CA710 /* Entity+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FD773616F3DDB0008CA710 /* Entity+Helpers.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -612,6 +614,10 @@
 		77FD772C16F3C756008CA710 /* SimpleDPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleDPad.m; sourceTree = "<group>"; };
 		77FD772E16F3CE22008CA710 /* pd_dpad-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pd_dpad-hd.png"; path = "../../Assets/pd_resources/Sprites/pd_dpad-hd.png"; sourceTree = "<group>"; };
 		77FD772F16F3CE22008CA710 /* pd_dpad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pd_dpad.png; path = ../../Assets/pd_resources/Sprites/pd_dpad.png; sourceTree = "<group>"; };
+		77FD773216F3DC10008CA710 /* PlayerComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerComponent.h; sourceTree = "<group>"; };
+		77FD773316F3DC10008CA710 /* PlayerComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerComponent.m; sourceTree = "<group>"; };
+		77FD773516F3DDAF008CA710 /* Entity+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Entity+Helpers.h"; sourceTree = "<group>"; };
+		77FD773616F3DDB0008CA710 /* Entity+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Entity+Helpers.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1234,6 +1240,8 @@
 				775AC61016ED57ED00FA3049 /* Systems */,
 				775AC5F716ED579000FA3049 /* Entity.h */,
 				775AC5F816ED579000FA3049 /* Entity.mm */,
+				77FD773516F3DDAF008CA710 /* Entity+Helpers.h */,
+				77FD773616F3DDB0008CA710 /* Entity+Helpers.m */,
 				775AC5F916ED579000FA3049 /* EntityManager.h */,
 				775AC5FA16ED579000FA3049 /* EntityManager.m */,
 				775AC5FB16ED579000FA3049 /* EntityFactory.h */,
@@ -1270,6 +1278,8 @@
 				775AC61616ED611D00FA3049 /* MovementComponent.mm */,
 				77FD772416F394B7008CA710 /* ActionComponent.h */,
 				77FD772516F394B7008CA710 /* ActionComponent.m */,
+				77FD773216F3DC10008CA710 /* PlayerComponent.h */,
+				77FD773316F3DC10008CA710 /* PlayerComponent.m */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -1549,6 +1559,8 @@
 				77FD772616F394B7008CA710 /* ActionComponent.m in Sources */,
 				77FD772916F3983B008CA710 /* ActionSystem.mm in Sources */,
 				77FD772D16F3C756008CA710 /* SimpleDPad.m in Sources */,
+				77FD773416F3DC11008CA710 /* PlayerComponent.m in Sources */,
+				77FD773716F3DDB1008CA710 /* Entity+Helpers.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

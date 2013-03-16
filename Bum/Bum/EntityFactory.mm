@@ -13,6 +13,7 @@
 #import "HealthComponent.h"
 #import "MovementComponent.h"
 #import "ActionComponent.h"
+#import "PlayerComponent.h"
 
 @implementation EntityFactory {
     EntityManager * _entityManager;
@@ -36,6 +37,7 @@
     Entity * entity = [_entityManager createEntity];
     [_entityManager addComponent:[[RenderComponent alloc] initWithNode:sprite centerToSides:127.f centerToBottom:149.f] toEntity:entity];
     [_entityManager addComponent:[[HealthComponent alloc] initWithCurrentHP:200 maxHP:200] toEntity:entity];
+    [_entityManager addComponent:[[PlayerComponent alloc] init] toEntity:entity];
     
     
     // Animation

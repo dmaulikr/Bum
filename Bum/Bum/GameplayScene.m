@@ -16,11 +16,15 @@
 {
     if (self = [super init]) {
         
+        // create game layers
         _gameLayer = [GameplayLayer node];
         [self addChild:_gameLayer z:0];
         
         _hudLayer = [HUDLayer node];
         [self addChild:_hudLayer z:1];
+        
+        // connect layers
+        _gameLayer.hud = _hudLayer;
     }
     return self;
 }

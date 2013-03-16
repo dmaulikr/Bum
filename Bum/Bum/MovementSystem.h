@@ -9,9 +9,12 @@
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 #import "System.h"
+#import "SimpleDPad.h"
 
-@interface MovementSystem : System {
+@interface MovementSystem : System <SimpleDPadDelegate> {
     
 }
+
+@property (nonatomic, unsafe_unretained) CCTMXTiledMap *tileMap;
 
 @end

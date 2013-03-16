@@ -66,8 +66,14 @@
     
     float distanceSQ = ccpDistanceSQ(loc, position_);
     if (distanceSQ <= _radius * _radius) {
+        
         _isHeld = YES;
         [self updateDirectionForTouchLocation:loc];
+        
+        if ([_delegate respondsToSelector:@selector(simpleDPadTouchesBegan:)]) {
+            [_delegate simpleDPadTouchesBegan:self];
+        }
+        
         return YES;
     }
     return NO;
@@ -81,9 +87,13 @@
 
 
 -(void)ccTouchEnded:(UITouch *)touch withEvent:(UIEvent *)event {
+    
     _direction = CGPointZero;
     _isHeld = NO;
-    [_delegate simpleDPadTouchesEnded:self];
+    
+    if ([_delegate respondsToSelector:@selector(simpleDPadTouchesEnded:)]) {
+        [_delegate simpleDPadTouchesEnded:self];
+    }
 }
 
 
