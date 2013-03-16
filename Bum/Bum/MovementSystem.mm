@@ -14,6 +14,17 @@
 
 @implementation MovementSystem
 
+
+- (id)initWithEntityManager:(EntityManager *)entityManager
+              entityFactory:(EntityFactory *)entityFactory
+                    tileMap:(CCTMXTiledMap *)tileMap
+{
+    if (self = [super initWithEntityManager:entityManager entityFactory:entityFactory]) {
+        _tileMap = tileMap;
+    }
+    return self;
+}
+
 - (void)update:(float)dt
 {
     NSArray *moveEntities = [self.entityManager getAllEntitiesPosessingComponentOfClass:[MovementComponent class]];
@@ -25,30 +36,25 @@
         
         if (!move || !render) return;
         
-//        CGPoint vector = ccpSub(move.target, render.node.position);
-//        float distance = ccpLength(vector);
-//        
-//        // stop moving after small distances
-//        if (distance < fabsf(0.01)) {
-//            render.node.position = move.target;
-//            return;
-//        }
+        // determine the new position target by adding velocity
+        move.target = ccpAdd(render.node.position, ccpMult(move.velocity, dt));
         
-        render.node.position =  move.target = ccpAdd(render.node.position, ccpMult(move.velocity, dt));
-        
-        NSLog(@"map width: %.2f", _tileMap.mapSize.width);
+        // stop moving after small distances
+        CGPoint vector = ccpSub(move.target, render.node.position);
+        float distance = ccpLength(vector);
+        if (distance < fabsf(1.f)) {
+            render.node.position = move.target;
+            return;
+        }
         
         float posX = MIN(_tileMap.mapSize.width * _tileMap.tileSize.width - render.centerToSides, MAX(render.centerToSides, move.target.x));
-        float posY = MIN(3 * _tileMap.tileSize.height + render.centerToBottom, MAX(render.centerToBottom, move.target.y));
+        float posY = MIN(FLOOR_ROWS * _tileMap.tileSize.height + render.centerToBottom, MAX(render.centerToBottom, move.target.y));
         render.node.position = ccp(posX, posY);
         
-        NSLog(@"velocity: %@, target: %@, node position: %@",
-              NSStringFromCGPoint(move.velocity),
-              NSStringFromCGPoint(move.target),
-              NSStringFromCGPoint(render.node.position));
-        
-        
-        
+//        NSLog(@"velocity: %@, target: %@, node position: %@",
+//              NSStringFromCGPoint(move.velocity),
+//              NSStringFromCGPoint(move.target),
+//              NSStringFromCGPoint(render.node.position));
     }
 }
 

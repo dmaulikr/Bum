@@ -17,4 +17,8 @@
 
 @property (nonatomic, unsafe_unretained) CCTMXTiledMap *tileMap;
 
+- (id)initWithEntityManager:(EntityManager *)entityManager
+              entityFactory:(EntityFactory *)entityFactory
+                    tileMap:(CCTMXTiledMap *)tileMap;
+
 @end

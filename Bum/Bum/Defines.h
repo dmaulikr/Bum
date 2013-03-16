@@ -36,3 +36,7 @@ typedef struct _BoundingBox {
 //Box2D is optimized for objects of 1x1 metre therefore it makes sense
 //to define the ratio so that your most common object type is 1x1 metre.
 #define PTM_RATIO 32
+
+
+// the number of map tiles the main character can vertically move between.
+#define FLOOR_ROWS 3

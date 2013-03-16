@@ -19,6 +19,7 @@
 #import "ActionComponent.h"
 #import "SimpleDPad.h"
 
+
 typedef enum {
     DepthLevelBackground = 0,
     DepthLevelMainMap,
@@ -177,10 +178,7 @@ typedef enum {
 - (void)createGameSystems
 {
     _healthSystem = [[HealthSystem alloc] initWithEntityManager:_entityManager entityFactory:_entityFactory];
-    
-    _movementSystem = [[MovementSystem alloc] initWithEntityManager:_entityManager entityFactory:_entityFactory];
-    _movementSystem.tileMap = _tileMap;
-    
+    _movementSystem = [[MovementSystem alloc] initWithEntityManager:_entityManager entityFactory:_entityFactory tileMap:_tileMap];
     _actionSystem = [[ActionSystem alloc] initWithEntityManager:_entityManager entityFactory:_entityFactory];
 }
 
