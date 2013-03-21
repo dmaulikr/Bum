@@ -43,9 +43,10 @@
         assert(body != nil);
         
         // apply velocity
-        b2Vec2 vel = b2Vec2(move.velocity.x, move.velocity.y);
+//        b2Vec2 vel = b2Vec2(move.velocity.x, move.velocity.y);
 //        body->SetLinearVelocity(vel);
-        body->ApplyLinearImpulse(vel, vel);
+        b2Vec2 linearVelocity = body->GetLinearVelocity();
+        
         
         // get the position from box2d to cocos2d and update the sprite
         render.node.position = [LevelHelperLoader metersToPoints:body->GetPosition()];
@@ -62,7 +63,20 @@
     
     float walkSpeed = .75f;
     
-    CGPoint velocity = player.movement.velocity = ccp(direction.x * walkSpeed, direction.y * walkSpeed);
+    b2Body *body = player.render.node.body;
+    b2Vec2 moveSpeed = b2Vec2(walkSpeed * direction.x, 0.f);
+    
+    body->ApplyLinearImpulse(moveSpeed, player.render.node.body->GetPosition());
+    
+    
+    CGPoint velocity = player.movement.velocity;
+    velocity.x += player.movement.acceleration.x * walkSpeed * direction.x;
+    
+    if (velocity.x > player.movement.maxVelocity) {
+        velocity.x = player.movement.maxVelocity;
+    }
+    
+//    player.movement.velocity = velocity;
     
 //    NSLog(@"player velocity: %@", NSStringFromCGPoint(velocity));
     

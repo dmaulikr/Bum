@@ -212,7 +212,6 @@ typedef enum {
 - (void)simpleDPadTouchesEnded:(SimpleDPad *)dPad
 {
     Entity *player = [[_entityManager getAllEntitiesPosessingComponentOfClass:[PlayerComponent class]] lastObject];
-    player.movement.velocity = CGPointZero;
     
     if (player.action.actionState == ActionStateWalk) {
         player.action.actionState = ActionStateIdle;

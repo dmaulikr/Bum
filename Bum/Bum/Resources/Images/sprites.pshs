@@ -514,7 +514,7 @@
 						<key>IsBullet</key>
 						<false/>
 						<key>LinearDamping</key>
-						<real>0.0</real>
+						<real>0.10000000149011612</real>
 						<key>LinearVelocity</key>
 						<string>{0, 0}</string>
 						<key>SH_ComplexShapes</key>
@@ -536,7 +536,7 @@
 									</array>
 								</array>
 								<key>Friction</key>
-								<real>0.10000000149011612</real>
+								<real>0.66600000858306885</real>
 								<key>Group</key>
 								<integer>0</integer>
 								<key>Height</key>

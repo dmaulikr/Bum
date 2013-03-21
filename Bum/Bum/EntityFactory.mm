@@ -84,7 +84,9 @@
     
     
     // Movement
-    [_entityManager addComponent:[[MovementComponent alloc] initWithMaxVelocity:100.f maxAcceleration:100.f] toEntity:entity];
+    MovementComponent *movement = [[MovementComponent alloc] initWithMaxVelocity:50.f maxAcceleration:1.f];
+    movement.acceleration = CGPointMake(.333f, 1.f);
+    [_entityManager addComponent:movement toEntity:entity];
     return entity;
 }
 

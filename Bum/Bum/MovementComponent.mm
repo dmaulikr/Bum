@@ -18,7 +18,7 @@
         self.maxAcceleration = accel;
         self.target = CGPointZero;
         self.velocity = CGPointZero;
-        self.acceleration = CGPointZero;
+        self.acceleration = CGPointMake(1.f, 1.f);
     }
     return self;
 }
