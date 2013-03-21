@@ -63,9 +63,9 @@
 }
 
 
-- (Component *)getComponentOfClass:(Class)class forEntity:(Entity *)entity
+- (Component *)getComponentOfClass:(Class)klass forEntity:(Entity *)entity
 {
-    return _componentsByClass[NSStringFromClass(class)][@(entity.entityID)];
+    return _componentsByClass[NSStringFromClass(klass)][@(entity.entityID)];
 }
 
 
@@ -80,9 +80,9 @@
 }
 
 
-- (NSArray *)getAllEntitiesPosessingComponentOfClass:(Class)class
+- (NSArray *)getAllEntitiesPosessingComponentOfClass:(Class)klass
 {
-    NSMutableDictionary * components = _componentsByClass[NSStringFromClass(class)];
+    NSMutableDictionary * components = _componentsByClass[NSStringFromClass(klass)];
     if (components) {
         NSMutableArray * retval = [NSMutableArray arrayWithCapacity:components.allKeys.count];
         for (NSNumber * eid in components.allKeys) {

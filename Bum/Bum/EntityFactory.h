@@ -11,10 +11,14 @@
 @class Entity;
 @class EntityManager;
 @class CCSpriteBatchNode;
+@class CCLayer;
+@class LevelHelperLoader;
 
 @interface EntityFactory : NSObject
 
-- (id)initWithEntityManager:(EntityManager *)entityManager batchNode:(CCSpriteBatchNode *)batchNode;
+- (id)initWithEntityManager:(EntityManager *)entityManager
+                      layer:(CCLayer *)layer
+          levelHelperLoader:(LevelHelperLoader *)loader;
 
 - (Entity *)createHumanPlayer;
 - (Entity *)createAIPlayer;

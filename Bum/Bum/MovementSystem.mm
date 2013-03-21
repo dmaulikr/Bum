@@ -11,6 +11,7 @@
 #import "RenderComponent.h"
 #import "PlayerComponent.h"
 #import "ActionComponent.h"
+#import "Box2D.h"
 
 @implementation MovementSystem
 
@@ -30,8 +31,9 @@
     
     for (Entity *entity in moveEntities) {
         
-        MovementComponent *move = (MovementComponent*)[self.entityManager getComponentOfClass:[MovementComponent class] forEntity:entity];
-        RenderComponent *render = (RenderComponent*)[self.entityManager getComponentOfClass:[RenderComponent class] forEntity:entity];
+        MovementComponent *move = [entity movement];
+        RenderComponent *render = [entity render];
+        PlayerComponent *player = [entity player];
         
         if (!move || !render) return;
         
@@ -45,10 +47,14 @@
             render.node.position = move.target;
             return;
         }
+    
+        b2Body *body = render.node.body;
+        b2Vec2 vel = b2Vec2(move.velocity.x, move.velocity.y);
+        body->SetLinearVelocity(vel);
         
-        float posX = MIN(_tileMap.mapSize.width * _tileMap.tileSize.width - render.centerToSides, MAX(render.centerToSides, move.target.x));
-        float posY = MIN(FLOOR_ROWS * _tileMap.tileSize.height + render.centerToBottom, MAX(render.centerToBottom, move.target.y));
-        render.node.position = ccp(posX, posY);
+//        float posX = MIN(_tileMap.mapSize.width * _tileMap.tileSize.width - render.centerToSides, MAX(render.centerToSides, move.target.x));
+//        float posY = MIN(FLOOR_ROWS * _tileMap.tileSize.height + render.centerToBottom, MAX(render.centerToBottom, move.target.y));
+//        render.node.position = ccp(posX, posY);
         
 //        NSLog(@"velocity: %@, target: %@, node position: %@",
 //              NSStringFromCGPoint(move.velocity),
@@ -64,7 +70,7 @@
 {
     Entity *player = [[self.entityManager getAllEntitiesPosessingComponentOfClass:[PlayerComponent class]] lastObject];
     
-    float walkSpeed = 300.f;
+    float walkSpeed = 40.f;
     
     CGPoint velocity = player.movement.velocity = ccp(direction.x * walkSpeed, direction.y * walkSpeed);
     NSLog(@"player velocity: %@", NSStringFromCGPoint(velocity));

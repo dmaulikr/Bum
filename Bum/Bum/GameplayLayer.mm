@@ -18,6 +18,7 @@
 #import "ActionSystem.h"
 #import "ActionComponent.h"
 #import "PlayerComponent.h"
+#import "LevelHelperLoader.h"
 
 typedef enum {
     DepthLevelBackground = 0,
@@ -34,6 +35,9 @@ typedef enum {
     // box2d
     b2World* world;
     GLESDebugDraw *m_debugDraw;
+    
+    // level helper
+    LevelHelperLoader *_loader;
     
     // entity system
     EntityManager *_entityManager;
@@ -69,6 +73,8 @@ typedef enum {
 	
 	delete m_debugDraw;
 	m_debugDraw = NULL;
+    
+    _loader = nil;
 }
 
 - (void)setHud:(HUDLayer *)hud
@@ -84,35 +90,16 @@ typedef enum {
 
 - (void)setup
 {
-    [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"bum.plist"];
-    
-    _batchNode = [CCSpriteBatchNode batchNodeWithFile:@"bum.pvr.ccz"];
-    [self addChild:_batchNode z:DepthLevelCharacters];
-    
-    [self initBackground];
-    [self initTileMap];
     [self initPhysics];
+    [self initLevel];
     [self scheduleUpdate];
 }
 
-
-- (void)initBackground
+- (void)initLevel
 {
-//    CCSprite *background = [CCSprite spriteWithSpriteFrameName:@"background.png"];
-//    background.position = ccp(background.contentSize.width * .5, background.contentSize.height * .5);
-//    [self addChild:background z:DepthLevelBackground];
-}
-
-
-- (void)initTileMap
-{
-    _tileMap = [[CCTMXTiledMap alloc] initWithTMXFile:@"pd_tilemap.tmx"];
-    for (CCTMXLayer *child in [_tileMap children]) {
-        // This method ensures that anti-aliasing is turned off for all the textures used in the tiled map,
-        // so that you can retain the pixel-like style of the textures even when the map is scaled.
-        [[child texture] setAliasTexParameters];
-    }
-    [self addChild:_tileMap z:DepthLevelMainMap];
+    _loader = [[LevelHelperLoader alloc] initWithContentOfFile:@"level0"];
+    [_loader addObjectsToWorld:world cocos2dLayer:self];
+    [_loader createPhysicBoundaries:world];
 }
 
 
@@ -134,7 +121,7 @@ typedef enum {
 - (void)createGameObjects
 {
     _entityManager = [[EntityManager alloc] init];
-    _entityFactory = [[EntityFactory alloc] initWithEntityManager:_entityManager batchNode:_batchNode];
+    _entityFactory = [[EntityFactory alloc] initWithEntityManager:_entityManager layer:self levelHelperLoader:_loader];
     
     [self createGameSystems];
     [self addHero];
@@ -187,6 +174,21 @@ typedef enum {
 	// Instruct the world to perform a single step of simulation. It is
 	// generally best to keep the time step and iterations fixed.
 	world->Step(dt, velocityIterations, positionIterations);
+    
+    // interate over the bodies in the physics world
+    for (b2Body *b = world->GetBodyList(); b; b = b->GetNext()) {
+        if (b->GetUserData() != NULL) {
+            // synchronize the AtlasSprites position and rotation with the corresponding body
+            LHSprite *myActor = (__bridge LHSprite *)b->GetUserData();
+            
+            if (myActor != 0) {
+                // get the position from box2d to cocos2d
+                myActor.position = [LevelHelperLoader metersToPoints:b->GetPosition()];
+                myActor.rotation = -1 * CC_RADIANS_TO_DEGREES(b->GetAngle());
+            }
+        }
+    }
+    
     
     [_movementSystem update:dt];
     [_healthSystem update:dt];
