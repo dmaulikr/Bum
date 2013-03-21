@@ -14,7 +14,6 @@
 
 @implementation MovementSystem
 
-
 - (id)initWithEntityManager:(EntityManager *)entityManager
               entityFactory:(EntityFactory *)entityFactory
                     tileMap:(CCTMXTiledMap *)tileMap
@@ -72,35 +71,6 @@
     
     if (velocity.x >= 0) player.render.node.scaleX = 1.0;
     else player.render.node.scaleX = -1.0;
-}
-
-
-#pragma mark - SimpleDPadDelegate
-
-- (void)simpleDPadTouchesBegan:(SimpleDPad *)dPad
-{
-    Entity *player = [[self.entityManager getAllEntitiesPosessingComponentOfClass:[PlayerComponent class]] lastObject];
-    player.action.actionState = ActionStateWalk;
-}
-
-- (void)simpleDPadTouchesEnded:(SimpleDPad *)dPad
-{
-    Entity *player = [[self.entityManager getAllEntitiesPosessingComponentOfClass:[PlayerComponent class]] lastObject];
-    player.movement.velocity = CGPointZero;
-    
-    if (player.action.actionState == ActionStateWalk) {
-        player.action.actionState = ActionStateIdle;
-    }
-}
-
-- (void)simpleDPad:(SimpleDPad *)dPad didChangeDirectionTo:(CGPoint)direction
-{
-    [self walkWithDirection:direction];
-}
-
-- (void)simpleDPad:(SimpleDPad *)dPad isHoldingDirection:(CGPoint)direction
-{
-    [self walkWithDirection:direction];
 }
 
 @end

@@ -9,9 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 #import "System.h"
-#import "SimpleDPad.h"
 
-@interface MovementSystem : System <SimpleDPadDelegate> {
+@interface MovementSystem : System {
     
 }
 
@@ -20,5 +19,7 @@
 - (id)initWithEntityManager:(EntityManager *)entityManager
               entityFactory:(EntityFactory *)entityFactory
                     tileMap:(CCTMXTiledMap *)tileMap;
+
+- (void)walkWithDirection:(CGPoint)direction;
 
 @end

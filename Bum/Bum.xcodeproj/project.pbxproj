@@ -181,10 +181,7 @@
 		775AC5DA16ED56BB00FA3049 /* b2Rope.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 775AC5D916ED56BB00FA3049 /* b2Rope.cpp */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		775AC5E016ED56BB00FA3049 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 775AC5DF16ED56BB00FA3049 /* main.m */; };
 		775AC5E316ED56BB00FA3049 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 775AC5E216ED56BB00FA3049 /* AppDelegate.mm */; };
-		775AC5E616ED56BB00FA3049 /* HelloWorldLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 775AC5E516ED56BB00FA3049 /* HelloWorldLayer.mm */; };
-		775AC5E916ED56BB00FA3049 /* IntroLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 775AC5E816ED56BB00FA3049 /* IntroLayer.mm */; };
 		775AC5EC16ED56BB00FA3049 /* GLES-Render.mm in Sources */ = {isa = PBXBuildFile; fileRef = 775AC5EB16ED56BB00FA3049 /* GLES-Render.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		775AC5EF16ED56BB00FA3049 /* PhysicsSprite.mm in Sources */ = {isa = PBXBuildFile; fileRef = 775AC5EE16ED56BB00FA3049 /* PhysicsSprite.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		775AC5F116ED56BB00FA3049 /* blocks.png in Resources */ = {isa = PBXBuildFile; fileRef = 775AC5F016ED56BB00FA3049 /* blocks.png */; };
 		775AC60716ED579000FA3049 /* Entity.mm in Sources */ = {isa = PBXBuildFile; fileRef = 775AC5F816ED579000FA3049 /* Entity.mm */; };
 		775AC60816ED579000FA3049 /* EntityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 775AC5FA16ED579000FA3049 /* EntityManager.m */; };
@@ -569,14 +566,8 @@
 		775AC5DF16ED56BB00FA3049 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		775AC5E116ED56BB00FA3049 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		775AC5E216ED56BB00FA3049 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
-		775AC5E416ED56BB00FA3049 /* HelloWorldLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
-		775AC5E516ED56BB00FA3049 /* HelloWorldLayer.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = HelloWorldLayer.mm; sourceTree = "<group>"; };
-		775AC5E716ED56BB00FA3049 /* IntroLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntroLayer.h; sourceTree = "<group>"; };
-		775AC5E816ED56BB00FA3049 /* IntroLayer.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = IntroLayer.mm; sourceTree = "<group>"; };
 		775AC5EA16ED56BB00FA3049 /* GLES-Render.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GLES-Render.h"; sourceTree = "<group>"; };
 		775AC5EB16ED56BB00FA3049 /* GLES-Render.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "GLES-Render.mm"; sourceTree = "<group>"; };
-		775AC5ED16ED56BB00FA3049 /* PhysicsSprite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhysicsSprite.h; sourceTree = "<group>"; };
-		775AC5EE16ED56BB00FA3049 /* PhysicsSprite.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PhysicsSprite.mm; sourceTree = "<group>"; };
 		775AC5F016ED56BB00FA3049 /* blocks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blocks.png; path = Resources/blocks.png; sourceTree = "<group>"; };
 		775AC5F716ED579000FA3049 /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
 		775AC5F816ED579000FA3049 /* Entity.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Entity.mm; sourceTree = "<group>"; };
@@ -640,9 +631,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7724FCAC16F1058800081714 /* Art */ = {
+		7724FCAC16F1058800081714 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				775AC5F016ED56BB00FA3049 /* blocks.png */,
+				775AC3DC16ED56B900FA3049 /* fps_images.png */,
+				775AC3DE16ED56B900FA3049 /* fps_images-hd.png */,
+				775AC3E016ED56B900FA3049 /* fps_images-ipadhd.png */,
+				7776B35D16FB76AA0037640D /* App */,
 				77FD772E16F3CE22008CA710 /* pd_dpad-hd.png */,
 				77FD772F16F3CE22008CA710 /* pd_dpad.png */,
 				77FD771C16F38E8B008CA710 /* Tileset */,
@@ -651,7 +647,7 @@
 				7724FCF916F1219D00081714 /* bum.plist */,
 				7724FCFA16F1219D00081714 /* bum.pvr.ccz */,
 			);
-			name = Art;
+			name = Images;
 			sourceTree = "<group>";
 		};
 		775AC3B816ED56B900FA3049 = {
@@ -694,15 +690,9 @@
 				77FD772316F391A1008CA710 /* Defines.h */,
 				775AC5E116ED56BB00FA3049 /* AppDelegate.h */,
 				775AC5E216ED56BB00FA3049 /* AppDelegate.mm */,
-				775AC5E416ED56BB00FA3049 /* HelloWorldLayer.h */,
-				775AC5E516ED56BB00FA3049 /* HelloWorldLayer.mm */,
-				775AC5E716ED56BB00FA3049 /* IntroLayer.h */,
-				775AC5E816ED56BB00FA3049 /* IntroLayer.mm */,
-				77FD772A16F3C71D008CA710 /* Gameplay */,
 				775AC5EA16ED56BB00FA3049 /* GLES-Render.h */,
 				775AC5EB16ED56BB00FA3049 /* GLES-Render.mm */,
-				775AC5ED16ED56BB00FA3049 /* PhysicsSprite.h */,
-				775AC5EE16ED56BB00FA3049 /* PhysicsSprite.mm */,
+				77FD772A16F3C71D008CA710 /* Gameplay */,
 				775AC3D716ED56B900FA3049 /* Resources */,
 				775AC3F116ED56B900FA3049 /* libs */,
 				775AC5DD16ED56BB00FA3049 /* Supporting Files */,
@@ -713,21 +703,10 @@
 		775AC3D716ED56B900FA3049 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				7724FCAC16F1058800081714 /* Art */,
-				775AC3D816ED56B900FA3049 /* Default.png */,
-				775AC3DA16ED56B900FA3049 /* Default-Landscape~ipad.png */,
-				775AC3DC16ED56B900FA3049 /* fps_images.png */,
-				775AC3DE16ED56B900FA3049 /* fps_images-hd.png */,
-				775AC3E016ED56B900FA3049 /* fps_images-ipadhd.png */,
-				775AC3E216ED56B900FA3049 /* Icon-72.png */,
-				775AC3E416ED56B900FA3049 /* Icon-Small-50.png */,
-				775AC3E616ED56B900FA3049 /* Icon-Small.png */,
-				775AC3E816ED56B900FA3049 /* Icon-Small@2x.png */,
-				775AC3EA16ED56B900FA3049 /* Icon.png */,
-				775AC3EC16ED56B900FA3049 /* Icon@2x.png */,
+				7776B35E16FB76CD0037640D /* Levels */,
+				7724FCAC16F1058800081714 /* Images */,
 				775AC3EE16ED56B900FA3049 /* Info.plist */,
 				775AC3EF16ED56B900FA3049 /* iTunesArtwork */,
-				775AC5F016ED56BB00FA3049 /* blocks.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -1284,6 +1263,28 @@
 			name = Components;
 			sourceTree = "<group>";
 		};
+		7776B35D16FB76AA0037640D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				775AC3E216ED56B900FA3049 /* Icon-72.png */,
+				775AC3E416ED56B900FA3049 /* Icon-Small-50.png */,
+				775AC3E616ED56B900FA3049 /* Icon-Small.png */,
+				775AC3E816ED56B900FA3049 /* Icon-Small@2x.png */,
+				775AC3EA16ED56B900FA3049 /* Icon.png */,
+				775AC3EC16ED56B900FA3049 /* Icon@2x.png */,
+				775AC3D816ED56B900FA3049 /* Default.png */,
+				775AC3DA16ED56B900FA3049 /* Default-Landscape~ipad.png */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		7776B35E16FB76CD0037640D /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Levels;
+			sourceTree = "<group>";
+		};
 		77FD771C16F38E8B008CA710 /* Tileset */ = {
 			isa = PBXGroup;
 			children = (
@@ -1539,10 +1540,7 @@
 				775AC5DA16ED56BB00FA3049 /* b2Rope.cpp in Sources */,
 				775AC5E016ED56BB00FA3049 /* main.m in Sources */,
 				775AC5E316ED56BB00FA3049 /* AppDelegate.mm in Sources */,
-				775AC5E616ED56BB00FA3049 /* HelloWorldLayer.mm in Sources */,
-				775AC5E916ED56BB00FA3049 /* IntroLayer.mm in Sources */,
 				775AC5EC16ED56BB00FA3049 /* GLES-Render.mm in Sources */,
-				775AC5EF16ED56BB00FA3049 /* PhysicsSprite.mm in Sources */,
 				775AC60716ED579000FA3049 /* Entity.mm in Sources */,
 				775AC60816ED579000FA3049 /* EntityManager.m in Sources */,
 				775AC60916ED579000FA3049 /* EntityFactory.mm in Sources */,
