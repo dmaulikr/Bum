@@ -9,16 +9,17 @@
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 #import "System.h"
+#import "Box2D.h"
 
 @interface MovementSystem : System {
     
 }
 
-@property (nonatomic, unsafe_unretained) CCTMXTiledMap *tileMap;
+@property (nonatomic, unsafe_unretained) b2World *world;
 
 - (id)initWithEntityManager:(EntityManager *)entityManager
               entityFactory:(EntityFactory *)entityFactory
-                    tileMap:(CCTMXTiledMap *)tileMap;
+                      world:(b2World *)world;
 
 - (void)walkWithDirection:(CGPoint)direction;
 

@@ -17,10 +17,10 @@
 
 - (id)initWithEntityManager:(EntityManager *)entityManager
               entityFactory:(EntityFactory *)entityFactory
-                    tileMap:(CCTMXTiledMap *)tileMap
+                      world:(b2World *)world
 {
     if (self = [super initWithEntityManager:entityManager entityFactory:entityFactory]) {
-        _tileMap = tileMap;
+        _world = world;
     }
     return self;
 }
@@ -35,31 +35,21 @@
         RenderComponent *render = [entity render];
         PlayerComponent *player = [entity player];
         
-        if (!move || !render) return;
+        if (!move || !render) continue;
         
-        // determine the new position target by adding velocity
-        move.target = ccpAdd(render.node.position, ccpMult(move.velocity, dt));
-        
-        // stop moving after small distances
-        CGPoint vector = ccpSub(move.target, render.node.position);
-        float distance = ccpLength(vector);
-        if (distance < fabsf(1.f)) {
-            render.node.position = move.target;
-            return;
-        }
+        b2Body *b = render.node.body;
+        LHSprite *myActor = (__bridge LHSprite *)b->GetUserData();
     
+        if (!myActor) continue;
+        
+        // apply velocity
         b2Body *body = render.node.body;
         b2Vec2 vel = b2Vec2(move.velocity.x, move.velocity.y);
         body->SetLinearVelocity(vel);
         
-//        float posX = MIN(_tileMap.mapSize.width * _tileMap.tileSize.width - render.centerToSides, MAX(render.centerToSides, move.target.x));
-//        float posY = MIN(FLOOR_ROWS * _tileMap.tileSize.height + render.centerToBottom, MAX(render.centerToBottom, move.target.y));
-//        render.node.position = ccp(posX, posY);
-        
-//        NSLog(@"velocity: %@, target: %@, node position: %@",
-//              NSStringFromCGPoint(move.velocity),
-//              NSStringFromCGPoint(move.target),
-//              NSStringFromCGPoint(render.node.position));
+        // get the position from box2d to cocos2d and update the sprite
+        myActor.position = [LevelHelperLoader metersToPoints:b->GetPosition()];
+        myActor.rotation = -1 * CC_RADIANS_TO_DEGREES(b->GetAngle());
     }
 }
 

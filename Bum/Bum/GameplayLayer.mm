@@ -33,7 +33,7 @@ typedef enum {
     CCTMXTiledMap *_tileMap;
     
     // box2d
-    b2World* world;
+    b2World* _world;
     GLESDebugDraw *m_debugDraw;
     
     // level helper
@@ -68,8 +68,8 @@ typedef enum {
 
 - (void)dealloc
 {
-    delete world;
-	world = NULL;
+    delete _world;
+	_world = NULL;
 	
 	delete m_debugDraw;
 	m_debugDraw = NULL;
@@ -98,8 +98,8 @@ typedef enum {
 - (void)initLevel
 {
     _loader = [[LevelHelperLoader alloc] initWithContentOfFile:@"level0"];
-    [_loader addObjectsToWorld:world cocos2dLayer:self];
-    [_loader createPhysicBoundaries:world];
+    [_loader addObjectsToWorld:_world cocos2dLayer:self];
+    [_loader createPhysicBoundaries:_world];
 }
 
 
@@ -109,12 +109,12 @@ typedef enum {
     
 	b2Vec2 gravity;
 	gravity.Set(0.0f, -10.0f);
-	world = new b2World(gravity);
+	_world = new b2World(gravity);
 	
 	// Do we want to let bodies sleep?
-	world->SetAllowSleeping(true);
+	_world->SetAllowSleeping(true);
 	
-	world->SetContinuousPhysics(true);
+	_world->SetContinuousPhysics(true);
 }
 
 
@@ -131,7 +131,7 @@ typedef enum {
 - (void)createGameSystems
 {
     _healthSystem = [[HealthSystem alloc] initWithEntityManager:_entityManager entityFactory:_entityFactory];
-    _movementSystem = [[MovementSystem alloc] initWithEntityManager:_entityManager entityFactory:_entityFactory tileMap:_tileMap];
+    _movementSystem = [[MovementSystem alloc] initWithEntityManager:_entityManager entityFactory:_entityFactory world:_world];
     _actionSystem = [[ActionSystem alloc] initWithEntityManager:_entityManager entityFactory:_entityFactory];
 }
 
@@ -173,22 +173,7 @@ typedef enum {
 	
 	// Instruct the world to perform a single step of simulation. It is
 	// generally best to keep the time step and iterations fixed.
-	world->Step(dt, velocityIterations, positionIterations);
-    
-    // interate over the bodies in the physics world
-    for (b2Body *b = world->GetBodyList(); b; b = b->GetNext()) {
-        if (b->GetUserData() != NULL) {
-            // synchronize the AtlasSprites position and rotation with the corresponding body
-            LHSprite *myActor = (__bridge LHSprite *)b->GetUserData();
-            
-            if (myActor != 0) {
-                // get the position from box2d to cocos2d
-                myActor.position = [LevelHelperLoader metersToPoints:b->GetPosition()];
-                myActor.rotation = -1 * CC_RADIANS_TO_DEGREES(b->GetAngle());
-            }
-        }
-    }
-    
+	_world->Step(dt, velocityIterations, positionIterations);
     
     [_movementSystem update:dt];
     [_healthSystem update:dt];
@@ -208,7 +193,7 @@ typedef enum {
 	
 	kmGLPushMatrix();
 	
-	world->DrawDebugData();
+	_world->DrawDebugData();
 	
 	kmGLPopMatrix();
     
