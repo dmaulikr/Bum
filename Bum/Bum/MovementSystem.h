@@ -16,6 +16,7 @@
 }
 
 @property (nonatomic, unsafe_unretained) b2World *world;
+@property (nonatomic, unsafe_unretained) LevelHelperLoader *loader;
 
 - (id)initWithEntityManager:(EntityManager *)entityManager
               entityFactory:(EntityFactory *)entityFactory

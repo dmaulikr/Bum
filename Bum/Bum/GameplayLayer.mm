@@ -19,6 +19,7 @@
 #import "ActionComponent.h"
 #import "PlayerComponent.h"
 #import "LevelHelperLoader.h"
+#import "CameraSystem.h"
 
 typedef enum {
     DepthLevelBackground = 0,
@@ -28,16 +29,13 @@ typedef enum {
 
 @interface GameplayLayer () {
     
-    // cocos2d
-    CCSpriteBatchNode *_batchNode;
-    CCTMXTiledMap *_tileMap;
-    
     // box2d
     b2World* _world;
     GLESDebugDraw *m_debugDraw;
     
     // level helper
     LevelHelperLoader *_loader;
+    LHParallaxNode *_parallax;
     
     // entity system
     EntityManager *_entityManager;
@@ -46,6 +44,7 @@ typedef enum {
     HealthSystem *_healthSystem;
     MovementSystem *_movementSystem;
     ActionSystem *_actionSystem;
+    CameraSystem *_cameraSystem;
     
     Entity * _player;
     Entity * _enemy;
@@ -82,7 +81,6 @@ typedef enum {
     if (_hud) {
         _hud.dPad.delegate = nil;
     }
-    
     _hud = hud;
     _hud.dPad.delegate = self;
 }
@@ -100,20 +98,20 @@ typedef enum {
     _loader = [[LevelHelperLoader alloc] initWithContentOfFile:@"level0"];
     [_loader addObjectsToWorld:_world cocos2dLayer:self];
     [_loader createPhysicBoundaries:_world];
+    [_loader createGravity:_world];
 }
 
 
 -(void) initPhysics
 {
-    CGSize s = [[CCDirector sharedDirector] winSize];
+//    CGSize s = [[CCDirector sharedDirector] winSize];
     
 	b2Vec2 gravity;
-	gravity.Set(0.0f, -10.0f);
+	gravity.Set(0.0f, -100.0f);
 	_world = new b2World(gravity);
 	
 	// Do we want to let bodies sleep?
 	_world->SetAllowSleeping(true);
-	
 	_world->SetContinuousPhysics(true);
 }
 
@@ -133,6 +131,7 @@ typedef enum {
     _healthSystem = [[HealthSystem alloc] initWithEntityManager:_entityManager entityFactory:_entityFactory];
     _movementSystem = [[MovementSystem alloc] initWithEntityManager:_entityManager entityFactory:_entityFactory world:_world];
     _actionSystem = [[ActionSystem alloc] initWithEntityManager:_entityManager entityFactory:_entityFactory];
+    _cameraSystem = [[CameraSystem alloc] initWithEntityManager:_entityManager entityFactory:_entityFactory levelLoader:_loader layer:self];
 }
 
 
@@ -178,6 +177,7 @@ typedef enum {
     [_movementSystem update:dt];
     [_healthSystem update:dt];
     [_actionSystem update:dt];
+    [_cameraSystem update:dt];
 }
 
 - (void)draw

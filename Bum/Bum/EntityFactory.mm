@@ -50,7 +50,7 @@
     // idle
     CCArray *idleFrames = [CCArray arrayWithCapacity:animationFrames];
     for (int i=1; i < animationFrames; i++) {
-        NSString *spriteName = [NSString stringWithFormat:@"bum-run-%02d", i];
+        NSString *spriteName = [NSString stringWithFormat:@"bum-throw-%02d", i];
         LHSprite *frame = [_loader createBatchSpriteWithName:spriteName fromSheet:@"Bum" fromSHFile:@"sprites"];
         [idleFrames addObject:frame];
     }
@@ -72,7 +72,7 @@
     // attack
     CCArray *attackFrames = [CCArray arrayWithCapacity:animationFrames];
     for (int i=1; i < animationFrames; i++) {
-        NSString *spriteName = [NSString stringWithFormat:@"bum-throw-%2d", i];
+        NSString *spriteName = [NSString stringWithFormat:@"bum-kick-%2d", i];
         LHSprite *frame = [_loader createBatchSpriteWithName:spriteName fromSheet:@"Bum" fromSHFile:@"sprites"];
         [runFrames addObject:frame];
     }

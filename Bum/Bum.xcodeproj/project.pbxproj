@@ -216,13 +216,14 @@
 		7776B3BC16FB89760037640D /* LHSprite.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7776B3A016FB89760037640D /* LHSprite.mm */; };
 		7776B3BD16FB89760037640D /* LHTouchMgr.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7776B3A216FB89760037640D /* LHTouchMgr.mm */; };
 		7776B3BE16FB89760037640D /* SHDocumentLoader.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7776B3A416FB89760037640D /* SHDocumentLoader.mm */; };
+		7776B3C416FBB5000037640D /* pd_dpad-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 7776B3C216FBB5000037640D /* pd_dpad-hd.png */; };
+		7776B3C516FBB5000037640D /* pd_dpad.png in Resources */ = {isa = PBXBuildFile; fileRef = 7776B3C316FBB5000037640D /* pd_dpad.png */; };
+		7776B3C816FBB8D80037640D /* CameraSystem.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7776B3C716FBB8D80037640D /* CameraSystem.mm */; };
 		77FD771816F38866008CA710 /* GameplayScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77FD771716F38866008CA710 /* GameplayScene.mm */; };
 		77FD771B16F388D5008CA710 /* HUDLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77FD771A16F388D4008CA710 /* HUDLayer.mm */; };
 		77FD772616F394B7008CA710 /* ActionComponent.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77FD772516F394B7008CA710 /* ActionComponent.mm */; };
 		77FD772916F3983B008CA710 /* ActionSystem.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77FD772816F3983B008CA710 /* ActionSystem.mm */; };
 		77FD772D16F3C756008CA710 /* SimpleDPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FD772C16F3C756008CA710 /* SimpleDPad.m */; };
-		77FD773016F3CE22008CA710 /* pd_dpad-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 77FD772E16F3CE22008CA710 /* pd_dpad-hd.png */; };
-		77FD773116F3CE22008CA710 /* pd_dpad.png in Resources */ = {isa = PBXBuildFile; fileRef = 77FD772F16F3CE22008CA710 /* pd_dpad.png */; };
 		77FD773416F3DC11008CA710 /* PlayerComponent.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77FD773316F3DC10008CA710 /* PlayerComponent.mm */; };
 		77FD773716F3DDB1008CA710 /* Entity+Helpers.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77FD773616F3DDB0008CA710 /* Entity+Helpers.mm */; };
 /* End PBXBuildFile section */
@@ -659,6 +660,10 @@
 		7776B3A216FB89760037640D /* LHTouchMgr.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LHTouchMgr.mm; sourceTree = "<group>"; };
 		7776B3A316FB89760037640D /* SHDocumentLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHDocumentLoader.h; sourceTree = "<group>"; };
 		7776B3A416FB89760037640D /* SHDocumentLoader.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SHDocumentLoader.mm; sourceTree = "<group>"; };
+		7776B3C216FBB5000037640D /* pd_dpad-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pd_dpad-hd.png"; path = "../../Assets/artwork/ui/pd_dpad-hd.png"; sourceTree = "<group>"; };
+		7776B3C316FBB5000037640D /* pd_dpad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pd_dpad.png; path = ../../Assets/artwork/ui/pd_dpad.png; sourceTree = "<group>"; };
+		7776B3C616FBB8D70037640D /* CameraSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraSystem.h; sourceTree = "<group>"; };
+		7776B3C716FBB8D80037640D /* CameraSystem.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CameraSystem.mm; sourceTree = "<group>"; };
 		77FD771616F38866008CA710 /* GameplayScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameplayScene.h; sourceTree = "<group>"; };
 		77FD771716F38866008CA710 /* GameplayScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameplayScene.mm; sourceTree = "<group>"; };
 		77FD771916F388D4008CA710 /* HUDLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUDLayer.h; sourceTree = "<group>"; };
@@ -670,8 +675,6 @@
 		77FD772816F3983B008CA710 /* ActionSystem.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ActionSystem.mm; sourceTree = "<group>"; };
 		77FD772B16F3C756008CA710 /* SimpleDPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleDPad.h; sourceTree = "<group>"; };
 		77FD772C16F3C756008CA710 /* SimpleDPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleDPad.m; sourceTree = "<group>"; };
-		77FD772E16F3CE22008CA710 /* pd_dpad-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pd_dpad-hd.png"; path = "../../Assets/pd_resources/Sprites/pd_dpad-hd.png"; sourceTree = "<group>"; };
-		77FD772F16F3CE22008CA710 /* pd_dpad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pd_dpad.png; path = ../../Assets/pd_resources/Sprites/pd_dpad.png; sourceTree = "<group>"; };
 		77FD773216F3DC10008CA710 /* PlayerComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerComponent.h; sourceTree = "<group>"; };
 		77FD773316F3DC10008CA710 /* PlayerComponent.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PlayerComponent.mm; sourceTree = "<group>"; };
 		77FD773516F3DDAF008CA710 /* Entity+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Entity+Helpers.h"; sourceTree = "<group>"; };
@@ -764,9 +767,8 @@
 		775AC3D716ED56B900FA3049 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				7776B36816FB88B80037640D /* Levels */,
 				7776B35D16FB76AA0037640D /* App */,
-				7776B35E16FB76CD0037640D /* Levels */,
+				7776B36816FB88B80037640D /* Levels */,
 				7724FCAC16F1058800081714 /* Images */,
 				775AC3EE16ED56B900FA3049 /* Info.plist */,
 				775AC3EF16ED56B900FA3049 /* iTunesArtwork */,
@@ -1303,6 +1305,8 @@
 				7724FCAA16F1002900081714 /* MovementSystem.mm */,
 				77FD772716F3983B008CA710 /* ActionSystem.h */,
 				77FD772816F3983B008CA710 /* ActionSystem.mm */,
+				7776B3C616FBB8D70037640D /* CameraSystem.h */,
+				7776B3C716FBB8D80037640D /* CameraSystem.mm */,
 			);
 			name = Systems;
 			sourceTree = "<group>";
@@ -1341,18 +1345,11 @@
 			name = App;
 			sourceTree = "<group>";
 		};
-		7776B35E16FB76CD0037640D /* Levels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Levels;
-			sourceTree = "<group>";
-		};
 		7776B35F16FB888A0037640D /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				77FD772E16F3CE22008CA710 /* pd_dpad-hd.png */,
-				77FD772F16F3CE22008CA710 /* pd_dpad.png */,
+				7776B3C216FBB5000037640D /* pd_dpad-hd.png */,
+				7776B3C316FBB5000037640D /* pd_dpad.png */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -1533,14 +1530,14 @@
 				775AC3ED16ED56B900FA3049 /* Icon@2x.png in Resources */,
 				775AC3F016ED56B900FA3049 /* iTunesArtwork in Resources */,
 				775AC52E16ED56BA00FA3049 /* ChangeLog in Resources */,
-				77FD773016F3CE22008CA710 /* pd_dpad-hd.png in Resources */,
-				77FD773116F3CE22008CA710 /* pd_dpad.png in Resources */,
 				7776B36416FB88B00037640D /* sprites_Bum-hd.png in Resources */,
 				7776B36516FB88B00037640D /* sprites_Bum-ipadhd.png in Resources */,
 				7776B36616FB88B00037640D /* sprites_Bum.png in Resources */,
 				7776B36716FB88B00037640D /* sprites.pshs in Resources */,
 				7776B36A16FB88B90037640D /* level0.plhs in Resources */,
 				7776B3AB16FB89760037640D /* LICENSE_LevelHelper.txt in Resources */,
+				7776B3C416FBB5000037640D /* pd_dpad-hd.png in Resources */,
+				7776B3C516FBB5000037640D /* pd_dpad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1742,6 +1739,7 @@
 				7776B3BC16FB89760037640D /* LHSprite.mm in Sources */,
 				7776B3BD16FB89760037640D /* LHTouchMgr.mm in Sources */,
 				7776B3BE16FB89760037640D /* SHDocumentLoader.mm in Sources */,
+				7776B3C816FBB8D80037640D /* CameraSystem.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

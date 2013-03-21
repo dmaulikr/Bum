@@ -7,7 +7,7 @@
 	<key>CreatedWith</key>
 	<string>LevelHelper</string>
 	<key>Gravity</key>
-	<string>{0, 0}</string>
+	<string>{0, -100}</string>
 	<key>JOINTS_INFO</key>
 	<array/>
 	<key>LHVersion</key>
@@ -76,7 +76,7 @@
 								<key>Opacity</key>
 								<real>1</real>
 								<key>Position</key>
-								<string>{256, 291.5}</string>
+								<string>{256, 292.5}</string>
 								<key>Scale</key>
 								<string>{1.0060000419616699, 1}</string>
 								<key>SpriteSize</key>
@@ -151,7 +151,7 @@
 								<key>Opacity</key>
 								<real>1</real>
 								<key>Position</key>
-								<string>{768, 291.5}</string>
+								<string>{768, 292.5}</string>
 								<key>Scale</key>
 								<string>{1.0060000419616699, 1}</string>
 								<key>SpriteSize</key>
@@ -226,7 +226,7 @@
 								<key>Opacity</key>
 								<real>1</real>
 								<key>Position</key>
-								<string>{1280, 291.5}</string>
+								<string>{1280, 292.5}</string>
 								<key>Scale</key>
 								<string>{1.0060000419616699, 1}</string>
 								<key>SpriteSize</key>
@@ -301,7 +301,7 @@
 								<key>Opacity</key>
 								<real>1</real>
 								<key>Position</key>
-								<string>{1792, 291.5}</string>
+								<string>{1792, 292.5}</string>
 								<key>Scale</key>
 								<string>{1.0060000419616699, 1}</string>
 								<key>SpriteSize</key>
@@ -376,7 +376,7 @@
 								<key>Opacity</key>
 								<real>1</real>
 								<key>Position</key>
-								<string>{2304, 291.5}</string>
+								<string>{2304, 292.5}</string>
 								<key>Scale</key>
 								<string>{1.0060000419616699, 1}</string>
 								<key>SpriteSize</key>
@@ -451,7 +451,7 @@
 								<key>Opacity</key>
 								<real>1</real>
 								<key>Position</key>
-								<string>{2816, 291.5}</string>
+								<string>{2816, 292.5}</string>
 								<key>Scale</key>
 								<string>{1.0060000419616699, 1}</string>
 								<key>SpriteSize</key>
@@ -526,7 +526,7 @@
 								<key>Opacity</key>
 								<real>1</real>
 								<key>Position</key>
-								<string>{3328, 291.5}</string>
+								<string>{3328, 292.5}</string>
 								<key>Scale</key>
 								<string>{1.0060000419616699, 1}</string>
 								<key>SpriteSize</key>
@@ -601,7 +601,7 @@
 								<key>Opacity</key>
 								<real>1</real>
 								<key>Position</key>
-								<string>{3840, 291.5}</string>
+								<string>{3840, 292.5}</string>
 								<key>Scale</key>
 								<string>{1.0060000419616699, 1}</string>
 								<key>SpriteSize</key>
@@ -676,9 +676,9 @@
 								<key>Opacity</key>
 								<real>1</real>
 								<key>Position</key>
-								<string>{81.75, 183}</string>
+								<string>{74.413513824343681, 207.31376188993454}</string>
 								<key>Scale</key>
-								<string>{1, 1}</string>
+								<string>{0.71453839540481567, 0.71453839540481567}</string>
 								<key>SpriteSize</key>
 								<string>{163.5, 222}</string>
 								<key>Tag</key>
@@ -821,7 +821,7 @@
 				</dict>
 			</array>
 			<key>UniqueName</key>
-			<string>Parallax_1</string>
+			<string>ground</string>
 			<key>ZOrder</key>
 			<integer>0</integer>
 		</dict>

@@ -37,19 +37,19 @@
         
         if (!move || !render) continue;
         
-        b2Body *b = render.node.body;
-        LHSprite *myActor = (__bridge LHSprite *)b->GetUserData();
-    
-        if (!myActor) continue;
+        b2Body *body = render.node.body;
+        
+        // make sure a body is defined for an object with movement
+        assert(body != nil);
         
         // apply velocity
-        b2Body *body = render.node.body;
         b2Vec2 vel = b2Vec2(move.velocity.x, move.velocity.y);
-        body->SetLinearVelocity(vel);
+//        body->SetLinearVelocity(vel);
+        body->ApplyLinearImpulse(vel, vel);
         
         // get the position from box2d to cocos2d and update the sprite
-        myActor.position = [LevelHelperLoader metersToPoints:b->GetPosition()];
-        myActor.rotation = -1 * CC_RADIANS_TO_DEGREES(b->GetAngle());
+        render.node.position = [LevelHelperLoader metersToPoints:body->GetPosition()];
+        render.node.rotation = -1 * CC_RADIANS_TO_DEGREES(body->GetAngle());
     }
 }
 
@@ -60,10 +60,11 @@
 {
     Entity *player = [[self.entityManager getAllEntitiesPosessingComponentOfClass:[PlayerComponent class]] lastObject];
     
-    float walkSpeed = 40.f;
+    float walkSpeed = .75f;
     
     CGPoint velocity = player.movement.velocity = ccp(direction.x * walkSpeed, direction.y * walkSpeed);
-    NSLog(@"player velocity: %@", NSStringFromCGPoint(velocity));
+    
+//    NSLog(@"player velocity: %@", NSStringFromCGPoint(velocity));
     
     if (velocity.x >= 0) player.render.node.scaleX = 1.0;
     else player.render.node.scaleX = -1.0;
