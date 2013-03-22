@@ -16,5 +16,6 @@
 
 - (float)walkSpeed;
 - (float)runSpeed;
+- (float)jumpSpeed;
 
 @end

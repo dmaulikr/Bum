@@ -170,6 +170,7 @@ typedef enum {
 	// generally best to keep the time step and iterations fixed.
 	_world->Step(dt, velocityIterations, positionIterations);
     
+    [_controlsSystem update:dt];
     [_movementSystem update:dt];
     [_healthSystem update:dt];
     [_actionSystem update:dt];

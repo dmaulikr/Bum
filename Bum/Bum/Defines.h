@@ -37,3 +37,4 @@ typedef struct _BoundingBox {
 
 #define PLAYER_WALK_SPEED 10.f
 #define PLAYER_RUN_SPEED 20.f
+#define PLAYER_JUMP_SPEED 15.f

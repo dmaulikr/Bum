@@ -33,7 +33,6 @@
         
         MovementComponent *move = [entity movement];
         RenderComponent *render = [entity render];
-        PlayerComponent *player = [entity player];
         
         if (!move || !render) continue;
         

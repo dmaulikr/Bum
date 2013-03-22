@@ -14,7 +14,4 @@
 
 @property (nonatomic, unsafe_unretained) Entity *playerEntity;
 
-- (void)walkWithDirection:(CGPoint)direction;
-- (void)jump;
-
 @end

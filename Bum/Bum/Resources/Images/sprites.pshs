@@ -536,7 +536,7 @@
 									</array>
 								</array>
 								<key>Friction</key>
-								<real>0.5</real>
+								<real>0.10000000149011612</real>
 								<key>Group</key>
 								<integer>0</integer>
 								<key>Height</key>
@@ -560,7 +560,7 @@
 								<key>Name</key>
 								<string>UntitledFixture</string>
 								<key>Restitution</key>
-								<real>0.10000000149011612</real>
+								<real>0.0</real>
 								<key>ShapePoints</key>
 								<array>
 									<string>{88.88192008592705, 77.413285236129894}</string>

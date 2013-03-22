@@ -21,4 +21,9 @@
     return PLAYER_RUN_SPEED;
 }
 
+- (float)jumpSpeed
+{
+    return PLAYER_JUMP_SPEED;
+}
+
 @end
