@@ -20,6 +20,7 @@
 #import "PlayerComponent.h"
 #import "LevelHelperLoader.h"
 #import "CameraSystem.h"
+#import "ControlsSystem.h"
 
 typedef enum {
     DepthLevelBackground = 0,
@@ -45,6 +46,7 @@ typedef enum {
     MovementSystem *_movementSystem;
     ActionSystem *_actionSystem;
     CameraSystem *_cameraSystem;
+    ControlsSystem *_controlsSystem;
     
     Entity * _player;
     Entity * _enemy;
@@ -80,9 +82,11 @@ typedef enum {
 {
     if (_hud) {
         _hud.dPad.delegate = nil;
+        _hud.jumpButton.delegate = nil;
     }
     _hud = hud;
-    _hud.dPad.delegate = self;
+    _hud.dPad.delegate = _controlsSystem;
+    _hud.jumpButton.delegate = _controlsSystem;
 }
 
 
@@ -132,22 +136,14 @@ typedef enum {
     _movementSystem = [[MovementSystem alloc] initWithEntityManager:_entityManager entityFactory:_entityFactory world:_world];
     _actionSystem = [[ActionSystem alloc] initWithEntityManager:_entityManager entityFactory:_entityFactory];
     _cameraSystem = [[CameraSystem alloc] initWithEntityManager:_entityManager entityFactory:_entityFactory levelLoader:_loader layer:self];
+    _controlsSystem = [[ControlsSystem alloc] initWithEntityManager:_entityManager entityFactory:_entityFactory];
 }
 
 
 - (void)addHero
 {
     _player = [_entityFactory createHumanPlayer];
-    RenderComponent * humanRender = _player.render;
-    MovementComponent *movement = _player.movement;
-    
-    CGPoint humanStartPoint = ccp(humanRender.centerToSides, humanRender.centerToBottom);
-    if (humanRender) {
-        humanRender.node.position = humanStartPoint;
-    }
-    if (movement) {
-        movement.target = humanStartPoint;
-    }
+    _controlsSystem.playerEntity = _player;
 }
 
 - (void)addEnemy
@@ -196,37 +192,8 @@ typedef enum {
 	_world->DrawDebugData();
 	
 	kmGLPopMatrix();
-    
-    [_healthSystem draw];
 }
 
-
-#pragma mark - SimpleDPadDelegate
-
-- (void)simpleDPadTouchesBegan:(SimpleDPad *)dPad
-{
-    Entity *player = [[_entityManager getAllEntitiesPosessingComponentOfClass:[PlayerComponent class]] lastObject];
-    player.action.actionState = ActionStateWalk;
-}
-
-- (void)simpleDPadTouchesEnded:(SimpleDPad *)dPad
-{
-    Entity *player = [[_entityManager getAllEntitiesPosessingComponentOfClass:[PlayerComponent class]] lastObject];
-    
-    if (player.action.actionState == ActionStateWalk) {
-        player.action.actionState = ActionStateIdle;
-    }
-}
-
-- (void)simpleDPad:(SimpleDPad *)dPad didChangeDirectionTo:(CGPoint)direction
-{
-    [_movementSystem walkWithDirection:direction];
-}
-
-- (void)simpleDPad:(SimpleDPad *)dPad isHoldingDirection:(CGPoint)direction
-{
-    [_movementSystem walkWithDirection:direction];
-}
 
 
 @end

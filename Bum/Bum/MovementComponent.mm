@@ -11,14 +11,11 @@
 
 @implementation MovementComponent
 
-- (id)initWithMaxVelocity:(float)velocity maxAcceleration:(float)accel
+- (id)initWithMaxVelocity:(float)velocity
 {
     if (self = [super init]) {
         self.maxVelocity = velocity;
-        self.maxAcceleration = accel;
-        self.target = CGPointZero;
         self.velocity = CGPointZero;
-        self.acceleration = CGPointMake(1.f, 1.f);
     }
     return self;
 }

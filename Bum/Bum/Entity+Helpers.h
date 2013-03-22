@@ -8,11 +8,10 @@
 
 #import "Entity.h"
 
+@class ActionComponent;
 @class RenderComponent;
 @class MovementComponent;
 @class PlayerComponent;
-@class ActionComponent;
-
 @interface Entity (Helpers)
 
 - (ActionComponent *)action;

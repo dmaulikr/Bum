@@ -10,9 +10,11 @@
 #import "cocos2d.h"
 
 @class SimpleDPad;
+@class GameButton;
 @interface HUDLayer : CCLayer {
     
 }
 @property (nonatomic, readonly) SimpleDPad *dPad;
+@property (nonatomic, readonly) GameButton *jumpButton;
 
 @end

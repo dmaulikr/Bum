@@ -34,3 +34,6 @@ typedef struct _BoundingBox {
 
 // the number of map tiles the main character can vertically move between.
 #define FLOOR_ROWS 3
+
+#define PLAYER_WALK_SPEED 10.f
+#define PLAYER_RUN_SPEED 20.f

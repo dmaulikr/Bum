@@ -9,9 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 #import "HUDLayer.h"
-#import "SimpleDPad.h"
 
-@interface GameplayLayer : CCLayer <SimpleDPadDelegate> {
+@interface GameplayLayer : CCLayer {
     
 }
 

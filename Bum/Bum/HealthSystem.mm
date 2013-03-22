@@ -10,6 +10,7 @@
 #import "HealthComponent.h"
 #import "RenderComponent.h"
 
+
 @implementation HealthSystem
 
 - (void)update:(float)dt {
@@ -49,7 +50,7 @@
     }    
 }
 
-
+/*
 - (void)draw {
     NSArray * entities = [self.entityManager getAllEntitiesPosessingComponentOfClass:[HealthComponent class]];
     for (Entity * entity in entities) {
@@ -74,6 +75,6 @@
         ccDrawLine(ccp(sX, actualY), ccp(actualX, actualY));
     }    
 }
-
+*/
 
 @end

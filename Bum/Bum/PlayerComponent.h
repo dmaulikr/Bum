@@ -14,4 +14,7 @@
     
 }
 
+- (float)walkSpeed;
+- (float)runSpeed;
+
 @end

@@ -11,36 +11,4 @@
 
 @implementation Component
 
-- (id)initWithNode:(CCNode *)node
-{
-    if (self = [super init]) {
-        _isEnabled = YES;
-        _type = -1;
-    }
-    return self;
-}
-
-
-- (void)didAddToEntity:(Entity *)entity
-{
-    
-}
-
-
-- (void)didRemoveFromEntity:(Entity *)entity
-{
-    
-}
-
-- (void)update:(ccTime)time
-{
-    
-}
-
-
-+ (id)componentWithNode:(CCNode *)node
-{
-    return [[Component alloc] initWithNode:node];
-}
-
 @end

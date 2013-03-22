@@ -22,6 +22,4 @@
               entityFactory:(EntityFactory *)entityFactory
                       world:(b2World *)world;
 
-- (void)walkWithDirection:(CGPoint)direction;
-
 @end

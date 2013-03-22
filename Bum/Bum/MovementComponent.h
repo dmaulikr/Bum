@@ -14,14 +14,9 @@
     
 }
 
-@property (nonatomic) CGPoint target;
-
 @property (nonatomic) CGPoint velocity;
-@property (nonatomic) CGPoint acceleration;
-
 @property (nonatomic) float maxVelocity;
-@property (nonatomic) float maxAcceleration;
 
-- (id)initWithMaxVelocity:(float)velocity maxAcceleration:(float)accel;
+- (id)initWithMaxVelocity:(float)velocity;
 
 @end

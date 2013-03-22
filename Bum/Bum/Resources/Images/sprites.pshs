@@ -514,7 +514,7 @@
 						<key>IsBullet</key>
 						<false/>
 						<key>LinearDamping</key>
-						<real>0.10000000149011612</real>
+						<real>0.0</real>
 						<key>LinearVelocity</key>
 						<string>{0, 0}</string>
 						<key>SH_ComplexShapes</key>
@@ -525,7 +525,7 @@
 								<key>Category</key>
 								<integer>1</integer>
 								<key>Density</key>
-								<real>0.10000000149011612</real>
+								<real>1</real>
 								<key>Fixture</key>
 								<array>
 									<array>
@@ -536,7 +536,7 @@
 									</array>
 								</array>
 								<key>Friction</key>
-								<real>0.66600000858306885</real>
+								<real>0.5</real>
 								<key>Group</key>
 								<integer>0</integer>
 								<key>Height</key>
@@ -560,7 +560,7 @@
 								<key>Name</key>
 								<string>UntitledFixture</string>
 								<key>Restitution</key>
-								<real>0.20000000298023224</real>
+								<real>0.10000000149011612</real>
 								<key>ShapePoints</key>
 								<array>
 									<string>{88.88192008592705, 77.413285236129894}</string>
@@ -810,9 +810,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{661, 2}, {150.75, 179.75}}</string>
+						<string>{{655, 5}, {150.75, 179.75}}</string>
 						<key>Frame-HD</key>
-						<string>{{2644, 8}, {601, 719}}</string>
+						<string>{{2620, 20}, {601, 719}}</string>
 						<key>Image</key>
 						<string>sprites_Bum.png</string>
 						<key>Image-HD</key>
@@ -838,7 +838,7 @@
 						<key>OriginalSize</key>
 						<string>{654, 888}</string>
 						<key>Position</key>
-						<string>{2644, 8}</string>
+						<string>{2620, 20}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -926,9 +926,66 @@
 						<key>LinearVelocity</key>
 						<string>{0, 0}</string>
 						<key>SH_ComplexShapes</key>
-						<array/>
+						<array>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Category</key>
+								<integer>1</integer>
+								<key>Density</key>
+								<real>2</real>
+								<key>Fixture</key>
+								<array>
+									<array>
+										<string>{-256, -27.5}</string>
+										<string>{256, -27.5}</string>
+										<string>{256, 27.5}</string>
+										<string>{-256, 27.5}</string>
+									</array>
+								</array>
+								<key>Friction</key>
+								<real>1</real>
+								<key>Group</key>
+								<integer>0</integer>
+								<key>Height</key>
+								<real>220</real>
+								<key>HolesPoints</key>
+								<array/>
+								<key>IsCircle</key>
+								<false/>
+								<key>IsRectangle</key>
+								<true/>
+								<key>IsSensor</key>
+								<false/>
+								<key>LHHeight</key>
+								<real>55</real>
+								<key>LHShapePositionOffset</key>
+								<string>{-256, -27.5}</string>
+								<key>LHWidth</key>
+								<real>512</real>
+								<key>Mask</key>
+								<integer>65535</integer>
+								<key>Name</key>
+								<string>UntitledFixture</string>
+								<key>Restitution</key>
+								<real>0.0</real>
+								<key>ShapePoints</key>
+								<array>
+									<string>{0, 0}</string>
+									<string>{2048, 0}</string>
+									<string>{2048, 220}</string>
+									<string>{0, 220}</string>
+								</array>
+								<key>ShapePositionOffset</key>
+								<string>{0, 0}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>Width</key>
+								<real>2048</real>
+							</dict>
+						</array>
 						<key>Type</key>
-						<integer>3</integer>
+						<integer>0</integer>
 					</dict>
 					<key>SHSheetName</key>
 					<string>Bum</string>

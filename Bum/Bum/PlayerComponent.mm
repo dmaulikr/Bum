@@ -11,4 +11,14 @@
 
 @implementation PlayerComponent
 
+- (float)walkSpeed
+{
+    return PLAYER_WALK_SPEED;
+}
+
+- (float)runSpeed
+{
+    return PLAYER_RUN_SPEED;
+}
+
 @end

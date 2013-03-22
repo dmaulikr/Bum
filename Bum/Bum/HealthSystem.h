@@ -10,6 +10,4 @@
 
 @interface HealthSystem : System
 
-- (void)draw;
-
 @end
