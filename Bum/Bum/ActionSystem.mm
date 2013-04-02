@@ -24,43 +24,52 @@
         
         if (!action || !renderer) return;
         
-        if (renderer.actionState != action.actionState) {
-            
-            renderer.actionState = action.actionState;
-            
-            switch (action.actionState) {
-                    
-                case ActionStateAttack:
-                    [renderer.node prepareAnimationNamed:action.attackAnimation fromSHScene:action.spriteSheet];
-                    break;
+        
+        NSString *animationName;
+    
+        // first determine animation name based on movement.
+        switch (action.movementState) {
                 
-                case ActionStateBlock:
-                    [renderer.node prepareAnimationNamed:action.blockAnimation fromSHScene:action.spriteSheet];
-                    break;
-                    
-                case ActionStateHurt:
-                    [renderer.node prepareAnimationNamed:action.hurtAnimation fromSHScene:action.spriteSheet];
-                    break;
-                    
-                case ActionStateKnockedOut:
-                    [renderer.node prepareAnimationNamed:action.knockedOutAnimation fromSHScene:action.spriteSheet];
-                    break;
-                    
-                case ActionStateWalk:
-                    [renderer.node prepareAnimationNamed:action.walkAnimation fromSHScene:action.spriteSheet];
-                    break;
-                    
-                case ActionStateRun:
-                    [renderer.node prepareAnimationNamed:action.runAnimation fromSHScene:action.spriteSheet];
-                    break;
-                    
-                case ActionStateIdle:
-                case ActionStateNone:
-                default:
-                    [renderer.node prepareAnimationNamed:action.idleAnimation fromSHScene:action.spriteSheet];
-                    break;
-            }
-            
+            case MovementStateWalk:
+                [renderer.node prepareAnimationNamed:action.walkAnimation fromSHScene:action.spriteSheet];
+                break;
+                
+            case MovementStateRun:
+                [renderer.node prepareAnimationNamed:action.runAnimation fromSHScene:action.spriteSheet];
+                break;
+                
+            case MovementStateIdle:
+            default:
+                [renderer.node prepareAnimationNamed:action.idleAnimation fromSHScene:action.spriteSheet];
+                break;
+        }
+        
+        // if we have an action state, use that animation
+        switch (action.actionState) {
+                
+            case ActionStateAttack:
+                animationName = action.attackAnimation;
+                break;
+                
+            case ActionStateBlock:
+                animationName = action.blockAnimation;
+                break;
+                
+            case ActionStateHurt:
+                animationName = action.hurtAnimation;
+                break;
+                
+            case ActionStateKnockedOut:
+                animationName = action.knockedOutAnimation;
+                break;
+                
+            case ActionStateNone:
+                break;
+        }
+        
+        // play the animation if its not already playing
+        if (![renderer.currentAnimation isEqualToString:animationName]) {
+            [renderer.node prepareAnimationNamed:animationName fromSHScene:action.spriteSheet];
             [renderer.node playAnimation];
         }
     }

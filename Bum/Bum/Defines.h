@@ -18,14 +18,17 @@
 // 3 - enumerations
 typedef enum ActionState {
     ActionStateNone = 0,
-    ActionStateIdle,
     ActionStateAttack,
     ActionStateBlock,
-    ActionStateWalk,
-    ActionStateRun,
     ActionStateHurt,
     ActionStateKnockedOut
 } ActionState;
+
+typedef enum MovementState {
+    MovementStateIdle,
+    MovementStateWalk,
+    MovementStateRun
+} MovementState;
 
 // 4 - structures
 typedef struct _BoundingBox {

@@ -9,7 +9,7 @@
 #import "HealthSystem.h"
 #import "HealthComponent.h"
 #import "RenderComponent.h"
-
+#import "ActionComponent.h"
 
 @implementation HealthSystem
 
@@ -32,7 +32,7 @@
             
             // mark dead
             health.isAlive = FALSE;
-            render.actionState = ActionStateKnockedOut;
+            entity.action.actionState = ActionStateKnockedOut;
             
             // 4
             if (render) {

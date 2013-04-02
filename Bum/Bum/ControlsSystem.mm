@@ -12,10 +12,11 @@
 #import "PlayerComponent.h"
 #import "ActionComponent.h"
 
-#define ACCELERATION 10.f
+#define WALK_ACCELERATION 4.f
+#define RUN_ACCELERATION 8.f
 #define JUMP_ACCELERATION_REDUCTION .666
 #define JUMP_MAX_HOLD_TIME 1.f
-#define STOP_SPEED_FRICTION .333f
+#define STOP_SPEED_FRICTION .1f
 #define TURN_SPEED_FRICTION .1f
 
 typedef enum CharacterDirection {
@@ -70,15 +71,20 @@ typedef enum CharacterMoveState {
     
     // find the characters speed
     float maxVelocity;
+    float acceleration;
     
     switch (_moveState) {
-        case CharacterMoveStateRunning:
+        case CharacterMoveStateRunning: {
             maxVelocity = _playerEntity.player.runSpeed;
+            acceleration = RUN_ACCELERATION;
             break;
+        }
         case CharacterMoveStateWalking:
-        default:
+        default: {
             maxVelocity = _playerEntity.player.walkSpeed;
+            acceleration = WALK_ACCELERATION;
             break;
+        }
     }
     
     float targetVelocity;
@@ -88,11 +94,11 @@ typedef enum CharacterMoveState {
             break;
             
         case CharacterDirectionLeft:
-            targetVelocity = b2Max( vel.x - ACCELERATION, -maxVelocity );;
+            targetVelocity = b2Max( vel.x - acceleration, -maxVelocity );;
             break;
             
         case CharacterDirectionRight:
-            targetVelocity = b2Min( vel.x + ACCELERATION, maxVelocity );;
+            targetVelocity = b2Min( vel.x + acceleration, maxVelocity );;
             break;
             
         default:
@@ -109,7 +115,7 @@ typedef enum CharacterMoveState {
 - (void)walkWithDirection:(CGPoint)direction
 {
     _moveState = CharacterMoveStateWalking;
-    _playerEntity.action.actionState = ActionStateWalk;
+    _playerEntity.action.movementState = MovementStateWalk;
     [self setDirection:direction];
 }
 
@@ -117,7 +123,7 @@ typedef enum CharacterMoveState {
 - (void)runWithDirection:(CGPoint)direction
 {
     _moveState = CharacterMoveStateRunning;
-    _playerEntity.action.actionState = ActionStateRun;
+    _playerEntity.action.movementState = MovementStateRun;
     [self setDirection:direction];
 }
 
@@ -160,7 +166,7 @@ typedef enum CharacterMoveState {
 
 - (void)simpleDPadTouchesEnded:(SimpleDPad *)dPad
 {
-    _playerEntity.action.actionState = ActionStateIdle;
+    _playerEntity.action.movementState = MovementStateIdle;
     _moveState = CharacterMoveStateIdle;
     _characterDirection = CharacterDirectionNone;
 }

@@ -10,6 +10,8 @@
 #import "SimpleDPad.h"
 #import "GameButton.h"
 
+#define BUTTON_PADDING 25.f
+
 @interface HUDLayer () {
 }
 
@@ -43,11 +45,11 @@
     [rightControlsGroup addChild:_runButton];
     
     _jumpButton = [[GameButton alloc] initWithFile:@"button-a.png"];
-    _jumpButton.position = ccp(_runButton.contentSize.width * 1.5, 0);
+    _jumpButton.position = ccp(_runButton.contentSize.width + BUTTON_PADDING, 0);
     [rightControlsGroup addChild:_jumpButton];
 
-    rightControlsGroup.position = ccp(winSize.height - (_jumpButton.position.x + _jumpButton.contentSize.width),
-                                      _jumpButton.contentSize.height);
+    rightControlsGroup.position = ccp(winSize.height - (_jumpButton.position.x + _jumpButton.contentSize.width * .5 + BUTTON_PADDING),
+                                      128.f);
 }
 
 @end

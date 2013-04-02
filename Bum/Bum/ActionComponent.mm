@@ -11,10 +11,11 @@
 
 @implementation ActionComponent
 
-- (id)initWithActionState:(ActionState)state
+- (id)initWithMovementState:(MovementState)state
 {
     if (self = [super init]) {
-        _actionState = state;
+        _movementState = state;
+        _actionState = ActionStateNone;
     }
     return self;
 }

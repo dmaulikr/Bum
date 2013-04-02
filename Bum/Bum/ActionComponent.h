@@ -16,6 +16,9 @@
 
 // state
 @property(nonatomic, assign) ActionState actionState;
+@property(nonatomic, assign) MovementState movementState;
+@property(nonatomic, strong) NSString *currentAnimation;
+
 
 // Animation Names
 @property(nonatomic, strong) NSString *idleAnimation;
@@ -29,6 +32,6 @@
 @property(nonatomic, strong) NSString *spriteSheet;
 
 
-- (id)initWithActionState:(ActionState)state;
+- (id)initWithMovementState:(MovementState)state;
 
 @end

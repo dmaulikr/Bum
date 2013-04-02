@@ -44,7 +44,7 @@
     [_entityManager addComponent:[[PlayerComponent alloc] init] toEntity:entity];
     
     // Animation
-    ActionComponent *actionComp = [[ActionComponent alloc] initWithActionState:ActionStateIdle];
+    ActionComponent *actionComp = [[ActionComponent alloc] initWithMovementState:MovementStateIdle];
     actionComp.runAnimation = @"run";
     actionComp.walkAnimation = @"walk";
     actionComp.idleAnimation = @"idle";
