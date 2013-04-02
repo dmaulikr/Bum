@@ -21,7 +21,7 @@
 
 
 @protocol GameButtonDelegate <NSObject>
-
+@optional
 - (void)gameButtonTouchesBegan:(GameButton *)gameButton;
 - (void)gameButtonTouchesEnded:(GameButton *)gameButton;
 - (void)gameButtonTouchesDidEnter:(GameButton *)gameButton;

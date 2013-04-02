@@ -125,7 +125,7 @@ typedef enum CharacterMoveState {
 - (void)jump
 {
     b2Body *body = _playerEntity.render.node.body;
-    body->ApplyLinearImpulse( b2Vec2(0,10.f), body->GetWorldCenter() );
+    body->ApplyLinearImpulse( b2Vec2(0,PLAYER_JUMP_SPEED), body->GetWorldCenter() );
 }
 
 
@@ -189,22 +189,31 @@ typedef enum CharacterMoveState {
 
 - (void)gameButtonTouchesBegan:(GameButton *)gameButton
 {
-    if (gameButton == self.hud.runButton) {
-        
-    }
     if (gameButton == self.hud.jumpButton) {
         [self jump];
     }
+    
+    NSLog(@"began");
 }
 
 
 - (void)gameButtonTouchesEnded:(GameButton *)gameButton
 {
+    NSLog(@"ended");
 }
 
+- (void)gameButtonTouchesDidEnter:(GameButton *)gameButton
+{
+    NSLog(@"enter");
+    if (gameButton == self.hud.jumpButton) {
+        [self jump];
+    }
+}
 
 - (void)gameButtonTouchesDidLeave:(GameButton *)gameButton
 {
+    NSLog(@"leave");
+
 }
 
 

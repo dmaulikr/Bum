@@ -8,6 +8,7 @@
 #import "GameButton.h"
 
 @interface GameButton () {
+    BOOL _isLastTouchWithinBounds;
 }
 
 @end
@@ -27,7 +28,7 @@
 
 - (void)onEnterTransitionDidFinish
 {
-    [[[CCDirector sharedDirector] touchDispatcher] addTargetedDelegate:self priority:1 swallowsTouches:YES];
+    [[[CCDirector sharedDirector] touchDispatcher] addTargetedDelegate:self priority:1 swallowsTouches:NO];
 }
 
 - (void)onExit
@@ -48,15 +49,15 @@
 {
     CGPoint loc = [[CCDirector sharedDirector] convertToGL:[touch locationInView:[touch view]]];
     loc = [self.parent convertToNodeSpace:loc];
+    _isLastTouchWithinBounds = CGRectContainsPoint([self boundingBox], loc);
     
-    if (CGRectContainsPoint([self boundingBox], loc)) {
+    if (_isLastTouchWithinBounds) {
         _isHeld = YES;
         if ([_delegate respondsToSelector:@selector(gameButtonTouchesBegan:)]) {
             [_delegate gameButtonTouchesBegan:self];
         }
-        return YES;
     }
-    return NO;
+    return YES;
 }
  
 
@@ -66,25 +67,33 @@
     CGPoint loc = [[CCDirector sharedDirector] convertToGL:[touch locationInView:[touch view]]];
     loc = [self.parent convertToNodeSpace:loc];
     
-    if (!CGRectContainsPoint([self boundingBox], loc)) {
-        _isHeld = NO;
-        if ([_delegate respondsToSelector:@selector(gameButtonTouchesDidLeave:)]) {
-            [_delegate gameButtonTouchesDidLeave:self];
+    BOOL isTouchWithinBounds = CGRectContainsPoint([self boundingBox], loc);
+    
+    if (!_isHeld && isTouchWithinBounds) {
+        if ([_delegate respondsToSelector:@selector(gameButtonTouchesBegan:)]) {
+            [_delegate gameButtonTouchesBegan:self];
         }
     }
-    else {
-        // this captures the condition of the user rolling off the button then back on
-        _isHeld = YES;
+    else if (isTouchWithinBounds && !_isLastTouchWithinBounds) {
         if ([_delegate respondsToSelector:@selector(gameButtonTouchesDidEnter:)]) {
             [_delegate gameButtonTouchesDidEnter:self];
         }
     }
+    else if (!isTouchWithinBounds && _isLastTouchWithinBounds) {
+        if ([_delegate respondsToSelector:@selector(gameButtonTouchesDidLeave:)]) {
+            [_delegate gameButtonTouchesDidLeave:self];
+        }
+    }
+    
+    _isHeld = isTouchWithinBounds;
+    _isLastTouchWithinBounds = CGRectContainsPoint([self boundingBox], loc);
 }
 
 
 -(void)ccTouchEnded:(UITouch *)touch withEvent:(UIEvent *)event
 {
     _isHeld = NO;
+    _isLastTouchWithinBounds = NO;
     
     if ([_delegate respondsToSelector:@selector(gameButtonTouchesEnded:)]) {
         [_delegate gameButtonTouchesEnded:self];

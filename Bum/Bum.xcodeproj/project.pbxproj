@@ -771,6 +771,7 @@
 		775AC3D616ED56B900FA3049 /* Bum */ = {
 			isa = PBXGroup;
 			children = (
+				7765FE8C170B7B82003BEB5F /* Controls */,
 				775AC60F16ED579900FA3049 /* Entity Framework */,
 				77FD772316F391A1008CA710 /* Defines.h */,
 				775AC5E116ED56BB00FA3049 /* AppDelegate.h */,
@@ -1354,6 +1355,17 @@
 			name = Components;
 			sourceTree = "<group>";
 		};
+		7765FE8C170B7B82003BEB5F /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				77FD772B16F3C756008CA710 /* SimpleDPad.h */,
+				77FD772C16F3C756008CA710 /* SimpleDPad.mm */,
+				779CF5EA16FCADCA0085086C /* GameButton.h */,
+				779CF5EB16FCADCA0085086C /* GameButton.m */,
+			);
+			name = Controls;
+			sourceTree = "<group>";
+		};
 		7776B35D16FB76AA0037640D /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -1496,10 +1508,6 @@
 				775AC61316ED5BE300FA3049 /* GameplayLayer.mm */,
 				77FD771916F388D4008CA710 /* HUDLayer.h */,
 				77FD771A16F388D4008CA710 /* HUDLayer.mm */,
-				77FD772B16F3C756008CA710 /* SimpleDPad.h */,
-				77FD772C16F3C756008CA710 /* SimpleDPad.mm */,
-				779CF5EA16FCADCA0085086C /* GameButton.h */,
-				779CF5EB16FCADCA0085086C /* GameButton.m */,
 			);
 			name = Gameplay;
 			sourceTree = "<group>";
