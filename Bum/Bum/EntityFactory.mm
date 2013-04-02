@@ -36,7 +36,7 @@
 
 - (Entity *)createHumanPlayer
 {
-    LHSprite *sprite = [_loader spriteWithUniqueName:@"bum-run-01"];
+    LHSprite *sprite = [_loader spriteWithUniqueName:@"idle"];
     
     Entity * entity = [_entityManager createEntity];
     [_entityManager addComponent:[[RenderComponent alloc] initWithNode:sprite centerToSides:127.f centerToBottom:149.f] toEntity:entity];
@@ -45,39 +45,10 @@
     
     // Animation
     ActionComponent *actionComp = [[ActionComponent alloc] initWithActionState:ActionStateIdle];
-    NSUInteger animationFrames = 1;
- 
-    // idle
-    CCArray *idleFrames = [CCArray arrayWithCapacity:animationFrames];
-    for (int i=1; i < animationFrames; i++) {
-        NSString *spriteName = [NSString stringWithFormat:@"bum-throw-%02d", i];
-        LHSprite *frame = [_loader createBatchSpriteWithName:spriteName fromSheet:@"Bum" fromSHFile:@"sprites"];
-        [idleFrames addObject:frame];
-    }
-    CCAnimation *idleAnimation = [CCAnimation animationWithSpriteFrames:[idleFrames getNSArray] delay:1.0/12.0];
-    actionComp.idleAction = [CCRepeatForever actionWithAction:[CCAnimate actionWithAnimation:idleAnimation]];
-    
-    
-    // run
-    CCArray *runFrames = [CCArray arrayWithCapacity:animationFrames];
-    for (int i=1; i < animationFrames; i++) {
-        NSString *spriteName = [NSString stringWithFormat:@"bum-run-%2d", i];
-        LHSprite *frame = [_loader createBatchSpriteWithName:spriteName fromSheet:@"Bum" fromSHFile:@"sprites"];
-        [runFrames addObject:frame];
-    }
-    CCAnimation *runAnimation = [CCAnimation animationWithSpriteFrames:[runFrames getNSArray] delay:1.0/12.0];
-    actionComp.walkAction = [CCRepeatForever actionWithAction:[CCAnimate actionWithAnimation:runAnimation]];
-    
-    
-    // attack
-    CCArray *attackFrames = [CCArray arrayWithCapacity:animationFrames];
-    for (int i=1; i < animationFrames; i++) {
-        NSString *spriteName = [NSString stringWithFormat:@"bum-kick-%2d", i];
-        LHSprite *frame = [_loader createBatchSpriteWithName:spriteName fromSheet:@"Bum" fromSHFile:@"sprites"];
-        [runFrames addObject:frame];
-    }
-    CCAnimation *attackAnimation = [CCAnimation animationWithSpriteFrames:[attackFrames getNSArray] delay:1.0/12.0];
-    actionComp.attackAction = [CCRepeatForever actionWithAction:[CCAnimate actionWithAnimation:attackAnimation]];
+    actionComp.runAnimation = @"run";
+    actionComp.walkAnimation = @"walk";
+    actionComp.idleAnimation = @"idle";
+    actionComp.spriteSheet = @"sprites";
     
     // finally add the action component to the manager
     [_entityManager addComponent:actionComp toEntity:entity];

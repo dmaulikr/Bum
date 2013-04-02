@@ -24,7 +24,7 @@
 			<key>MaxSheetSize</key>
 			<integer>4096</integer>
 			<key>NpotSize</key>
-			<string>{3964, 960}</string>
+			<string>{4012, 632}</string>
 			<key>Padding</key>
 			<integer>8</integer>
 			<key>PixelFormat</key>
@@ -39,53 +39,51 @@
 			<string></string>
 			<key>Sheet_Sprites_Info</key>
 			<dict>
-				<key>bum-block-01</key>
+				<key>block_elbow</key>
 				<dict>
 					<key>DocumentSecurityImageBookmark</key>
 					<data>
-					Ym9va3wEAAAAAAQQMAAAAAAAAAAAAAAAAAAA
-					AAAAAAAAAAAAAAAAAAAAAAAAAAAAVAMAAAUA
+					Ym9va0QEAAAAAAQQMAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAHAMAAAUA
 					AAABAQAAVXNlcnMAAAAKAAAAAQEAAGdyYW50
-					ZGF2aXMAAAkAAAABAQAAV29ya3NwYWNlAAAA
-					AwAAAAEBAABCdW0ABgAAAAEBAABBc3NldHMA
-					AAcAAAABAQAAYXJ0d29yawARAAAAAQEAAGNo
-					YXJhY3RlciBzcHJpdGVzAAAAEAAAAAEBAABi
-					dW0tYmxvY2stMDEucG5nIAAAAAEGAAAEAAAA
-					FAAAACgAAAA8AAAASAAAAFgAAABoAAAAhAAA
-					AAgAAAAEAwAAF7sQAAAAAAAIAAAABAMAAJnd
-					EAAAAAAACAAAAAQDAADAeBcAAAAAAAgAAAAE
-					AwAAR/fbAwAAAAAIAAAABAMAAHO/3wMAAAAA
-					CAAAAAQDAACk2N8DAAAAAAgAAAAEAwAAs7r4
-					AwAAAAAIAAAABAMAAJbc+AMAAAAAIAAAAAEG
-					AADEAAAA1AAAAOQAAAD0AAAABAEAABQBAAAk
-					AQAANAEAAAgAAAAABAAAQbb7gxsAAAAYAAAA
-					AQIAAAEAAAAAAAAADwAAAAAAAAAAAAAAAAAA
-					AAAAAAABBQAABAAAAAMDAAAFAAAABAAAAAMD
-					AAAEAAAACAAAAAQDAAAGAAAAAAAAAAQAAAAD
-					AwAA9QEAAAwAAAABAQAATWFjaW50b3NoIEhE
-					CAAAAAQDAAAAYDGBYAAAAAgAAAAABAAAQbVo
-					pakAAAAkAAAAAQEAADY4MkI5MjQzLTdDRTct
-					M0Y1MS05RkI4LTJCNUZBQjNBNDJCQxgAAAAB
-					AgAAgQAAAAEACADvPwAAAQAIAAAAAAAAAAAA
-					AQAAAAEBAAAvAAAABAAAAAMDAAAAAQAA2QAA
-					AAECAAAyYjE3MTQzZTZiOTI4YjAyMGFmOTQw
-					NmJlYzEwYTgzZGVmNjg2ZTcxOzAwMDAwMDAw
-					OzAwMDAwMDAwMDAwMDAwMjA7Y29tLmFwcGxl
-					LmFwcC1zYW5kYm94LnJlYWQtd3JpdGU7MDAw
-					MDAwMDE7MDEwMDAwMDI7MDAwMDAwMDAwM2Y4
-					ZGM5NjsvdXNlcnMvZ3JhbnRkYXZpcy93b3Jr
-					c3BhY2UvYnVtL2Fzc2V0cy9hcnR3b3JrL2No
-					YXJhY3RlciBzcHJpdGVzL2J1bS1ibG9jay0w
-					MS5wbmcAAAAA8AAAAP7///8BAAAAAAAAABMA
-					AAAEEAAAnAAAAAAAAAAFEAAARAEAAAAAAAAQ
-					EAAAfAEAAAAAAABAEAAAbAEAAAAAAABUEAAA
-					pAEAAAAAAABVEAAAsAEAAAAAAABWEAAAnAEA
-					AAAAAAACIAAAWAIAAAAAAAAQIAAA2AEAAAAA
-					AAARIAAADAIAAAAAAAASIAAA7AEAAAAAAAAT
-					IAAA/AEAAAAAAAAgIAAAOAIAAAAAAAAwIAAA
-					nAEAAAAAAAABwAAAvAEAAAAAAAARwAAAFAAA
-					AAAAAAASwAAAzAEAAAAAAAAQ0AAAZAIAAAAA
-					AACA8AAAcAIAAAAAAAA=
+					ZGF2aXMAABEAAAABAQAAR3Jhdml0eSBDb3Jl
+					IEFwcHMAAAAIAAAAAQEAAEJ1bSBHYW1lGwAA
+					AAEBAABkb2N1bWVudHMtZXhwb3J0LTIwMTMt
+					MDQtMDIADwAAAAEBAABibG9ja19lbGJvdy5w
+					bmcAGAAAAAEGAAAEAAAAFAAAACgAAABEAAAA
+					VAAAAHgAAAAIAAAABAMAABe7EAAAAAAACAAA
+					AAQDAACZ3RAAAAAAAAgAAAAEAwAA/B5aAQAA
+					AAAIAAAABAMAAKHY3wMAAAAACAAAAAQDAAAz
+					1A8EAAAAAAgAAAAEAwAANNQPBAAAAAAYAAAA
+					AQYAALAAAADAAAAA0AAAAOAAAADwAAAAAAEA
+					AAgAAAAABAAAQbcD+bYAAAAYAAAAAQIAAAEA
+					AAAAAAAADwAAAAAAAAAAAAAAAAAAAAAAAAAB
+					BQAABAAAAAMDAAAHAAAABAAAAAMDAAAEAAAA
+					CAAAAAQDAAAEAAAAAAAAAAQAAAADAwAA9QEA
+					AAwAAAABAQAATWFjaW50b3NoIEhECAAAAAQD
+					AAAAYDGBYAAAAAgAAAAABAAAQbVopakAAAAk
+					AAAAAQEAADY4MkI5MjQzLTdDRTctM0Y1MS05
+					RkI4LTJCNUZBQjNBNDJCQxgAAAABAgAAgQAA
+					AAEACADvPwAAAQAIAAAAAAAAAAAAAQAAAAEB
+					AAAvAAAABAAAAAMDAAAAAQAA4AAAAAECAABi
+					ZjIzM2QxOWU0YWVlNDVhNWYyZWYwMDI5ZmM4
+					OGM0ZDA4YTQ5OTEyOzAwMDAwMDAwOzAwMDAw
+					MDAwMDAwMDAwMjA7Y29tLmFwcGxlLmFwcC1z
+					YW5kYm94LnJlYWQtd3JpdGU7MDAwMDAwMDE7
+					MDEwMDAwMDM7MDAwMDAwMDAwNDBmZDQzNDsv
+					dXNlcnMvZ3JhbnRkYXZpcy9ncmF2aXR5IGNv
+					cmUgYXBwcy9idW0gZ2FtZS9kb2N1bWVudHMt
+					ZXhwb3J0LTIwMTMtMDQtMDIvYmxvY2tfZWxi
+					b3cucG5nAPAAAAD+////AQAAAAAAAAATAAAA
+					BBAAAJAAAAAAAAAABRAAABABAAAAAAAAEBAA
+					AEABAAAAAAAAQBAAADABAAAAAAAAVBAAAGgB
+					AAAAAAAAVRAAAHQBAAAAAAAAVhAAAGABAAAA
+					AAAAAiAAABwCAAAAAAAAECAAAJwBAAAAAAAA
+					ESAAANABAAAAAAAAEiAAALABAAAAAAAAEyAA
+					AMABAAAAAAAAICAAAPwBAAAAAAAAMCAAAGAB
+					AAAAAAAAAcAAAIABAAAAAAAAEcAAABQAAAAA
+					AAAAEsAAAJABAAAAAAAAENAAACgCAAAAAAAA
+					gPAAADQCAAAAAAAA
 					</data>
 					<key>IsSHSprite</key>
 					<true/>
@@ -121,10 +119,10 @@
 								<key>Fixture</key>
 								<array>
 									<array>
-										<string>{-65.25, -92}</string>
-										<string>{72.75, -92}</string>
-										<string>{72.75, 88.5}</string>
-										<string>{-65.25, 88.5}</string>
+										<string>{-64.25, -77.625}</string>
+										<string>{45, -77.625}</string>
+										<string>{45, 77.625}</string>
+										<string>{-64.25, 77.625}</string>
 									</array>
 								</array>
 								<key>Friction</key>
@@ -132,7 +130,7 @@
 								<key>Group</key>
 								<integer>0</integer>
 								<key>Height</key>
-								<real>722</real>
+								<real>621</real>
 								<key>HolesPoints</key>
 								<array/>
 								<key>IsCircle</key>
@@ -142,11 +140,11 @@
 								<key>IsSensor</key>
 								<false/>
 								<key>LHHeight</key>
-								<real>180.5</real>
+								<real>155.25</real>
 								<key>LHShapePositionOffset</key>
-								<string>{-65.25, -88.5}</string>
+								<string>{-64.25, -77.625}</string>
 								<key>LHWidth</key>
-								<real>138</real>
+								<real>109.25</real>
 								<key>Mask</key>
 								<integer>65535</integer>
 								<key>Name</key>
@@ -156,16 +154,16 @@
 								<key>ShapePoints</key>
 								<array>
 									<string>{0, 0}</string>
-									<string>{552, 0}</string>
-									<string>{552, 722}</string>
-									<string>{0, 722}</string>
+									<string>{437, 0}</string>
+									<string>{437, 621}</string>
+									<string>{0, 621}</string>
 								</array>
 								<key>ShapePositionOffset</key>
 								<string>{0, 0}</string>
 								<key>Tag</key>
 								<integer>0</integer>
 								<key>Width</key>
-								<real>552</real>
+								<real>437</real>
 							</dict>
 						</array>
 						<key>Type</key>
@@ -174,7 +172,7 @@
 					<key>SHSheetName</key>
 					<string>Bum</string>
 					<key>SHSpriteName</key>
-					<string>bum-block-01</string>
+					<string>block_elbow</string>
 					<key>SheetImage</key>
 					<string>sprites_Bum.png</string>
 					<key>SheetImage-HD</key>
@@ -198,9 +196,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{2, 59}, {138, 180.5}}</string>
+						<string>{{649, 2}, {109.75, 155.75}}</string>
 						<key>Frame-HD</key>
-						<string>{{8, 236}, {552, 722}}</string>
+						<string>{{2596, 8}, {437, 621}}</string>
 						<key>Image</key>
 						<string>sprites_Bum.png</string>
 						<key>Image-HD</key>
@@ -214,82 +212,79 @@
 						<key>IsTrimmed</key>
 						<true/>
 						<key>Name</key>
-						<string>bum-block-01</string>
+						<string>block_elbow</string>
 						<key>Opacity</key>
 						<real>1</real>
 						<key>OriginalImage</key>
-						<string>/Users/grantdavis/Workspace/Bum/Assets/artwork/character sprites/bum-block-01.png</string>
+						<string>/Users/grantdavis/Gravity Core Apps/Bum Game/documents-export-2013-04-02/block_elbow.png</string>
 						<key>OriginalImage_RelativePath</key>
-						<string>../../../../Assets/artwork/character%20sprites/bum-block-01.png/</string>
+						<string>../../../../../../Gravity%20Core%20Apps/Bum%20Game/documents-export-2013-04-02/block_elbow.png/</string>
 						<key>OriginalRect</key>
-						<string>{{66, 90}, {552, 722}}</string>
+						<string>{{8, 0}, {437, 621}}</string>
 						<key>OriginalSize</key>
-						<string>{654, 888}</string>
+						<string>{530, 621}</string>
 						<key>Position</key>
-						<string>{8, 236}</string>
+						<string>{2596, 8}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
-						<string>{163.5, 222}</string>
+						<string>{132.5, 155.25}</string>
 						<key>SpriteWasBreaked</key>
 						<false/>
 						<key>Tag</key>
 						<integer>0</integer>
 						<key>TextureOffset</key>
-						<string>{3.75, -1.75}</string>
+						<string>{-9.375, -0.25}</string>
 						<key>UsesBatchRendering</key>
 						<true/>
 						<key>ZOrder</key>
 						<integer>0</integer>
 					</dict>
 				</dict>
-				<key>bum-kick-01</key>
+				<key>idle</key>
 				<dict>
 					<key>DocumentSecurityImageBookmark</key>
 					<data>
-					Ym9va3gEAAAAAAQQMAAAAAAAAAAAAAAAAAAA
-					AAAAAAAAAAAAAAAAAAAAAAAAAAAAUAMAAAUA
+					Ym9vazgEAAAAAAQQMAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAEAMAAAUA
 					AAABAQAAVXNlcnMAAAAKAAAAAQEAAGdyYW50
-					ZGF2aXMAAAkAAAABAQAAV29ya3NwYWNlAAAA
-					AwAAAAEBAABCdW0ABgAAAAEBAABBc3NldHMA
-					AAcAAAABAQAAYXJ0d29yawARAAAAAQEAAGNo
-					YXJhY3RlciBzcHJpdGVzAAAADwAAAAEBAABi
-					dW0ta2ljay0wMS5wbmcAIAAAAAEGAAAEAAAA
-					FAAAACgAAAA8AAAASAAAAFgAAABoAAAAhAAA
-					AAgAAAAEAwAAF7sQAAAAAAAIAAAABAMAAJnd
-					EAAAAAAACAAAAAQDAADAeBcAAAAAAAgAAAAE
-					AwAAR/fbAwAAAAAIAAAABAMAAHO/3wMAAAAA
-					CAAAAAQDAACk2N8DAAAAAAgAAAAEAwAAs7r4
-					AwAAAAAIAAAABAMAALrc+AMAAAAAIAAAAAEG
-					AADEAAAA1AAAAOQAAAD0AAAABAEAABQBAAAk
-					AQAANAEAAAgAAAAABAAAQbb7gyUAAAAYAAAA
-					AQIAAAEAAAAAAAAADwAAAAAAAAAAAAAAAAAA
-					AAAAAAABBQAABAAAAAMDAAAFAAAABAAAAAMD
-					AAAEAAAACAAAAAQDAAAGAAAAAAAAAAQAAAAD
-					AwAA9QEAAAwAAAABAQAATWFjaW50b3NoIEhE
-					CAAAAAQDAAAAYDGBYAAAAAgAAAAABAAAQbVo
-					pakAAAAkAAAAAQEAADY4MkI5MjQzLTdDRTct
-					M0Y1MS05RkI4LTJCNUZBQjNBNDJCQxgAAAAB
-					AgAAgQAAAAEACADvPwAAAQAIAAAAAAAAAAAA
-					AQAAAAEBAAAvAAAABAAAAAMDAAAAAQAA2AAA
-					AAECAAA3YmQ0YmI4OWQ2NTc3Njc0ZWM4MmU1
-					YTE2ZjMwZTgxOGY0NjczOTcxOzAwMDAwMDAw
-					OzAwMDAwMDAwMDAwMDAwMjA7Y29tLmFwcGxl
-					LmFwcC1zYW5kYm94LnJlYWQtd3JpdGU7MDAw
-					MDAwMDE7MDEwMDAwMDI7MDAwMDAwMDAwM2Y4
-					ZGNiYTsvdXNlcnMvZ3JhbnRkYXZpcy93b3Jr
-					c3BhY2UvYnVtL2Fzc2V0cy9hcnR3b3JrL2No
-					YXJhY3RlciBzcHJpdGVzL2J1bS1raWNrLTAx
-					LnBuZwDwAAAA/v///wEAAAAAAAAAEwAAAAQQ
-					AACcAAAAAAAAAAUQAABEAQAAAAAAABAQAAB8
-					AQAAAAAAAEAQAABsAQAAAAAAAFQQAACkAQAA
-					AAAAAFUQAACwAQAAAAAAAFYQAACcAQAAAAAA
-					AAIgAABYAgAAAAAAABAgAADYAQAAAAAAABEg
-					AAAMAgAAAAAAABIgAADsAQAAAAAAABMgAAD8
-					AQAAAAAAACAgAAA4AgAAAAAAADAgAACcAQAA
-					AAAAAAHAAAC8AQAAAAAAABHAAAAUAAAAAAAA
-					ABLAAADMAQAAAAAAABDQAABkAgAAAAAAAIDw
-					AABwAgAAAAAAAA==
+					ZGF2aXMAABEAAAABAQAAR3Jhdml0eSBDb3Jl
+					IEFwcHMAAAAIAAAAAQEAAEJ1bSBHYW1lGwAA
+					AAEBAABkb2N1bWVudHMtZXhwb3J0LTIwMTMt
+					MDQtMDIACAAAAAEBAABpZGxlLnBuZxgAAAAB
+					BgAABAAAABQAAAAoAAAARAAAAFQAAAB4AAAA
+					CAAAAAQDAAAXuxAAAAAAAAgAAAAEAwAAmd0Q
+					AAAAAAAIAAAABAMAAPweWgEAAAAACAAAAAQD
+					AACh2N8DAAAAAAgAAAAEAwAAM9QPBAAAAAAI
+					AAAABAMAADXUDwQAAAAAGAAAAAEGAACoAAAA
+					uAAAAMgAAADYAAAA6AAAAPgAAAAIAAAAAAQA
+					AEG3A/myAAAAGAAAAAECAAABAAAAAAAAAA8A
+					AAAAAAAAAAAAAAAAAAAAAAAAAQUAAAQAAAAD
+					AwAABwAAAAQAAAADAwAABAAAAAgAAAAEAwAA
+					BAAAAAAAAAAEAAAAAwMAAPUBAAAMAAAAAQEA
+					AE1hY2ludG9zaCBIRAgAAAAEAwAAAGAxgWAA
+					AAAIAAAAAAQAAEG1aKWpAAAAJAAAAAEBAAA2
+					ODJCOTI0My03Q0U3LTNGNTEtOUZCOC0yQjVG
+					QUIzQTQyQkMYAAAAAQIAAIEAAAABAAgA7z8A
+					AAEACAAAAAAAAAAAAAEAAAABAQAALwAAAAQA
+					AAADAwAAAAEAANkAAAABAgAAYzBjZWU2MTJj
+					Nzg2YTlkNmZjMTVlM2U4MWY4OWQ2MTAxNjA3
+					NGZmOTswMDAwMDAwMDswMDAwMDAwMDAwMDAw
+					MDIwO2NvbS5hcHBsZS5hcHAtc2FuZGJveC5y
+					ZWFkLXdyaXRlOzAwMDAwMDAxOzAxMDAwMDAz
+					OzAwMDAwMDAwMDQwZmQ0MzU7L3VzZXJzL2dy
+					YW50ZGF2aXMvZ3Jhdml0eSBjb3JlIGFwcHMv
+					YnVtIGdhbWUvZG9jdW1lbnRzLWV4cG9ydC0y
+					MDEzLTA0LTAyL2lkbGUucG5nAAAAAPAAAAD+
+					////AQAAAAAAAAATAAAABBAAAIgAAAAAAAAA
+					BRAAAAgBAAAAAAAAEBAAADgBAAAAAAAAQBAA
+					ACgBAAAAAAAAVBAAAGABAAAAAAAAVRAAAGwB
+					AAAAAAAAVhAAAFgBAAAAAAAAAiAAABQCAAAA
+					AAAAECAAAJQBAAAAAAAAESAAAMgBAAAAAAAA
+					EiAAAKgBAAAAAAAAEyAAALgBAAAAAAAAICAA
+					APQBAAAAAAAAMCAAAFgBAAAAAAAAAcAAAHgB
+					AAAAAAAAEcAAABQAAAAAAAAAEsAAAIgBAAAA
+					AAAAENAAACACAAAAAAAAgPAAACwCAAAAAAAA
 					</data>
 					<key>IsSHSprite</key>
 					<true/>
@@ -325,10 +320,10 @@
 								<key>Fixture</key>
 								<array>
 									<array>
-										<string>{-62.5, -86.5}</string>
-										<string>{81.25, -86.5}</string>
-										<string>{81.25, 91.5}</string>
-										<string>{-62.5, 91.5}</string>
+										<string>{-64, -77.625}</string>
+										<string>{40.75, -77.625}</string>
+										<string>{40.75, 77.625}</string>
+										<string>{-64, 77.625}</string>
 									</array>
 								</array>
 								<key>Friction</key>
@@ -336,7 +331,7 @@
 								<key>Group</key>
 								<integer>0</integer>
 								<key>Height</key>
-								<real>712</real>
+								<real>621</real>
 								<key>HolesPoints</key>
 								<array/>
 								<key>IsCircle</key>
@@ -346,215 +341,11 @@
 								<key>IsSensor</key>
 								<false/>
 								<key>LHHeight</key>
-								<real>178</real>
+								<real>155.25</real>
 								<key>LHShapePositionOffset</key>
-								<string>{-62.5, -91.5}</string>
+								<string>{-64, -77.625}</string>
 								<key>LHWidth</key>
-								<real>143.75</real>
-								<key>Mask</key>
-								<integer>65535</integer>
-								<key>Name</key>
-								<string>UntitledFixture</string>
-								<key>Restitution</key>
-								<real>0.20000000298023224</real>
-								<key>ShapePoints</key>
-								<array>
-									<string>{0, 0}</string>
-									<string>{3.5208595475486406e-14, 575}</string>
-									<string>{-712, 575}</string>
-									<string>{-712, 4.3597426049645776e-14}</string>
-								</array>
-								<key>ShapePositionOffset</key>
-								<string>{0, 0}</string>
-								<key>Tag</key>
-								<integer>0</integer>
-								<key>Width</key>
-								<real>575</real>
-							</dict>
-						</array>
-						<key>Type</key>
-						<integer>2</integer>
-					</dict>
-					<key>SHSheetName</key>
-					<string>Bum</string>
-					<key>SHSpriteName</key>
-					<string>bum-kick-01</string>
-					<key>SheetImage</key>
-					<string>sprites_Bum.png</string>
-					<key>SheetImage-HD</key>
-					<string>sprites_Bum-ipadhd.png</string>
-					<key>TextureProperties</key>
-					<dict>
-						<key>Angle</key>
-						<integer>0</integer>
-						<key>Border</key>
-						<integer>0</integer>
-						<key>CanBeTrimmed</key>
-						<true/>
-						<key>Color</key>
-						<string>{{1, 1}, {1, 1}}</string>
-						<key>ConvertedFromOldFormat</key>
-						<false/>
-						<key>CustomClassName</key>
-						<string></string>
-						<key>FlipX</key>
-						<false/>
-						<key>FlipY</key>
-						<false/>
-						<key>Frame</key>
-						<string>{{813, 2}, {143.75, 178}}</string>
-						<key>Frame-HD</key>
-						<string>{{3252, 8}, {575, 712}}</string>
-						<key>Image</key>
-						<string>sprites_Bum.png</string>
-						<key>Image-HD</key>
-						<string>sprites_Bum-ipadhd.png</string>
-						<key>IsCropped</key>
-						<false/>
-						<key>IsDrawable</key>
-						<true/>
-						<key>IsRotated</key>
-						<true/>
-						<key>IsTrimmed</key>
-						<true/>
-						<key>Name</key>
-						<string>bum-kick-01</string>
-						<key>Opacity</key>
-						<real>1</real>
-						<key>OriginalImage</key>
-						<string>/Users/grantdavis/Workspace/Bum/Assets/artwork/character sprites/bum-kick-01.png</string>
-						<key>OriginalImage_RelativePath</key>
-						<string>../../../../Assets/artwork/character%20sprites/bum-kick-01.png/</string>
-						<key>OriginalRect</key>
-						<string>{{77, 78}, {575, 712}}</string>
-						<key>OriginalSize</key>
-						<string>{654, 888}</string>
-						<key>Position</key>
-						<string>{3252, 8}</string>
-						<key>Scale</key>
-						<string>{1, 1}</string>
-						<key>SpriteSize</key>
-						<string>{163.5, 222}</string>
-						<key>SpriteWasBreaked</key>
-						<false/>
-						<key>Tag</key>
-						<integer>0</integer>
-						<key>TextureOffset</key>
-						<string>{9.375, 2.5}</string>
-						<key>UsesBatchRendering</key>
-						<true/>
-						<key>ZOrder</key>
-						<integer>0</integer>
-					</dict>
-				</dict>
-				<key>bum-run-01</key>
-				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9va3gEAAAAAAQQMAAAAAAAAAAAAAAAAAAA
-					AAAAAAAAAAAAAAAAAAAAAAAAAAAAUAMAAAUA
-					AAABAQAAVXNlcnMAAAAKAAAAAQEAAGdyYW50
-					ZGF2aXMAAAkAAAABAQAAV29ya3NwYWNlAAAA
-					AwAAAAEBAABCdW0ABgAAAAEBAABBc3NldHMA
-					AAcAAAABAQAAYXJ0d29yawARAAAAAQEAAGNo
-					YXJhY3RlciBzcHJpdGVzAAAADgAAAAEBAABi
-					dW0tcnVuLTAxLnBuZwAAIAAAAAEGAAAEAAAA
-					FAAAACgAAAA8AAAASAAAAFgAAABoAAAAhAAA
-					AAgAAAAEAwAAF7sQAAAAAAAIAAAABAMAAJnd
-					EAAAAAAACAAAAAQDAADAeBcAAAAAAAgAAAAE
-					AwAAR/fbAwAAAAAIAAAABAMAAHO/3wMAAAAA
-					CAAAAAQDAACk2N8DAAAAAAgAAAAEAwAAs7r4
-					AwAAAAAIAAAABAMAALe6+AMAAAAAIAAAAAEG
-					AADEAAAA1AAAAOQAAAD0AAAABAEAABQBAAAk
-					AQAANAEAAAgAAAAABAAAQbb7fgUAAAAYAAAA
-					AQIAAAEAAAAAAAAADwAAAAAAAAAAAAAAAAAA
-					AAAAAAABBQAABAAAAAMDAAAFAAAABAAAAAMD
-					AAAEAAAACAAAAAQDAAAGAAAAAAAAAAQAAAAD
-					AwAA9QEAAAwAAAABAQAATWFjaW50b3NoIEhE
-					CAAAAAQDAAAAYDGBYAAAAAgAAAAABAAAQbVo
-					pakAAAAkAAAAAQEAADY4MkI5MjQzLTdDRTct
-					M0Y1MS05RkI4LTJCNUZBQjNBNDJCQxgAAAAB
-					AgAAgQAAAAEACADvPwAAAQAIAAAAAAAAAAAA
-					AQAAAAEBAAAvAAAABAAAAAMDAAAAAQAA1wAA
-					AAECAAAwNjY4OTk5NzUwMmU3ZDFhYmU4YTk1
-					ZTNlOTRkOWVmNGM0NGQ4MzY5OzAwMDAwMDAw
-					OzAwMDAwMDAwMDAwMDAwMjA7Y29tLmFwcGxl
-					LmFwcC1zYW5kYm94LnJlYWQtd3JpdGU7MDAw
-					MDAwMDE7MDEwMDAwMDI7MDAwMDAwMDAwM2Y4
-					YmFiNzsvdXNlcnMvZ3JhbnRkYXZpcy93b3Jr
-					c3BhY2UvYnVtL2Fzc2V0cy9hcnR3b3JrL2No
-					YXJhY3RlciBzcHJpdGVzL2J1bS1ydW4tMDEu
-					cG5nAADwAAAA/v///wEAAAAAAAAAEwAAAAQQ
-					AACcAAAAAAAAAAUQAABEAQAAAAAAABAQAAB8
-					AQAAAAAAAEAQAABsAQAAAAAAAFQQAACkAQAA
-					AAAAAFUQAACwAQAAAAAAAFYQAACcAQAAAAAA
-					AAIgAABYAgAAAAAAABAgAADYAQAAAAAAABEg
-					AAAMAgAAAAAAABIgAADsAQAAAAAAABMgAAD8
-					AQAAAAAAACAgAAA4AgAAAAAAADAgAACcAQAA
-					AAAAAAHAAAC8AQAAAAAAABHAAAAUAAAAAAAA
-					ABLAAADMAQAAAAAAABDQAABkAgAAAAAAAIDw
-					AABwAgAAAAAAAA==
-					</data>
-					<key>IsSHSprite</key>
-					<true/>
-					<key>PhysicProperties</key>
-					<dict>
-						<key>AngularDamping</key>
-						<real>0.0</real>
-						<key>AngularVelocity</key>
-						<real>0.0</real>
-						<key>CanSleep</key>
-						<true/>
-						<key>FixedRot</key>
-						<true/>
-						<key>GravityScale</key>
-						<real>1</real>
-						<key>HandledBySH</key>
-						<true/>
-						<key>IsBullet</key>
-						<false/>
-						<key>LinearDamping</key>
-						<real>0.0</real>
-						<key>LinearVelocity</key>
-						<string>{0, 0}</string>
-						<key>SH_ComplexShapes</key>
-						<array>
-							<dict>
-								<key>Angle</key>
-								<integer>0</integer>
-								<key>Category</key>
-								<integer>1</integer>
-								<key>Density</key>
-								<real>1</real>
-								<key>Fixture</key>
-								<array>
-									<array>
-										<string>{-50.279519978518238, -76.779519978518238}</string>
-										<string>{55.197416759641328, -76.779519978518238}</string>
-										<string>{55.197416759641328, 75.896678690967519}</string>
-										<string>{-50.279519978518238, 75.896678690967519}</string>
-									</array>
-								</array>
-								<key>Friction</key>
-								<real>0.10000000149011612</real>
-								<key>Group</key>
-								<integer>0</integer>
-								<key>Height</key>
-								<real>777</real>
-								<key>HolesPoints</key>
-								<array/>
-								<key>IsCircle</key>
-								<false/>
-								<key>IsRectangle</key>
-								<true/>
-								<key>IsSensor</key>
-								<false/>
-								<key>LHHeight</key>
-								<real>194.25</real>
-								<key>LHShapePositionOffset</key>
-								<string>{-72.5, -95.25}</string>
-								<key>LHWidth</key>
-								<real>142.75</real>
+								<real>104.75</real>
 								<key>Mask</key>
 								<integer>65535</integer>
 								<key>Name</key>
@@ -563,221 +354,17 @@
 								<real>0.0</real>
 								<key>ShapePoints</key>
 								<array>
-									<string>{88.88192008592705, 77.413285236129894}</string>
-									<string>{510.78966703856531, 77.413285236129894}</string>
-									<string>{510.78966703856531, 688.11807991407295}</string>
-									<string>{88.88192008592705, 688.11807991407295}</string>
-								</array>
-								<key>ShapePositionOffset</key>
-								<string>{0, 0}</string>
-								<key>Tag</key>
-								<integer>0</integer>
-								<key>Width</key>
-								<real>571</real>
-							</dict>
-						</array>
-						<key>Type</key>
-						<integer>2</integer>
-					</dict>
-					<key>SHSheetName</key>
-					<string>Bum</string>
-					<key>SHSpriteName</key>
-					<string>bum-run-01</string>
-					<key>SheetImage</key>
-					<string>sprites_Bum.png</string>
-					<key>SheetImage-HD</key>
-					<string>sprites_Bum-ipadhd.png</string>
-					<key>TextureProperties</key>
-					<dict>
-						<key>Angle</key>
-						<integer>0</integer>
-						<key>Border</key>
-						<integer>0</integer>
-						<key>CanBeTrimmed</key>
-						<true/>
-						<key>Color</key>
-						<string>{{1, 1}, {1, 1}}</string>
-						<key>ConvertedFromOldFormat</key>
-						<false/>
-						<key>CustomClassName</key>
-						<string></string>
-						<key>FlipX</key>
-						<false/>
-						<key>FlipY</key>
-						<false/>
-						<key>Frame</key>
-						<string>{{516, 2}, {142.75, 194.75}}</string>
-						<key>Frame-HD</key>
-						<string>{{2064, 8}, {571, 777}}</string>
-						<key>Image</key>
-						<string>sprites_Bum.png</string>
-						<key>Image-HD</key>
-						<string>sprites_Bum-ipadhd.png</string>
-						<key>IsCropped</key>
-						<false/>
-						<key>IsDrawable</key>
-						<true/>
-						<key>IsRotated</key>
-						<false/>
-						<key>IsTrimmed</key>
-						<true/>
-						<key>Name</key>
-						<string>bum-run-01</string>
-						<key>Opacity</key>
-						<real>1</real>
-						<key>OriginalImage</key>
-						<string>/Users/grantdavis/Workspace/Bum/Assets/artwork/character sprites/bum-run-01.png</string>
-						<key>OriginalImage_RelativePath</key>
-						<string>../../../../Assets/artwork/character%20sprites/bum-run-01.png/</string>
-						<key>OriginalRect</key>
-						<string>{{37, 63}, {571, 777}}</string>
-						<key>OriginalSize</key>
-						<string>{654, 888}</string>
-						<key>Position</key>
-						<string>{2064, 8}</string>
-						<key>Scale</key>
-						<string>{1, 1}</string>
-						<key>SpriteSize</key>
-						<string>{163.5, 222}</string>
-						<key>SpriteWasBreaked</key>
-						<false/>
-						<key>Tag</key>
-						<integer>0</integer>
-						<key>TextureOffset</key>
-						<string>{-1.125, -2.125}</string>
-						<key>UsesBatchRendering</key>
-						<true/>
-						<key>ZOrder</key>
-						<integer>0</integer>
-					</dict>
-				</dict>
-				<key>bum-throw-01</key>
-				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9va3wEAAAAAAQQMAAAAAAAAAAAAAAAAAAA
-					AAAAAAAAAAAAAAAAAAAAAAAAAAAAVAMAAAUA
-					AAABAQAAVXNlcnMAAAAKAAAAAQEAAGdyYW50
-					ZGF2aXMAAAkAAAABAQAAV29ya3NwYWNlAAAA
-					AwAAAAEBAABCdW0ABgAAAAEBAABBc3NldHMA
-					AAcAAAABAQAAYXJ0d29yawARAAAAAQEAAGNo
-					YXJhY3RlciBzcHJpdGVzAAAAEAAAAAEBAABi
-					dW0tdGhyb3ctMDEucG5nIAAAAAEGAAAEAAAA
-					FAAAACgAAAA8AAAASAAAAFgAAABoAAAAhAAA
-					AAgAAAAEAwAAF7sQAAAAAAAIAAAABAMAAJnd
-					EAAAAAAACAAAAAQDAADAeBcAAAAAAAgAAAAE
-					AwAAR/fbAwAAAAAIAAAABAMAAHO/3wMAAAAA
-					CAAAAAQDAACk2N8DAAAAAAgAAAAEAwAAs7r4
-					AwAAAAAIAAAABAMAAOrc+AMAAAAAIAAAAAEG
-					AADEAAAA1AAAAOQAAAD0AAAABAEAABQBAAAk
-					AQAANAEAAAgAAAAABAAAQbb7gzEAAAAYAAAA
-					AQIAAAEAAAAAAAAADwAAAAAAAAAAAAAAAAAA
-					AAAAAAABBQAABAAAAAMDAAAFAAAABAAAAAMD
-					AAAEAAAACAAAAAQDAAAGAAAAAAAAAAQAAAAD
-					AwAA9QEAAAwAAAABAQAATWFjaW50b3NoIEhE
-					CAAAAAQDAAAAYDGBYAAAAAgAAAAABAAAQbVo
-					pakAAAAkAAAAAQEAADY4MkI5MjQzLTdDRTct
-					M0Y1MS05RkI4LTJCNUZBQjNBNDJCQxgAAAAB
-					AgAAgQAAAAEACADvPwAAAQAIAAAAAAAAAAAA
-					AQAAAAEBAAAvAAAABAAAAAMDAAAAAQAA2QAA
-					AAECAABjYTg0OTI0YjhlZmMzZTZjMjEyMGVk
-					MWIyYzUwMzA3MGEwZGE5YjZhOzAwMDAwMDAw
-					OzAwMDAwMDAwMDAwMDAwMjA7Y29tLmFwcGxl
-					LmFwcC1zYW5kYm94LnJlYWQtd3JpdGU7MDAw
-					MDAwMDE7MDEwMDAwMDI7MDAwMDAwMDAwM2Y4
-					ZGNlYTsvdXNlcnMvZ3JhbnRkYXZpcy93b3Jr
-					c3BhY2UvYnVtL2Fzc2V0cy9hcnR3b3JrL2No
-					YXJhY3RlciBzcHJpdGVzL2J1bS10aHJvdy0w
-					MS5wbmcAAAAA8AAAAP7///8BAAAAAAAAABMA
-					AAAEEAAAnAAAAAAAAAAFEAAARAEAAAAAAAAQ
-					EAAAfAEAAAAAAABAEAAAbAEAAAAAAABUEAAA
-					pAEAAAAAAABVEAAAsAEAAAAAAABWEAAAnAEA
-					AAAAAAACIAAAWAIAAAAAAAAQIAAA2AEAAAAA
-					AAARIAAADAIAAAAAAAASIAAA7AEAAAAAAAAT
-					IAAA/AEAAAAAAAAgIAAAOAIAAAAAAAAwIAAA
-					nAEAAAAAAAABwAAAvAEAAAAAAAARwAAAFAAA
-					AAAAAAASwAAAzAEAAAAAAAAQ0AAAZAIAAAAA
-					AACA8AAAcAIAAAAAAAA=
-					</data>
-					<key>IsSHSprite</key>
-					<true/>
-					<key>PhysicProperties</key>
-					<dict>
-						<key>AngularDamping</key>
-						<real>0.0</real>
-						<key>AngularVelocity</key>
-						<real>0.0</real>
-						<key>CanSleep</key>
-						<true/>
-						<key>FixedRot</key>
-						<true/>
-						<key>GravityScale</key>
-						<real>1</real>
-						<key>HandledBySH</key>
-						<true/>
-						<key>IsBullet</key>
-						<false/>
-						<key>LinearDamping</key>
-						<real>0.0</real>
-						<key>LinearVelocity</key>
-						<string>{0, 0}</string>
-						<key>SH_ComplexShapes</key>
-						<array>
-							<dict>
-								<key>Angle</key>
-								<integer>0</integer>
-								<key>Category</key>
-								<integer>1</integer>
-								<key>Density</key>
-								<real>0.20000000298023224</real>
-								<key>Fixture</key>
-								<array>
-									<array>
-										<string>{-68.5, -88}</string>
-										<string>{81.75, -88}</string>
-										<string>{81.75, 91.75}</string>
-										<string>{-68.5, 91.75}</string>
-									</array>
-								</array>
-								<key>Friction</key>
-								<real>0.20000000298023224</real>
-								<key>Group</key>
-								<integer>0</integer>
-								<key>Height</key>
-								<real>719</real>
-								<key>HolesPoints</key>
-								<array/>
-								<key>IsCircle</key>
-								<false/>
-								<key>IsRectangle</key>
-								<true/>
-								<key>IsSensor</key>
-								<false/>
-								<key>LHHeight</key>
-								<real>179.75</real>
-								<key>LHShapePositionOffset</key>
-								<string>{-68.5, -91.75}</string>
-								<key>LHWidth</key>
-								<real>150.25</real>
-								<key>Mask</key>
-								<integer>65535</integer>
-								<key>Name</key>
-								<string>UntitledFixture</string>
-								<key>Restitution</key>
-								<real>0.20000000298023224</real>
-								<key>ShapePoints</key>
-								<array>
 									<string>{0, 0}</string>
-									<string>{601, 0}</string>
-									<string>{601, 719}</string>
-									<string>{0, 719}</string>
+									<string>{419, 0}</string>
+									<string>{419, 621}</string>
+									<string>{0, 621}</string>
 								</array>
 								<key>ShapePositionOffset</key>
 								<string>{0, 0}</string>
 								<key>Tag</key>
 								<integer>0</integer>
 								<key>Width</key>
-								<real>601</real>
+								<real>419</real>
 							</dict>
 						</array>
 						<key>Type</key>
@@ -786,7 +373,7 @@
 					<key>SHSheetName</key>
 					<string>Bum</string>
 					<key>SHSpriteName</key>
-					<string>bum-throw-01</string>
+					<string>idle</string>
 					<key>SheetImage</key>
 					<string>sprites_Bum.png</string>
 					<key>SheetImage-HD</key>
@@ -810,9 +397,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{655, 5}, {150.75, 179.75}}</string>
+						<string>{{761, 2}, {104.75, 155.75}}</string>
 						<key>Frame-HD</key>
-						<string>{{2620, 20}, {601, 719}}</string>
+						<string>{{3044, 8}, {419, 621}}</string>
 						<key>Image</key>
 						<string>sprites_Bum.png</string>
 						<key>Image-HD</key>
@@ -826,29 +413,29 @@
 						<key>IsTrimmed</key>
 						<true/>
 						<key>Name</key>
-						<string>bum-throw-01</string>
+						<string>idle</string>
 						<key>Opacity</key>
 						<real>1</real>
 						<key>OriginalImage</key>
-						<string>/Users/grantdavis/Workspace/Bum/Assets/artwork/character sprites/bum-throw-01.png</string>
+						<string>/Users/grantdavis/Gravity Core Apps/Bum Game/documents-export-2013-04-02/idle.png</string>
 						<key>OriginalImage_RelativePath</key>
-						<string>../../../../Assets/artwork/character%20sprites/bum-throw-01.png/</string>
+						<string>../../../../../../Gravity%20Core%20Apps/Bum%20Game/documents-export-2013-04-02/idle.png/</string>
 						<key>OriginalRect</key>
-						<string>{{53, 77}, {601, 719}}</string>
+						<string>{{9, 0}, {419, 621}}</string>
 						<key>OriginalSize</key>
-						<string>{654, 888}</string>
+						<string>{530, 621}</string>
 						<key>Position</key>
-						<string>{2620, 20}</string>
+						<string>{3044, 8}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
-						<string>{163.5, 222}</string>
+						<string>{132.5, 155.25}</string>
 						<key>SpriteWasBreaked</key>
 						<false/>
 						<key>Tag</key>
 						<integer>0</integer>
 						<key>TextureOffset</key>
-						<string>{6.875, 1.875}</string>
+						<string>{-11.625, -0.25}</string>
 						<key>UsesBatchRendering</key>
 						<true/>
 						<key>ZOrder</key>
@@ -884,11 +471,11 @@
 					LTlGQjgtMkI1RkFCM0E0MkJDGAAAAAECAACB
 					AAAAAQAIAO8/AAABAAgAAAAAAAAAAAABAAAA
 					AQEAAC8AAAAEAAAAAwMAAAABAADUAAAAAQIA
-					ADVhZmRmNjhkMjFlOWIyM2U1ZDk3OTJlOTI3
-					ZmUwMDY2ZmJhMGVmZjg7MDAwMDAwMDA7MDAw
+					ADFiYjJhMWIzMzBjNWUwODMyZjRkMmI4MjBh
+					MDU4MzY0ZTMzNjY5MjM7MDAwMDAwMDA7MDAw
 					MDAwMDAwMDAwMDAyMDtjb20uYXBwbGUuYXBw
 					LXNhbmRib3gucmVhZC13cml0ZTswMDAwMDAw
-					MTswMTAwMDAwMjswMDAwMDAwMDAzZjhkYmUx
+					MTswMTAwMDAwMzswMDAwMDAwMDAzZjhkYmUx
 					Oy91c2Vycy9ncmFudGRhdmlzL3dvcmtzcGFj
 					ZS9idW0vYXNzZXRzL2FydHdvcmsvbGV2ZWwg
 					c3ByaXRlcy9tb2NrLWdyb3VuZC5wbmcA8AAA
@@ -1059,6 +646,409 @@
 						<integer>0</integer>
 					</dict>
 				</dict>
+				<key>run</key>
+				<dict>
+					<key>DocumentSecurityImageBookmark</key>
+					<data>
+					Ym9vazQEAAAAAAQQMAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAADAMAAAUA
+					AAABAQAAVXNlcnMAAAAKAAAAAQEAAGdyYW50
+					ZGF2aXMAABEAAAABAQAAR3Jhdml0eSBDb3Jl
+					IEFwcHMAAAAIAAAAAQEAAEJ1bSBHYW1lGwAA
+					AAEBAABkb2N1bWVudHMtZXhwb3J0LTIwMTMt
+					MDQtMDIABwAAAAEBAABydW4ucG5nABgAAAAB
+					BgAABAAAABQAAAAoAAAARAAAAFQAAAB4AAAA
+					CAAAAAQDAAAXuxAAAAAAAAgAAAAEAwAAmd0Q
+					AAAAAAAIAAAABAMAAPweWgEAAAAACAAAAAQD
+					AACh2N8DAAAAAAgAAAAEAwAAM9QPBAAAAAAI
+					AAAABAMAADfUDwQAAAAAGAAAAAEGAACoAAAA
+					uAAAAMgAAADYAAAA6AAAAPgAAAAIAAAAAAQA
+					AEG3A/m2AAAAGAAAAAECAAABAAAAAAAAAA8A
+					AAAAAAAAAAAAAAAAAAAAAAAAAQUAAAQAAAAD
+					AwAABwAAAAQAAAADAwAABAAAAAgAAAAEAwAA
+					BAAAAAAAAAAEAAAAAwMAAPUBAAAMAAAAAQEA
+					AE1hY2ludG9zaCBIRAgAAAAEAwAAAGAxgWAA
+					AAAIAAAAAAQAAEG1aKWpAAAAJAAAAAEBAAA2
+					ODJCOTI0My03Q0U3LTNGNTEtOUZCOC0yQjVG
+					QUIzQTQyQkMYAAAAAQIAAIEAAAABAAgA7z8A
+					AAEACAAAAAAAAAAAAAEAAAABAQAALwAAAAQA
+					AAADAwAAAAEAANgAAAABAgAAYTU4MjFkNmJk
+					ZjJmMjM5NTc2MmRhNjY0ZjRiNjBiYjAxYjUw
+					MjdmNDswMDAwMDAwMDswMDAwMDAwMDAwMDAw
+					MDIwO2NvbS5hcHBsZS5hcHAtc2FuZGJveC5y
+					ZWFkLXdyaXRlOzAwMDAwMDAxOzAxMDAwMDAz
+					OzAwMDAwMDAwMDQwZmQ0Mzc7L3VzZXJzL2dy
+					YW50ZGF2aXMvZ3Jhdml0eSBjb3JlIGFwcHMv
+					YnVtIGdhbWUvZG9jdW1lbnRzLWV4cG9ydC0y
+					MDEzLTA0LTAyL3J1bi5wbmcA8AAAAP7///8B
+					AAAAAAAAABMAAAAEEAAAiAAAAAAAAAAFEAAA
+					CAEAAAAAAAAQEAAAOAEAAAAAAABAEAAAKAEA
+					AAAAAABUEAAAYAEAAAAAAABVEAAAbAEAAAAA
+					AABWEAAAWAEAAAAAAAACIAAAFAIAAAAAAAAQ
+					IAAAlAEAAAAAAAARIAAAyAEAAAAAAAASIAAA
+					qAEAAAAAAAATIAAAuAEAAAAAAAAgIAAA9AEA
+					AAAAAAAwIAAAWAEAAAAAAAABwAAAeAEAAAAA
+					AAARwAAAFAAAAAAAAAASwAAAiAEAAAAAAAAQ
+					0AAAIAIAAAAAAACA8AAALAIAAAAAAAA=
+					</data>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<true/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Category</key>
+								<integer>1</integer>
+								<key>Density</key>
+								<real>0.20000000298023224</real>
+								<key>Fixture</key>
+								<array>
+									<array>
+										<string>{-65.5, -58.125}</string>
+										<string>{43.25, -58.125}</string>
+										<string>{43.25, 77.625}</string>
+										<string>{-65.5, 77.625}</string>
+									</array>
+								</array>
+								<key>Friction</key>
+								<real>0.20000000298023224</real>
+								<key>Group</key>
+								<integer>0</integer>
+								<key>Height</key>
+								<real>543</real>
+								<key>HolesPoints</key>
+								<array/>
+								<key>IsCircle</key>
+								<false/>
+								<key>IsRectangle</key>
+								<true/>
+								<key>IsSensor</key>
+								<false/>
+								<key>LHHeight</key>
+								<real>135.75</real>
+								<key>LHShapePositionOffset</key>
+								<string>{-65.5, -77.625}</string>
+								<key>LHWidth</key>
+								<real>108.75</real>
+								<key>Mask</key>
+								<integer>65535</integer>
+								<key>Name</key>
+								<string>UntitledFixture</string>
+								<key>Restitution</key>
+								<real>0.20000000298023224</real>
+								<key>ShapePoints</key>
+								<array>
+									<string>{0, 0}</string>
+									<string>{2.6636067881454933e-14, 435}</string>
+									<string>{-543, 435.00000000000006}</string>
+									<string>{-543, 3.3249160596850637e-14}</string>
+								</array>
+								<key>ShapePositionOffset</key>
+								<string>{0, 0}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>Width</key>
+								<real>435</real>
+							</dict>
+						</array>
+						<key>Type</key>
+						<integer>2</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>Bum</string>
+					<key>SHSpriteName</key>
+					<string>run</string>
+					<key>SheetImage</key>
+					<string>sprites_Bum.png</string>
+					<key>SheetImage-HD</key>
+					<string>sprites_Bum-ipadhd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{867, 2}, {108.75, 135.75}}</string>
+						<key>Frame-HD</key>
+						<string>{{3468, 8}, {435, 543}}</string>
+						<key>Image</key>
+						<string>sprites_Bum.png</string>
+						<key>Image-HD</key>
+						<string>sprites_Bum-ipadhd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<true/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>run</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/grantdavis/Gravity Core Apps/Bum Game/documents-export-2013-04-02/run.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../../../../../../Gravity%20Core%20Apps/Bum%20Game/documents-export-2013-04-02/run.png/</string>
+						<key>OriginalRect</key>
+						<string>{{3, 0}, {435, 543}}</string>
+						<key>OriginalSize</key>
+						<string>{530, 621}</string>
+						<key>Position</key>
+						<string>{3468, 8}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{132.5, 155.25}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{-11.125, 9.75}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>throw</key>
+				<dict>
+					<key>DocumentSecurityImageBookmark</key>
+					<data>
+					Ym9vazwEAAAAAAQQMAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAFAMAAAUA
+					AAABAQAAVXNlcnMAAAAKAAAAAQEAAGdyYW50
+					ZGF2aXMAABEAAAABAQAAR3Jhdml0eSBDb3Jl
+					IEFwcHMAAAAIAAAAAQEAAEJ1bSBHYW1lGwAA
+					AAEBAABkb2N1bWVudHMtZXhwb3J0LTIwMTMt
+					MDQtMDIACQAAAAEBAAB0aHJvdy5wbmcAAAAY
+					AAAAAQYAAAQAAAAUAAAAKAAAAEQAAABUAAAA
+					eAAAAAgAAAAEAwAAF7sQAAAAAAAIAAAABAMA
+					AJndEAAAAAAACAAAAAQDAAD8HloBAAAAAAgA
+					AAAEAwAAodjfAwAAAAAIAAAABAMAADPUDwQA
+					AAAACAAAAAQDAAA21A8EAAAAABgAAAABBgAA
+					rAAAALwAAADMAAAA3AAAAOwAAAD8AAAACAAA
+					AAAEAABBtwP5sAAAABgAAAABAgAAAQAAAAAA
+					AAAPAAAAAAAAAAAAAAAAAAAAAAAAAAEFAAAE
+					AAAAAwMAAAcAAAAEAAAAAwMAAAQAAAAIAAAA
+					BAMAAAQAAAAAAAAABAAAAAMDAAD1AQAADAAA
+					AAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAABg
+					MYFgAAAACAAAAAAEAABBtWilqQAAACQAAAAB
+					AQAANjgyQjkyNDMtN0NFNy0zRjUxLTlGQjgt
+					MkI1RkFCM0E0MkJDGAAAAAECAACBAAAAAQAI
+					AO8/AAABAAgAAAAAAAAAAAABAAAAAQEAAC8A
+					AAAEAAAAAwMAAAABAADaAAAAAQIAAGU4MTI4
+					MjAzYWRjYWFmNjQyNGJkYzM1MWQwMTA2ZWJm
+					ZTNhNmYyYzU7MDAwMDAwMDA7MDAwMDAwMDAw
+					MDAwMDAyMDtjb20uYXBwbGUuYXBwLXNhbmRi
+					b3gucmVhZC13cml0ZTswMDAwMDAwMTswMTAw
+					MDAwMzswMDAwMDAwMDA0MGZkNDM2Oy91c2Vy
+					cy9ncmFudGRhdmlzL2dyYXZpdHkgY29yZSBh
+					cHBzL2J1bSBnYW1lL2RvY3VtZW50cy1leHBv
+					cnQtMjAxMy0wNC0wMi90aHJvdy5wbmcAAADw
+					AAAA/v///wEAAAAAAAAAEwAAAAQQAACMAAAA
+					AAAAAAUQAAAMAQAAAAAAABAQAAA8AQAAAAAA
+					AEAQAAAsAQAAAAAAAFQQAABkAQAAAAAAAFUQ
+					AABwAQAAAAAAAFYQAABcAQAAAAAAAAIgAAAY
+					AgAAAAAAABAgAACYAQAAAAAAABEgAADMAQAA
+					AAAAABIgAACsAQAAAAAAABMgAAC8AQAAAAAA
+					ACAgAAD4AQAAAAAAADAgAABcAQAAAAAAAAHA
+					AAB8AQAAAAAAABHAAAAUAAAAAAAAABLAAACM
+					AQAAAAAAABDQAAAkAgAAAAAAAIDwAAAwAgAA
+					AAAAAA==
+					</data>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<true/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Category</key>
+								<integer>1</integer>
+								<key>Density</key>
+								<real>0.20000000298023224</real>
+								<key>Fixture</key>
+								<array>
+									<array>
+										<string>{-65.5, -77.625}</string>
+										<string>{65.5, -77.625}</string>
+										<string>{65.5, 77.625}</string>
+										<string>{-65.5, 77.625}</string>
+									</array>
+								</array>
+								<key>Friction</key>
+								<real>0.20000000298023224</real>
+								<key>Group</key>
+								<integer>0</integer>
+								<key>Height</key>
+								<real>621</real>
+								<key>HolesPoints</key>
+								<array/>
+								<key>IsCircle</key>
+								<false/>
+								<key>IsRectangle</key>
+								<true/>
+								<key>IsSensor</key>
+								<false/>
+								<key>LHHeight</key>
+								<real>155.25</real>
+								<key>LHShapePositionOffset</key>
+								<string>{-65.5, -77.625}</string>
+								<key>LHWidth</key>
+								<real>131</real>
+								<key>Mask</key>
+								<integer>65535</integer>
+								<key>Name</key>
+								<string>UntitledFixture</string>
+								<key>Restitution</key>
+								<real>0.20000000298023224</real>
+								<key>ShapePoints</key>
+								<array>
+									<string>{0, 0}</string>
+									<string>{524, 0}</string>
+									<string>{524, 621}</string>
+									<string>{0, 621}</string>
+								</array>
+								<key>ShapePositionOffset</key>
+								<string>{0, 0}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>Width</key>
+								<real>524</real>
+							</dict>
+						</array>
+						<key>Type</key>
+						<integer>2</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>Bum</string>
+					<key>SHSpriteName</key>
+					<string>throw</string>
+					<key>SheetImage</key>
+					<string>sprites_Bum.png</string>
+					<key>SheetImage-HD</key>
+					<string>sprites_Bum-ipadhd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{516, 2}, {131, 155.75}}</string>
+						<key>Frame-HD</key>
+						<string>{{2064, 8}, {524, 621}}</string>
+						<key>Image</key>
+						<string>sprites_Bum.png</string>
+						<key>Image-HD</key>
+						<string>sprites_Bum-ipadhd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<false/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>throw</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/grantdavis/Gravity Core Apps/Bum Game/documents-export-2013-04-02/throw.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../../../../../../Gravity%20Core%20Apps/Bum%20Game/documents-export-2013-04-02/throw.png/</string>
+						<key>OriginalRect</key>
+						<string>{{3, 0}, {524, 621}}</string>
+						<key>OriginalSize</key>
+						<string>{530, 621}</string>
+						<key>Position</key>
+						<string>{2064, 8}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{132.5, 155.25}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, -0.25}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
 			</dict>
 			<key>Size</key>
 			<string>{4096, 1024}</string>
@@ -1069,7 +1059,440 @@
 		</dict>
 	</array>
 	<key>SH_ANIMATIONS_LIST</key>
-	<array/>
+	<array>
+		<dict>
+			<key>DelayPerUnit</key>
+			<real>0.40000000596046448</real>
+			<key>Frames</key>
+			<array>
+				<dict>
+					<key>DocumentSecurityImageBookmark</key>
+					<data>
+					Ym9vazQEAAAAAAQQMAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAADAMAAAUA
+					AAABAQAAVXNlcnMAAAAKAAAAAQEAAGdyYW50
+					ZGF2aXMAABEAAAABAQAAR3Jhdml0eSBDb3Jl
+					IEFwcHMAAAAIAAAAAQEAAEJ1bSBHYW1lGwAA
+					AAEBAABkb2N1bWVudHMtZXhwb3J0LTIwMTMt
+					MDQtMDIABwAAAAEBAABydW4ucG5nABgAAAAB
+					BgAABAAAABQAAAAoAAAARAAAAFQAAAB4AAAA
+					CAAAAAQDAAAXuxAAAAAAAAgAAAAEAwAAmd0Q
+					AAAAAAAIAAAABAMAAPweWgEAAAAACAAAAAQD
+					AACh2N8DAAAAAAgAAAAEAwAAM9QPBAAAAAAI
+					AAAABAMAADfUDwQAAAAAGAAAAAEGAACoAAAA
+					uAAAAMgAAADYAAAA6AAAAPgAAAAIAAAAAAQA
+					AEG3A/m2AAAAGAAAAAECAAABAAAAAAAAAA8A
+					AAAAAAAAAAAAAAAAAAAAAAAAAQUAAAQAAAAD
+					AwAABwAAAAQAAAADAwAABAAAAAgAAAAEAwAA
+					BAAAAAAAAAAEAAAAAwMAAPUBAAAMAAAAAQEA
+					AE1hY2ludG9zaCBIRAgAAAAEAwAAAGAxgWAA
+					AAAIAAAAAAQAAEG1aKWpAAAAJAAAAAEBAAA2
+					ODJCOTI0My03Q0U3LTNGNTEtOUZCOC0yQjVG
+					QUIzQTQyQkMYAAAAAQIAAIEAAAABAAgA7z8A
+					AAEACAAAAAAAAAAAAAEAAAABAQAALwAAAAQA
+					AAADAwAAAAEAANgAAAABAgAAYTU4MjFkNmJk
+					ZjJmMjM5NTc2MmRhNjY0ZjRiNjBiYjAxYjUw
+					MjdmNDswMDAwMDAwMDswMDAwMDAwMDAwMDAw
+					MDIwO2NvbS5hcHBsZS5hcHAtc2FuZGJveC5y
+					ZWFkLXdyaXRlOzAwMDAwMDAxOzAxMDAwMDAz
+					OzAwMDAwMDAwMDQwZmQ0Mzc7L3VzZXJzL2dy
+					YW50ZGF2aXMvZ3Jhdml0eSBjb3JlIGFwcHMv
+					YnVtIGdhbWUvZG9jdW1lbnRzLWV4cG9ydC0y
+					MDEzLTA0LTAyL3J1bi5wbmcA8AAAAP7///8B
+					AAAAAAAAABMAAAAEEAAAiAAAAAAAAAAFEAAA
+					CAEAAAAAAAAQEAAAOAEAAAAAAABAEAAAKAEA
+					AAAAAABUEAAAYAEAAAAAAABVEAAAbAEAAAAA
+					AABWEAAAWAEAAAAAAAACIAAAFAIAAAAAAAAQ
+					IAAAlAEAAAAAAAARIAAAyAEAAAAAAAASIAAA
+					qAEAAAAAAAATIAAAuAEAAAAAAAAgIAAA9AEA
+					AAAAAAAwIAAAWAEAAAAAAAABwAAAeAEAAAAA
+					AAARwAAAFAAAAAAAAAASwAAAiAEAAAAAAAAQ
+					0AAAIAIAAAAAAACA8AAALAIAAAAAAAA=
+					</data>
+					<key>Frame</key>
+					<string>{{867, 2}, {108.75, 135.75}}</string>
+					<key>Frame-HD</key>
+					<string>{{3468, 8}, {435, 543}}</string>
+					<key>IsRotated</key>
+					<true/>
+					<key>OriginalImage</key>
+					<string>/Users/grantdavis/Gravity Core Apps/Bum Game/documents-export-2013-04-02/run.png</string>
+					<key>SpriteSize</key>
+					<string>{132.5, 155.75}</string>
+					<key>TextureOffset</key>
+					<string>{-11.125, 10}</string>
+					<key>delayPerUnit</key>
+					<real>1</real>
+					<key>notifications</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>run</string>
+				</dict>
+			</array>
+			<key>Loop</key>
+			<true/>
+			<key>Repetitions</key>
+			<integer>1</integer>
+			<key>RestoreOriginalFrame</key>
+			<false/>
+			<key>SheetImage</key>
+			<string>sprites_Bum.png</string>
+			<key>SheetName</key>
+			<string>Bum</string>
+			<key>StartAtLaunch</key>
+			<true/>
+			<key>UniqueName</key>
+			<string>run</string>
+		</dict>
+		<dict>
+			<key>DelayPerUnit</key>
+			<real>0.40000000596046448</real>
+			<key>Frames</key>
+			<array>
+				<dict>
+					<key>DocumentSecurityImageBookmark</key>
+					<data>
+					Ym9vazgEAAAAAAQQMAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAEAMAAAUA
+					AAABAQAAVXNlcnMAAAAKAAAAAQEAAGdyYW50
+					ZGF2aXMAABEAAAABAQAAR3Jhdml0eSBDb3Jl
+					IEFwcHMAAAAIAAAAAQEAAEJ1bSBHYW1lGwAA
+					AAEBAABkb2N1bWVudHMtZXhwb3J0LTIwMTMt
+					MDQtMDIACAAAAAEBAABpZGxlLnBuZxgAAAAB
+					BgAABAAAABQAAAAoAAAARAAAAFQAAAB4AAAA
+					CAAAAAQDAAAXuxAAAAAAAAgAAAAEAwAAmd0Q
+					AAAAAAAIAAAABAMAAPweWgEAAAAACAAAAAQD
+					AACh2N8DAAAAAAgAAAAEAwAAM9QPBAAAAAAI
+					AAAABAMAADXUDwQAAAAAGAAAAAEGAACoAAAA
+					uAAAAMgAAADYAAAA6AAAAPgAAAAIAAAAAAQA
+					AEG3A/myAAAAGAAAAAECAAABAAAAAAAAAA8A
+					AAAAAAAAAAAAAAAAAAAAAAAAAQUAAAQAAAAD
+					AwAABwAAAAQAAAADAwAABAAAAAgAAAAEAwAA
+					BAAAAAAAAAAEAAAAAwMAAPUBAAAMAAAAAQEA
+					AE1hY2ludG9zaCBIRAgAAAAEAwAAAGAxgWAA
+					AAAIAAAAAAQAAEG1aKWpAAAAJAAAAAEBAAA2
+					ODJCOTI0My03Q0U3LTNGNTEtOUZCOC0yQjVG
+					QUIzQTQyQkMYAAAAAQIAAIEAAAABAAgA7z8A
+					AAEACAAAAAAAAAAAAAEAAAABAQAALwAAAAQA
+					AAADAwAAAAEAANkAAAABAgAAYzBjZWU2MTJj
+					Nzg2YTlkNmZjMTVlM2U4MWY4OWQ2MTAxNjA3
+					NGZmOTswMDAwMDAwMDswMDAwMDAwMDAwMDAw
+					MDIwO2NvbS5hcHBsZS5hcHAtc2FuZGJveC5y
+					ZWFkLXdyaXRlOzAwMDAwMDAxOzAxMDAwMDAz
+					OzAwMDAwMDAwMDQwZmQ0MzU7L3VzZXJzL2dy
+					YW50ZGF2aXMvZ3Jhdml0eSBjb3JlIGFwcHMv
+					YnVtIGdhbWUvZG9jdW1lbnRzLWV4cG9ydC0y
+					MDEzLTA0LTAyL2lkbGUucG5nAAAAAPAAAAD+
+					////AQAAAAAAAAATAAAABBAAAIgAAAAAAAAA
+					BRAAAAgBAAAAAAAAEBAAADgBAAAAAAAAQBAA
+					ACgBAAAAAAAAVBAAAGABAAAAAAAAVRAAAGwB
+					AAAAAAAAVhAAAFgBAAAAAAAAAiAAABQCAAAA
+					AAAAECAAAJQBAAAAAAAAESAAAMgBAAAAAAAA
+					EiAAAKgBAAAAAAAAEyAAALgBAAAAAAAAICAA
+					APQBAAAAAAAAMCAAAFgBAAAAAAAAAcAAAHgB
+					AAAAAAAAEcAAABQAAAAAAAAAEsAAAIgBAAAA
+					AAAAENAAACACAAAAAAAAgPAAACwCAAAAAAAA
+					</data>
+					<key>Frame</key>
+					<string>{{761, 2}, {104.75, 155.75}}</string>
+					<key>Frame-HD</key>
+					<string>{{3044, 8}, {419, 621}}</string>
+					<key>IsRotated</key>
+					<false/>
+					<key>OriginalImage</key>
+					<string>/Users/grantdavis/Gravity Core Apps/Bum Game/documents-export-2013-04-02/idle.png</string>
+					<key>SpriteSize</key>
+					<string>{132.5, 155.75}</string>
+					<key>TextureOffset</key>
+					<string>{-11.625, -0}</string>
+					<key>delayPerUnit</key>
+					<real>1</real>
+					<key>notifications</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>idle</string>
+				</dict>
+			</array>
+			<key>Loop</key>
+			<false/>
+			<key>Repetitions</key>
+			<integer>1</integer>
+			<key>RestoreOriginalFrame</key>
+			<false/>
+			<key>SheetImage</key>
+			<string>sprites_Bum.png</string>
+			<key>SheetName</key>
+			<string>Bum</string>
+			<key>StartAtLaunch</key>
+			<true/>
+			<key>UniqueName</key>
+			<string>idle</string>
+		</dict>
+		<dict>
+			<key>DelayPerUnit</key>
+			<real>0.40000000596046448</real>
+			<key>Frames</key>
+			<array>
+				<dict>
+					<key>DocumentSecurityImageBookmark</key>
+					<data>
+					Ym9vazwEAAAAAAQQMAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAFAMAAAUA
+					AAABAQAAVXNlcnMAAAAKAAAAAQEAAGdyYW50
+					ZGF2aXMAABEAAAABAQAAR3Jhdml0eSBDb3Jl
+					IEFwcHMAAAAIAAAAAQEAAEJ1bSBHYW1lGwAA
+					AAEBAABkb2N1bWVudHMtZXhwb3J0LTIwMTMt
+					MDQtMDIACQAAAAEBAAB0aHJvdy5wbmcAAAAY
+					AAAAAQYAAAQAAAAUAAAAKAAAAEQAAABUAAAA
+					eAAAAAgAAAAEAwAAF7sQAAAAAAAIAAAABAMA
+					AJndEAAAAAAACAAAAAQDAAD8HloBAAAAAAgA
+					AAAEAwAAodjfAwAAAAAIAAAABAMAADPUDwQA
+					AAAACAAAAAQDAAA21A8EAAAAABgAAAABBgAA
+					rAAAALwAAADMAAAA3AAAAOwAAAD8AAAACAAA
+					AAAEAABBtwP5sAAAABgAAAABAgAAAQAAAAAA
+					AAAPAAAAAAAAAAAAAAAAAAAAAAAAAAEFAAAE
+					AAAAAwMAAAcAAAAEAAAAAwMAAAQAAAAIAAAA
+					BAMAAAQAAAAAAAAABAAAAAMDAAD1AQAADAAA
+					AAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAABg
+					MYFgAAAACAAAAAAEAABBtWilqQAAACQAAAAB
+					AQAANjgyQjkyNDMtN0NFNy0zRjUxLTlGQjgt
+					MkI1RkFCM0E0MkJDGAAAAAECAACBAAAAAQAI
+					AO8/AAABAAgAAAAAAAAAAAABAAAAAQEAAC8A
+					AAAEAAAAAwMAAAABAADaAAAAAQIAAGU4MTI4
+					MjAzYWRjYWFmNjQyNGJkYzM1MWQwMTA2ZWJm
+					ZTNhNmYyYzU7MDAwMDAwMDA7MDAwMDAwMDAw
+					MDAwMDAyMDtjb20uYXBwbGUuYXBwLXNhbmRi
+					b3gucmVhZC13cml0ZTswMDAwMDAwMTswMTAw
+					MDAwMzswMDAwMDAwMDA0MGZkNDM2Oy91c2Vy
+					cy9ncmFudGRhdmlzL2dyYXZpdHkgY29yZSBh
+					cHBzL2J1bSBnYW1lL2RvY3VtZW50cy1leHBv
+					cnQtMjAxMy0wNC0wMi90aHJvdy5wbmcAAADw
+					AAAA/v///wEAAAAAAAAAEwAAAAQQAACMAAAA
+					AAAAAAUQAAAMAQAAAAAAABAQAAA8AQAAAAAA
+					AEAQAAAsAQAAAAAAAFQQAABkAQAAAAAAAFUQ
+					AABwAQAAAAAAAFYQAABcAQAAAAAAAAIgAAAY
+					AgAAAAAAABAgAACYAQAAAAAAABEgAADMAQAA
+					AAAAABIgAACsAQAAAAAAABMgAAC8AQAAAAAA
+					ACAgAAD4AQAAAAAAADAgAABcAQAAAAAAAAHA
+					AAB8AQAAAAAAABHAAAAUAAAAAAAAABLAAACM
+					AQAAAAAAABDQAAAkAgAAAAAAAIDwAAAwAgAA
+					AAAAAA==
+					</data>
+					<key>Frame</key>
+					<string>{{516, 2}, {131, 155.75}}</string>
+					<key>Frame-HD</key>
+					<string>{{2064, 8}, {524, 621}}</string>
+					<key>IsRotated</key>
+					<false/>
+					<key>OriginalImage</key>
+					<string>/Users/grantdavis/Gravity Core Apps/Bum Game/documents-export-2013-04-02/throw.png</string>
+					<key>SpriteSize</key>
+					<string>{132.5, 155.75}</string>
+					<key>TextureOffset</key>
+					<string>{0, -0}</string>
+					<key>delayPerUnit</key>
+					<real>1</real>
+					<key>notifications</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>throw</string>
+				</dict>
+			</array>
+			<key>Loop</key>
+			<false/>
+			<key>Repetitions</key>
+			<integer>1</integer>
+			<key>RestoreOriginalFrame</key>
+			<false/>
+			<key>SheetImage</key>
+			<string>sprites_Bum.png</string>
+			<key>SheetName</key>
+			<string>Bum</string>
+			<key>StartAtLaunch</key>
+			<true/>
+			<key>UniqueName</key>
+			<string>throw</string>
+		</dict>
+		<dict>
+			<key>DelayPerUnit</key>
+			<real>0.40000000596046448</real>
+			<key>Frames</key>
+			<array>
+				<dict>
+					<key>DocumentSecurityImageBookmark</key>
+					<data>
+					Ym9va0QEAAAAAAQQMAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAHAMAAAUA
+					AAABAQAAVXNlcnMAAAAKAAAAAQEAAGdyYW50
+					ZGF2aXMAABEAAAABAQAAR3Jhdml0eSBDb3Jl
+					IEFwcHMAAAAIAAAAAQEAAEJ1bSBHYW1lGwAA
+					AAEBAABkb2N1bWVudHMtZXhwb3J0LTIwMTMt
+					MDQtMDIADwAAAAEBAABibG9ja19lbGJvdy5w
+					bmcAGAAAAAEGAAAEAAAAFAAAACgAAABEAAAA
+					VAAAAHgAAAAIAAAABAMAABe7EAAAAAAACAAA
+					AAQDAACZ3RAAAAAAAAgAAAAEAwAA/B5aAQAA
+					AAAIAAAABAMAAKHY3wMAAAAACAAAAAQDAAAz
+					1A8EAAAAAAgAAAAEAwAANNQPBAAAAAAYAAAA
+					AQYAALAAAADAAAAA0AAAAOAAAADwAAAAAAEA
+					AAgAAAAABAAAQbcD+bYAAAAYAAAAAQIAAAEA
+					AAAAAAAADwAAAAAAAAAAAAAAAAAAAAAAAAAB
+					BQAABAAAAAMDAAAHAAAABAAAAAMDAAAEAAAA
+					CAAAAAQDAAAEAAAAAAAAAAQAAAADAwAA9QEA
+					AAwAAAABAQAATWFjaW50b3NoIEhECAAAAAQD
+					AAAAYDGBYAAAAAgAAAAABAAAQbVopakAAAAk
+					AAAAAQEAADY4MkI5MjQzLTdDRTctM0Y1MS05
+					RkI4LTJCNUZBQjNBNDJCQxgAAAABAgAAgQAA
+					AAEACADvPwAAAQAIAAAAAAAAAAAAAQAAAAEB
+					AAAvAAAABAAAAAMDAAAAAQAA4AAAAAECAABi
+					ZjIzM2QxOWU0YWVlNDVhNWYyZWYwMDI5ZmM4
+					OGM0ZDA4YTQ5OTEyOzAwMDAwMDAwOzAwMDAw
+					MDAwMDAwMDAwMjA7Y29tLmFwcGxlLmFwcC1z
+					YW5kYm94LnJlYWQtd3JpdGU7MDAwMDAwMDE7
+					MDEwMDAwMDM7MDAwMDAwMDAwNDBmZDQzNDsv
+					dXNlcnMvZ3JhbnRkYXZpcy9ncmF2aXR5IGNv
+					cmUgYXBwcy9idW0gZ2FtZS9kb2N1bWVudHMt
+					ZXhwb3J0LTIwMTMtMDQtMDIvYmxvY2tfZWxi
+					b3cucG5nAPAAAAD+////AQAAAAAAAAATAAAA
+					BBAAAJAAAAAAAAAABRAAABABAAAAAAAAEBAA
+					AEABAAAAAAAAQBAAADABAAAAAAAAVBAAAGgB
+					AAAAAAAAVRAAAHQBAAAAAAAAVhAAAGABAAAA
+					AAAAAiAAABwCAAAAAAAAECAAAJwBAAAAAAAA
+					ESAAANABAAAAAAAAEiAAALABAAAAAAAAEyAA
+					AMABAAAAAAAAICAAAPwBAAAAAAAAMCAAAGAB
+					AAAAAAAAAcAAAIABAAAAAAAAEcAAABQAAAAA
+					AAAAEsAAAJABAAAAAAAAENAAACgCAAAAAAAA
+					gPAAADQCAAAAAAAA
+					</data>
+					<key>Frame</key>
+					<string>{{649, 2}, {109.75, 155.75}}</string>
+					<key>Frame-HD</key>
+					<string>{{2596, 8}, {437, 621}}</string>
+					<key>IsRotated</key>
+					<false/>
+					<key>OriginalImage</key>
+					<string>/Users/grantdavis/Gravity Core Apps/Bum Game/documents-export-2013-04-02/block_elbow.png</string>
+					<key>SpriteSize</key>
+					<string>{132.5, 155.75}</string>
+					<key>TextureOffset</key>
+					<string>{-9.375, -0}</string>
+					<key>delayPerUnit</key>
+					<real>1</real>
+					<key>notifications</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>block_elbow</string>
+				</dict>
+			</array>
+			<key>Loop</key>
+			<false/>
+			<key>Repetitions</key>
+			<integer>1</integer>
+			<key>RestoreOriginalFrame</key>
+			<false/>
+			<key>SheetImage</key>
+			<string>sprites_Bum.png</string>
+			<key>SheetName</key>
+			<string>Bum</string>
+			<key>StartAtLaunch</key>
+			<true/>
+			<key>UniqueName</key>
+			<string>block</string>
+		</dict>
+		<dict>
+			<key>DelayPerUnit</key>
+			<real>0.40000000596046448</real>
+			<key>Frames</key>
+			<array>
+				<dict>
+					<key>DocumentSecurityImageBookmark</key>
+					<data>
+					Ym9vazgEAAAAAAQQMAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAEAMAAAUA
+					AAABAQAAVXNlcnMAAAAKAAAAAQEAAGdyYW50
+					ZGF2aXMAABEAAAABAQAAR3Jhdml0eSBDb3Jl
+					IEFwcHMAAAAIAAAAAQEAAEJ1bSBHYW1lGwAA
+					AAEBAABkb2N1bWVudHMtZXhwb3J0LTIwMTMt
+					MDQtMDIACAAAAAEBAABpZGxlLnBuZxgAAAAB
+					BgAABAAAABQAAAAoAAAARAAAAFQAAAB4AAAA
+					CAAAAAQDAAAXuxAAAAAAAAgAAAAEAwAAmd0Q
+					AAAAAAAIAAAABAMAAPweWgEAAAAACAAAAAQD
+					AACh2N8DAAAAAAgAAAAEAwAAM9QPBAAAAAAI
+					AAAABAMAADXUDwQAAAAAGAAAAAEGAACoAAAA
+					uAAAAMgAAADYAAAA6AAAAPgAAAAIAAAAAAQA
+					AEG3A/myAAAAGAAAAAECAAABAAAAAAAAAA8A
+					AAAAAAAAAAAAAAAAAAAAAAAAAQUAAAQAAAAD
+					AwAABwAAAAQAAAADAwAABAAAAAgAAAAEAwAA
+					BAAAAAAAAAAEAAAAAwMAAPUBAAAMAAAAAQEA
+					AE1hY2ludG9zaCBIRAgAAAAEAwAAAGAxgWAA
+					AAAIAAAAAAQAAEG1aKWpAAAAJAAAAAEBAAA2
+					ODJCOTI0My03Q0U3LTNGNTEtOUZCOC0yQjVG
+					QUIzQTQyQkMYAAAAAQIAAIEAAAABAAgA7z8A
+					AAEACAAAAAAAAAAAAAEAAAABAQAALwAAAAQA
+					AAADAwAAAAEAANkAAAABAgAAYzBjZWU2MTJj
+					Nzg2YTlkNmZjMTVlM2U4MWY4OWQ2MTAxNjA3
+					NGZmOTswMDAwMDAwMDswMDAwMDAwMDAwMDAw
+					MDIwO2NvbS5hcHBsZS5hcHAtc2FuZGJveC5y
+					ZWFkLXdyaXRlOzAwMDAwMDAxOzAxMDAwMDAz
+					OzAwMDAwMDAwMDQwZmQ0MzU7L3VzZXJzL2dy
+					YW50ZGF2aXMvZ3Jhdml0eSBjb3JlIGFwcHMv
+					YnVtIGdhbWUvZG9jdW1lbnRzLWV4cG9ydC0y
+					MDEzLTA0LTAyL2lkbGUucG5nAAAAAPAAAAD+
+					////AQAAAAAAAAATAAAABBAAAIgAAAAAAAAA
+					BRAAAAgBAAAAAAAAEBAAADgBAAAAAAAAQBAA
+					ACgBAAAAAAAAVBAAAGABAAAAAAAAVRAAAGwB
+					AAAAAAAAVhAAAFgBAAAAAAAAAiAAABQCAAAA
+					AAAAECAAAJQBAAAAAAAAESAAAMgBAAAAAAAA
+					EiAAAKgBAAAAAAAAEyAAALgBAAAAAAAAICAA
+					APQBAAAAAAAAMCAAAFgBAAAAAAAAAcAAAHgB
+					AAAAAAAAEcAAABQAAAAAAAAAEsAAAIgBAAAA
+					AAAAENAAACACAAAAAAAAgPAAACwCAAAAAAAA
+					</data>
+					<key>Frame</key>
+					<string>{{761, 2}, {104.75, 155.75}}</string>
+					<key>Frame-HD</key>
+					<string>{{3044, 8}, {419, 621}}</string>
+					<key>IsRotated</key>
+					<false/>
+					<key>OriginalImage</key>
+					<string>/Users/grantdavis/Gravity Core Apps/Bum Game/documents-export-2013-04-02/idle.png</string>
+					<key>SpriteSize</key>
+					<string>{132.5, 155.75}</string>
+					<key>TextureOffset</key>
+					<string>{-11.625, -0}</string>
+					<key>delayPerUnit</key>
+					<real>1</real>
+					<key>notifications</key>
+					<dict/>
+					<key>offset</key>
+					<string>{0, 0}</string>
+					<key>spriteframe</key>
+					<string>idle</string>
+				</dict>
+			</array>
+			<key>Loop</key>
+			<false/>
+			<key>Repetitions</key>
+			<integer>1</integer>
+			<key>RestoreOriginalFrame</key>
+			<false/>
+			<key>SheetImage</key>
+			<string>sprites_Bum.png</string>
+			<key>SheetName</key>
+			<string>Bum</string>
+			<key>StartAtLaunch</key>
+			<true/>
+			<key>UniqueName</key>
+			<string>walk</string>
+		</dict>
+	</array>
 	<key>SaveSettings</key>
 	<dict>
 		<key>Dither</key>
@@ -1108,10 +1531,10 @@
 	AAAAAAgAAAAEAwAABgAAAAAAAAAEAAAAAwMAAPUBAAAMAAAAAQEAAE1hY2ludG9zaCBI
 	RAgAAAAEAwAAAGAxgWAAAAAIAAAAAAQAAEG1aKWpAAAAJAAAAAEBAAA2ODJCOTI0My03
 	Q0U3LTNGNTEtOUZCOC0yQjVGQUIzQTQyQkMYAAAAAQIAAIEAAAABAAgA7z8AAAEACAAA
-	AAAAAAAAAAEAAAABAQAALwAAAAAAAAABBQAABAAAAAMDAAAAAQAAwAAAAAECAAA3NDU4
-	ZjMxMzY3YjA4OGNkMjg5NmY2Y2ViYTZjZmZkMTBkZTBlODdlOzAwMDAwMDAwOzAwMDAw
+	AAAAAAAAAAEAAAABAQAALwAAAAAAAAABBQAABAAAAAMDAAAAAQAAwAAAAAECAAAwODEz
+	NzFjMTU3NWU2ODY5YTc4MmVhMDg4ZWNiOTlkMTNmYjBmYTljOzAwMDAwMDAwOzAwMDAw
 	MDAwMDAwMDAwMjA7Y29tLmFwcGxlLmFwcC1zYW5kYm94LnJlYWQtd3JpdGU7MDAwMDAw
-	MDE7MDEwMDAwMDI7MDAwMDAwMDAwM2Y4ZGUzODsvdXNlcnMvZ3JhbnRkYXZpcy93b3Jr
+	MDE7MDEwMDAwMDM7MDAwMDAwMDAwM2Y4ZGUzODsvdXNlcnMvZ3JhbnRkYXZpcy93b3Jr
 	c3BhY2UvYnVtL2J1bS9idW0vcmVzb3VyY2VzL2ltYWdlcwDMAAAA/v///wEAAAAAAAAA
 	EAAAAAQQAABsAAAAAAAAAAUQAAAUAQAAAAAAABAQAABMAQAAAAAAAEAQAAA8AQAAAAAA
 	AAIgAAAIAgAAAAAAABAgAACIAQAAAAAAABEgAAC8AQAAAAAAABIgAACcAQAAAAAAABMg

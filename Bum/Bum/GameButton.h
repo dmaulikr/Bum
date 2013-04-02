@@ -13,6 +13,7 @@
 @interface GameButton : CCSprite <CCTargetedTouchDelegate>
 
 @property (nonatomic, unsafe_unretained) NSObject <GameButtonDelegate> *delegate;
+@property (nonatomic) BOOL isHeld;
 
 - (id)initWithFile:(NSString *)file delegate:(NSObject <GameButtonDelegate> *)delegate;
 
@@ -23,6 +24,7 @@
 
 - (void)gameButtonTouchesBegan:(GameButton *)gameButton;
 - (void)gameButtonTouchesEnded:(GameButton *)gameButton;
+- (void)gameButtonTouchesDidEnter:(GameButton *)gameButton;
 - (void)gameButtonTouchesDidLeave:(GameButton *)gameButton;
 - (void)gameButtonIsBeingHeld:(GameButton *)gameButton;
 

@@ -17,12 +17,17 @@
 // state
 @property(nonatomic, assign) ActionState actionState;
 
-// CCActions
-@property(nonatomic, strong) id idleAction;
-@property(nonatomic, strong) id attackAction;
-@property(nonatomic, strong) id walkAction;
-@property(nonatomic, strong) id hurtAction;
-@property(nonatomic, strong) id knockedOutAction;
+// Animation Names
+@property(nonatomic, strong) NSString *idleAnimation;
+@property(nonatomic, strong) NSString *attackAnimation;
+@property(nonatomic, strong) NSString *blockAnimation;
+@property(nonatomic, strong) NSString *walkAnimation;
+@property(nonatomic, strong) NSString *runAnimation;
+@property(nonatomic, strong) NSString *hurtAnimation;
+@property(nonatomic, strong) NSString *knockedOutAnimation;
+
+@property(nonatomic, strong) NSString *spriteSheet;
+
 
 - (id)initWithActionState:(ActionState)state;
 

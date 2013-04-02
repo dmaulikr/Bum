@@ -20,7 +20,9 @@ typedef enum ActionState {
     ActionStateNone = 0,
     ActionStateIdle,
     ActionStateAttack,
+    ActionStateBlock,
     ActionStateWalk,
+    ActionStateRun,
     ActionStateHurt,
     ActionStateKnockedOut
 } ActionState;

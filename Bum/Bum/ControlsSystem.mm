@@ -109,6 +109,7 @@ typedef enum CharacterMoveState {
 - (void)walkWithDirection:(CGPoint)direction
 {
     _moveState = CharacterMoveStateWalking;
+    _playerEntity.action.actionState = ActionStateWalk;
     [self setDirection:direction];
 }
 
@@ -116,6 +117,7 @@ typedef enum CharacterMoveState {
 - (void)runWithDirection:(CGPoint)direction
 {
     _moveState = CharacterMoveStateRunning;
+    _playerEntity.action.actionState = ActionStateRun;
     [self setDirection:direction];
 }
 
@@ -123,7 +125,7 @@ typedef enum CharacterMoveState {
 - (void)jump
 {
     b2Body *body = _playerEntity.render.node.body;
-    body->ApplyLinearImpulse( b2Vec2(0,50.f), body->GetWorldCenter() );
+    body->ApplyLinearImpulse( b2Vec2(0,10.f), body->GetWorldCenter() );
 }
 
 
@@ -136,11 +138,15 @@ typedef enum CharacterMoveState {
     }
     else if (direction.x >= 0) {
         _characterDirection = CharacterDirectionRight;
-        _playerEntity.render.node.scaleX = 1.0;
+        if (_playerEntity.render.node.scaleX < 0.0) {
+            _playerEntity.render.node.scaleX *= -1.0;
+        }
     }
     else {
         _characterDirection = CharacterDirectionLeft;
-        _playerEntity.render.node.scaleX = -1.0;
+        if (_playerEntity.render.node.scaleX > 0.0) {
+            _playerEntity.render.node.scaleX *= -1.0;
+        }
     }
 }
 
@@ -162,13 +168,19 @@ typedef enum CharacterMoveState {
 
 - (void)simpleDPad:(SimpleDPad *)dPad didChangeDirectionTo:(CGPoint)direction
 {
-    [self walkWithDirection:direction];
+    if (self.hud.runButton.isHeld) {
+        [self runWithDirection:direction];
+    }
+    else [self walkWithDirection:direction];
 }
 
 
 - (void)simpleDPad:(SimpleDPad *)dPad isHoldingDirection:(CGPoint)direction
 {
-    [self walkWithDirection:direction];
+    if (self.hud.runButton.isHeld) {
+        [self runWithDirection:direction];
+    }
+    else [self walkWithDirection:direction];
 }
 
 

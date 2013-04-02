@@ -547,7 +547,24 @@
 						</dict>
 						<dict>
 							<key>AnimationsProperties</key>
-							<dict/>
+							<dict>
+								<key>AnimAtStart</key>
+								<true/>
+								<key>AnimLoop</key>
+								<false/>
+								<key>AnimName</key>
+								<string>idle</string>
+								<key>AnimRepetitions</key>
+								<integer>1</integer>
+								<key>AnimRestoreOriginalFrame</key>
+								<false/>
+								<key>AnimSpeed</key>
+								<real>0.40000000596046448</real>
+								<key>OtherAnimations</key>
+								<array/>
+								<key>SHScene</key>
+								<string>sprites.pshs</string>
+							</dict>
 							<key>Children</key>
 							<array/>
 							<key>CustomClassInfo</key>
@@ -575,7 +592,7 @@
 							<key>SHSheetName</key>
 							<string>Bum</string>
 							<key>SHSpriteName</key>
-							<string>bum-run-01</string>
+							<string>idle</string>
 							<key>SheetImage</key>
 							<string>sprites_Bum.png</string>
 							<key>TextureProperties</key>
@@ -589,7 +606,7 @@
 								<key>FlipY</key>
 								<false/>
 								<key>Frame</key>
-								<string>{{516, 2}, {142.75, 194.75}}</string>
+								<string>{{761, 2}, {104.75, 155.75}}</string>
 								<key>IsDrawable</key>
 								<true/>
 								<key>IsExpanded</key>
@@ -601,24 +618,24 @@
 								<key>Opacity</key>
 								<real>1</real>
 								<key>Position</key>
-								<string>{57.307922974228859, 224.08782202005386}</string>
+								<string>{74.851406887173653, 224.83532769232988}</string>
 								<key>Scale</key>
-								<string>{0.50529569387435913, 0.50529569387435913}</string>
+								<string>{0.52605897188186646, 0.52605897188186646}</string>
 								<key>SpriteSize</key>
-								<string>{163.5, 222}</string>
+								<string>{132.5, 155.25}</string>
 								<key>Tag</key>
 								<integer>0</integer>
 								<key>TagName</key>
 								<string>DEFAULT</string>
 								<key>TextureOffset</key>
-								<string>{-1.125, -2.125}</string>
+								<string>{-11.625, -0.25}</string>
 								<key>UniqueName</key>
-								<string>bum-run-01</string>
+								<string>idle</string>
 								<key>ZOrder</key>
 								<integer>0</integer>
 							</dict>
 							<key>UniqueName</key>
-							<string>bum-run-01</string>
+							<string>idle</string>
 						</dict>
 					</array>
 					<key>CustomClassInfo</key>
@@ -695,14 +712,6 @@
 					<real>0.0</real>
 					<key>SpriteName</key>
 					<string>mock-ground</string>
-				</dict>
-				<dict>
-					<key>RatioX</key>
-					<real>1</real>
-					<key>RatioY</key>
-					<real>0.0</real>
-					<key>SpriteName</key>
-					<string>mock-ground_2</string>
 				</dict>
 				<dict>
 					<key>RatioX</key>

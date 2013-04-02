@@ -27,32 +27,41 @@
         if (renderer.actionState != action.actionState) {
             
             renderer.actionState = action.actionState;
-            [renderer.node stopAllActions];
             
             switch (action.actionState) {
                     
                 case ActionStateAttack:
-                    [renderer.node runAction:action.attackAction];
+                    [renderer.node prepareAnimationNamed:action.attackAnimation fromSHScene:action.spriteSheet];
+                    break;
+                
+                case ActionStateBlock:
+                    [renderer.node prepareAnimationNamed:action.blockAnimation fromSHScene:action.spriteSheet];
                     break;
                     
                 case ActionStateHurt:
-                    [renderer.node runAction:action.hurtAction];
+                    [renderer.node prepareAnimationNamed:action.hurtAnimation fromSHScene:action.spriteSheet];
                     break;
                     
                 case ActionStateKnockedOut:
-                    [renderer.node runAction:action.knockedOutAction];
+                    [renderer.node prepareAnimationNamed:action.knockedOutAnimation fromSHScene:action.spriteSheet];
                     break;
                     
                 case ActionStateWalk:
-                    [renderer.node runAction:action.walkAction];
+                    [renderer.node prepareAnimationNamed:action.walkAnimation fromSHScene:action.spriteSheet];
+                    break;
+                    
+                case ActionStateRun:
+                    [renderer.node prepareAnimationNamed:action.runAnimation fromSHScene:action.spriteSheet];
                     break;
                     
                 case ActionStateIdle:
                 case ActionStateNone:
                 default:
-                    [renderer.node runAction:action.idleAction];
+                    [renderer.node prepareAnimationNamed:action.idleAnimation fromSHScene:action.spriteSheet];
                     break;
             }
+            
+            [renderer.node playAnimation];
         }
     }
 }

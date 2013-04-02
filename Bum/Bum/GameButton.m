@@ -8,7 +8,6 @@
 #import "GameButton.h"
 
 @interface GameButton () {
-    BOOL _isHeld;
 }
 
 @end
@@ -51,6 +50,7 @@
     loc = [self.parent convertToNodeSpace:loc];
     
     if (CGRectContainsPoint([self boundingBox], loc)) {
+        _isHeld = YES;
         if ([_delegate respondsToSelector:@selector(gameButtonTouchesBegan:)]) {
             [_delegate gameButtonTouchesBegan:self];
         }
@@ -58,7 +58,7 @@
     }
     return NO;
 }
-
+ 
 
 
 -(void)ccTouchMoved:(UITouch *)touch withEvent:(UIEvent *)event
@@ -67,8 +67,16 @@
     loc = [self.parent convertToNodeSpace:loc];
     
     if (!CGRectContainsPoint([self boundingBox], loc)) {
+        _isHeld = NO;
         if ([_delegate respondsToSelector:@selector(gameButtonTouchesDidLeave:)]) {
             [_delegate gameButtonTouchesDidLeave:self];
+        }
+    }
+    else {
+        // this captures the condition of the user rolling off the button then back on
+        _isHeld = YES;
+        if ([_delegate respondsToSelector:@selector(gameButtonTouchesDidEnter:)]) {
+            [_delegate gameButtonTouchesDidEnter:self];
         }
     }
 }
