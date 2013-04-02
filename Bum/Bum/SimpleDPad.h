@@ -18,9 +18,6 @@
 @property (nonatomic, readonly) CGPoint direction;
 @property (nonatomic) BOOL isHeld;
 
-- (id)initWithFile:(NSString *)filename radius:(float)radius;
-+ (id)dPadWithFile:(NSString *)filename radius:(float)radius;
-
 @end
 
 @protocol SimpleDPadDelegate <NSObject>

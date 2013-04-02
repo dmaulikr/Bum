@@ -32,13 +32,18 @@
     CGSize winSize = [[CCDirector sharedDirector] winSize];
     NSLog(@"winSize: %@", NSStringFromCGSize(winSize));
     
-    _dPad = [[SimpleDPad alloc] initWithFile:@"pd_dpad.png" radius:64.f];
+    _dPad = [[SimpleDPad alloc] init];
     _dPad.position = ccp(128.f, 128.f);
     [self addChild:_dPad];
     
     _jumpButton = [[GameButton alloc] initWithFile:@"pd_dpad.png"];
-    _jumpButton.position = ccp( winSize.height - _jumpButton.contentSize.width, _jumpButton.contentSize.height);
     [self addChild:_jumpButton];
+    
+    if (UI_USER_INTERFACE_IDIOM() ==  UIUserInterfaceIdiomPhone) {
+        _jumpButton.scale = .5;
+        _dPad.scale = .5;
+    }
+    _jumpButton.position = ccp( winSize.height - _jumpButton.contentSize.width, _jumpButton.contentSize.height);
 }
 
 @end

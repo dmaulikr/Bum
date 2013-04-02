@@ -185,6 +185,14 @@
 		775AC60E16ED579000FA3049 /* HealthComponent.mm in Sources */ = {isa = PBXBuildFile; fileRef = 775AC60616ED579000FA3049 /* HealthComponent.mm */; };
 		775AC61416ED5BE300FA3049 /* GameplayLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 775AC61316ED5BE300FA3049 /* GameplayLayer.mm */; };
 		775AC61716ED611D00FA3049 /* MovementComponent.mm in Sources */ = {isa = PBXBuildFile; fileRef = 775AC61616ED611D00FA3049 /* MovementComponent.mm */; };
+		7765FE84170B3EFE003BEB5F /* button-a-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 7765FE7C170B3EFE003BEB5F /* button-a-hd.png */; };
+		7765FE85170B3EFE003BEB5F /* button-a.png in Resources */ = {isa = PBXBuildFile; fileRef = 7765FE7D170B3EFE003BEB5F /* button-a.png */; };
+		7765FE86170B3EFE003BEB5F /* button-b-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 7765FE7E170B3EFE003BEB5F /* button-b-hd.png */; };
+		7765FE87170B3EFE003BEB5F /* button-b.png in Resources */ = {isa = PBXBuildFile; fileRef = 7765FE7F170B3EFE003BEB5F /* button-b.png */; };
+		7765FE88170B3EFE003BEB5F /* movement-area-circle-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 7765FE80170B3EFE003BEB5F /* movement-area-circle-hd.png */; };
+		7765FE89170B3EFE003BEB5F /* movement-area-circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 7765FE81170B3EFE003BEB5F /* movement-area-circle.png */; };
+		7765FE8A170B3EFE003BEB5F /* movement-stick-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 7765FE82170B3EFE003BEB5F /* movement-stick-hd.png */; };
+		7765FE8B170B3EFE003BEB5F /* movement-stick.png in Resources */ = {isa = PBXBuildFile; fileRef = 7765FE83170B3EFE003BEB5F /* movement-stick.png */; };
 		7776B36416FB88B00037640D /* sprites_Bum-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 7776B36016FB88AF0037640D /* sprites_Bum-hd.png */; };
 		7776B36516FB88B00037640D /* sprites_Bum-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = 7776B36116FB88B00037640D /* sprites_Bum-ipadhd.png */; };
 		7776B36616FB88B00037640D /* sprites_Bum.png in Resources */ = {isa = PBXBuildFile; fileRef = 7776B36216FB88B00037640D /* sprites_Bum.png */; };
@@ -604,6 +612,14 @@
 		775AC61316ED5BE300FA3049 /* GameplayLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameplayLayer.mm; sourceTree = "<group>"; };
 		775AC61516ED611D00FA3049 /* MovementComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovementComponent.h; sourceTree = "<group>"; };
 		775AC61616ED611D00FA3049 /* MovementComponent.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MovementComponent.mm; sourceTree = "<group>"; };
+		7765FE7C170B3EFE003BEB5F /* button-a-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-a-hd.png"; path = "../../Assets/artwork/ui/button-a-hd.png"; sourceTree = "<group>"; };
+		7765FE7D170B3EFE003BEB5F /* button-a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-a.png"; path = "../../Assets/artwork/ui/button-a.png"; sourceTree = "<group>"; };
+		7765FE7E170B3EFE003BEB5F /* button-b-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-b-hd.png"; path = "../../Assets/artwork/ui/button-b-hd.png"; sourceTree = "<group>"; };
+		7765FE7F170B3EFE003BEB5F /* button-b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-b.png"; path = "../../Assets/artwork/ui/button-b.png"; sourceTree = "<group>"; };
+		7765FE80170B3EFE003BEB5F /* movement-area-circle-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "movement-area-circle-hd.png"; path = "../../Assets/artwork/ui/movement-area-circle-hd.png"; sourceTree = "<group>"; };
+		7765FE81170B3EFE003BEB5F /* movement-area-circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "movement-area-circle.png"; path = "../../Assets/artwork/ui/movement-area-circle.png"; sourceTree = "<group>"; };
+		7765FE82170B3EFE003BEB5F /* movement-stick-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "movement-stick-hd.png"; path = "../../Assets/artwork/ui/movement-stick-hd.png"; sourceTree = "<group>"; };
+		7765FE83170B3EFE003BEB5F /* movement-stick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "movement-stick.png"; path = "../../Assets/artwork/ui/movement-stick.png"; sourceTree = "<group>"; };
 		7776B36016FB88AF0037640D /* sprites_Bum-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sprites_Bum-hd.png"; path = "Resources/Images/sprites_Bum-hd.png"; sourceTree = "<group>"; };
 		7776B36116FB88B00037640D /* sprites_Bum-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sprites_Bum-ipadhd.png"; path = "Resources/Images/sprites_Bum-ipadhd.png"; sourceTree = "<group>"; };
 		7776B36216FB88B00037640D /* sprites_Bum.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sprites_Bum.png; path = Resources/Images/sprites_Bum.png; sourceTree = "<group>"; };
@@ -1356,6 +1372,14 @@
 		7776B35F16FB888A0037640D /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				7765FE7C170B3EFE003BEB5F /* button-a-hd.png */,
+				7765FE7D170B3EFE003BEB5F /* button-a.png */,
+				7765FE7E170B3EFE003BEB5F /* button-b-hd.png */,
+				7765FE7F170B3EFE003BEB5F /* button-b.png */,
+				7765FE80170B3EFE003BEB5F /* movement-area-circle-hd.png */,
+				7765FE81170B3EFE003BEB5F /* movement-area-circle.png */,
+				7765FE82170B3EFE003BEB5F /* movement-stick-hd.png */,
+				7765FE83170B3EFE003BEB5F /* movement-stick.png */,
 				7776B3C216FBB5000037640D /* pd_dpad-hd.png */,
 				7776B3C316FBB5000037640D /* pd_dpad.png */,
 			);
@@ -1548,6 +1572,14 @@
 				7776B3AB16FB89760037640D /* LICENSE_LevelHelper.txt in Resources */,
 				7776B3C416FBB5000037640D /* pd_dpad-hd.png in Resources */,
 				7776B3C516FBB5000037640D /* pd_dpad.png in Resources */,
+				7765FE84170B3EFE003BEB5F /* button-a-hd.png in Resources */,
+				7765FE85170B3EFE003BEB5F /* button-a.png in Resources */,
+				7765FE86170B3EFE003BEB5F /* button-b-hd.png in Resources */,
+				7765FE87170B3EFE003BEB5F /* button-b.png in Resources */,
+				7765FE88170B3EFE003BEB5F /* movement-area-circle-hd.png in Resources */,
+				7765FE89170B3EFE003BEB5F /* movement-area-circle.png in Resources */,
+				7765FE8A170B3EFE003BEB5F /* movement-stick-hd.png in Resources */,
+				7765FE8B170B3EFE003BEB5F /* movement-stick.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

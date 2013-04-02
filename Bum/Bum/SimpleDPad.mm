@@ -12,6 +12,7 @@
 
 
 @interface SimpleDPad () {
+    CCSprite *_stick;
     CGPoint _center;
 }
 
@@ -20,23 +21,23 @@
 
 @implementation SimpleDPad
 
-- (id)initWithFile:(NSString *)filename radius:(float)radius
+- (id)init
 {
-    if (self = [super initWithFile:filename]) {
-        _radius = radius;
+    if (self = [super initWithFile:@"movement-area-circle.png"]) {
+        _radius = self.contentSize.width * .5;
         _center = CGPointMake(_radius, _radius);
         _direction = CGPointZero;
         _isHeld = NO;
+        
+        // create the joystick that moves with touches
+        _stick = [CCSprite spriteWithFile:@"movement-stick.png"];
+        _stick.position = ccp(_radius, _radius);
+        [self addChild:_stick];
+        
         [self scheduleUpdate];
     }
     return self;
 }
-
-+ (id)dPadWithFile:(NSString *)filename radius:(float)radius
-{
-    return [[SimpleDPad alloc] initWithFile:filename radius:radius];
-}
-
 
 #pragma mark - CCNode
 
@@ -68,7 +69,9 @@
     if (distanceSQ <= _radius * _radius) {
         
         _isHeld = YES;
+        
         [self updateDirectionForTouchLocation:loc];
+        [self updateStickPositionForTouchLocation:loc];
         
         if ([_delegate respondsToSelector:@selector(simpleDPadTouchesBegan:)]) {
             [_delegate simpleDPadTouchesBegan:self];
@@ -81,8 +84,9 @@
 
 
 -(void)ccTouchMoved:(UITouch *)touch withEvent:(UIEvent *)event {
-    CGPoint location = [[CCDirector sharedDirector] convertToGL:[touch locationInView:[touch view]]];
-    [self updateDirectionForTouchLocation:location];
+    CGPoint loc = [[CCDirector sharedDirector] convertToGL:[touch locationInView:[touch view]]];
+    [self updateDirectionForTouchLocation:loc];
+    [self updateStickPositionForTouchLocation:loc];
 }
 
 
@@ -90,6 +94,7 @@
     
     _direction = CGPointZero;
     _isHeld = NO;
+    _stick.position = ccp(self.contentSize.width * .5, self.contentSize.height * .5);
     
     if ([_delegate respondsToSelector:@selector(simpleDPadTouchesEnded:)]) {
         [_delegate simpleDPadTouchesEnded:self];
@@ -136,6 +141,35 @@
             [_delegate simpleDPad:self didChangeDirectionTo:_direction];
         }
     }
+}
+
+
+- (void)updateStickPositionForTouchLocation:(CGPoint)location
+{
+    CGPoint localLoc = [self convertToNodeSpace:location];
+    
+    CGPoint center = ccp(self.contentSize.width * .5, self.contentSize.height * .5);
+    float radians = ccpToAngle(ccpSub(localLoc, center));
+    CGFloat distance = ccpDistance(localLoc, center);
+    CGFloat maxDistance = _radius;
+    
+    CGPoint position;
+    if (fabsf(distance) > maxDistance) {
+        // limit the distance of the touch point
+        position = ccpAdd(cartesianCoordinateFromPolar(_radius, radians), center);
+    }
+    else position = localLoc;
+    
+    _stick.position = position;
+}
+
+
+CGPoint cartesianCoordinateFromPolar(float radius, float radians)
+{
+    float x,y;
+    x = radius * cosf(radians);
+    y = radius * sinf(radians);
+    return CGPointMake(x, y);
 }
 
 
