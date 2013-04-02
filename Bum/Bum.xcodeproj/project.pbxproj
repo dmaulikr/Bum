@@ -1521,6 +1521,7 @@
 			buildPhases = (
 				775AC3BD16ED56B900FA3049 /* Sources */,
 				775AC3BE16ED56B900FA3049 /* Frameworks */,
+				7765FE8D170B89E4003BEB5F /* Auto Increment Build Number */,
 				775AC3BF16ED56B900FA3049 /* Resources */,
 			);
 			buildRules = (
@@ -1592,6 +1593,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7765FE8D170B89E4003BEB5F /* Auto Increment Build Number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Auto Increment Build Number";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Auto Increment Version Script\n# This script will increment the build number by 1\n# when running a configuration other than Debug and Release\n# while not on intel architecture\narch=${ARCHS:0:4}\nconf=${CONFIGURATION}\nif [ \"$conf\" != \"Debug\" ] && [ \"$conf\" != \"Release\" ] && [ \"$arch\" != \"i386\" ]\nthen\nbuildPlist=${INFOPLIST_FILE}\nbuildVersion=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" $buildPlist)\nbuildVersion=$(($buildVersion + 1))\necho \"Incrementing build version\"\necho \"    New build number is: $buildVersion\"\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildVersion\" $buildPlist\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		775AC3BD16ED56B900FA3049 /* Sources */ = {
