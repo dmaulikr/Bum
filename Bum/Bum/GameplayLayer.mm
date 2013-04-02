@@ -85,8 +85,7 @@ typedef enum {
         _hud.jumpButton.delegate = nil;
     }
     _hud = hud;
-    _hud.dPad.delegate = _controlsSystem;
-    _hud.jumpButton.delegate = _controlsSystem;
+    _controlsSystem.hud = hud;
 }
 
 

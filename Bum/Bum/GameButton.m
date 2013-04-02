@@ -48,6 +48,7 @@
 - (BOOL)ccTouchBegan:(UITouch *)touch withEvent:(UIEvent *)event
 {
     CGPoint loc = [[CCDirector sharedDirector] convertToGL:[touch locationInView:[touch view]]];
+    loc = [self.parent convertToNodeSpace:loc];
     
     if (CGRectContainsPoint([self boundingBox], loc)) {
         if ([_delegate respondsToSelector:@selector(gameButtonTouchesBegan:)]) {
@@ -62,8 +63,10 @@
 
 -(void)ccTouchMoved:(UITouch *)touch withEvent:(UIEvent *)event
 {
-    CGPoint location = [[CCDirector sharedDirector] convertToGL:[touch locationInView:[touch view]]];
-    if (!CGRectContainsPoint([self boundingBox], location)) {
+    CGPoint loc = [[CCDirector sharedDirector] convertToGL:[touch locationInView:[touch view]]];
+    loc = [self.parent convertToNodeSpace:loc];
+    
+    if (!CGRectContainsPoint([self boundingBox], loc)) {
         if ([_delegate respondsToSelector:@selector(gameButtonTouchesDidLeave:)]) {
             [_delegate gameButtonTouchesDidLeave:self];
         }

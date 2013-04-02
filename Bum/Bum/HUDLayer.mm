@@ -30,20 +30,24 @@
 - (void)setupControls
 {
     CGSize winSize = [[CCDirector sharedDirector] winSize];
-    NSLog(@"winSize: %@", NSStringFromCGSize(winSize));
+    
+    CCLayer *rightControlsGroup = [CCLayer node];
+    rightControlsGroup.isTouchEnabled = YES;
+    [self addChild:rightControlsGroup];
     
     _dPad = [[SimpleDPad alloc] init];
     _dPad.position = ccp(128.f, 128.f);
     [self addChild:_dPad];
     
-    _jumpButton = [[GameButton alloc] initWithFile:@"pd_dpad.png"];
-    [self addChild:_jumpButton];
+    _runButton = [[GameButton alloc] initWithFile:@"button-b.png"];
+    [rightControlsGroup addChild:_runButton];
     
-    if (UI_USER_INTERFACE_IDIOM() ==  UIUserInterfaceIdiomPhone) {
-        _jumpButton.scale = .5;
-        _dPad.scale = .5;
-    }
-    _jumpButton.position = ccp( winSize.height - _jumpButton.contentSize.width, _jumpButton.contentSize.height);
+    _jumpButton = [[GameButton alloc] initWithFile:@"button-a.png"];
+    _jumpButton.position = ccp(_runButton.contentSize.width * 1.5, 0);
+    [rightControlsGroup addChild:_jumpButton];
+
+    rightControlsGroup.position = ccp(winSize.height - (_jumpButton.position.x + _jumpButton.contentSize.width),
+                                      _jumpButton.contentSize.height);
 }
 
 @end

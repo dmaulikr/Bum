@@ -16,5 +16,6 @@
 }
 @property (nonatomic, readonly) SimpleDPad *dPad;
 @property (nonatomic, readonly) GameButton *jumpButton;
+@property (nonatomic, readonly) GameButton *runButton;
 
 @end

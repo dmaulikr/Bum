@@ -48,6 +48,16 @@ typedef enum CharacterMoveState {
     return self;
 }
 
+
+- (void)setHud:(HUDLayer *)hud
+{
+    _hud = hud;
+    _hud.dPad.delegate = self;
+    _hud.jumpButton.delegate = self;
+    _hud.runButton.delegate = self;
+}
+
+
 - (void)update:(float)dt
 {
     b2Body *body = _playerEntity.render.node.body;
@@ -167,7 +177,12 @@ typedef enum CharacterMoveState {
 
 - (void)gameButtonTouchesBegan:(GameButton *)gameButton
 {
-    [self jump];
+    if (gameButton == self.hud.runButton) {
+        
+    }
+    if (gameButton == self.hud.jumpButton) {
+        [self jump];
+    }
 }
 
 
