@@ -229,6 +229,8 @@
 		7776B3C816FBB8D80037640D /* CameraSystem.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7776B3C716FBB8D80037640D /* CameraSystem.mm */; };
 		779CF5EC16FCADCA0085086C /* GameButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 779CF5EB16FCADCA0085086C /* GameButton.m */; };
 		779CF5EF16FCB1090085086C /* ControlsSystem.mm in Sources */ = {isa = PBXBuildFile; fileRef = 779CF5EE16FCB1090085086C /* ControlsSystem.mm */; };
+		77C43F1D170E79470095C520 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77C43F1B170E79470095C520 /* Default-568h@2x.png */; };
+		77C43F1E170E79470095C520 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77C43F1C170E79470095C520 /* Default@2x.png */; };
 		77FD771816F38866008CA710 /* GameplayScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77FD771716F38866008CA710 /* GameplayScene.mm */; };
 		77FD771B16F388D5008CA710 /* HUDLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77FD771A16F388D4008CA710 /* HUDLayer.mm */; };
 		77FD772616F394B7008CA710 /* ActionComponent.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77FD772516F394B7008CA710 /* ActionComponent.mm */; };
@@ -686,6 +688,8 @@
 		779CF5EB16FCADCA0085086C /* GameButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameButton.m; sourceTree = "<group>"; };
 		779CF5ED16FCB1090085086C /* ControlsSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlsSystem.h; sourceTree = "<group>"; };
 		779CF5EE16FCB1090085086C /* ControlsSystem.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ControlsSystem.mm; sourceTree = "<group>"; };
+		77C43F1B170E79470095C520 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Resources/Default-568h@2x.png"; sourceTree = "<group>"; };
+		77C43F1C170E79470095C520 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Resources/Default@2x.png"; sourceTree = "<group>"; };
 		77FD771616F38866008CA710 /* GameplayScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameplayScene.h; sourceTree = "<group>"; };
 		77FD771716F38866008CA710 /* GameplayScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameplayScene.mm; sourceTree = "<group>"; };
 		77FD771916F388D4008CA710 /* HUDLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUDLayer.h; sourceTree = "<group>"; };
@@ -771,14 +775,10 @@
 		775AC3D616ED56B900FA3049 /* Bum */ = {
 			isa = PBXGroup;
 			children = (
+				77C43F16170E762F0095C520 /* App */,
 				7765FE8C170B7B82003BEB5F /* Controls */,
 				775AC60F16ED579900FA3049 /* Entity Framework */,
-				77FD772316F391A1008CA710 /* Defines.h */,
-				775AC5E116ED56BB00FA3049 /* AppDelegate.h */,
-				775AC5E216ED56BB00FA3049 /* AppDelegate.mm */,
-				775AC5EA16ED56BB00FA3049 /* GLES-Render.h */,
-				775AC5EB16ED56BB00FA3049 /* GLES-Render.mm */,
-				77FD772A16F3C71D008CA710 /* Gameplay */,
+				77FD772A16F3C71D008CA710 /* Game Layers */,
 				775AC3D716ED56B900FA3049 /* Resources */,
 				7776B36B16FB89750037640D /* LevelHelper */,
 				775AC3F116ED56B900FA3049 /* libs */,
@@ -1376,6 +1376,8 @@
 				775AC3EA16ED56B900FA3049 /* Icon.png */,
 				775AC3EC16ED56B900FA3049 /* Icon@2x.png */,
 				775AC3D816ED56B900FA3049 /* Default.png */,
+				77C43F1B170E79470095C520 /* Default-568h@2x.png */,
+				77C43F1C170E79470095C520 /* Default@2x.png */,
 				775AC3DA16ED56B900FA3049 /* Default-Landscape~ipad.png */,
 			);
 			name = App;
@@ -1499,7 +1501,19 @@
 			path = Nodes;
 			sourceTree = "<group>";
 		};
-		77FD772A16F3C71D008CA710 /* Gameplay */ = {
+		77C43F16170E762F0095C520 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				77FD772316F391A1008CA710 /* Defines.h */,
+				775AC5E116ED56BB00FA3049 /* AppDelegate.h */,
+				775AC5E216ED56BB00FA3049 /* AppDelegate.mm */,
+				775AC5EA16ED56BB00FA3049 /* GLES-Render.h */,
+				775AC5EB16ED56BB00FA3049 /* GLES-Render.mm */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		77FD772A16F3C71D008CA710 /* Game Layers */ = {
 			isa = PBXGroup;
 			children = (
 				77FD771616F38866008CA710 /* GameplayScene.h */,
@@ -1509,7 +1523,7 @@
 				77FD771916F388D4008CA710 /* HUDLayer.h */,
 				77FD771A16F388D4008CA710 /* HUDLayer.mm */,
 			);
-			name = Gameplay;
+			name = "Game Layers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1589,6 +1603,8 @@
 				7765FE89170B3EFE003BEB5F /* movement-area-circle.png in Resources */,
 				7765FE8A170B3EFE003BEB5F /* movement-stick-hd.png in Resources */,
 				7765FE8B170B3EFE003BEB5F /* movement-stick.png in Resources */,
+				77C43F1D170E79470095C520 /* Default-568h@2x.png in Resources */,
+				77C43F1E170E79470095C520 /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

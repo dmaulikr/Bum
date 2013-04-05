@@ -102,6 +102,8 @@ typedef enum {
     [_loader addObjectsToWorld:_world cocos2dLayer:self];
     [_loader createPhysicBoundaries:_world];
     [_loader createGravity:_world];
+    NSLog(@"Game screen size: %@", NSStringFromCGSize(_loader.gameScreenSize));
+    NSLog(@"Game world size: %@", NSStringFromCGRect(_loader.gameWorldSize));
 }
 
 
