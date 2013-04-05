@@ -10,12 +10,10 @@
 
 @implementation RenderComponent
 
-- (id)initWithNode:(LHSprite *)node centerToSides:(float)centerToSides centerToBottom:(float)centerToBottom
+- (id)initWithNode:(LHSprite *)node
 {
     if (self = [super init]) {
         _node = node;
-        _centerToSides = centerToSides;
-        _centerToBottom = centerToBottom;
     }
     return self;
 }

@@ -16,10 +16,8 @@
 }
 
 @property (strong, nonatomic, readonly) LHSprite *node;
-@property (nonatomic, assign) float centerToSides;
-@property (nonatomic, assign) float centerToBottom;
 @property (strong, nonatomic) NSString *currentAnimation;
 
-- (id)initWithNode:(LHSprite *)node centerToSides:(float)centerToSides centerToBottom:(float)centerToBottom;
+- (id)initWithNode:(LHSprite *)node;
 
 @end

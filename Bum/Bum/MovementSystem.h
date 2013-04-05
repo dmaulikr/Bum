@@ -20,6 +20,6 @@
 
 - (id)initWithEntityManager:(EntityManager *)entityManager
               entityFactory:(EntityFactory *)entityFactory
-                      world:(b2World *)world;
+                levelLoader:(LevelHelperLoader *)loader;
 
 @end

@@ -229,9 +229,15 @@
 		7776B3C816FBB8D80037640D /* CameraSystem.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7776B3C716FBB8D80037640D /* CameraSystem.mm */; };
 		779CF5EC16FCADCA0085086C /* GameButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 779CF5EB16FCADCA0085086C /* GameButton.m */; };
 		779CF5EF16FCB1090085086C /* ControlsSystem.mm in Sources */ = {isa = PBXBuildFile; fileRef = 779CF5EE16FCB1090085086C /* ControlsSystem.mm */; };
+		77B34ABE170F5A000044E381 /* ProjectileSystem.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77B34ABD170F5A000044E381 /* ProjectileSystem.mm */; };
 		77C43F1D170E79470095C520 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77C43F1B170E79470095C520 /* Default-568h@2x.png */; };
 		77C43F1E170E79470095C520 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77C43F1C170E79470095C520 /* Default@2x.png */; };
 		77C43F22170E80790095C520 /* CanCounterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C43F21170E80790095C520 /* CanCounterView.m */; };
+		77F2177E170F0F6E00020CBF /* WeaponComponent.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77F2177D170F0F6E00020CBF /* WeaponComponent.mm */; };
+		77F219C1170F156600020CBF /* fps_images-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 77F219BE170F156600020CBF /* fps_images-hd.png */; };
+		77F219C2170F156600020CBF /* fps_images-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = 77F219BF170F156600020CBF /* fps_images-ipadhd.png */; };
+		77F219C3170F156600020CBF /* fps_images.png in Resources */ = {isa = PBXBuildFile; fileRef = 77F219C0170F156600020CBF /* fps_images.png */; };
+		77F219C6170F212F00020CBF /* ProjectileComponent.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77F219C5170F212E00020CBF /* ProjectileComponent.mm */; };
 		77FD771816F38866008CA710 /* GameplayScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77FD771716F38866008CA710 /* GameplayScene.mm */; };
 		77FD771B16F388D5008CA710 /* HUDLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77FD771A16F388D4008CA710 /* HUDLayer.mm */; };
 		77FD772616F394B7008CA710 /* ActionComponent.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77FD772516F394B7008CA710 /* ActionComponent.mm */; };
@@ -689,10 +695,19 @@
 		779CF5EB16FCADCA0085086C /* GameButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameButton.m; sourceTree = "<group>"; };
 		779CF5ED16FCB1090085086C /* ControlsSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlsSystem.h; sourceTree = "<group>"; };
 		779CF5EE16FCB1090085086C /* ControlsSystem.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ControlsSystem.mm; sourceTree = "<group>"; };
+		77B34ABC170F5A000044E381 /* ProjectileSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectileSystem.h; sourceTree = "<group>"; };
+		77B34ABD170F5A000044E381 /* ProjectileSystem.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ProjectileSystem.mm; sourceTree = "<group>"; };
 		77C43F1B170E79470095C520 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Resources/Default-568h@2x.png"; sourceTree = "<group>"; };
 		77C43F1C170E79470095C520 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Resources/Default@2x.png"; sourceTree = "<group>"; };
 		77C43F20170E80790095C520 /* CanCounterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanCounterView.h; sourceTree = "<group>"; };
 		77C43F21170E80790095C520 /* CanCounterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanCounterView.m; sourceTree = "<group>"; };
+		77F2177C170F0F6E00020CBF /* WeaponComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeaponComponent.h; sourceTree = "<group>"; };
+		77F2177D170F0F6E00020CBF /* WeaponComponent.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WeaponComponent.mm; sourceTree = "<group>"; };
+		77F219BE170F156600020CBF /* fps_images-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fps_images-hd.png"; sourceTree = "<group>"; };
+		77F219BF170F156600020CBF /* fps_images-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fps_images-ipadhd.png"; sourceTree = "<group>"; };
+		77F219C0170F156600020CBF /* fps_images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fps_images.png; sourceTree = "<group>"; };
+		77F219C4170F212E00020CBF /* ProjectileComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectileComponent.h; sourceTree = "<group>"; };
+		77F219C5170F212E00020CBF /* ProjectileComponent.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ProjectileComponent.mm; sourceTree = "<group>"; };
 		77FD771616F38866008CA710 /* GameplayScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameplayScene.h; sourceTree = "<group>"; };
 		77FD771716F38866008CA710 /* GameplayScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameplayScene.mm; sourceTree = "<group>"; };
 		77FD771916F388D4008CA710 /* HUDLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUDLayer.h; sourceTree = "<group>"; };
@@ -733,6 +748,9 @@
 		7724FCAC16F1058800081714 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				77F219BE170F156600020CBF /* fps_images-hd.png */,
+				77F219BF170F156600020CBF /* fps_images-ipadhd.png */,
+				77F219C0170F156600020CBF /* fps_images.png */,
 				7776B36016FB88AF0037640D /* sprites_Bum-hd.png */,
 				7776B36116FB88B00037640D /* sprites_Bum-ipadhd.png */,
 				7776B36216FB88B00037640D /* sprites_Bum.png */,
@@ -1335,6 +1353,8 @@
 				77FD772816F3983B008CA710 /* ActionSystem.mm */,
 				775AC5FF16ED579000FA3049 /* HealthSystem.h */,
 				775AC60016ED579000FA3049 /* HealthSystem.mm */,
+				77B34ABC170F5A000044E381 /* ProjectileSystem.h */,
+				77B34ABD170F5A000044E381 /* ProjectileSystem.mm */,
 			);
 			name = Systems;
 			sourceTree = "<group>";
@@ -1354,6 +1374,10 @@
 				77FD772516F394B7008CA710 /* ActionComponent.mm */,
 				77FD773216F3DC10008CA710 /* PlayerComponent.h */,
 				77FD773316F3DC10008CA710 /* PlayerComponent.mm */,
+				77F2177C170F0F6E00020CBF /* WeaponComponent.h */,
+				77F2177D170F0F6E00020CBF /* WeaponComponent.mm */,
+				77F219C4170F212E00020CBF /* ProjectileComponent.h */,
+				77F219C5170F212E00020CBF /* ProjectileComponent.mm */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -1618,6 +1642,9 @@
 				7765FE8B170B3EFE003BEB5F /* movement-stick.png in Resources */,
 				77C43F1D170E79470095C520 /* Default-568h@2x.png in Resources */,
 				77C43F1E170E79470095C520 /* Default@2x.png in Resources */,
+				77F219C1170F156600020CBF /* fps_images-hd.png in Resources */,
+				77F219C2170F156600020CBF /* fps_images-ipadhd.png in Resources */,
+				77F219C3170F156600020CBF /* fps_images.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1840,6 +1867,9 @@
 				779CF5EC16FCADCA0085086C /* GameButton.m in Sources */,
 				779CF5EF16FCB1090085086C /* ControlsSystem.mm in Sources */,
 				77C43F22170E80790095C520 /* CanCounterView.m in Sources */,
+				77F2177E170F0F6E00020CBF /* WeaponComponent.mm in Sources */,
+				77F219C6170F212F00020CBF /* ProjectileComponent.mm in Sources */,
+				77B34ABE170F5A000044E381 /* ProjectileSystem.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

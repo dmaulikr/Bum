@@ -14,9 +14,4 @@
     
 }
 
-@property (nonatomic) CGPoint velocity;
-@property (nonatomic) float maxVelocity;
-
-- (id)initWithMaxVelocity:(float)velocity;
-
 @end

@@ -75,6 +75,7 @@
 	<key>Tags</key>
 	<array>
 		<string>DEFAULT</string>
+		<string>FLOOR</string>
 	</array>
 </dict>
 </plist>

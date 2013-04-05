@@ -13,10 +13,12 @@
 @interface EntityManager : NSObject
 
 - (uint32_t) generateNewEid;
+
 - (Entity *)createEntity;
+- (void)removeEntity:(Entity *)entity;
 
 - (void)addComponent:(Component *)component toEntity:(Entity *)entity;
-- (void)removeEntity:(Entity *)entity;
+- (void)removeComponent:(Component *)component fromEntity:(Entity *)entity;
 
 - (Component *)getComponentOfClass:(Class)klass forEntity:(Entity *)entity;
 - (NSArray *)getAllEntitiesPosessingComponentOfClass:(Class)klass;

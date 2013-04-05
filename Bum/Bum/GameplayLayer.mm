@@ -21,6 +21,7 @@
 #import "LevelHelperLoader.h"
 #import "CameraSystem.h"
 #import "ControlsSystem.h"
+#import "ProjectileSystem.h"
 
 typedef enum {
     DepthLevelBackground = 0,
@@ -47,6 +48,7 @@ typedef enum {
     ActionSystem *_actionSystem;
     CameraSystem *_cameraSystem;
     ControlsSystem *_controlsSystem;
+    ProjectileSystem *_projectileSystem;
     
     Entity * _player;
     Entity * _enemy;
@@ -128,16 +130,20 @@ typedef enum {
     
     [self createGameSystems];
     [self addHero];
-    [self addEnemy];
 }
 
 - (void)createGameSystems
 {
     _healthSystem = [[HealthSystem alloc] initWithEntityManager:_entityManager entityFactory:_entityFactory];
-    _movementSystem = [[MovementSystem alloc] initWithEntityManager:_entityManager entityFactory:_entityFactory world:_world];
+    _movementSystem = [[MovementSystem alloc] initWithEntityManager:_entityManager entityFactory:_entityFactory levelLoader:_loader];
     _actionSystem = [[ActionSystem alloc] initWithEntityManager:_entityManager entityFactory:_entityFactory];
     _cameraSystem = [[CameraSystem alloc] initWithEntityManager:_entityManager entityFactory:_entityFactory levelLoader:_loader layer:self];
     _controlsSystem = [[ControlsSystem alloc] initWithEntityManager:_entityManager entityFactory:_entityFactory];
+    _projectileSystem = [[ProjectileSystem alloc] initWithEntityManager:_entityManager entityFactory:_entityFactory];
+    
+    // TODO: refactor system into a singleton manager and retrieve by class
+    _controlsSystem.projectileSystem = _projectileSystem;
+    _projectileSystem.actionSystem = _actionSystem;
 }
 
 
@@ -145,15 +151,6 @@ typedef enum {
 {
     _player = [_entityFactory createHumanPlayer];
     _controlsSystem.playerEntity = _player;
-}
-
-- (void)addEnemy
-{
-    _enemy = [_entityFactory createAIPlayer];
-    RenderComponent *aiRenderer = _enemy.render;
-    if (aiRenderer) {
-        aiRenderer.node.position = ccp(SCREEN.width, aiRenderer.centerToBottom);
-    }
 }
 
 
@@ -171,9 +168,18 @@ typedef enum {
 	// generally best to keep the time step and iterations fixed.
 	_world->Step(dt, velocityIterations, positionIterations);
     
-    [_controlsSystem update:dt];
+    // update movement first so all CCNodes have the correct position set from the box2D world
     [_movementSystem update:dt];
+    
+    // update projectile statuses
+    [_projectileSystem update:dt];
+    
+    // update resources
     [_healthSystem update:dt];
+    
+    // add player controls
+    [_controlsSystem update:dt];
+    
     [_actionSystem update:dt];
     [_cameraSystem update:dt];
 }

@@ -15,6 +15,8 @@
 
 - (void)update:(float)dt
 {
+    [self updateCurrentActionWithTime:dt];
+    
     NSArray *actionEntities = [self.entityManager getAllEntitiesPosessingComponentOfClass:[ActionComponent class]];
  
     for (Entity *entity in actionEntities)
@@ -23,7 +25,6 @@
         RenderComponent *renderer = (RenderComponent *)[self.entityManager getComponentOfClass:[RenderComponent class] forEntity:entity];
         
         if (!action || !renderer) return;
-        
         
         NSString *animationName;
     
@@ -74,5 +75,34 @@
         }
     }
 }
+
+
+- (void)updateCurrentActionWithTime:(ccTime)dt
+{
+    if (_currentAction == ActionStateNone) return;
+    
+    _actionTimeElapsed += dt;
+    if (_actionTimeElapsed >= _actionDuration) {
+        _currentAction = ActionStateNone;
+        _actionTimeElapsed = 0.f;
+        _actionDuration = 0.f;
+    }
+}
+
+- (void)playAction:(ActionState)state forDuration:(float)duration entity:(Entity *)entity
+{
+    ActionComponent *action = (ActionComponent *)[self.entityManager getComponentOfClass:[ActionComponent class] forEntity:entity];
+    RenderComponent *renderer = (RenderComponent *)[self.entityManager getComponentOfClass:[RenderComponent class] forEntity:entity];
+    
+    action.actionState = state;
+    CCSequence *seq = [CCSequence actions:
+                       [CCDelayTime actionWithDuration:duration],
+                       [CCCallBlock actionWithBlock:^{
+                            action.actionState = ActionStateNone;
+                        }],
+                       nil];
+    [renderer.node runAction:seq];
+}
+
 
 @end

@@ -12,11 +12,15 @@
 @class RenderComponent;
 @class MovementComponent;
 @class PlayerComponent;
+@class WeaponComponent;
+@class ProjectileComponent;
 @interface Entity (Helpers)
 
 - (ActionComponent *)action;
 - (RenderComponent *)render;
 - (MovementComponent *)movement;
 - (PlayerComponent *)player;
+- (WeaponComponent *)weapon;
+- (ProjectileComponent *)projectile;
 
 @end

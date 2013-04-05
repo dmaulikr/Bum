@@ -17,33 +17,41 @@
 
 - (id)initWithEntityManager:(EntityManager *)entityManager
               entityFactory:(EntityFactory *)entityFactory
-                      world:(b2World *)world
+                levelLoader:(LevelHelperLoader *)loader
 {
     if (self = [super initWithEntityManager:entityManager entityFactory:entityFactory]) {
-        _world = world;
+        _loader = loader;
     }
     return self;
 }
 
 - (void)update:(float)dt
 {
-    NSArray *moveEntities = [self.entityManager getAllEntitiesPosessingComponentOfClass:[MovementComponent class]];
+//    NSArray *moveEntities = [self.entityManager getAllEntitiesPosessingComponentOfClass:[MovementComponent class]];
+//    
+//    for (Entity *entity in moveEntities) {
+//        
+//        MovementComponent *move = [entity movement];
+//        RenderComponent *render = [entity render];
+//        
+//        if (!move || !render) continue;
+//        
+//        b2Body *body = render.node.body;
+//        
+//        // make sure a body is defined for an object with movement
+//        assert(body != nil);
+//        
+//        // get the position from box2d to cocos2d and update the sprite
+//        render.node.position = [LevelHelperLoader metersToPoints:body->GetPosition()];
+//        render.node.rotation = -1 * CC_RADIANS_TO_DEGREES(body->GetAngle());
+//    }
     
-    for (Entity *entity in moveEntities) {
-        
-        MovementComponent *move = [entity movement];
-        RenderComponent *render = [entity render];
-        
-        if (!move || !render) continue;
-        
-        b2Body *body = render.node.body;
-        
-        // make sure a body is defined for an object with movement
-        assert(body != nil);
-        
-        // get the position from box2d to cocos2d and update the sprite
-        render.node.position = [LevelHelperLoader metersToPoints:body->GetPosition()];
-        render.node.rotation = -1 * CC_RADIANS_TO_DEGREES(body->GetAngle());
+    NSArray *allSprites = [_loader allSprites];
+    for (LHSprite *sprite in allSprites) {
+        b2Body *body = sprite.body;
+        if (body == nil) continue;
+        sprite.position = [LevelHelperLoader metersToPoints:body->GetPosition()];
+        sprite.rotation = -1 * CC_RADIANS_TO_DEGREES(body->GetAngle());
     }
 }
 

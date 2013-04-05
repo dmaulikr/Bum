@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 #import "Component.h"
+#import "WeaponComponent.h"
 
 @interface PlayerComponent : Component {
     

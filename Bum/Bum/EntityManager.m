@@ -63,6 +63,17 @@
 }
 
 
+- (void)removeComponent:(Component *)component fromEntity:(Entity *)entity
+{
+    NSMutableDictionary *components = _componentsByClass[NSStringFromClass([component class])];
+    if (!components) {
+        return;
+    }
+    [components removeObjectForKey:@(entity.entityID)];
+}
+
+
+
 - (Component *)getComponentOfClass:(Class)klass forEntity:(Entity *)entity
 {
     return _componentsByClass[NSStringFromClass(klass)][@(entity.entityID)];

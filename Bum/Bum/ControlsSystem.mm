@@ -11,6 +11,10 @@
 #import "RenderComponent.h"
 #import "PlayerComponent.h"
 #import "ActionComponent.h"
+#import "WeaponComponent.h"
+#import "ProjectileComponent.h"
+#import "ProjectileSystem.h"
+#import "ActionSystem.h"
 
 #define WALK_ACCELERATION 4.f
 #define RUN_ACCELERATION 8.f
@@ -18,6 +22,8 @@
 #define JUMP_MAX_HOLD_TIME 1.f
 #define STOP_SPEED_FRICTION .1f
 #define TURN_SPEED_FRICTION .1f
+
+#define HOLD_DURATION_BEFORE_RUNNING .33f
 
 typedef enum CharacterDirection {
     CharacterDirectionNone = 0,
@@ -35,6 +41,7 @@ typedef enum CharacterMoveState {
     CGPoint _direction;
     CharacterDirection _characterDirection;
     CharacterMoveState _moveState;
+    float _bButtonHoldDuration;
 }
 
 @end
@@ -68,6 +75,13 @@ typedef enum CharacterMoveState {
     
 
     // MOVEMENT ---------------------------------------------------------------------
+    
+    if (_hud.runButton.isHeld) {
+        _bButtonHoldDuration += dt;
+        if (_bButtonHoldDuration < HOLD_DURATION_BEFORE_RUNNING) {
+            return;
+        }
+    }
     
     // find the characters speed
     float maxVelocity;
@@ -110,6 +124,7 @@ typedef enum CharacterMoveState {
     body->ApplyLinearImpulse( b2Vec2(impulse,0), body->GetWorldCenter() );
 }
 
+
 #pragma mark - Character Movement
 
 - (void)walkWithDirection:(CGPoint)direction
@@ -126,14 +141,6 @@ typedef enum CharacterMoveState {
     _playerEntity.action.movementState = MovementStateRun;
     [self setDirection:direction];
 }
-
-
-- (void)jump
-{
-    b2Body *body = _playerEntity.render.node.body;
-    body->ApplyLinearImpulse( b2Vec2(0,PLAYER_JUMP_SPEED), body->GetWorldCenter() );
-}
-
 
 - (void)setDirection:(CGPoint)direction
 {
@@ -155,6 +162,27 @@ typedef enum CharacterMoveState {
         }
     }
 }
+
+
+#pragma mark - Character Actions
+
+- (void)attack
+{
+    NSLog(@"attacking with weapon");
+    WeaponComponent *weapon = _playerEntity.weapon;
+    [_projectileSystem throwProjectileWithWeapon:weapon direction:_direction];
+    
+}
+
+- (void)jump
+{
+    b2Body *body = _playerEntity.render.node.body;
+    body->ApplyLinearImpulse( b2Vec2(0,PLAYER_JUMP_SPEED), body->GetWorldCenter() );
+}
+
+
+
+
 
 
 #pragma mark - SimpleDPadDelegate
@@ -195,6 +223,10 @@ typedef enum CharacterMoveState {
 
 - (void)gameButtonTouchesBegan:(GameButton *)gameButton
 {
+    if (gameButton == self.hud.runButton) {
+        _bButtonHoldDuration = 0.f;
+    }
+    
     if (gameButton == self.hud.jumpButton) {
         [self jump];
     }
@@ -206,11 +238,22 @@ typedef enum CharacterMoveState {
 - (void)gameButtonTouchesEnded:(GameButton *)gameButton
 {
     NSLog(@"ended");
+    
+    if (gameButton == self.hud.runButton && _bButtonHoldDuration > 0.f && _bButtonHoldDuration < HOLD_DURATION_BEFORE_RUNNING) {
+        [self attack];
+        _bButtonHoldDuration = 0.f;
+        return;
+    }
 }
 
 - (void)gameButtonTouchesDidEnter:(GameButton *)gameButton
 {
     NSLog(@"enter");
+    
+    if (gameButton == self.hud.runButton) {
+        _bButtonHoldDuration = 0.f;
+    }
+    
     if (gameButton == self.hud.jumpButton) {
         [self jump];
     }
@@ -218,6 +261,9 @@ typedef enum CharacterMoveState {
 
 - (void)gameButtonTouchesDidLeave:(GameButton *)gameButton
 {
+    if (gameButton == self.hud.runButton) {
+        _bButtonHoldDuration = 0.f;
+    }
     NSLog(@"leave");
 
 }
