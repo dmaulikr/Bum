@@ -48,11 +48,11 @@
     actionComp.runAnimation = @"run";
     actionComp.walkAnimation = @"walk";
     actionComp.idleAnimation = @"idle";
+    actionComp.attackAnimation = @"throw";
     actionComp.spriteSheet = @"sprites";
     
     // finally add the action component to the manager
     [_entityManager addComponent:actionComp toEntity:entity];
-    
     
     // Movement
     MovementComponent *movement = [[MovementComponent alloc] initWithMaxVelocity:100.f];

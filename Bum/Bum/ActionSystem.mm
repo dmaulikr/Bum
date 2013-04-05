@@ -31,16 +31,16 @@
         switch (action.movementState) {
                 
             case MovementStateWalk:
-                [renderer.node prepareAnimationNamed:action.walkAnimation fromSHScene:action.spriteSheet];
+                animationName = action.walkAnimation;
                 break;
                 
             case MovementStateRun:
-                [renderer.node prepareAnimationNamed:action.runAnimation fromSHScene:action.spriteSheet];
+                animationName = action.runAnimation;
                 break;
                 
             case MovementStateIdle:
             default:
-                [renderer.node prepareAnimationNamed:action.idleAnimation fromSHScene:action.spriteSheet];
+                animationName = action.idleAnimation;
                 break;
         }
         
