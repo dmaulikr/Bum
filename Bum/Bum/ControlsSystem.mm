@@ -73,26 +73,25 @@ typedef enum CharacterMoveState {
 - (void)setLoader:(LevelHelperLoader *)loader
 {
     [super setLoader:loader];
+    
+    // listen for the player sprite touching the floor for controlling jumps
     [self.loader registerBeginOrEndCollisionCallbackBetweenTagA:PLAYER
                                                         andTagB:FLOOR
                                                      idListener:self
                                                     selListener:@selector(handleFloorCollisions:)];
+    [self.loader registerPostCollisionCallbackBetweenTagA:PLAYER
+                                                  andTagB:FLOOR
+                                               idListener:self
+                                              selListener:@selector(handleFloorCollisions:)];
 }
 
 - (void)handleFloorCollisions:(LHContactInfo *)info
 {
-    if (info.contactType == LH_BEGIN_CONTACT) {
-        NSLog(@"player touched floor");
-        _isTouchingFloor = YES;
-        
-        if (_isJumping) {
-            _isJumping = NO;
-        }
-    }
-    else {
-        
-        NSLog(@"player left floor");
-        _isTouchingFloor = NO;
+    _isTouchingFloor = info.contact->IsTouching();
+    
+    // mark as no longer jumping when we touch the floor
+    if (_isTouchingFloor && _isJumping) {
+        _isJumping = NO;
     }
 }
 
@@ -102,9 +101,6 @@ typedef enum CharacterMoveState {
     b2Body *body = _playerEntity.render.node.body;
     b2Vec2 vel = body->GetLinearVelocity();
     
-    // JUMPING ---------------------------------------------------------------------
-    
-
     // MOVEMENT ---------------------------------------------------------------------
     
     if (_hud.runButton.isHeld) {
