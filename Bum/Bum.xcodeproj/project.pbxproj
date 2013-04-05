@@ -231,6 +231,7 @@
 		779CF5EF16FCB1090085086C /* ControlsSystem.mm in Sources */ = {isa = PBXBuildFile; fileRef = 779CF5EE16FCB1090085086C /* ControlsSystem.mm */; };
 		77C43F1D170E79470095C520 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77C43F1B170E79470095C520 /* Default-568h@2x.png */; };
 		77C43F1E170E79470095C520 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77C43F1C170E79470095C520 /* Default@2x.png */; };
+		77C43F22170E80790095C520 /* CanCounterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C43F21170E80790095C520 /* CanCounterView.m */; };
 		77FD771816F38866008CA710 /* GameplayScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77FD771716F38866008CA710 /* GameplayScene.mm */; };
 		77FD771B16F388D5008CA710 /* HUDLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77FD771A16F388D4008CA710 /* HUDLayer.mm */; };
 		77FD772616F394B7008CA710 /* ActionComponent.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77FD772516F394B7008CA710 /* ActionComponent.mm */; };
@@ -690,6 +691,8 @@
 		779CF5EE16FCB1090085086C /* ControlsSystem.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ControlsSystem.mm; sourceTree = "<group>"; };
 		77C43F1B170E79470095C520 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Resources/Default-568h@2x.png"; sourceTree = "<group>"; };
 		77C43F1C170E79470095C520 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Resources/Default@2x.png"; sourceTree = "<group>"; };
+		77C43F20170E80790095C520 /* CanCounterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanCounterView.h; sourceTree = "<group>"; };
+		77C43F21170E80790095C520 /* CanCounterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanCounterView.m; sourceTree = "<group>"; };
 		77FD771616F38866008CA710 /* GameplayScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameplayScene.h; sourceTree = "<group>"; };
 		77FD771716F38866008CA710 /* GameplayScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameplayScene.mm; sourceTree = "<group>"; };
 		77FD771916F388D4008CA710 /* HUDLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUDLayer.h; sourceTree = "<group>"; };
@@ -1513,9 +1516,19 @@
 			name = App;
 			sourceTree = "<group>";
 		};
+		77C43F1F170E801A0095C520 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				77C43F20170E80790095C520 /* CanCounterView.h */,
+				77C43F21170E80790095C520 /* CanCounterView.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
 		77FD772A16F3C71D008CA710 /* Game Layers */ = {
 			isa = PBXGroup;
 			children = (
+				77C43F1F170E801A0095C520 /* UI */,
 				77FD771616F38866008CA710 /* GameplayScene.h */,
 				77FD771716F38866008CA710 /* GameplayScene.mm */,
 				775AC61216ED5BE300FA3049 /* GameplayLayer.h */,
@@ -1826,6 +1839,7 @@
 				7776B3C816FBB8D80037640D /* CameraSystem.mm in Sources */,
 				779CF5EC16FCADCA0085086C /* GameButton.m in Sources */,
 				779CF5EF16FCB1090085086C /* ControlsSystem.mm in Sources */,
+				77C43F22170E80790095C520 /* CanCounterView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

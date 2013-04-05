@@ -9,6 +9,7 @@
 #import "HUDLayer.h"
 #import "SimpleDPad.h"
 #import "GameButton.h"
+#import "CanCounterView.h"
 
 #define BUTTON_PADDING_IPHONE 15.f
 #define BUTTON_PADDING_IPAD 25.f
@@ -26,6 +27,7 @@
     if (self = [super init]) {
         self.isTouchEnabled = YES;
         [self setupControls];
+        [self setupInterface];
     }
     return self;
 }
@@ -64,6 +66,16 @@
         rightControlsGroup.position = ccp(winSize.height - (_jumpButton.position.x + _jumpButton.contentSize.width * .5 + BUTTON_PADDING_IPAD),
                                           128.f);
     }
+}
+
+- (void)setupInterface
+{
+    CGSize winSize = [[CCDirector sharedDirector] winSize];
+    CGSize size = CGSizeMake(winSize.height, winSize.width); // adjust the size for landscape
+    
+    _canCounterView = [[CanCounterView alloc] init];
+    _canCounterView.position = ccp(size.width * .5, size.height - 20.f);
+    [self addChild:_canCounterView];
 }
 
 @end

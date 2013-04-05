@@ -11,11 +11,13 @@
 
 @class SimpleDPad;
 @class GameButton;
+@class CanCounterView;
 @interface HUDLayer : CCLayer {
     
 }
 @property (nonatomic, readonly) SimpleDPad *dPad;
 @property (nonatomic, readonly) GameButton *jumpButton;
 @property (nonatomic, readonly) GameButton *runButton;
+@property (nonatomic, readonly) CanCounterView *canCounterView;
 
 @end
