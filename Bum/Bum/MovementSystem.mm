@@ -15,16 +15,6 @@
 
 @implementation MovementSystem
 
-- (id)initWithEntityManager:(EntityManager *)entityManager
-              entityFactory:(EntityFactory *)entityFactory
-                levelLoader:(LevelHelperLoader *)loader
-{
-    if (self = [super initWithEntityManager:entityManager entityFactory:entityFactory]) {
-        _loader = loader;
-    }
-    return self;
-}
-
 - (void)update:(float)dt
 {
 //    NSArray *moveEntities = [self.entityManager getAllEntitiesPosessingComponentOfClass:[MovementComponent class]];
@@ -46,7 +36,7 @@
 //        render.node.rotation = -1 * CC_RADIANS_TO_DEGREES(body->GetAngle());
 //    }
     
-    NSArray *allSprites = [_loader allSprites];
+    NSArray *allSprites = [self.loader allSprites];
     for (LHSprite *sprite in allSprites) {
         b2Body *body = sprite.body;
         if (body == nil) continue;

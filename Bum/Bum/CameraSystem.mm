@@ -25,8 +25,7 @@
                 levelLoader:(LevelHelperLoader *)loader
                       layer:(CCLayer *)layer
 {
-    if (self = [super initWithEntityManager:entityManager entityFactory:entityFactory]) {
-        _loader = loader;
+    if (self = [super initWithEntityManager:entityManager entityFactory:entityFactory loader:loader]) {
         _ground = [loader parallaxNodeWithUniqueName:@"ground"];
         _layer = layer;
     }
@@ -52,7 +51,7 @@
 -(void)setViewpointCenter:(CGPoint) position {
     
     CGSize winSize = [[CCDirector sharedDirector] winSize];
-    CGRect worldRect = [_loader gameWorldSize];
+    CGRect worldRect = [self.loader gameWorldSize];
     
     int x = MAX(position.x, worldRect.origin.x + winSize.width / 2);
     int y = MAX(position.y, worldRect.origin.y + winSize.height / 2);
@@ -65,8 +64,6 @@
     
     _layer.position = viewPoint;
 }
-
-
 
 
 

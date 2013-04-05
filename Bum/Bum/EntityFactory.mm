@@ -89,13 +89,13 @@
     Entity *entity = [_entityManager createEntity];
     
     // projectile
-    [_entityManager addComponent:[[ProjectileComponent alloc] initWithFireSpeed:CGPointMake(2.f, .5f)
+    [_entityManager addComponent:[[ProjectileComponent alloc] initWithFireSpeed:CGPointMake(1.5f, .5f)
                                                                     maxDistance:2000.f
                                                                     maxDuration:3.f]
                         toEntity:entity];
     
     // renderer
-    LHSprite *sprite = [_loader createBatchSpriteWithUniqueName:name];
+    LHSprite *sprite = [_loader createSpriteWithName:name fromSheet:@"Bum" fromSHFile:@"sprites"];
     sprite.body->SetBullet(YES);
     RenderComponent *renderer = [[RenderComponent alloc] initWithNode:sprite];
     [_entityManager addComponent:renderer toEntity:entity];

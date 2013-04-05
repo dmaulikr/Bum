@@ -63,7 +63,9 @@
 enum LevelHelper_TAG 
 { 
 	DEFAULT_TAG 	= 0,
-	NUMBER_OF_TAGS 	= 1
+	FLOOR 			= 1,
+	PLAYER 			= 2,
+	NUMBER_OF_TAGS 	= 3
 };
 
 CGSize  LHSizeFromString(NSString* val);

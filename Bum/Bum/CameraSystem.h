@@ -11,7 +11,6 @@
 
 @interface CameraSystem : System
 
-@property (nonatomic, unsafe_unretained) LevelHelperLoader *loader;
 
 - (id)initWithEntityManager:(EntityManager *)entityManager
               entityFactory:(EntityFactory *)entityFactory

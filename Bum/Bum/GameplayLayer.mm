@@ -104,6 +104,7 @@ typedef enum {
     [_loader addObjectsToWorld:_world cocos2dLayer:self];
     [_loader createPhysicBoundaries:_world];
     [_loader createGravity:_world];
+    [_loader useLevelHelperCollisionHandling];
     NSLog(@"Game screen size: %@", NSStringFromCGSize(_loader.gameScreenSize));
     NSLog(@"Game world size: %@", NSStringFromCGRect(_loader.gameWorldSize));
 }
@@ -134,12 +135,12 @@ typedef enum {
 
 - (void)createGameSystems
 {
-    _healthSystem = [[HealthSystem alloc] initWithEntityManager:_entityManager entityFactory:_entityFactory];
-    _movementSystem = [[MovementSystem alloc] initWithEntityManager:_entityManager entityFactory:_entityFactory levelLoader:_loader];
-    _actionSystem = [[ActionSystem alloc] initWithEntityManager:_entityManager entityFactory:_entityFactory];
+    _healthSystem = [[HealthSystem alloc] initWithEntityManager:_entityManager entityFactory:_entityFactory loader:_loader];
+    _movementSystem = [[MovementSystem alloc] initWithEntityManager:_entityManager entityFactory:_entityFactory loader:_loader];
+    _actionSystem = [[ActionSystem alloc] initWithEntityManager:_entityManager entityFactory:_entityFactory loader:_loader];
     _cameraSystem = [[CameraSystem alloc] initWithEntityManager:_entityManager entityFactory:_entityFactory levelLoader:_loader layer:self];
-    _controlsSystem = [[ControlsSystem alloc] initWithEntityManager:_entityManager entityFactory:_entityFactory];
-    _projectileSystem = [[ProjectileSystem alloc] initWithEntityManager:_entityManager entityFactory:_entityFactory];
+    _controlsSystem = [[ControlsSystem alloc] initWithEntityManager:_entityManager entityFactory:_entityFactory loader:_loader];
+    _projectileSystem = [[ProjectileSystem alloc] initWithEntityManager:_entityManager entityFactory:_entityFactory loader:_loader];
     
     // TODO: refactor system into a singleton manager and retrieve by class
     _controlsSystem.projectileSystem = _projectileSystem;

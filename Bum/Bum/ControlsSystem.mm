@@ -15,6 +15,7 @@
 #import "ProjectileComponent.h"
 #import "ProjectileSystem.h"
 #import "ActionSystem.h"
+#import "LevelHelperLoader.h"
 
 #define WALK_ACCELERATION 4.f
 #define RUN_ACCELERATION 8.f
@@ -42,6 +43,8 @@ typedef enum CharacterMoveState {
     CharacterDirection _characterDirection;
     CharacterMoveState _moveState;
     float _bButtonHoldDuration;
+    BOOL _isTouchingFloor;
+    BOOL _isJumping;
 }
 
 @end
@@ -52,6 +55,7 @@ typedef enum CharacterMoveState {
 {
     if (self = [super init]) {
         _characterDirection = CharacterDirectionRight;
+        _isTouchingFloor = YES;
     }
     return self;
 }
@@ -63,6 +67,33 @@ typedef enum CharacterMoveState {
     _hud.dPad.delegate = self;
     _hud.jumpButton.delegate = self;
     _hud.runButton.delegate = self;
+}
+
+
+- (void)setLoader:(LevelHelperLoader *)loader
+{
+    [super setLoader:loader];
+    [self.loader registerBeginOrEndCollisionCallbackBetweenTagA:PLAYER
+                                                        andTagB:FLOOR
+                                                     idListener:self
+                                                    selListener:@selector(handleFloorCollisions:)];
+}
+
+- (void)handleFloorCollisions:(LHContactInfo *)info
+{
+    if (info.contactType == LH_BEGIN_CONTACT) {
+        NSLog(@"player touched floor");
+        _isTouchingFloor = YES;
+        
+        if (_isJumping) {
+            _isJumping = NO;
+        }
+    }
+    else {
+        
+        NSLog(@"player left floor");
+        _isTouchingFloor = NO;
+    }
 }
 
 
@@ -176,12 +207,12 @@ typedef enum CharacterMoveState {
 
 - (void)jump
 {
-    b2Body *body = _playerEntity.render.node.body;
-    body->ApplyLinearImpulse( b2Vec2(0,PLAYER_JUMP_SPEED), body->GetWorldCenter() );
+    if (!_isJumping && _isTouchingFloor) {
+        _isJumping = YES;
+        b2Body *body = _playerEntity.render.node.body;
+        body->ApplyLinearImpulse( b2Vec2(0,PLAYER_JUMP_SPEED), body->GetWorldCenter() );
+    }
 }
-
-
-
 
 
 

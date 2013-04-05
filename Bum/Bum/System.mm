@@ -13,10 +13,12 @@
 
 - (id)initWithEntityManager:(EntityManager *)entityManager
               entityFactory:(EntityFactory *)entityFactory
+                     loader:(LevelHelperLoader*)loader
 {
     if ((self = [super init])) {
         self.entityManager = entityManager;
         self.entityFactory = entityFactory;
+        self.loader = loader;
     }
     return self;
 }
