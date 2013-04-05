@@ -105,6 +105,7 @@ typedef enum {
     [_loader createPhysicBoundaries:_world];
     [_loader createGravity:_world];
     [_loader useLevelHelperCollisionHandling];
+    [LevelHelperLoader dontStretchArt];
     NSLog(@"Game screen size: %@", NSStringFromCGSize(_loader.gameScreenSize));
     NSLog(@"Game world size: %@", NSStringFromCGRect(_loader.gameWorldSize));
 }
