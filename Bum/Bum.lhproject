@@ -77,6 +77,8 @@
 		<string>DEFAULT</string>
 		<string>FLOOR</string>
 		<string>PLAYER</string>
+		<string>WIRE</string>
+		<string>WALL</string>
 	</array>
 </dict>
 </plist>

@@ -81,8 +81,10 @@
     
     b2Vec2 impulse = b2Vec2(bullet.projectile.fireSpeed.x * xDirection, bullet.projectile.fireSpeed.y);
     b2Body *body = bullet.render.node.body;
-    b2Vec2 rotationPoint = b2Vec2(arc4random(), arc4random()); // apply force to a random point
-    body->ApplyLinearImpulse( impulse, body->GetWorldPoint( rotationPoint ));
+    b2Vec2 center = body->GetWorldCenter();
+    b2Vec2 rotationPoint = b2Vec2(center.x + arc4random() * bullet.render.node.contentSize.width * .5,
+                                  center.y + arc4random() * bullet.render.node.contentSize.height * .5); // apply force to a random point
+    body->ApplyLinearImpulse( impulse, rotationPoint);
     
     // store projectile starting position
     bullet.projectile.position = [LevelHelperLoader metersToPoints:body->GetPosition()];

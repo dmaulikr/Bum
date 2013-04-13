@@ -201,6 +201,9 @@
 		7776B3C416FBB5000037640D /* pd_dpad-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 7776B3C216FBB5000037640D /* pd_dpad-hd.png */; };
 		7776B3C516FBB5000037640D /* pd_dpad.png in Resources */ = {isa = PBXBuildFile; fileRef = 7776B3C316FBB5000037640D /* pd_dpad.png */; };
 		7776B3C816FBB8D80037640D /* CameraSystem.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7776B3C716FBB8D80037640D /* CameraSystem.mm */; };
+		779C63E517187FC700DD4A25 /* sprites_Level0-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 779C63E217187FC700DD4A25 /* sprites_Level0-hd.png */; };
+		779C63E617187FC700DD4A25 /* sprites_Level0-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = 779C63E317187FC700DD4A25 /* sprites_Level0-ipadhd.png */; };
+		779C63E717187FC700DD4A25 /* sprites_Level0.png in Resources */ = {isa = PBXBuildFile; fileRef = 779C63E417187FC700DD4A25 /* sprites_Level0.png */; };
 		779CF5EC16FCADCA0085086C /* GameButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 779CF5EB16FCADCA0085086C /* GameButton.m */; };
 		779CF5EF16FCB1090085086C /* ControlsSystem.mm in Sources */ = {isa = PBXBuildFile; fileRef = 779CF5EE16FCB1090085086C /* ControlsSystem.mm */; };
 		77B34ABE170F5A000044E381 /* ProjectileSystem.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77B34ABD170F5A000044E381 /* ProjectileSystem.mm */; };
@@ -638,6 +641,9 @@
 		7776B3C316FBB5000037640D /* pd_dpad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pd_dpad.png; path = ../../Assets/artwork/ui/pd_dpad.png; sourceTree = "<group>"; };
 		7776B3C616FBB8D70037640D /* CameraSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraSystem.h; sourceTree = "<group>"; };
 		7776B3C716FBB8D80037640D /* CameraSystem.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CameraSystem.mm; sourceTree = "<group>"; };
+		779C63E217187FC700DD4A25 /* sprites_Level0-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sprites_Level0-hd.png"; path = "Resources/Images/sprites_Level0-hd.png"; sourceTree = "<group>"; };
+		779C63E317187FC700DD4A25 /* sprites_Level0-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sprites_Level0-ipadhd.png"; path = "Resources/Images/sprites_Level0-ipadhd.png"; sourceTree = "<group>"; };
+		779C63E417187FC700DD4A25 /* sprites_Level0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sprites_Level0.png; path = Resources/Images/sprites_Level0.png; sourceTree = "<group>"; };
 		779CF5EA16FCADCA0085086C /* GameButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameButton.h; sourceTree = "<group>"; };
 		779CF5EB16FCADCA0085086C /* GameButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameButton.m; sourceTree = "<group>"; };
 		779CF5ED16FCB1090085086C /* ControlsSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlsSystem.h; sourceTree = "<group>"; };
@@ -754,6 +760,9 @@
 				7776B36016FB88AF0037640D /* sprites_Bum-hd.png */,
 				7776B36116FB88B00037640D /* sprites_Bum-ipadhd.png */,
 				7776B36216FB88B00037640D /* sprites_Bum.png */,
+				779C63E217187FC700DD4A25 /* sprites_Level0-hd.png */,
+				779C63E317187FC700DD4A25 /* sprites_Level0-ipadhd.png */,
+				779C63E417187FC700DD4A25 /* sprites_Level0.png */,
 				7776B36316FB88B00037640D /* sprites.pshs */,
 				7776B35F16FB888A0037640D /* UI */,
 			);
@@ -1645,6 +1654,9 @@
 				77F219C2170F156600020CBF /* fps_images-ipadhd.png in Resources */,
 				77F219C3170F156600020CBF /* fps_images.png in Resources */,
 				77B34AFF170F71290044E381 /* LICENSE_LevelHelper.txt in Resources */,
+				779C63E517187FC700DD4A25 /* sprites_Level0-hd.png in Resources */,
+				779C63E617187FC700DD4A25 /* sprites_Level0-ipadhd.png in Resources */,
+				779C63E717187FC700DD4A25 /* sprites_Level0.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

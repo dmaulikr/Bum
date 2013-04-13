@@ -37,6 +37,411 @@
 							<key>ParentClass</key>
 							<string>LHBatch</string>
 							<key>ParentName</key>
+							<string>Level0</string>
+							<key>PathProperties</key>
+							<dict/>
+							<key>PhysicProperties</key>
+							<dict>
+								<key>HandledBySH</key>
+								<true/>
+							</dict>
+							<key>SHSceneName</key>
+							<string>sprites.pshs</string>
+							<key>SHSheetName</key>
+							<string>Level0</string>
+							<key>SHSpriteName</key>
+							<string>level0-bgslice-03</string>
+							<key>SheetImage</key>
+							<string>sprites_Level0.png</string>
+							<key>TextureProperties</key>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Color</key>
+								<string>{{1, 1}, {1, 1}}</string>
+								<key>FlipX</key>
+								<false/>
+								<key>FlipY</key>
+								<false/>
+								<key>Frame</key>
+								<string>{{2, 388}, {480, 384}}</string>
+								<key>IsDrawable</key>
+								<true/>
+								<key>IsExpanded</key>
+								<false/>
+								<key>IsRotated</key>
+								<true/>
+								<key>Locked</key>
+								<true/>
+								<key>Opacity</key>
+								<real>1</real>
+								<key>Position</key>
+								<string>{1200, 192}</string>
+								<key>Scale</key>
+								<string>{1, 1}</string>
+								<key>SpriteSize</key>
+								<string>{480, 384}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>TagName</key>
+								<string>DEFAULT</string>
+								<key>TextureOffset</key>
+								<string>{0, -0}</string>
+								<key>UniqueName</key>
+								<string>level0-bgslice-03</string>
+								<key>ZOrder</key>
+								<integer>-1</integer>
+							</dict>
+							<key>UniqueName</key>
+							<string>level0-bgslice-03</string>
+						</dict>
+						<dict>
+							<key>AnimationsProperties</key>
+							<dict/>
+							<key>Children</key>
+							<array/>
+							<key>CustomClassInfo</key>
+							<dict>
+								<key>ClassDefaults</key>
+								<dict/>
+								<key>ClassName</key>
+								<string>No Class</string>
+							</dict>
+							<key>NodeType</key>
+							<string>LHSprite</string>
+							<key>ParentClass</key>
+							<string>LHBatch</string>
+							<key>ParentName</key>
+							<string>Level0</string>
+							<key>PathProperties</key>
+							<dict/>
+							<key>PhysicProperties</key>
+							<dict>
+								<key>HandledBySH</key>
+								<true/>
+							</dict>
+							<key>SHSceneName</key>
+							<string>sprites.pshs</string>
+							<key>SHSheetName</key>
+							<string>Level0</string>
+							<key>SHSpriteName</key>
+							<string>level0-bgslice-02</string>
+							<key>SheetImage</key>
+							<string>sprites_Level0.png</string>
+							<key>TextureProperties</key>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Color</key>
+								<string>{{1, 1}, {1, 1}}</string>
+								<key>FlipX</key>
+								<false/>
+								<key>FlipY</key>
+								<false/>
+								<key>Frame</key>
+								<string>{{484, 2}, {480, 384}}</string>
+								<key>IsDrawable</key>
+								<true/>
+								<key>IsExpanded</key>
+								<false/>
+								<key>IsRotated</key>
+								<false/>
+								<key>Locked</key>
+								<true/>
+								<key>Opacity</key>
+								<real>1</real>
+								<key>Position</key>
+								<string>{720, 192}</string>
+								<key>Scale</key>
+								<string>{1, 1}</string>
+								<key>SpriteSize</key>
+								<string>{480, 384}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>TagName</key>
+								<string>DEFAULT</string>
+								<key>TextureOffset</key>
+								<string>{0, -0}</string>
+								<key>UniqueName</key>
+								<string>level0-bgslice-02</string>
+								<key>ZOrder</key>
+								<integer>-1</integer>
+							</dict>
+							<key>UniqueName</key>
+							<string>level0-bgslice-02</string>
+						</dict>
+						<dict>
+							<key>AnimationsProperties</key>
+							<dict/>
+							<key>Children</key>
+							<array/>
+							<key>CustomClassInfo</key>
+							<dict>
+								<key>ClassDefaults</key>
+								<dict/>
+								<key>ClassName</key>
+								<string>No Class</string>
+							</dict>
+							<key>NodeType</key>
+							<string>LHSprite</string>
+							<key>ParentClass</key>
+							<string>LHBatch</string>
+							<key>ParentName</key>
+							<string>Level0</string>
+							<key>PathProperties</key>
+							<dict/>
+							<key>PhysicProperties</key>
+							<dict>
+								<key>HandledBySH</key>
+								<true/>
+							</dict>
+							<key>SHSceneName</key>
+							<string>sprites.pshs</string>
+							<key>SHSheetName</key>
+							<string>Level0</string>
+							<key>SHSpriteName</key>
+							<string>level0-bgslice-05</string>
+							<key>SheetImage</key>
+							<string>sprites_Level0.png</string>
+							<key>TextureProperties</key>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Color</key>
+								<string>{{1, 1}, {1, 1}}</string>
+								<key>FlipX</key>
+								<false/>
+								<key>FlipY</key>
+								<false/>
+								<key>Frame</key>
+								<string>{{2, 870}, {127.75, 384}}</string>
+								<key>IsDrawable</key>
+								<true/>
+								<key>IsExpanded</key>
+								<false/>
+								<key>IsRotated</key>
+								<true/>
+								<key>Locked</key>
+								<true/>
+								<key>Opacity</key>
+								<real>1</real>
+								<key>Position</key>
+								<string>{1983.875, 192}</string>
+								<key>Scale</key>
+								<string>{1, 1}</string>
+								<key>SpriteSize</key>
+								<string>{127.75, 384}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>TagName</key>
+								<string>DEFAULT</string>
+								<key>TextureOffset</key>
+								<string>{0, -0}</string>
+								<key>UniqueName</key>
+								<string>level0-bgslice-05</string>
+								<key>ZOrder</key>
+								<integer>-1</integer>
+							</dict>
+							<key>UniqueName</key>
+							<string>level0-bgslice-05</string>
+						</dict>
+						<dict>
+							<key>AnimationsProperties</key>
+							<dict/>
+							<key>Children</key>
+							<array/>
+							<key>CustomClassInfo</key>
+							<dict>
+								<key>ClassDefaults</key>
+								<dict/>
+								<key>ClassName</key>
+								<string>No Class</string>
+							</dict>
+							<key>NodeType</key>
+							<string>LHSprite</string>
+							<key>ParentClass</key>
+							<string>LHBatch</string>
+							<key>ParentName</key>
+							<string>Level0</string>
+							<key>PathProperties</key>
+							<dict/>
+							<key>PhysicProperties</key>
+							<dict>
+								<key>HandledBySH</key>
+								<true/>
+							</dict>
+							<key>SHSceneName</key>
+							<string>sprites.pshs</string>
+							<key>SHSheetName</key>
+							<string>Level0</string>
+							<key>SHSpriteName</key>
+							<string>level0-bgslice-01</string>
+							<key>SheetImage</key>
+							<string>sprites_Level0.png</string>
+							<key>TextureProperties</key>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Color</key>
+								<string>{{1, 1}, {1, 1}}</string>
+								<key>FlipX</key>
+								<false/>
+								<key>FlipY</key>
+								<false/>
+								<key>Frame</key>
+								<string>{{2, 2}, {480, 384}}</string>
+								<key>IsDrawable</key>
+								<true/>
+								<key>IsExpanded</key>
+								<false/>
+								<key>IsRotated</key>
+								<false/>
+								<key>Locked</key>
+								<true/>
+								<key>Opacity</key>
+								<real>1</real>
+								<key>Position</key>
+								<string>{240, 192}</string>
+								<key>Scale</key>
+								<string>{1, 1}</string>
+								<key>SpriteSize</key>
+								<string>{480, 384}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>TagName</key>
+								<string>DEFAULT</string>
+								<key>TextureOffset</key>
+								<string>{0, -0}</string>
+								<key>UniqueName</key>
+								<string>level0-bgslice-01</string>
+								<key>ZOrder</key>
+								<integer>-1</integer>
+							</dict>
+							<key>UniqueName</key>
+							<string>level0-bgslice-01</string>
+						</dict>
+						<dict>
+							<key>AnimationsProperties</key>
+							<dict/>
+							<key>Children</key>
+							<array/>
+							<key>CustomClassInfo</key>
+							<dict>
+								<key>ClassDefaults</key>
+								<dict/>
+								<key>ClassName</key>
+								<string>No Class</string>
+							</dict>
+							<key>NodeType</key>
+							<string>LHSprite</string>
+							<key>ParentClass</key>
+							<string>LHBatch</string>
+							<key>ParentName</key>
+							<string>Level0</string>
+							<key>PathProperties</key>
+							<dict/>
+							<key>PhysicProperties</key>
+							<dict>
+								<key>HandledBySH</key>
+								<true/>
+							</dict>
+							<key>SHSceneName</key>
+							<string>sprites.pshs</string>
+							<key>SHSheetName</key>
+							<string>Level0</string>
+							<key>SHSpriteName</key>
+							<string>level0-bgslice-04</string>
+							<key>SheetImage</key>
+							<string>sprites_Level0.png</string>
+							<key>TextureProperties</key>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Color</key>
+								<string>{{1, 1}, {1, 1}}</string>
+								<key>FlipX</key>
+								<false/>
+								<key>FlipY</key>
+								<false/>
+								<key>Frame</key>
+								<string>{{388, 388}, {480, 384}}</string>
+								<key>IsDrawable</key>
+								<true/>
+								<key>IsExpanded</key>
+								<false/>
+								<key>IsRotated</key>
+								<false/>
+								<key>Locked</key>
+								<true/>
+								<key>Opacity</key>
+								<real>1</real>
+								<key>Position</key>
+								<string>{1680, 192}</string>
+								<key>Scale</key>
+								<string>{1, 1}</string>
+								<key>SpriteSize</key>
+								<string>{480, 384}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>TagName</key>
+								<string>DEFAULT</string>
+								<key>TextureOffset</key>
+								<string>{0, -0}</string>
+								<key>UniqueName</key>
+								<string>level0-bgslice-04</string>
+								<key>ZOrder</key>
+								<integer>-1</integer>
+							</dict>
+							<key>UniqueName</key>
+							<string>level0-bgslice-04</string>
+						</dict>
+					</array>
+					<key>CustomClassInfo</key>
+					<dict>
+						<key>ClassName</key>
+						<string>No Class</string>
+					</dict>
+					<key>NodeType</key>
+					<string>LHBatch</string>
+					<key>ParentClass</key>
+					<string>LHLayer</string>
+					<key>ParentName</key>
+					<string>MAIN_LAYER</string>
+					<key>SHScene</key>
+					<string>sprites.pshs</string>
+					<key>SheetImage</key>
+					<string>sprites_Level0.png</string>
+					<key>SheetImageRelative</key>
+					<string>/Bum/Resources/Images/sprites_Level0.png</string>
+					<key>Tag</key>
+					<integer>0</integer>
+					<key>TagName</key>
+					<string>DEFAULT</string>
+					<key>UniqueName</key>
+					<string>Level0</string>
+					<key>ZOrder</key>
+					<integer>0</integer>
+				</dict>
+				<dict>
+					<key>Children</key>
+					<array>
+						<dict>
+							<key>AnimationsProperties</key>
+							<dict/>
+							<key>Children</key>
+							<array/>
+							<key>CustomClassInfo</key>
+							<dict>
+								<key>ClassDefaults</key>
+								<dict/>
+								<key>ClassName</key>
+								<string>No Class</string>
+							</dict>
+							<key>NodeType</key>
+							<string>LHSprite</string>
+							<key>ParentClass</key>
+							<string>LHBatch</string>
+							<key>ParentName</key>
 							<string>Bum</string>
 							<key>PathProperties</key>
 							<dict/>
@@ -66,7 +471,7 @@
 								<key>Frame</key>
 								<string>{{2, 2}, {512, 55}}</string>
 								<key>IsDrawable</key>
-								<true/>
+								<false/>
 								<key>IsExpanded</key>
 								<false/>
 								<key>IsRotated</key>
@@ -76,7 +481,7 @@
 								<key>Opacity</key>
 								<real>1</real>
 								<key>Position</key>
-								<string>{257.5360107421875, 292.5}</string>
+								<string>{257.5360107421875, 323.5}</string>
 								<key>Scale</key>
 								<string>{1.0060000419616699, 1}</string>
 								<key>SpriteSize</key>
@@ -141,7 +546,7 @@
 								<key>Frame</key>
 								<string>{{2, 2}, {512, 55}}</string>
 								<key>IsDrawable</key>
-								<true/>
+								<false/>
 								<key>IsExpanded</key>
 								<false/>
 								<key>IsRotated</key>
@@ -151,7 +556,7 @@
 								<key>Opacity</key>
 								<real>1</real>
 								<key>Position</key>
-								<string>{768, 292.5}</string>
+								<string>{769.5360107421875, 323.5}</string>
 								<key>Scale</key>
 								<string>{1.0060000419616699, 1}</string>
 								<key>SpriteSize</key>
@@ -216,7 +621,7 @@
 								<key>Frame</key>
 								<string>{{2, 2}, {512, 55}}</string>
 								<key>IsDrawable</key>
-								<true/>
+								<false/>
 								<key>IsExpanded</key>
 								<false/>
 								<key>IsRotated</key>
@@ -226,7 +631,7 @@
 								<key>Opacity</key>
 								<real>1</real>
 								<key>Position</key>
-								<string>{1535, 292.5}</string>
+								<string>{1281.5360107421875, 323.5}</string>
 								<key>Scale</key>
 								<string>{1.0060000419616699, 1}</string>
 								<key>SpriteSize</key>
@@ -291,7 +696,7 @@
 								<key>Frame</key>
 								<string>{{2, 2}, {512, 55}}</string>
 								<key>IsDrawable</key>
-								<true/>
+								<false/>
 								<key>IsExpanded</key>
 								<false/>
 								<key>IsRotated</key>
@@ -301,7 +706,7 @@
 								<key>Opacity</key>
 								<real>1</real>
 								<key>Position</key>
-								<string>{2047, 292.5}</string>
+								<string>{1793.5360107421875, 323.5}</string>
 								<key>Scale</key>
 								<string>{1.0060000419616699, 1}</string>
 								<key>SpriteSize</key>
@@ -350,7 +755,7 @@
 							<key>SHSheetName</key>
 							<string>Bum</string>
 							<key>SHSpriteName</key>
-							<string>mock-ground</string>
+							<string>trashcan</string>
 							<key>SheetImage</key>
 							<string>sprites_Bum.png</string>
 							<key>TextureProperties</key>
@@ -364,7 +769,7 @@
 								<key>FlipY</key>
 								<false/>
 								<key>Frame</key>
-								<string>{{2, 2}, {512, 55}}</string>
+								<string>{{649, 157}, {71, 86.5}}</string>
 								<key>IsDrawable</key>
 								<true/>
 								<key>IsExpanded</key>
@@ -376,24 +781,99 @@
 								<key>Opacity</key>
 								<real>1</real>
 								<key>Position</key>
-								<string>{2559, 292.5}</string>
+								<string>{454.75, 229.75}</string>
 								<key>Scale</key>
-								<string>{1.0060000419616699, 1}</string>
+								<string>{1, 1}</string>
 								<key>SpriteSize</key>
-								<string>{512, 55}</string>
+								<string>{71.5, 87.5}</string>
 								<key>Tag</key>
 								<integer>1</integer>
 								<key>TagName</key>
 								<string>FLOOR</string>
 								<key>TextureOffset</key>
-								<string>{0, -0}</string>
+								<string>{0.25, -0.5}</string>
 								<key>UniqueName</key>
-								<string>mock-ground_5</string>
+								<string>trashcan</string>
 								<key>ZOrder</key>
 								<integer>0</integer>
 							</dict>
 							<key>UniqueName</key>
-							<string>mock-ground_5</string>
+							<string>trashcan</string>
+						</dict>
+						<dict>
+							<key>AnimationsProperties</key>
+							<dict/>
+							<key>Children</key>
+							<array/>
+							<key>CustomClassInfo</key>
+							<dict>
+								<key>ClassDefaults</key>
+								<dict/>
+								<key>ClassName</key>
+								<string>No Class</string>
+							</dict>
+							<key>NodeType</key>
+							<string>LHSprite</string>
+							<key>ParentClass</key>
+							<string>LHBatch</string>
+							<key>ParentName</key>
+							<string>Bum</string>
+							<key>PathProperties</key>
+							<dict/>
+							<key>PhysicProperties</key>
+							<dict>
+								<key>HandledBySH</key>
+								<true/>
+							</dict>
+							<key>SHSceneName</key>
+							<string>sprites.pshs</string>
+							<key>SHSheetName</key>
+							<string>Bum</string>
+							<key>SHSpriteName</key>
+							<string>trashcan</string>
+							<key>SheetImage</key>
+							<string>sprites_Bum.png</string>
+							<key>TextureProperties</key>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Color</key>
+								<string>{{1, 1}, {1, 1}}</string>
+								<key>FlipX</key>
+								<false/>
+								<key>FlipY</key>
+								<false/>
+								<key>Frame</key>
+								<string>{{649, 157}, {71, 86.5}}</string>
+								<key>IsDrawable</key>
+								<true/>
+								<key>IsExpanded</key>
+								<false/>
+								<key>IsRotated</key>
+								<false/>
+								<key>Locked</key>
+								<false/>
+								<key>Opacity</key>
+								<real>1</real>
+								<key>Position</key>
+								<string>{478.75, 251.75}</string>
+								<key>Scale</key>
+								<string>{1, 1}</string>
+								<key>SpriteSize</key>
+								<string>{71.5, 87.5}</string>
+								<key>Tag</key>
+								<integer>1</integer>
+								<key>TagName</key>
+								<string>FLOOR</string>
+								<key>TextureOffset</key>
+								<string>{0.25, -0.5}</string>
+								<key>UniqueName</key>
+								<string>trashcan_1</string>
+								<key>ZOrder</key>
+								<integer>0</integer>
+							</dict>
+							<key>UniqueName</key>
+							<string>trashcan_1</string>
 						</dict>
 						<dict>
 							<key>AnimationsProperties</key>
@@ -441,6 +921,81 @@
 								<key>Frame</key>
 								<string>{{2, 2}, {512, 55}}</string>
 								<key>IsDrawable</key>
+								<false/>
+								<key>IsExpanded</key>
+								<false/>
+								<key>IsRotated</key>
+								<false/>
+								<key>Locked</key>
+								<false/>
+								<key>Opacity</key>
+								<real>1</real>
+								<key>Position</key>
+								<string>{560.35697937011719, 161.15023064613342}</string>
+								<key>Scale</key>
+								<string>{0.31389445066452026, 1.2054629325866699}</string>
+								<key>SpriteSize</key>
+								<string>{512, 55}</string>
+								<key>Tag</key>
+								<integer>3</integer>
+								<key>TagName</key>
+								<string>WIRE</string>
+								<key>TextureOffset</key>
+								<string>{0, -0}</string>
+								<key>UniqueName</key>
+								<string>mock-ground_2</string>
+								<key>ZOrder</key>
+								<integer>0</integer>
+							</dict>
+							<key>UniqueName</key>
+							<string>mock-ground_2</string>
+						</dict>
+						<dict>
+							<key>AnimationsProperties</key>
+							<dict/>
+							<key>Children</key>
+							<array/>
+							<key>CustomClassInfo</key>
+							<dict>
+								<key>ClassDefaults</key>
+								<dict/>
+								<key>ClassName</key>
+								<string>No Class</string>
+							</dict>
+							<key>NodeType</key>
+							<string>LHSprite</string>
+							<key>ParentClass</key>
+							<string>LHBatch</string>
+							<key>ParentName</key>
+							<string>Bum</string>
+							<key>PathProperties</key>
+							<dict/>
+							<key>PhysicProperties</key>
+							<dict>
+								<key>HandledBySH</key>
+								<true/>
+							</dict>
+							<key>SHSceneName</key>
+							<string>sprites.pshs</string>
+							<key>SHSheetName</key>
+							<string>Bum</string>
+							<key>SHSpriteName</key>
+							<string>enemy_hippy-bum</string>
+							<key>SheetImage</key>
+							<string>sprites_Bum.png</string>
+							<key>TextureProperties</key>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Color</key>
+								<string>{{1, 1}, {1, 1}}</string>
+								<key>FlipX</key>
+								<false/>
+								<key>FlipY</key>
+								<false/>
+								<key>Frame</key>
+								<string>{{649, 2}, {117.75, 152.75}}</string>
+								<key>IsDrawable</key>
 								<true/>
 								<key>IsExpanded</key>
 								<false/>
@@ -451,24 +1006,249 @@
 								<key>Opacity</key>
 								<real>1</real>
 								<key>Position</key>
-								<string>{3071, 292.5}</string>
+								<string>{1089.6875, 238.21875}</string>
 								<key>Scale</key>
-								<string>{1.0060000419616699, 1}</string>
+								<string>{0.75, 0.75}</string>
 								<key>SpriteSize</key>
-								<string>{512, 55}</string>
+								<string>{132.5, 155.25}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>TagName</key>
+								<string>DEFAULT</string>
+								<key>TextureOffset</key>
+								<string>{-4.625, 1.25}</string>
+								<key>UniqueName</key>
+								<string>enemy_hippy-bum</string>
+								<key>ZOrder</key>
+								<integer>0</integer>
+							</dict>
+							<key>UniqueName</key>
+							<string>enemy_hippy-bum</string>
+						</dict>
+						<dict>
+							<key>AnimationsProperties</key>
+							<dict/>
+							<key>Children</key>
+							<array/>
+							<key>CustomClassInfo</key>
+							<dict>
+								<key>ClassDefaults</key>
+								<dict/>
+								<key>ClassName</key>
+								<string>No Class</string>
+							</dict>
+							<key>NodeType</key>
+							<string>LHSprite</string>
+							<key>ParentClass</key>
+							<string>LHBatch</string>
+							<key>ParentName</key>
+							<string>Bum</string>
+							<key>PathProperties</key>
+							<dict/>
+							<key>PhysicProperties</key>
+							<dict>
+								<key>HandledBySH</key>
+								<true/>
+							</dict>
+							<key>SHSceneName</key>
+							<string>sprites.pshs</string>
+							<key>SHSheetName</key>
+							<string>Bum</string>
+							<key>SHSpriteName</key>
+							<string>enemy_mullet-hawk_dude</string>
+							<key>SheetImage</key>
+							<string>sprites_Bum.png</string>
+							<key>TextureProperties</key>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Color</key>
+								<string>{{1, 1}, {1, 1}}</string>
+								<key>FlipX</key>
+								<false/>
+								<key>FlipY</key>
+								<false/>
+								<key>Frame</key>
+								<string>{{769, 2}, {113.75, 150.75}}</string>
+								<key>IsDrawable</key>
+								<true/>
+								<key>IsExpanded</key>
+								<false/>
+								<key>IsRotated</key>
+								<false/>
+								<key>Locked</key>
+								<false/>
+								<key>Opacity</key>
+								<real>1</real>
+								<key>Position</key>
+								<string>{1281.6875, 237.21875}</string>
+								<key>Scale</key>
+								<string>{0.75, 0.75}</string>
+								<key>SpriteSize</key>
+								<string>{132.5, 155.25}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>TagName</key>
+								<string>DEFAULT</string>
+								<key>TextureOffset</key>
+								<string>{-7.125, -1}</string>
+								<key>UniqueName</key>
+								<string>enemy_mullet-hawk_dude</string>
+								<key>ZOrder</key>
+								<integer>0</integer>
+							</dict>
+							<key>UniqueName</key>
+							<string>enemy_mullet-hawk_dude</string>
+						</dict>
+						<dict>
+							<key>AnimationsProperties</key>
+							<dict/>
+							<key>Children</key>
+							<array/>
+							<key>CustomClassInfo</key>
+							<dict>
+								<key>ClassDefaults</key>
+								<dict/>
+								<key>ClassName</key>
+								<string>No Class</string>
+							</dict>
+							<key>NodeType</key>
+							<string>LHSprite</string>
+							<key>ParentClass</key>
+							<string>LHBatch</string>
+							<key>ParentName</key>
+							<string>Bum</string>
+							<key>PathProperties</key>
+							<dict/>
+							<key>PhysicProperties</key>
+							<dict>
+								<key>HandledBySH</key>
+								<true/>
+							</dict>
+							<key>SHSceneName</key>
+							<string>sprites.pshs</string>
+							<key>SHSheetName</key>
+							<string>Bum</string>
+							<key>SHSpriteName</key>
+							<string>enemy_hippy-bum</string>
+							<key>SheetImage</key>
+							<string>sprites_Bum.png</string>
+							<key>TextureProperties</key>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Color</key>
+								<string>{{1, 1}, {1, 1}}</string>
+								<key>FlipX</key>
+								<false/>
+								<key>FlipY</key>
+								<false/>
+								<key>Frame</key>
+								<string>{{649, 2}, {117.75, 152.75}}</string>
+								<key>IsDrawable</key>
+								<true/>
+								<key>IsExpanded</key>
+								<false/>
+								<key>IsRotated</key>
+								<false/>
+								<key>Locked</key>
+								<false/>
+								<key>Opacity</key>
+								<real>1</real>
+								<key>Position</key>
+								<string>{1521.6875, 238.21875}</string>
+								<key>Scale</key>
+								<string>{0.75, 0.75}</string>
+								<key>SpriteSize</key>
+								<string>{132.5, 155.25}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>TagName</key>
+								<string>DEFAULT</string>
+								<key>TextureOffset</key>
+								<string>{-4.625, 1.25}</string>
+								<key>UniqueName</key>
+								<string>enemy_hippy-bum_1</string>
+								<key>ZOrder</key>
+								<integer>0</integer>
+							</dict>
+							<key>UniqueName</key>
+							<string>enemy_hippy-bum_1</string>
+						</dict>
+						<dict>
+							<key>AnimationsProperties</key>
+							<dict/>
+							<key>Children</key>
+							<array/>
+							<key>CustomClassInfo</key>
+							<dict>
+								<key>ClassDefaults</key>
+								<dict/>
+								<key>ClassName</key>
+								<string>No Class</string>
+							</dict>
+							<key>NodeType</key>
+							<string>LHSprite</string>
+							<key>ParentClass</key>
+							<string>LHBatch</string>
+							<key>ParentName</key>
+							<string>Bum</string>
+							<key>PathProperties</key>
+							<dict/>
+							<key>PhysicProperties</key>
+							<dict>
+								<key>HandledBySH</key>
+								<true/>
+							</dict>
+							<key>SHSceneName</key>
+							<string>sprites.pshs</string>
+							<key>SHSheetName</key>
+							<string>Bum</string>
+							<key>SHSpriteName</key>
+							<string>trashcan</string>
+							<key>SheetImage</key>
+							<string>sprites_Bum.png</string>
+							<key>TextureProperties</key>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Color</key>
+								<string>{{1, 1}, {1, 1}}</string>
+								<key>FlipX</key>
+								<false/>
+								<key>FlipY</key>
+								<false/>
+								<key>Frame</key>
+								<string>{{649, 157}, {71, 86.5}}</string>
+								<key>IsDrawable</key>
+								<true/>
+								<key>IsExpanded</key>
+								<false/>
+								<key>IsRotated</key>
+								<false/>
+								<key>Locked</key>
+								<false/>
+								<key>Opacity</key>
+								<real>1</real>
+								<key>Position</key>
+								<string>{417.75, 243.75}</string>
+								<key>Scale</key>
+								<string>{1, 1}</string>
+								<key>SpriteSize</key>
+								<string>{71.5, 87.5}</string>
 								<key>Tag</key>
 								<integer>1</integer>
 								<key>TagName</key>
 								<string>FLOOR</string>
 								<key>TextureOffset</key>
-								<string>{0, -0}</string>
+								<string>{0.25, -0.5}</string>
 								<key>UniqueName</key>
-								<string>mock-ground_6</string>
+								<string>trashcan_2</string>
 								<key>ZOrder</key>
 								<integer>0</integer>
 							</dict>
 							<key>UniqueName</key>
-							<string>mock-ground_6</string>
+							<string>trashcan_2</string>
 						</dict>
 						<dict>
 							<key>AnimationsProperties</key>
@@ -516,6 +1296,81 @@
 								<key>Frame</key>
 								<string>{{2, 2}, {512, 55}}</string>
 								<key>IsDrawable</key>
+								<false/>
+								<key>IsExpanded</key>
+								<false/>
+								<key>IsRotated</key>
+								<false/>
+								<key>Locked</key>
+								<false/>
+								<key>Opacity</key>
+								<real>1</real>
+								<key>Position</key>
+								<string>{597.51858520507812, 243.86184078454971}</string>
+								<key>Scale</key>
+								<string>{0.30280697345733643, 1.8858851194381714}</string>
+								<key>SpriteSize</key>
+								<string>{512, 55}</string>
+								<key>Tag</key>
+								<integer>4</integer>
+								<key>TagName</key>
+								<string>WALL</string>
+								<key>TextureOffset</key>
+								<string>{0, -0}</string>
+								<key>UniqueName</key>
+								<string>mock-ground_2_1</string>
+								<key>ZOrder</key>
+								<integer>0</integer>
+							</dict>
+							<key>UniqueName</key>
+							<string>mock-ground_2_1</string>
+						</dict>
+						<dict>
+							<key>AnimationsProperties</key>
+							<dict/>
+							<key>Children</key>
+							<array/>
+							<key>CustomClassInfo</key>
+							<dict>
+								<key>ClassDefaults</key>
+								<dict/>
+								<key>ClassName</key>
+								<string>No Class</string>
+							</dict>
+							<key>NodeType</key>
+							<string>LHSprite</string>
+							<key>ParentClass</key>
+							<string>LHBatch</string>
+							<key>ParentName</key>
+							<string>Bum</string>
+							<key>PathProperties</key>
+							<dict/>
+							<key>PhysicProperties</key>
+							<dict>
+								<key>HandledBySH</key>
+								<true/>
+							</dict>
+							<key>SHSceneName</key>
+							<string>sprites.pshs</string>
+							<key>SHSheetName</key>
+							<string>Bum</string>
+							<key>SHSpriteName</key>
+							<string>enemy_whore</string>
+							<key>SheetImage</key>
+							<string>sprites_Bum.png</string>
+							<key>TextureProperties</key>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Color</key>
+								<string>{{1, 1}, {1, 1}}</string>
+								<key>FlipX</key>
+								<false/>
+								<key>FlipY</key>
+								<false/>
+								<key>Frame</key>
+								<string>{{109, 59}, {106, 152}}</string>
+								<key>IsDrawable</key>
 								<true/>
 								<key>IsExpanded</key>
 								<false/>
@@ -526,24 +1381,24 @@
 								<key>Opacity</key>
 								<real>1</real>
 								<key>Position</key>
-								<string>{3583, 292.5}</string>
+								<string>{297.6875, 238.21875}</string>
 								<key>Scale</key>
-								<string>{1.0060000419616699, 1}</string>
+								<string>{0.75, 0.75}</string>
 								<key>SpriteSize</key>
-								<string>{512, 55}</string>
+								<string>{132.5, 155.25}</string>
 								<key>Tag</key>
-								<integer>1</integer>
-								<key>TagName</key>
-								<string>FLOOR</string>
-								<key>TextureOffset</key>
-								<string>{0, -0}</string>
-								<key>UniqueName</key>
-								<string>mock-ground_7</string>
-								<key>ZOrder</key>
 								<integer>0</integer>
+								<key>TagName</key>
+								<string>DEFAULT</string>
+								<key>TextureOffset</key>
+								<string>{4.25, -1.625}</string>
+								<key>UniqueName</key>
+								<string>enemy_whore</string>
+								<key>ZOrder</key>
+								<integer>1</integer>
 							</dict>
 							<key>UniqueName</key>
-							<string>mock-ground_7</string>
+							<string>enemy_whore</string>
 						</dict>
 						<dict>
 							<key>AnimationsProperties</key>
@@ -606,7 +1461,7 @@
 								<key>FlipY</key>
 								<false/>
 								<key>Frame</key>
-								<string>{{761, 3}, {104.75, 155.75}}</string>
+								<string>{{2, 59}, {104.75, 155.75}}</string>
 								<key>IsDrawable</key>
 								<true/>
 								<key>IsExpanded</key>
@@ -618,9 +1473,9 @@
 								<key>Opacity</key>
 								<real>1</real>
 								<key>Position</key>
-								<string>{162.85140688717365, 224.83532769232988}</string>
+								<string>{113.6875, 246.21875}</string>
 								<key>Scale</key>
-								<string>{0.52605897188186646, 0.52605897188186646}</string>
+								<string>{0.75, 0.75}</string>
 								<key>SpriteSize</key>
 								<string>{132.5, 155.25}</string>
 								<key>Tag</key>
@@ -632,7 +1487,7 @@
 								<key>UniqueName</key>
 								<string>bum</string>
 								<key>ZOrder</key>
-								<integer>0</integer>
+								<integer>1</integer>
 							</dict>
 							<key>UniqueName</key>
 							<string>bum</string>
@@ -687,79 +1542,7 @@
 		</dict>
 	</array>
 	<key>PARALLAX_INFO</key>
-	<array>
-		<dict>
-			<key>ContinuousScrolling</key>
-			<false/>
-			<key>Direction</key>
-			<integer>0</integer>
-			<key>Speed</key>
-			<real>0.0</real>
-			<key>Sprites</key>
-			<array>
-				<dict>
-					<key>RatioX</key>
-					<real>1</real>
-					<key>RatioY</key>
-					<real>0.0</real>
-					<key>SpriteName</key>
-					<string>mock-ground_6</string>
-				</dict>
-				<dict>
-					<key>RatioX</key>
-					<real>1</real>
-					<key>RatioY</key>
-					<real>0.0</real>
-					<key>SpriteName</key>
-					<string>mock-ground</string>
-				</dict>
-				<dict>
-					<key>RatioX</key>
-					<real>1</real>
-					<key>RatioY</key>
-					<real>0.0</real>
-					<key>SpriteName</key>
-					<string>mock-ground_7</string>
-				</dict>
-				<dict>
-					<key>RatioX</key>
-					<real>1</real>
-					<key>RatioY</key>
-					<real>0.0</real>
-					<key>SpriteName</key>
-					<string>mock-ground_3</string>
-				</dict>
-				<dict>
-					<key>RatioX</key>
-					<real>1</real>
-					<key>RatioY</key>
-					<real>0.0</real>
-					<key>SpriteName</key>
-					<string>mock-ground_4</string>
-				</dict>
-				<dict>
-					<key>RatioX</key>
-					<real>1</real>
-					<key>RatioY</key>
-					<real>0.0</real>
-					<key>SpriteName</key>
-					<string>mock-ground_5</string>
-				</dict>
-				<dict>
-					<key>RatioX</key>
-					<real>1</real>
-					<key>RatioY</key>
-					<real>0.0</real>
-					<key>SpriteName</key>
-					<string>mock-ground_1</string>
-				</dict>
-			</array>
-			<key>UniqueName</key>
-			<string>ground</string>
-			<key>ZOrder</key>
-			<integer>0</integer>
-		</dict>
-	</array>
+	<array/>
 	<key>ScenePreference</key>
 	<dict>
 		<key>2HDSuffix</key>
@@ -773,7 +1556,7 @@
 		<key>Device</key>
 		<integer>2</integer>
 		<key>GameWorld</key>
-		<string>{{0, 0}, {3840, 320}}</string>
+		<string>{{0, 0}, {2048, 384}}</string>
 		<key>HDSuffix</key>
 		<string>-hd</string>
 		<key>Orientation</key>
@@ -791,6 +1574,8 @@
 			<string>DEFAULT</string>
 			<string>FLOOR</string>
 			<string>PLAYER</string>
+			<string>WIRE</string>
+			<string>WALL</string>
 		</array>
 		<key>ZoomValue</key>
 		<real>0.0</real>
@@ -844,17 +1629,17 @@
 		<key>Tag</key>
 		<integer>0</integer>
 		<key>TagBottom</key>
-		<integer>0</integer>
+		<integer>1</integer>
 		<key>TagBottomName</key>
-		<string>DEFAULT</string>
+		<string>FLOOR</string>
 		<key>TagLeft</key>
-		<integer>0</integer>
+		<integer>4</integer>
 		<key>TagLeftName</key>
-		<string>DEFAULT</string>
+		<string>WALL</string>
 		<key>TagRight</key>
-		<integer>0</integer>
+		<integer>4</integer>
 		<key>TagRightName</key>
-		<string>DEFAULT</string>
+		<string>WALL</string>
 		<key>TagTop</key>
 		<integer>0</integer>
 		<key>TagTopName</key>
@@ -862,7 +1647,7 @@
 		<key>Type</key>
 		<integer>0</integer>
 		<key>WBRect</key>
-		<string>{{0, 0}, {3840, 320}}</string>
+		<string>{{0, 0}, {2048, 384}}</string>
 	</dict>
 </dict>
 </plist>

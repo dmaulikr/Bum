@@ -24,7 +24,7 @@
 			<key>MaxSheetSize</key>
 			<integer>4096</integer>
 			<key>NpotSize</key>
-			<string>{4012, 636}</string>
+			<string>{3976, 988}</string>
 			<key>Padding</key>
 			<integer>8</integer>
 			<key>PixelFormat</key>
@@ -39,6 +39,219 @@
 			<string></string>
 			<key>Sheet_Sprites_Info</key>
 			<dict>
+				<key>beer_can</key>
+				<dict>
+					<key>DocumentSecurityImageBookmark</key>
+					<data>
+					Ym9va9gEAAAAAAQQMAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAsAMAAAUA
+					AAABAQAAVXNlcnMAAAAKAAAAAQEAAGdyYW50
+					ZGF2aXMAAAwAAAABAQAAR29vZ2xlIERyaXZl
+					FAAAAAEBAABHcmFudCZNaWtlJlJ5YW4gR2Ft
+					ZQYAAAABAQAAQXNzZXRzAAARAAAAAQEAAHRl
+					c3Rfc3ByaXRlc19pUGFkAAAAJwAAAAEBAABz
+					cHJpdGVzX0VuZW1pZXNfUHJvamVjdGlsZXNf
+					QkdzXzRfMTJfMTMADAAAAAEBAABiZWVyX2Nh
+					bi5wbmcgAAAAAQYAAAQAAAAUAAAAKAAAADwA
+					AABYAAAAaAAAAIQAAAC0AAAACAAAAAQDAAAX
+					uxAAAAAAAAgAAAAEAwAAmd0QAAAAAAAIAAAA
+					BAMAAOk/+AMAAAAACAAAAAQDAACnYhYEAAAA
+					AAgAAAAEAwAAvmIWBAAAAAAIAAAABAMAAOdi
+					FgQAAAAACAAAAAQDAAC1yCQEAAAAAAgAAAAE
+					AwAAtsgkBAAAAAAgAAAAAQYAAPAAAAAAAQAA
+					EAEAACABAAAwAQAAQAEAAFABAABgAQAACAAA
+					AAAEAABBtxh0XgAAABgAAAABAgAAAQAAAAAA
+					AAAPAAAAAAAAAAAAAAAAAAAAAAAAAAEFAAAE
+					AAAAAwMAAAcAAAAEAAAAAwMAAAYAAAAIAAAA
+					BAMAAAYAAAAAAAAABAAAAAMDAAD1AQAADAAA
+					AAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAABg
+					MYFgAAAACAAAAAAEAABBtWilqQAAACQAAAAB
+					AQAANjgyQjkyNDMtN0NFNy0zRjUxLTlGQjgt
+					MkI1RkFCM0E0MkJDGAAAAAECAACBAAAAAQAI
+					AO8/AAABAAgAAAAAAAAAAAABAAAAAQEAAC8A
+					AAAEAAAAAwMAAAABAAAJAQAAAQIAAGVkMjUy
+					ODU3N2FlOTY1NmMwZTAxNWYzMmNlMzJkMzQ2
+					NzA3ZDUyZjI7MDAwMDAwMDA7MDAwMDAwMDAw
+					MDAwMDAyMDtjb20uYXBwbGUuYXBwLXNhbmRi
+					b3gucmVhZC13cml0ZTswMDAwMDAwMTswMTAw
+					MDAwMTswMDAwMDAwMDA0MjRjOGI2Oy91c2Vy
+					cy9ncmFudGRhdmlzL2dvb2dsZSBkcml2ZS9n
+					cmFudCZtaWtlJnJ5YW4gZ2FtZS9hc3NldHMv
+					dGVzdF9zcHJpdGVzX2lwYWQvc3ByaXRlc19l
+					bmVtaWVzX3Byb2plY3RpbGVzX2Jnc180XzEy
+					XzEzL2JlZXJfY2FuLnBuZwAAAADwAAAA/v//
+					/wEAAAAAAAAAEwAAAAQQAADIAAAAAAAAAAUQ
+					AABwAQAAAAAAABAQAACoAQAAAAAAAEAQAACY
+					AQAAAAAAAFQQAADQAQAAAAAAAFUQAADcAQAA
+					AAAAAFYQAADIAQAAAAAAAAIgAACEAgAAAAAA
+					ABAgAAAEAgAAAAAAABEgAAA4AgAAAAAAABIg
+					AAAYAgAAAAAAABMgAAAoAgAAAAAAACAgAABk
+					AgAAAAAAADAgAADIAQAAAAAAAAHAAADoAQAA
+					AAAAABHAAAAUAAAAAAAAABLAAAD4AQAAAAAA
+					ABDQAACQAgAAAAAAAIDwAACcAgAAAAAAAA==
+					</data>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Category</key>
+								<integer>1</integer>
+								<key>Density</key>
+								<real>0.20000000298023224</real>
+								<key>Fixture</key>
+								<array>
+									<array>
+										<string>{1.375, 23.875}</string>
+										<string>{-18.875, -2.375}</string>
+										<string>{-14.125, -14.375}</string>
+										<string>{0.625, -19.625}</string>
+										<string>{18.875, 5.875}</string>
+										<string>{13.625, 18.375}</string>
+										<string>{1.625, 24.125}</string>
+									</array>
+								</array>
+								<key>Friction</key>
+								<real>0.20000000298023224</real>
+								<key>Group</key>
+								<integer>0</integer>
+								<key>Height</key>
+								<real>0.0</real>
+								<key>HolesPoints</key>
+								<array/>
+								<key>IsCircle</key>
+								<false/>
+								<key>IsRectangle</key>
+								<false/>
+								<key>IsSensor</key>
+								<true/>
+								<key>LHHeight</key>
+								<real>0.0</real>
+								<key>LHShapePositionOffset</key>
+								<string>{-18.875, -24.125}</string>
+								<key>LHWidth</key>
+								<real>0.0</real>
+								<key>Mask</key>
+								<integer>65535</integer>
+								<key>Name</key>
+								<string>UntitledFixture</string>
+								<key>Restitution</key>
+								<real>0.20000000298023224</real>
+								<key>ShapePoints</key>
+								<array>
+									<string>{81, 1}</string>
+									<string>{0, 106}</string>
+									<string>{19, 154}</string>
+									<string>{78, 175}</string>
+									<string>{151, 73}</string>
+									<string>{130, 23}</string>
+									<string>{82, 0}</string>
+								</array>
+								<key>ShapePositionOffset</key>
+								<string>{0, 0}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>Width</key>
+								<real>0.0</real>
+							</dict>
+						</array>
+						<key>Type</key>
+						<integer>2</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>Bum</string>
+					<key>SHSpriteName</key>
+					<string>beer_can</string>
+					<key>SheetImage</key>
+					<string>sprites_Bum.png</string>
+					<key>SheetImage-HD</key>
+					<string>sprites_Bum-ipadhd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{760, 157}, {38, 45}}</string>
+						<key>Frame-HD</key>
+						<string>{{3040, 628}, {152, 180}}</string>
+						<key>Image</key>
+						<string>sprites_Bum.png</string>
+						<key>Image-HD</key>
+						<string>sprites_Bum-ipadhd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<false/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>beer_can</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/grantdavis/Google Drive/Grant&amp;Mike&amp;Ryan Game/Assets/test_sprites_iPad/sprites_Enemies_Projectiles_BGs_4_12_13/beer_can.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../../../../../../Google%20Drive/Grant&amp;Mike&amp;Ryan%20Game/Assets/test_sprites_iPad/sprites_Enemies_Projectiles_BGs_4_12_13/beer_can.png/</string>
+						<key>OriginalRect</key>
+						<string>{{4, 23}, {152, 180}}</string>
+						<key>OriginalSize</key>
+						<string>{159, 239}</string>
+						<key>Position</key>
+						<string>{3040, 628}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{39.75, 59.75}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0.125, 1.625}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
 				<key>block_elbow</key>
 				<dict>
 					<key>DocumentSecurityImageBookmark</key>
@@ -65,12 +278,12 @@
 					AAAAAQEAADY4MkI5MjQzLTdDRTctM0Y1MS05
 					RkI4LTJCNUZBQjNBNDJCQxgAAAABAgAAgQAA
 					AAEACADvPwAAAQAIAAAAAAAAAAAAAQAAAAEB
-					AAAvAAAABAAAAAMDAAAAAQAA4AAAAAECAAA5
-					OWNlZGE3NGU1ZWVkY2Y0M2ViOWU5YjVmMjhl
-					Yzc4YzBlNmM2NDE4OzAwMDAwMDAwOzAwMDAw
+					AAAvAAAABAAAAAMDAAAAAQAA4AAAAAECAAA0
+					ZjE4ZjU0ZjhkOTNlMTdhYTgzODVjN2EyNDdm
+					MDkzNmJlMTQ5ODUzOzAwMDAwMDAwOzAwMDAw
 					MDAwMDAwMDAwMjA7Y29tLmFwcGxlLmFwcC1z
 					YW5kYm94LnJlYWQtd3JpdGU7MDAwMDAwMDE7
-					MDEwMDAwMDI7MDAwMDAwMDAwNDBmZDQzNDsv
+					MDEwMDAwMDE7MDAwMDAwMDAwNDBmZDQzNDsv
 					dXNlcnMvZ3JhbnRkYXZpcy9ncmF2aXR5IGNv
 					cmUgYXBwcy9idW0gZ2FtZS9kb2N1bWVudHMt
 					ZXhwb3J0LTIwMTMtMDQtMDIvYmxvY2tfZWxi
@@ -196,9 +409,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{649, 2}, {109.75, 155.75}}</string>
+						<string>{{884, 2}, {109.75, 155.75}}</string>
 						<key>Frame-HD</key>
-						<string>{{2596, 8}, {437, 621}}</string>
+						<string>{{3536, 8}, {437, 621}}</string>
 						<key>Image</key>
 						<string>sprites_Bum.png</string>
 						<key>Image-HD</key>
@@ -224,7 +437,7 @@
 						<key>OriginalSize</key>
 						<string>{530, 621}</string>
 						<key>Position</key>
-						<string>{2596, 8}</string>
+						<string>{3536, 8}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -235,6 +448,647 @@
 						<integer>0</integer>
 						<key>TextureOffset</key>
 						<string>{-9.375, -0.25}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>bottle1</key>
+				<dict>
+					<key>DocumentSecurityImageBookmark</key>
+					<data>
+					Ym9va9QEAAAAAAQQMAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAArAMAAAUA
+					AAABAQAAVXNlcnMAAAAKAAAAAQEAAGdyYW50
+					ZGF2aXMAAAwAAAABAQAAR29vZ2xlIERyaXZl
+					FAAAAAEBAABHcmFudCZNaWtlJlJ5YW4gR2Ft
+					ZQYAAAABAQAAQXNzZXRzAAARAAAAAQEAAHRl
+					c3Rfc3ByaXRlc19pUGFkAAAAJwAAAAEBAABz
+					cHJpdGVzX0VuZW1pZXNfUHJvamVjdGlsZXNf
+					QkdzXzRfMTJfMTMACwAAAAEBAABib3R0bGUx
+					LnBuZwAgAAAAAQYAAAQAAAAUAAAAKAAAADwA
+					AABYAAAAaAAAAIQAAAC0AAAACAAAAAQDAAAX
+					uxAAAAAAAAgAAAAEAwAAmd0QAAAAAAAIAAAA
+					BAMAAOk/+AMAAAAACAAAAAQDAACnYhYEAAAA
+					AAgAAAAEAwAAvmIWBAAAAAAIAAAABAMAAOdi
+					FgQAAAAACAAAAAQDAAC1yCQEAAAAAAgAAAAE
+					AwAAvsgkBAAAAAAgAAAAAQYAAPAAAAAAAQAA
+					EAEAACABAAAwAQAAQAEAAFABAABgAQAACAAA
+					AAAEAABBtxhz2AAAABgAAAABAgAAAQAAAAAA
+					AAAPAAAAAAAAAAAAAAAAAAAAAAAAAAEFAAAE
+					AAAAAwMAAAcAAAAEAAAAAwMAAAYAAAAIAAAA
+					BAMAAAYAAAAAAAAABAAAAAMDAAD1AQAADAAA
+					AAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAABg
+					MYFgAAAACAAAAAAEAABBtWilqQAAACQAAAAB
+					AQAANjgyQjkyNDMtN0NFNy0zRjUxLTlGQjgt
+					MkI1RkFCM0E0MkJDGAAAAAECAACBAAAAAQAI
+					AO8/AAABAAgAAAAAAAAAAAABAAAAAQEAAC8A
+					AAAEAAAAAwMAAAABAAAIAQAAAQIAAGE2YzFi
+					MTI1NDBlOTY1MjUzNGFlYzMxMDEwYTNkMWZj
+					YzQ4OTEzYjI7MDAwMDAwMDA7MDAwMDAwMDAw
+					MDAwMDAyMDtjb20uYXBwbGUuYXBwLXNhbmRi
+					b3gucmVhZC13cml0ZTswMDAwMDAwMTswMTAw
+					MDAwMTswMDAwMDAwMDA0MjRjOGJlOy91c2Vy
+					cy9ncmFudGRhdmlzL2dvb2dsZSBkcml2ZS9n
+					cmFudCZtaWtlJnJ5YW4gZ2FtZS9hc3NldHMv
+					dGVzdF9zcHJpdGVzX2lwYWQvc3ByaXRlc19l
+					bmVtaWVzX3Byb2plY3RpbGVzX2Jnc180XzEy
+					XzEzL2JvdHRsZTEucG5nAPAAAAD+////AQAA
+					AAAAAAATAAAABBAAAMgAAAAAAAAABRAAAHAB
+					AAAAAAAAEBAAAKgBAAAAAAAAQBAAAJgBAAAA
+					AAAAVBAAANABAAAAAAAAVRAAANwBAAAAAAAA
+					VhAAAMgBAAAAAAAAAiAAAIQCAAAAAAAAECAA
+					AAQCAAAAAAAAESAAADgCAAAAAAAAEiAAABgC
+					AAAAAAAAEyAAACgCAAAAAAAAICAAAGQCAAAA
+					AAAAMCAAAMgBAAAAAAAAAcAAAOgBAAAAAAAA
+					EcAAABQAAAAAAAAAEsAAAPgBAAAAAAAAENAA
+					AJACAAAAAAAAgPAAAJwCAAAAAAAA
+					</data>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<true/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Category</key>
+								<integer>1</integer>
+								<key>Density</key>
+								<real>0.20000000298023224</real>
+								<key>Fixture</key>
+								<array>
+									<array>
+										<string>{2.625, 23.375}</string>
+										<string>{-13.125, 1.625}</string>
+										<string>{-18.125, -22.125}</string>
+										<string>{-10.375, -26.625}</string>
+										<string>{3.125, -14.375}</string>
+										<string>{17.125, 15.125}</string>
+										<string>{2.875, 23.625}</string>
+									</array>
+								</array>
+								<key>Friction</key>
+								<real>0.20000000298023224</real>
+								<key>Group</key>
+								<integer>0</integer>
+								<key>Height</key>
+								<real>0.0</real>
+								<key>HolesPoints</key>
+								<array/>
+								<key>IsCircle</key>
+								<false/>
+								<key>IsRectangle</key>
+								<false/>
+								<key>IsSensor</key>
+								<true/>
+								<key>LHHeight</key>
+								<real>0.0</real>
+								<key>LHShapePositionOffset</key>
+								<string>{-18.125, -23.625}</string>
+								<key>LHWidth</key>
+								<real>0.0</real>
+								<key>Mask</key>
+								<integer>65535</integer>
+								<key>Name</key>
+								<string>UntitledFixture</string>
+								<key>Restitution</key>
+								<real>0.20000000298023224</real>
+								<key>ShapePoints</key>
+								<array>
+									<string>{83, 1}</string>
+									<string>{20, 88}</string>
+									<string>{0, 183}</string>
+									<string>{31, 201}</string>
+									<string>{85, 152}</string>
+									<string>{141, 34}</string>
+									<string>{84, 0}</string>
+								</array>
+								<key>ShapePositionOffset</key>
+								<string>{0, 0}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>Width</key>
+								<real>0.0</real>
+							</dict>
+						</array>
+						<key>Type</key>
+						<integer>2</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>Bum</string>
+					<key>SHSpriteName</key>
+					<string>bottle1</string>
+					<key>SheetImage</key>
+					<string>sprites_Bum.png</string>
+					<key>SheetImage-HD</key>
+					<string>sprites_Bum-ipadhd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{722, 157}, {35.5, 50.5}}</string>
+						<key>Frame-HD</key>
+						<string>{{2888, 628}, {142, 202}}</string>
+						<key>Image</key>
+						<string>sprites_Bum.png</string>
+						<key>Image-HD</key>
+						<string>sprites_Bum-ipadhd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<false/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>bottle1</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/grantdavis/Google Drive/Grant&amp;Mike&amp;Ryan Game/Assets/test_sprites_iPad/sprites_Enemies_Projectiles_BGs_4_12_13/bottle1.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../../../../../../Google%20Drive/Grant&amp;Mike&amp;Ryan%20Game/Assets/test_sprites_iPad/sprites_Enemies_Projectiles_BGs_4_12_13/bottle1.png/</string>
+						<key>OriginalRect</key>
+						<string>{{7, 25}, {142, 202}}</string>
+						<key>OriginalSize</key>
+						<string>{159, 239}</string>
+						<key>Position</key>
+						<string>{2888, 628}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{39.75, 59.75}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{-0.375, -1.625}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>bottle2_broken</key>
+				<dict>
+					<key>DocumentSecurityImageBookmark</key>
+					<data>
+					Ym9va+QEAAAAAAQQMAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAvAMAAAUA
+					AAABAQAAVXNlcnMAAAAKAAAAAQEAAGdyYW50
+					ZGF2aXMAAAwAAAABAQAAR29vZ2xlIERyaXZl
+					FAAAAAEBAABHcmFudCZNaWtlJlJ5YW4gR2Ft
+					ZQYAAAABAQAAQXNzZXRzAAARAAAAAQEAAHRl
+					c3Rfc3ByaXRlc19pUGFkAAAAJwAAAAEBAABz
+					cHJpdGVzX0VuZW1pZXNfUHJvamVjdGlsZXNf
+					QkdzXzRfMTJfMTMAEgAAAAEBAABib3R0bGUy
+					X2Jyb2tlbi5wbmcAACAAAAABBgAABAAAABQA
+					AAAoAAAAPAAAAFgAAABoAAAAhAAAALQAAAAI
+					AAAABAMAABe7EAAAAAAACAAAAAQDAACZ3RAA
+					AAAAAAgAAAAEAwAA6T/4AwAAAAAIAAAABAMA
+					AKdiFgQAAAAACAAAAAQDAAC+YhYEAAAAAAgA
+					AAAEAwAA52IWBAAAAAAIAAAABAMAALXIJAQA
+					AAAACAAAAAQDAADAyCQEAAAAACAAAAABBgAA
+					+AAAAAgBAAAYAQAAKAEAADgBAABIAQAAWAEA
+					AGgBAAAIAAAAAAQAAEG3GHSHAAAAGAAAAAEC
+					AAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAA
+					AAAAAQUAAAQAAAADAwAABwAAAAQAAAADAwAA
+					BgAAAAgAAAAEAwAABgAAAAAAAAAEAAAAAwMA
+					APUBAAAMAAAAAQEAAE1hY2ludG9zaCBIRAgA
+					AAAEAwAAAGAxgWAAAAAIAAAAAAQAAEG1aKWp
+					AAAAJAAAAAEBAAA2ODJCOTI0My03Q0U3LTNG
+					NTEtOUZCOC0yQjVGQUIzQTQyQkMYAAAAAQIA
+					AIEAAAABAAgA7z8AAAEACAAAAAAAAAAAAAEA
+					AAABAQAALwAAAAQAAAADAwAAAAEAAA8BAAAB
+					AgAANzk4YmU3ZmI5NGE5YzE1OWJiZDgxYzFl
+					ZGIyZmIwMzJlODIwZjUyOTswMDAwMDAwMDsw
+					MDAwMDAwMDAwMDAwMDIwO2NvbS5hcHBsZS5h
+					cHAtc2FuZGJveC5yZWFkLXdyaXRlOzAwMDAw
+					MDAxOzAxMDAwMDAxOzAwMDAwMDAwMDQyNGM4
+					YzA7L3VzZXJzL2dyYW50ZGF2aXMvZ29vZ2xl
+					IGRyaXZlL2dyYW50Jm1pa2UmcnlhbiBnYW1l
+					L2Fzc2V0cy90ZXN0X3Nwcml0ZXNfaXBhZC9z
+					cHJpdGVzX2VuZW1pZXNfcHJvamVjdGlsZXNf
+					YmdzXzRfMTJfMTMvYm90dGxlMl9icm9rZW4u
+					cG5nAADwAAAA/v///wEAAAAAAAAAEwAAAAQQ
+					AADQAAAAAAAAAAUQAAB4AQAAAAAAABAQAACw
+					AQAAAAAAAEAQAACgAQAAAAAAAFQQAADYAQAA
+					AAAAAFUQAADkAQAAAAAAAFYQAADQAQAAAAAA
+					AAIgAACMAgAAAAAAABAgAAAMAgAAAAAAABEg
+					AABAAgAAAAAAABIgAAAgAgAAAAAAABMgAAAw
+					AgAAAAAAACAgAABsAgAAAAAAADAgAADQAQAA
+					AAAAAAHAAADwAQAAAAAAABHAAAAUAAAAAAAA
+					ABLAAAAAAgAAAAAAABDQAACYAgAAAAAAAIDw
+					AACkAgAAAAAAAA==
+					</data>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<true/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Category</key>
+								<integer>1</integer>
+								<key>Density</key>
+								<real>0.20000000298023224</real>
+								<key>Fixture</key>
+								<array>
+									<array>
+										<string>{-1.625, 23.125}</string>
+										<string>{-17.125, -18.875}</string>
+										<string>{-8.375, -24.125}</string>
+										<string>{18.875, 12.125}</string>
+										<string>{-1.375, 23.375}</string>
+									</array>
+								</array>
+								<key>Friction</key>
+								<real>0.20000000298023224</real>
+								<key>Group</key>
+								<integer>0</integer>
+								<key>Height</key>
+								<real>0.0</real>
+								<key>HolesPoints</key>
+								<array/>
+								<key>IsCircle</key>
+								<false/>
+								<key>IsRectangle</key>
+								<false/>
+								<key>IsSensor</key>
+								<true/>
+								<key>LHHeight</key>
+								<real>0.0</real>
+								<key>LHShapePositionOffset</key>
+								<string>{-17.125, -23.375}</string>
+								<key>LHWidth</key>
+								<real>0.0</real>
+								<key>Mask</key>
+								<integer>65535</integer>
+								<key>Name</key>
+								<string>UntitledFixture</string>
+								<key>Restitution</key>
+								<real>0.20000000298023224</real>
+								<key>ShapePoints</key>
+								<array>
+									<string>{-1, 62}</string>
+									<string>{-169, 1.4210854715202004e-14}</string>
+									<string>{-190, 35.000000000000014}</string>
+									<string>{-44.999999999999993, 144}</string>
+									<string>{0, 63}</string>
+								</array>
+								<key>ShapePositionOffset</key>
+								<string>{0, 0}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>Width</key>
+								<real>0.0</real>
+							</dict>
+						</array>
+						<key>Type</key>
+						<integer>2</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>Bum</string>
+					<key>SHSpriteName</key>
+					<string>bottle2_broken</string>
+					<key>SheetImage</key>
+					<string>sprites_Bum.png</string>
+					<key>SheetImage-HD</key>
+					<string>sprites_Bum-ipadhd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{722, 210}, {36.75, 48}}</string>
+						<key>Frame-HD</key>
+						<string>{{2888, 840}, {145, 192}}</string>
+						<key>Image</key>
+						<string>sprites_Bum.png</string>
+						<key>Image-HD</key>
+						<string>sprites_Bum-ipadhd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<true/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>bottle2_broken</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/grantdavis/Google Drive/Grant&amp;Mike&amp;Ryan Game/Assets/test_sprites_iPad/sprites_Enemies_Projectiles_BGs_4_12_13/bottle2_broken.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../../../../../../Google%20Drive/Grant&amp;Mike&amp;Ryan%20Game/Assets/test_sprites_iPad/sprites_Enemies_Projectiles_BGs_4_12_13/bottle2_broken.png/</string>
+						<key>OriginalRect</key>
+						<string>{{11, 26}, {145, 192}}</string>
+						<key>OriginalSize</key>
+						<string>{159, 239}</string>
+						<key>Position</key>
+						<string>{2888, 840}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{39.75, 59.75}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{1.25, -0.625}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>bottle_cap</key>
+				<dict>
+					<key>DocumentSecurityImageBookmark</key>
+					<data>
+					Ym9va9wEAAAAAAQQMAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAtAMAAAUA
+					AAABAQAAVXNlcnMAAAAKAAAAAQEAAGdyYW50
+					ZGF2aXMAAAwAAAABAQAAR29vZ2xlIERyaXZl
+					FAAAAAEBAABHcmFudCZNaWtlJlJ5YW4gR2Ft
+					ZQYAAAABAQAAQXNzZXRzAAARAAAAAQEAAHRl
+					c3Rfc3ByaXRlc19pUGFkAAAAJwAAAAEBAABz
+					cHJpdGVzX0VuZW1pZXNfUHJvamVjdGlsZXNf
+					QkdzXzRfMTJfMTMADgAAAAEBAABib3R0bGVf
+					Y2FwLnBuZwAAIAAAAAEGAAAEAAAAFAAAACgA
+					AAA8AAAAWAAAAGgAAACEAAAAtAAAAAgAAAAE
+					AwAAF7sQAAAAAAAIAAAABAMAAJndEAAAAAAA
+					CAAAAAQDAADpP/gDAAAAAAgAAAAEAwAAp2IW
+					BAAAAAAIAAAABAMAAL5iFgQAAAAACAAAAAQD
+					AADnYhYEAAAAAAgAAAAEAwAAtcgkBAAAAAAI
+					AAAABAMAAMLIJAQAAAAAIAAAAAEGAAD0AAAA
+					BAEAABQBAAAkAQAANAEAAEQBAABUAQAAZAEA
+					AAgAAAAABAAAQbcYdMEAAAAYAAAAAQIAAAEA
+					AAAAAAAADwAAAAAAAAAAAAAAAAAAAAAAAAAB
+					BQAABAAAAAMDAAAHAAAABAAAAAMDAAAGAAAA
+					CAAAAAQDAAAGAAAAAAAAAAQAAAADAwAA9QEA
+					AAwAAAABAQAATWFjaW50b3NoIEhECAAAAAQD
+					AAAAYDGBYAAAAAgAAAAABAAAQbVopakAAAAk
+					AAAAAQEAADY4MkI5MjQzLTdDRTctM0Y1MS05
+					RkI4LTJCNUZBQjNBNDJCQxgAAAABAgAAgQAA
+					AAEACADvPwAAAQAIAAAAAAAAAAAAAQAAAAEB
+					AAAvAAAABAAAAAMDAAAAAQAACwEAAAECAAA5
+					OWNjYzM0ODE1NGU5NjRmYjVkM2EyN2U1MjU1
+					NzVkZDFmMGI1NDM1OzAwMDAwMDAwOzAwMDAw
+					MDAwMDAwMDAwMjA7Y29tLmFwcGxlLmFwcC1z
+					YW5kYm94LnJlYWQtd3JpdGU7MDAwMDAwMDE7
+					MDEwMDAwMDE7MDAwMDAwMDAwNDI0YzhjMjsv
+					dXNlcnMvZ3JhbnRkYXZpcy9nb29nbGUgZHJp
+					dmUvZ3JhbnQmbWlrZSZyeWFuIGdhbWUvYXNz
+					ZXRzL3Rlc3Rfc3ByaXRlc19pcGFkL3Nwcml0
+					ZXNfZW5lbWllc19wcm9qZWN0aWxlc19iZ3Nf
+					NF8xMl8xMy9ib3R0bGVfY2FwLnBuZwAA8AAA
+					AP7///8BAAAAAAAAABMAAAAEEAAAzAAAAAAA
+					AAAFEAAAdAEAAAAAAAAQEAAArAEAAAAAAABA
+					EAAAnAEAAAAAAABUEAAA1AEAAAAAAABVEAAA
+					4AEAAAAAAABWEAAAzAEAAAAAAAACIAAAiAIA
+					AAAAAAAQIAAACAIAAAAAAAARIAAAPAIAAAAA
+					AAASIAAAHAIAAAAAAAATIAAALAIAAAAAAAAg
+					IAAAaAIAAAAAAAAwIAAAzAEAAAAAAAABwAAA
+					7AEAAAAAAAARwAAAFAAAAAAAAAASwAAA/AEA
+					AAAAAAAQ0AAAlAIAAAAAAACA8AAAoAIAAAAA
+					AAA=
+					</data>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Category</key>
+								<integer>1</integer>
+								<key>Density</key>
+								<real>0.20000000298023224</real>
+								<key>Fixture</key>
+								<array>
+									<array>
+										<string>{-12.875, -2.625}</string>
+										<string>{-1.625, -11.125}</string>
+										<string>{12.125, -11.375}</string>
+										<string>{11.875, 2.125}</string>
+										<string>{-6.625, 12.625}</string>
+										<string>{-6.875, 12.375}</string>
+									</array>
+									<array>
+										<string>{-12.875, -2.625}</string>
+										<string>{-6.875, 12.375}</string>
+										<string>{-16.375, 7.125}</string>
+									</array>
+								</array>
+								<key>Friction</key>
+								<real>0.20000000298023224</real>
+								<key>Group</key>
+								<integer>0</integer>
+								<key>Height</key>
+								<real>0.0</real>
+								<key>HolesPoints</key>
+								<array/>
+								<key>IsCircle</key>
+								<false/>
+								<key>IsRectangle</key>
+								<false/>
+								<key>IsSensor</key>
+								<true/>
+								<key>LHHeight</key>
+								<real>0.0</real>
+								<key>LHShapePositionOffset</key>
+								<string>{-16.375, -12.625}</string>
+								<key>LHWidth</key>
+								<real>0.0</real>
+								<key>Mask</key>
+								<integer>65535</integer>
+								<key>Name</key>
+								<string>UntitledFixture</string>
+								<key>Restitution</key>
+								<real>0.20000000298023224</real>
+								<key>ShapePoints</key>
+								<array>
+									<string>{-1, 38}</string>
+									<string>{-22, 0}</string>
+									<string>{-61, 14}</string>
+									<string>{-95, 59.000000000000007}</string>
+									<string>{-96, 114}</string>
+									<string>{-41.999999999999993, 113}</string>
+									<string>{0, 39}</string>
+								</array>
+								<key>ShapePositionOffset</key>
+								<string>{0, 0}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>Width</key>
+								<real>0.0</real>
+							</dict>
+						</array>
+						<key>Type</key>
+						<integer>2</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>Bum</string>
+					<key>SHSpriteName</key>
+					<string>bottle_cap</string>
+					<key>SheetImage</key>
+					<string>sprites_Bum.png</string>
+					<key>SheetImage-HD</key>
+					<string>sprites_Bum-ipadhd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{800, 155}, {30.75, 25.75}}</string>
+						<key>Frame-HD</key>
+						<string>{{3200, 620}, {121, 103}}</string>
+						<key>Image</key>
+						<string>sprites_Bum.png</string>
+						<key>Image-HD</key>
+						<string>sprites_Bum-ipadhd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<true/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>bottle_cap</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/grantdavis/Google Drive/Grant&amp;Mike&amp;Ryan Game/Assets/test_sprites_iPad/sprites_Enemies_Projectiles_BGs_4_12_13/bottle_cap.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../../../../../../Google%20Drive/Grant&amp;Mike&amp;Ryan%20Game/Assets/test_sprites_iPad/sprites_Enemies_Projectiles_BGs_4_12_13/bottle_cap.png/</string>
+						<key>OriginalRect</key>
+						<string>{{14, 69}, {121, 103}}</string>
+						<key>OriginalSize</key>
+						<string>{159, 239}</string>
+						<key>Position</key>
+						<string>{3200, 620}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{39.75, 59.75}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{-1, -0.25}</string>
 						<key>UsesBatchRendering</key>
 						<true/>
 						<key>ZOrder</key>
@@ -270,11 +1124,11 @@
 					LTlGQjgtMkI1RkFCM0E0MkJDGAAAAAECAACB
 					AAAAAQAIAO8/AAABAAgAAAAAAAAAAAABAAAA
 					AQEAAC8AAAAEAAAAAwMAAAABAADUAAAAAQIA
-					AGFhYmI3ZWQ5NWVlNmZhMjdlYjZkZDFhMDVh
-					ZThkZDE4Zjk2ZGI5ODM7MDAwMDAwMDA7MDAw
+					ADVhMmQzYzlhNWNmYzE5NDE1NDljZWUyYTky
+					OTY2NzAyZDQ4MzE2Mzk7MDAwMDAwMDA7MDAw
 					MDAwMDAwMDAwMDAyMDtjb20uYXBwbGUuYXBw
 					LXNhbmRib3gucmVhZC13cml0ZTswMDAwMDAw
-					MTswMTAwMDAwMjswMDAwMDAwMDA0MTZjOWI5
+					MTswMTAwMDAwMTswMDAwMDAwMDA0MTZjOWI5
 					Oy91c2Vycy9ncmFudGRhdmlzL3dvcmtzcGFj
 					ZS9idW0vYXNzZXRzL2FydHdvcmsvY2hhcmFj
 					dGVyIHNwcml0ZXMvZnBvLWNhdC5wbmcA8AAA
@@ -306,7 +1160,7 @@
 						<key>HandledBySH</key>
 						<true/>
 						<key>IsBullet</key>
-						<true/>
+						<false/>
 						<key>LinearDamping</key>
 						<real>0.0</real>
 						<key>LinearVelocity</key>
@@ -360,7 +1214,7 @@
 								<key>IsRectangle</key>
 								<false/>
 								<key>IsSensor</key>
-								<true/>
+								<false/>
 								<key>LHHeight</key>
 								<real>0.0</real>
 								<key>LHShapePositionOffset</key>
@@ -370,21 +1224,21 @@
 								<key>Mask</key>
 								<integer>65535</integer>
 								<key>Name</key>
-								<string>UntitledFixture</string>
+								<string>hit</string>
 								<key>Restitution</key>
 								<real>0.20000000298023224</real>
 								<key>ShapePoints</key>
 								<array>
-									<string>{-0.99999999999999867, 21}</string>
-									<string>{-7, 1.0000000000000004}</string>
+									<string>{-1, 21}</string>
+									<string>{-7, 1}</string>
 									<string>{-47, 36}</string>
-									<string>{-74, 7.0000000000000044}</string>
+									<string>{-74, 7}</string>
 									<string>{-110, 108}</string>
 									<string>{-80, 95}</string>
 									<string>{-87.999999999999986, 130}</string>
 									<string>{-38.999999999999993, 142}</string>
 									<string>{-55.999999999999993, 71}</string>
-									<string>{1.3471114790620886e-15, 22}</string>
+									<string>{0, 22}</string>
 								</array>
 								<key>ShapePositionOffset</key>
 								<string>{0, 0}</string>
@@ -424,9 +1278,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{867, 113}, {35.75, 29.75}}</string>
+						<string>{{772, 204}, {35.75, 29.75}}</string>
 						<key>Frame-HD</key>
-						<string>{{3468, 452}, {143, 117}}</string>
+						<string>{{3088, 816}, {143, 117}}</string>
 						<key>Image</key>
 						<string>sprites_Bum.png</string>
 						<key>Image-HD</key>
@@ -452,7 +1306,7 @@
 						<key>OriginalSize</key>
 						<string>{172, 120}</string>
 						<key>Position</key>
-						<string>{3468, 452}</string>
+						<string>{3088, 816}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -463,6 +1317,1004 @@
 						<integer>0</integer>
 						<key>TextureOffset</key>
 						<string>{0.125, -0.125}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>enemy_hippy-bum</key>
+				<dict>
+					<key>DocumentSecurityImageBookmark</key>
+					<data>
+					Ym9va+QEAAAAAAQQMAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAvAMAAAUA
+					AAABAQAAVXNlcnMAAAAKAAAAAQEAAGdyYW50
+					ZGF2aXMAAAwAAAABAQAAR29vZ2xlIERyaXZl
+					FAAAAAEBAABHcmFudCZNaWtlJlJ5YW4gR2Ft
+					ZQYAAAABAQAAQXNzZXRzAAARAAAAAQEAAHRl
+					c3Rfc3ByaXRlc19pUGFkAAAAJwAAAAEBAABz
+					cHJpdGVzX0VuZW1pZXNfUHJvamVjdGlsZXNf
+					QkdzXzRfMTJfMTMAEwAAAAEBAABlbmVteV9o
+					aXBweS1idW0ucG5nACAAAAABBgAABAAAABQA
+					AAAoAAAAPAAAAFgAAABoAAAAhAAAALQAAAAI
+					AAAABAMAABe7EAAAAAAACAAAAAQDAACZ3RAA
+					AAAAAAgAAAAEAwAA6T/4AwAAAAAIAAAABAMA
+					AKdiFgQAAAAACAAAAAQDAAC+YhYEAAAAAAgA
+					AAAEAwAA52IWBAAAAAAIAAAABAMAALXIJAQA
+					AAAACAAAAAQDAADEyCQEAAAAACAAAAABBgAA
+					+AAAAAgBAAAYAQAAKAEAADgBAABIAQAAWAEA
+					AGgBAAAIAAAAAAQAAEG3GHUhAAAAGAAAAAEC
+					AAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAA
+					AAAAAQUAAAQAAAADAwAABwAAAAQAAAADAwAA
+					BgAAAAgAAAAEAwAABgAAAAAAAAAEAAAAAwMA
+					APUBAAAMAAAAAQEAAE1hY2ludG9zaCBIRAgA
+					AAAEAwAAAGAxgWAAAAAIAAAAAAQAAEG1aKWp
+					AAAAJAAAAAEBAAA2ODJCOTI0My03Q0U3LTNG
+					NTEtOUZCOC0yQjVGQUIzQTQyQkMYAAAAAQIA
+					AIEAAAABAAgA7z8AAAEACAAAAAAAAAAAAAEA
+					AAABAQAALwAAAAQAAAADAwAAAAEAABABAAAB
+					AgAAODkwM2YyNWU3NDkwODQ1ODYxMTMxY2M0
+					ZjljOThkMmQ2YWM0N2IyZjswMDAwMDAwMDsw
+					MDAwMDAwMDAwMDAwMDIwO2NvbS5hcHBsZS5h
+					cHAtc2FuZGJveC5yZWFkLXdyaXRlOzAwMDAw
+					MDAxOzAxMDAwMDAxOzAwMDAwMDAwMDQyNGM4
+					YzQ7L3VzZXJzL2dyYW50ZGF2aXMvZ29vZ2xl
+					IGRyaXZlL2dyYW50Jm1pa2UmcnlhbiBnYW1l
+					L2Fzc2V0cy90ZXN0X3Nwcml0ZXNfaXBhZC9z
+					cHJpdGVzX2VuZW1pZXNfcHJvamVjdGlsZXNf
+					YmdzXzRfMTJfMTMvZW5lbXlfaGlwcHktYnVt
+					LnBuZwDwAAAA/v///wEAAAAAAAAAEwAAAAQQ
+					AADQAAAAAAAAAAUQAAB4AQAAAAAAABAQAACw
+					AQAAAAAAAEAQAACgAQAAAAAAAFQQAADYAQAA
+					AAAAAFUQAADkAQAAAAAAAFYQAADQAQAAAAAA
+					AAIgAACMAgAAAAAAABAgAAAMAgAAAAAAABEg
+					AABAAgAAAAAAABIgAAAgAgAAAAAAABMgAAAw
+					AgAAAAAAACAgAABsAgAAAAAAADAgAADQAQAA
+					AAAAAAHAAADwAQAAAAAAABHAAAAUAAAAAAAA
+					ABLAAAAAAgAAAAAAABDQAACYAgAAAAAAAIDw
+					AACkAgAAAAAAAA==
+					</data>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<true/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Category</key>
+								<integer>1</integer>
+								<key>Density</key>
+								<real>0.20000000298023224</real>
+								<key>Fixture</key>
+								<array>
+									<array>
+										<string>{-63.5, -75.125}</string>
+										<string>{53.75, -75.125}</string>
+										<string>{53.75, 77.625}</string>
+										<string>{-63.5, 77.625}</string>
+									</array>
+								</array>
+								<key>Friction</key>
+								<real>0.20000000298023224</real>
+								<key>Group</key>
+								<integer>0</integer>
+								<key>Height</key>
+								<real>611</real>
+								<key>HolesPoints</key>
+								<array/>
+								<key>IsCircle</key>
+								<false/>
+								<key>IsRectangle</key>
+								<true/>
+								<key>IsSensor</key>
+								<false/>
+								<key>LHHeight</key>
+								<real>152.75</real>
+								<key>LHShapePositionOffset</key>
+								<string>{-63.5, -77.625}</string>
+								<key>LHWidth</key>
+								<real>117.25</real>
+								<key>Mask</key>
+								<integer>65535</integer>
+								<key>Name</key>
+								<string>body</string>
+								<key>Restitution</key>
+								<real>0.20000000298023224</real>
+								<key>ShapePoints</key>
+								<array>
+									<string>{0, 0}</string>
+									<string>{469, 0}</string>
+									<string>{469, 611}</string>
+									<string>{0, 611}</string>
+								</array>
+								<key>ShapePositionOffset</key>
+								<string>{0, 0}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>Width</key>
+								<real>469</real>
+							</dict>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Category</key>
+								<integer>1</integer>
+								<key>Density</key>
+								<real>0.20000000298023224</real>
+								<key>Fixture</key>
+								<array>
+									<array>
+										<string>{27, -8.875}</string>
+										<string>{39.75, -42.625}</string>
+										<string>{51, -18.375}</string>
+										<string>{25.5, 53.375}</string>
+									</array>
+									<array>
+										<string>{25.5, 53.375}</string>
+										<string>{-2, 77.625}</string>
+										<string>{-2, 77.375}</string>
+									</array>
+									<array>
+										<string>{-4.25, -21.375}</string>
+										<string>{-24.25, -74.625}</string>
+										<string>{0, -70.625}</string>
+										<string>{9.75, -39.875}</string>
+									</array>
+									<array>
+										<string>{-40.25, -5.625}</string>
+										<string>{-45.25, 16.625}</string>
+										<string>{-63.5, 6.125}</string>
+										<string>{-46.75, -29.125}</string>
+									</array>
+									<array>
+										<string>{-40.25, -5.625}</string>
+										<string>{-46.75, -29.125}</string>
+										<string>{-4.25, -21.375}</string>
+										<string>{-23, -6.625}</string>
+									</array>
+									<array>
+										<string>{17.5, -71.875}</string>
+										<string>{42.5, -72.375}</string>
+										<string>{27, -8.875}</string>
+										<string>{9.75, -39.875}</string>
+									</array>
+									<array>
+										<string>{-4.25, -21.375}</string>
+										<string>{9.75, -39.875}</string>
+										<string>{27, -8.875}</string>
+									</array>
+									<array>
+										<string>{27, -8.875}</string>
+										<string>{25.5, 53.375}</string>
+										<string>{-2, 77.375}</string>
+										<string>{-34.25, 57.875}</string>
+										<string>{-23, -6.625}</string>
+										<string>{-4.25, -21.375}</string>
+									</array>
+								</array>
+								<key>Friction</key>
+								<real>0.20000000298023224</real>
+								<key>Group</key>
+								<integer>0</integer>
+								<key>Height</key>
+								<real>0.0</real>
+								<key>HolesPoints</key>
+								<array/>
+								<key>IsCircle</key>
+								<false/>
+								<key>IsRectangle</key>
+								<false/>
+								<key>IsSensor</key>
+								<true/>
+								<key>LHHeight</key>
+								<real>0.0</real>
+								<key>LHShapePositionOffset</key>
+								<string>{-63.5, -77.625}</string>
+								<key>LHWidth</key>
+								<real>0.0</real>
+								<key>Mask</key>
+								<integer>65535</integer>
+								<key>Name</key>
+								<string>hit</string>
+								<key>Restitution</key>
+								<real>0.20000000298023224</real>
+								<key>ShapePoints</key>
+								<array>
+									<string>{246, 1}</string>
+									<string>{117, 79}</string>
+									<string>{162, 337}</string>
+									<string>{93, 333}</string>
+									<string>{73, 244}</string>
+									<string>{0, 286}</string>
+									<string>{67, 427}</string>
+									<string>{237, 396}</string>
+									<string>{157, 609}</string>
+									<string>{254, 593}</string>
+									<string>{293, 470}</string>
+									<string>{324, 598}</string>
+									<string>{424, 600}</string>
+									<string>{362, 346}</string>
+									<string>{413, 481}</string>
+									<string>{458, 384}</string>
+									<string>{356, 97}</string>
+									<string>{246, 0}</string>
+								</array>
+								<key>ShapePositionOffset</key>
+								<string>{0, 0}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>Width</key>
+								<real>0.0</real>
+							</dict>
+						</array>
+						<key>Type</key>
+						<integer>2</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>Bum</string>
+					<key>SHSpriteName</key>
+					<string>enemy_hippy-bum</string>
+					<key>SheetImage</key>
+					<string>sprites_Bum.png</string>
+					<key>SheetImage-HD</key>
+					<string>sprites_Bum-ipadhd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{649, 2}, {117.75, 152.75}}</string>
+						<key>Frame-HD</key>
+						<string>{{2596, 8}, {469, 611}}</string>
+						<key>Image</key>
+						<string>sprites_Bum.png</string>
+						<key>Image-HD</key>
+						<string>sprites_Bum-ipadhd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<false/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>enemy_hippy-bum</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/grantdavis/Google Drive/Grant&amp;Mike&amp;Ryan Game/Assets/test_sprites_iPad/sprites_Enemies_Projectiles_BGs_4_12_13/enemy_hippy-bum.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../../../../../../Google%20Drive/Grant&amp;Mike&amp;Ryan%20Game/Assets/test_sprites_iPad/sprites_Enemies_Projectiles_BGs_4_12_13/enemy_hippy-bum.png/</string>
+						<key>OriginalRect</key>
+						<string>{{11, 0}, {469, 611}}</string>
+						<key>OriginalSize</key>
+						<string>{530, 621}</string>
+						<key>Position</key>
+						<string>{2596, 8}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{132.5, 155.25}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{-4.625, 1.25}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>enemy_mullet-hawk_dude</key>
+				<dict>
+					<key>DocumentSecurityImageBookmark</key>
+					<data>
+					Ym9va/QEAAAAAAQQMAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAzAMAAAUA
+					AAABAQAAVXNlcnMAAAAKAAAAAQEAAGdyYW50
+					ZGF2aXMAAAwAAAABAQAAR29vZ2xlIERyaXZl
+					FAAAAAEBAABHcmFudCZNaWtlJlJ5YW4gR2Ft
+					ZQYAAAABAQAAQXNzZXRzAAARAAAAAQEAAHRl
+					c3Rfc3ByaXRlc19pUGFkAAAAJwAAAAEBAABz
+					cHJpdGVzX0VuZW1pZXNfUHJvamVjdGlsZXNf
+					QkdzXzRfMTJfMTMAGgAAAAEBAABlbmVteV9t
+					dWxsZXQtaGF3a19kdWRlLnBuZwAAIAAAAAEG
+					AAAEAAAAFAAAACgAAAA8AAAAWAAAAGgAAACE
+					AAAAtAAAAAgAAAAEAwAAF7sQAAAAAAAIAAAA
+					BAMAAJndEAAAAAAACAAAAAQDAADpP/gDAAAA
+					AAgAAAAEAwAAp2IWBAAAAAAIAAAABAMAAL5i
+					FgQAAAAACAAAAAQDAADnYhYEAAAAAAgAAAAE
+					AwAAtcgkBAAAAAAIAAAABAMAAMbIJAQAAAAA
+					IAAAAAEGAAAAAQAAEAEAACABAAAwAQAAQAEA
+					AFABAABgAQAAcAEAAAgAAAAABAAAQbcYdREA
+					AAAYAAAAAQIAAAEAAAAAAAAADwAAAAAAAAAA
+					AAAAAAAAAAAAAAABBQAABAAAAAMDAAAHAAAA
+					BAAAAAMDAAAGAAAACAAAAAQDAAAGAAAAAAAA
+					AAQAAAADAwAA9QEAAAwAAAABAQAATWFjaW50
+					b3NoIEhECAAAAAQDAAAAYDGBYAAAAAgAAAAA
+					BAAAQbVopakAAAAkAAAAAQEAADY4MkI5MjQz
+					LTdDRTctM0Y1MS05RkI4LTJCNUZBQjNBNDJC
+					QxgAAAABAgAAgQAAAAEACADvPwAAAQAIAAAA
+					AAAAAAAAAQAAAAEBAAAvAAAABAAAAAMDAAAA
+					AQAAFwEAAAECAABmZTViMTExODgxNTdiNTQy
+					NTRmYmQ4MTQ4MTMxOTUwYjg0OWJmODcyOzAw
+					MDAwMDAwOzAwMDAwMDAwMDAwMDAwMjA7Y29t
+					LmFwcGxlLmFwcC1zYW5kYm94LnJlYWQtd3Jp
+					dGU7MDAwMDAwMDE7MDEwMDAwMDE7MDAwMDAw
+					MDAwNDI0YzhjNjsvdXNlcnMvZ3JhbnRkYXZp
+					cy9nb29nbGUgZHJpdmUvZ3JhbnQmbWlrZSZy
+					eWFuIGdhbWUvYXNzZXRzL3Rlc3Rfc3ByaXRl
+					c19pcGFkL3Nwcml0ZXNfZW5lbWllc19wcm9q
+					ZWN0aWxlc19iZ3NfNF8xMl8xMy9lbmVteV9t
+					dWxsZXQtaGF3a19kdWRlLnBuZwAA8AAAAP7/
+					//8BAAAAAAAAABMAAAAEEAAA2AAAAAAAAAAF
+					EAAAgAEAAAAAAAAQEAAAuAEAAAAAAABAEAAA
+					qAEAAAAAAABUEAAA4AEAAAAAAABVEAAA7AEA
+					AAAAAABWEAAA2AEAAAAAAAACIAAAlAIAAAAA
+					AAAQIAAAFAIAAAAAAAARIAAASAIAAAAAAAAS
+					IAAAKAIAAAAAAAATIAAAOAIAAAAAAAAgIAAA
+					dAIAAAAAAAAwIAAA2AEAAAAAAAABwAAA+AEA
+					AAAAAAARwAAAFAAAAAAAAAASwAAACAIAAAAA
+					AAAQ0AAAoAIAAAAAAACA8AAArAIAAAAAAAA=
+					</data>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<true/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Category</key>
+								<integer>1</integer>
+								<key>Density</key>
+								<real>0.20000000298023224</real>
+								<key>Fixture</key>
+								<array>
+									<array>
+										<string>{-5, -25.625}</string>
+										<string>{-24, -75.875}</string>
+										<string>{-1, -72.125}</string>
+										<string>{14.75, -42.875}</string>
+										<string>{24.5, -14.375}</string>
+									</array>
+									<array>
+										<string>{24.5, -14.375}</string>
+										<string>{36, -45.375}</string>
+										<string>{49.5, -32.625}</string>
+										<string>{27, 4.625}</string>
+									</array>
+									<array>
+										<string>{-38.25, -11.375}</string>
+										<string>{-43.75, 10.375}</string>
+										<string>{-60.75, 0.125}</string>
+										<string>{-44, -33.375}</string>
+									</array>
+									<array>
+										<string>{-15.5, -4.875}</string>
+										<string>{-38.25, -11.375}</string>
+										<string>{-44, -33.375}</string>
+										<string>{-5, -25.625}</string>
+										<string>{24.5, -14.375}</string>
+										<string>{27, 4.625}</string>
+									</array>
+									<array>
+										<string>{15.5, -73.125}</string>
+										<string>{38.75, -73.875}</string>
+										<string>{24.5, -14.375}</string>
+										<string>{14.75, -42.875}</string>
+									</array>
+									<array>
+										<string>{-34.75, 43.625}</string>
+										<string>{-15.5, -4.875}</string>
+										<string>{27, 4.625}</string>
+										<string>{25.75, 61.625}</string>
+										<string>{-12.75, 74.375}</string>
+										<string>{-13, 74.125}</string>
+									</array>
+								</array>
+								<key>Friction</key>
+								<real>0.20000000298023224</real>
+								<key>Group</key>
+								<integer>0</integer>
+								<key>Height</key>
+								<real>0.0</real>
+								<key>HolesPoints</key>
+								<array/>
+								<key>IsCircle</key>
+								<false/>
+								<key>IsRectangle</key>
+								<false/>
+								<key>IsSensor</key>
+								<true/>
+								<key>LHHeight</key>
+								<real>0.0</real>
+								<key>LHShapePositionOffset</key>
+								<string>{-64, -74.375}</string>
+								<key>LHWidth</key>
+								<real>0.0</real>
+								<key>Mask</key>
+								<integer>65535</integer>
+								<key>Name</key>
+								<string>hit</string>
+								<key>Restitution</key>
+								<real>0.20000000298023224</real>
+								<key>ShapePoints</key>
+								<array>
+									<string>{204, 1}</string>
+									<string>{117, 123}</string>
+									<string>{194, 317}</string>
+									<string>{103, 343}</string>
+									<string>{81, 256}</string>
+									<string>{13, 297}</string>
+									<string>{80, 431}</string>
+									<string>{236, 400}</string>
+									<string>{160, 601}</string>
+									<string>{252, 586}</string>
+									<string>{315, 469}</string>
+									<string>{318, 590}</string>
+									<string>{411, 593}</string>
+									<string>{354, 355}</string>
+									<string>{400, 479}</string>
+									<string>{454, 428}</string>
+									<string>{364, 279}</string>
+									<string>{359, 51}</string>
+									<string>{205, 0}</string>
+								</array>
+								<key>ShapePositionOffset</key>
+								<string>{0, 0}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>Width</key>
+								<real>0.0</real>
+							</dict>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Category</key>
+								<integer>1</integer>
+								<key>Density</key>
+								<real>0.20000000298023224</real>
+								<key>Fixture</key>
+								<array>
+									<array>
+										<string>{-64, -76.375}</string>
+										<string>{49.75, -76.375}</string>
+										<string>{49.75, 74.375}</string>
+										<string>{-64, 74.375}</string>
+									</array>
+								</array>
+								<key>Friction</key>
+								<real>0.20000000298023224</real>
+								<key>Group</key>
+								<integer>0</integer>
+								<key>Height</key>
+								<real>603</real>
+								<key>HolesPoints</key>
+								<array/>
+								<key>IsCircle</key>
+								<false/>
+								<key>IsRectangle</key>
+								<true/>
+								<key>IsSensor</key>
+								<false/>
+								<key>LHHeight</key>
+								<real>150.75</real>
+								<key>LHShapePositionOffset</key>
+								<string>{-64, -74.375}</string>
+								<key>LHWidth</key>
+								<real>113.75</real>
+								<key>Mask</key>
+								<integer>65535</integer>
+								<key>Name</key>
+								<string>body</string>
+								<key>Restitution</key>
+								<real>0.20000000298023224</real>
+								<key>ShapePoints</key>
+								<array>
+									<string>{0, 0}</string>
+									<string>{455, 0}</string>
+									<string>{455, 603}</string>
+									<string>{0, 603}</string>
+								</array>
+								<key>ShapePositionOffset</key>
+								<string>{0, 0}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>Width</key>
+								<real>455</real>
+							</dict>
+						</array>
+						<key>Type</key>
+						<integer>0</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>Bum</string>
+					<key>SHSpriteName</key>
+					<string>enemy_mullet-hawk_dude</string>
+					<key>SheetImage</key>
+					<string>sprites_Bum.png</string>
+					<key>SheetImage-HD</key>
+					<string>sprites_Bum-ipadhd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{769, 2}, {113.75, 150.75}}</string>
+						<key>Frame-HD</key>
+						<string>{{3076, 8}, {455, 603}}</string>
+						<key>Image</key>
+						<string>sprites_Bum.png</string>
+						<key>Image-HD</key>
+						<string>sprites_Bum-ipadhd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<false/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>enemy_mullet-hawk_dude</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/grantdavis/Google Drive/Grant&amp;Mike&amp;Ryan Game/Assets/test_sprites_iPad/sprites_Enemies_Projectiles_BGs_4_12_13/enemy_mullet-hawk_dude.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../../../../../../Google%20Drive/Grant&amp;Mike&amp;Ryan%20Game/Assets/test_sprites_iPad/sprites_Enemies_Projectiles_BGs_4_12_13/enemy_mullet-hawk_dude.png/</string>
+						<key>OriginalRect</key>
+						<string>{{9, 13}, {455, 603}}</string>
+						<key>OriginalSize</key>
+						<string>{530, 621}</string>
+						<key>Position</key>
+						<string>{3076, 8}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{132.5, 155.25}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{-7.125, -1}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>enemy_whore</key>
+				<dict>
+					<key>DocumentSecurityImageBookmark</key>
+					<data>
+					Ym9va9wEAAAAAAQQMAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAtAMAAAUA
+					AAABAQAAVXNlcnMAAAAKAAAAAQEAAGdyYW50
+					ZGF2aXMAAAwAAAABAQAAR29vZ2xlIERyaXZl
+					FAAAAAEBAABHcmFudCZNaWtlJlJ5YW4gR2Ft
+					ZQYAAAABAQAAQXNzZXRzAAARAAAAAQEAAHRl
+					c3Rfc3ByaXRlc19pUGFkAAAAJwAAAAEBAABz
+					cHJpdGVzX0VuZW1pZXNfUHJvamVjdGlsZXNf
+					QkdzXzRfMTJfMTMADwAAAAEBAABlbmVteV93
+					aG9yZS5wbmcAIAAAAAEGAAAEAAAAFAAAACgA
+					AAA8AAAAWAAAAGgAAACEAAAAtAAAAAgAAAAE
+					AwAAF7sQAAAAAAAIAAAABAMAAJndEAAAAAAA
+					CAAAAAQDAADpP/gDAAAAAAgAAAAEAwAAp2IW
+					BAAAAAAIAAAABAMAAL5iFgQAAAAACAAAAAQD
+					AADnYhYEAAAAAAgAAAAEAwAAtcgkBAAAAAAI
+					AAAABAMAAMjIJAQAAAAAIAAAAAEGAAD0AAAA
+					BAEAABQBAAAkAQAANAEAAEQBAABUAQAAZAEA
+					AAgAAAAABAAAQbcYdQQAAAAYAAAAAQIAAAEA
+					AAAAAAAADwAAAAAAAAAAAAAAAAAAAAAAAAAB
+					BQAABAAAAAMDAAAHAAAABAAAAAMDAAAGAAAA
+					CAAAAAQDAAAGAAAAAAAAAAQAAAADAwAA9QEA
+					AAwAAAABAQAATWFjaW50b3NoIEhECAAAAAQD
+					AAAAYDGBYAAAAAgAAAAABAAAQbVopakAAAAk
+					AAAAAQEAADY4MkI5MjQzLTdDRTctM0Y1MS05
+					RkI4LTJCNUZBQjNBNDJCQxgAAAABAgAAgQAA
+					AAEACADvPwAAAQAIAAAAAAAAAAAAAQAAAAEB
+					AAAvAAAABAAAAAMDAAAAAQAADAEAAAECAABk
+					YTllZDFjYjUwNDA5ZGE1OTFiODAxOTdiNjY3
+					MGI0NzhjOWVmZThiOzAwMDAwMDAwOzAwMDAw
+					MDAwMDAwMDAwMjA7Y29tLmFwcGxlLmFwcC1z
+					YW5kYm94LnJlYWQtd3JpdGU7MDAwMDAwMDE7
+					MDEwMDAwMDE7MDAwMDAwMDAwNDI0YzhjODsv
+					dXNlcnMvZ3JhbnRkYXZpcy9nb29nbGUgZHJp
+					dmUvZ3JhbnQmbWlrZSZyeWFuIGdhbWUvYXNz
+					ZXRzL3Rlc3Rfc3ByaXRlc19pcGFkL3Nwcml0
+					ZXNfZW5lbWllc19wcm9qZWN0aWxlc19iZ3Nf
+					NF8xMl8xMy9lbmVteV93aG9yZS5wbmcA8AAA
+					AP7///8BAAAAAAAAABMAAAAEEAAAzAAAAAAA
+					AAAFEAAAdAEAAAAAAAAQEAAArAEAAAAAAABA
+					EAAAnAEAAAAAAABUEAAA1AEAAAAAAABVEAAA
+					4AEAAAAAAABWEAAAzAEAAAAAAAACIAAAiAIA
+					AAAAAAAQIAAACAIAAAAAAAARIAAAPAIAAAAA
+					AAASIAAAHAIAAAAAAAATIAAALAIAAAAAAAAg
+					IAAAaAIAAAAAAAAwIAAAzAEAAAAAAAABwAAA
+					7AEAAAAAAAARwAAAFAAAAAAAAAASwAAA/AEA
+					AAAAAAAQ0AAAlAIAAAAAAACA8AAAoAIAAAAA
+					AAA=
+					</data>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<true/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Category</key>
+								<integer>1</integer>
+								<key>Density</key>
+								<real>0.20000000298023224</real>
+								<key>Fixture</key>
+								<array>
+									<array>
+										<string>{6, 74.125}</string>
+										<string>{-29.5, 52.125}</string>
+										<string>{-22.25, 54.125}</string>
+									</array>
+									<array>
+										<string>{-37.75, 1.625}</string>
+										<string>{-39.75, 18.625}</string>
+										<string>{-48, -5.875}</string>
+									</array>
+									<array>
+										<string>{38.5, -8.875}</string>
+										<string>{43.5, -26.125}</string>
+										<string>{51, -2.375}</string>
+										<string>{34, 14.875}</string>
+									</array>
+									<array>
+										<string>{8.5, -65.375}</string>
+										<string>{-1, -77.125}</string>
+										<string>{20.25, -72.375}</string>
+									</array>
+									<array>
+										<string>{-15.5, -65.375}</string>
+										<string>{-25, -74.625}</string>
+										<string>{-5, -72.625}</string>
+									</array>
+									<array>
+										<string>{8.5, -65.375}</string>
+										<string>{20.25, -72.375}</string>
+										<string>{19.25, -32.625}</string>
+										<string>{-2.75, -44.125}</string>
+									</array>
+									<array>
+										<string>{-15.5, -65.375}</string>
+										<string>{-5, -72.625}</string>
+										<string>{-2.75, -44.125}</string>
+										<string>{-13.5, -26.625}</string>
+									</array>
+									<array>
+										<string>{21.75, -42.375}</string>
+										<string>{33.25, -48.125}</string>
+										<string>{38.5, -8.875}</string>
+										<string>{24.25, -28.375}</string>
+									</array>
+									<array>
+										<string>{-48, -5.875}</string>
+										<string>{-42.25, -18.375}</string>
+										<string>{-34.75, -13.625}</string>
+										<string>{-37.75, 1.625}</string>
+									</array>
+									<array>
+										<string>{-22.25, -7.625}</string>
+										<string>{-37.75, 1.625}</string>
+										<string>{-34.75, -13.625}</string>
+										<string>{-18.75, -31.125}</string>
+										<string>{-13.5, -26.625}</string>
+									</array>
+									<array>
+										<string>{-22.25, -7.625}</string>
+										<string>{-13.5, -26.625}</string>
+										<string>{-2.75, -44.125}</string>
+										<string>{19.25, -32.625}</string>
+										<string>{24.25, -28.375}</string>
+										<string>{38.5, -8.875}</string>
+										<string>{34, 14.875}</string>
+										<string>{-31.25, 15.375}</string>
+									</array>
+									<array>
+										<string>{29.75, 61.625}</string>
+										<string>{6.25, 74.375}</string>
+										<string>{6, 74.125}</string>
+									</array>
+									<array>
+										<string>{38.5, 33.875}</string>
+										<string>{29.75, 61.625}</string>
+										<string>{6, 74.125}</string>
+										<string>{-22.25, 54.125}</string>
+										<string>{-31.25, 15.375}</string>
+										<string>{34, 14.875}</string>
+									</array>
+								</array>
+								<key>Friction</key>
+								<real>0.20000000298023224</real>
+								<key>Group</key>
+								<integer>0</integer>
+								<key>Height</key>
+								<real>0.0</real>
+								<key>HolesPoints</key>
+								<array/>
+								<key>IsCircle</key>
+								<false/>
+								<key>IsRectangle</key>
+								<false/>
+								<key>IsSensor</key>
+								<true/>
+								<key>LHHeight</key>
+								<real>0.0</real>
+								<key>LHShapePositionOffset</key>
+								<string>{-48.75, -74.375}</string>
+								<key>LHWidth</key>
+								<real>0.0</real>
+								<key>Mask</key>
+								<integer>65535</integer>
+								<key>Name</key>
+								<string>hit</string>
+								<key>Restitution</key>
+								<real>0.20000000298023224</real>
+								<key>ShapePoints</key>
+								<array>
+									<string>{219, 1}</string>
+									<string>{77, 89}</string>
+									<string>{106, 81}</string>
+									<string>{70, 236}</string>
+									<string>{106, 328}</string>
+									<string>{44, 291}</string>
+									<string>{36, 223}</string>
+									<string>{3, 321}</string>
+									<string>{26, 371}</string>
+									<string>{56, 352}</string>
+									<string>{120, 422}</string>
+									<string>{141, 404}</string>
+									<string>{133, 559}</string>
+									<string>{95, 596}</string>
+									<string>{175, 588}</string>
+									<string>{184, 474}</string>
+									<string>{229, 559}</string>
+									<string>{191, 606}</string>
+									<string>{276, 587}</string>
+									<string>{272, 428}</string>
+									<string>{292, 411}</string>
+									<string>{282, 467}</string>
+									<string>{328, 490}</string>
+									<string>{349, 333}</string>
+									<string>{369, 402}</string>
+									<string>{399, 307}</string>
+									<string>{331, 238}</string>
+									<string>{349, 162}</string>
+									<string>{314, 51}</string>
+									<string>{220, 0}</string>
+								</array>
+								<key>ShapePositionOffset</key>
+								<string>{0, 0}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>Width</key>
+								<real>0.0</real>
+							</dict>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Category</key>
+								<integer>1</integer>
+								<key>Density</key>
+								<real>0.20000000298023224</real>
+								<key>Fixture</key>
+								<array>
+									<array>
+										<string>{-48.75, -77.625}</string>
+										<string>{57.25, -77.625}</string>
+										<string>{57.25, 74.375}</string>
+										<string>{-48.75, 74.375}</string>
+									</array>
+								</array>
+								<key>Friction</key>
+								<real>0.20000000298023224</real>
+								<key>Group</key>
+								<integer>0</integer>
+								<key>Height</key>
+								<real>608</real>
+								<key>HolesPoints</key>
+								<array/>
+								<key>IsCircle</key>
+								<false/>
+								<key>IsRectangle</key>
+								<true/>
+								<key>IsSensor</key>
+								<false/>
+								<key>LHHeight</key>
+								<real>152</real>
+								<key>LHShapePositionOffset</key>
+								<string>{-48.75, -74.375}</string>
+								<key>LHWidth</key>
+								<real>106</real>
+								<key>Mask</key>
+								<integer>65535</integer>
+								<key>Name</key>
+								<string>body</string>
+								<key>Restitution</key>
+								<real>0.20000000298023224</real>
+								<key>ShapePoints</key>
+								<array>
+									<string>{0, 0}</string>
+									<string>{424, 0}</string>
+									<string>{424, 608}</string>
+									<string>{0, 608}</string>
+								</array>
+								<key>ShapePositionOffset</key>
+								<string>{0, 0}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>Width</key>
+								<real>424</real>
+							</dict>
+						</array>
+						<key>Type</key>
+						<integer>2</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>Bum</string>
+					<key>SHSpriteName</key>
+					<string>enemy_whore</string>
+					<key>SheetImage</key>
+					<string>sprites_Bum.png</string>
+					<key>SheetImage-HD</key>
+					<string>sprites_Bum-ipadhd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{109, 59}, {106, 152}}</string>
+						<key>Frame-HD</key>
+						<string>{{436, 236}, {424, 608}}</string>
+						<key>Image</key>
+						<string>sprites_Bum.png</string>
+						<key>Image-HD</key>
+						<string>sprites_Bum-ipadhd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<false/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>enemy_whore</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/grantdavis/Google Drive/Grant&amp;Mike&amp;Ryan Game/Assets/test_sprites_iPad/sprites_Enemies_Projectiles_BGs_4_12_13/enemy_whore.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../../../../../../Google%20Drive/Grant&amp;Mike&amp;Ryan%20Game/Assets/test_sprites_iPad/sprites_Enemies_Projectiles_BGs_4_12_13/enemy_whore.png/</string>
+						<key>OriginalRect</key>
+						<string>{{70, 13}, {424, 608}}</string>
+						<key>OriginalSize</key>
+						<string>{530, 621}</string>
+						<key>Position</key>
+						<string>{436, 236}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{132.5, 155.25}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{4.25, -1.625}</string>
 						<key>UsesBatchRendering</key>
 						<true/>
 						<key>ZOrder</key>
@@ -495,11 +2347,11 @@
 					ODJCOTI0My03Q0U3LTNGNTEtOUZCOC0yQjVG
 					QUIzQTQyQkMYAAAAAQIAAIEAAAABAAgA7z8A
 					AAEACAAAAAAAAAAAAAEAAAABAQAALwAAAAQA
-					AAADAwAAAAEAANkAAAABAgAANzgzZmI4OTQx
-					NTg5NzRjNzQ3NmI5MDhlYzVjZGMzMzM2MTgw
-					N2NiMTswMDAwMDAwMDswMDAwMDAwMDAwMDAw
+					AAADAwAAAAEAANkAAAABAgAAMDcwMDY3ZTQ2
+					NTNmYWQ3ZjgyOWQ5ZGVlNDVjNGJjMTdmNmYw
+					ZTA1NzswMDAwMDAwMDswMDAwMDAwMDAwMDAw
 					MDIwO2NvbS5hcHBsZS5hcHAtc2FuZGJveC5y
-					ZWFkLXdyaXRlOzAwMDAwMDAxOzAxMDAwMDAy
+					ZWFkLXdyaXRlOzAwMDAwMDAxOzAxMDAwMDAx
 					OzAwMDAwMDAwMDQwZmQ0MzU7L3VzZXJzL2dy
 					YW50ZGF2aXMvZ3Jhdml0eSBjb3JlIGFwcHMv
 					YnVtIGdhbWUvZG9jdW1lbnRzLWV4cG9ydC0y
@@ -548,10 +2400,10 @@
 								<key>Fixture</key>
 								<array>
 									<array>
-										<string>{-64, -64.895053165344223}</string>
-										<string>{41.303475949332778, -64.895053165344223}</string>
-										<string>{41.303475949332778, 77.625}</string>
-										<string>{-64, 77.625}</string>
+										<string>{-40.75401049854122, -64.341577224833344}</string>
+										<string>{27.46657743655976, -64.341577224833344}</string>
+										<string>{27.46657743655976, 77.625}</string>
+										<string>{-40.75401049854122, 77.625}</string>
 									</array>
 								</array>
 								<key>Friction</key>
@@ -582,10 +2434,10 @@
 								<real>0.0</real>
 								<key>ShapePoints</key>
 								<array>
-									<string>{0, 0}</string>
-									<string>{421.21390379733111, 0}</string>
-									<string>{421.21390379733111, 570.08021266137689}</string>
-									<string>{0, 570.08021266137689}</string>
+									<string>{92.98395800583512, 0}</string>
+									<string>{365.86630974623904, 0}</string>
+									<string>{365.86630974623904, 567.86630889933338}</string>
+									<string>{92.98395800583512, 567.86630889933338}</string>
 								</array>
 								<key>ShapePositionOffset</key>
 								<string>{0, 0}</string>
@@ -625,9 +2477,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{761, 3}, {104.75, 155.75}}</string>
+						<string>{{2, 59}, {104.75, 155.75}}</string>
 						<key>Frame-HD</key>
-						<string>{{3044, 12}, {419, 621}}</string>
+						<string>{{8, 236}, {419, 621}}</string>
 						<key>Image</key>
 						<string>sprites_Bum.png</string>
 						<key>Image-HD</key>
@@ -653,7 +2505,7 @@
 						<key>OriginalSize</key>
 						<string>{530, 621}</string>
 						<key>Position</key>
-						<string>{3044, 12}</string>
+						<string>{8, 236}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -699,11 +2551,11 @@
 					LTlGQjgtMkI1RkFCM0E0MkJDGAAAAAECAACB
 					AAAAAQAIAO8/AAABAAgAAAAAAAAAAAABAAAA
 					AQEAAC8AAAAEAAAAAwMAAAABAADUAAAAAQIA
-					ADQ2MTM4MTJmNmM3MTRiN2MwYTRkNmQzMTUw
-					M2Y1YTQxZGFhNGRjODk7MDAwMDAwMDA7MDAw
+					AGJlYTE1OTM4MjU5YjA0OGRhMjAzOTgyOTQ1
+					ODU0ZjZkMzM5NDhkZjQ7MDAwMDAwMDA7MDAw
 					MDAwMDAwMDAwMDAyMDtjb20uYXBwbGUuYXBw
 					LXNhbmRib3gucmVhZC13cml0ZTswMDAwMDAw
-					MTswMTAwMDAwMjswMDAwMDAwMDAzZjhkYmUx
+					MTswMTAwMDAwMTswMDAwMDAwMDAzZjhkYmUx
 					Oy91c2Vycy9ncmFudGRhdmlzL3dvcmtzcGFj
 					ZS9idW0vYXNzZXRzL2FydHdvcmsvbGV2ZWwg
 					c3ByaXRlcy9tb2NrLWdyb3VuZC5wbmcA8AAA
@@ -900,11 +2752,11 @@
 					ODJCOTI0My03Q0U3LTNGNTEtOUZCOC0yQjVG
 					QUIzQTQyQkMYAAAAAQIAAIEAAAABAAgA7z8A
 					AAEACAAAAAAAAAAAAAEAAAABAQAALwAAAAQA
-					AAADAwAAAAEAANgAAAABAgAAODFmMGU1ODc0
-					ZDdkMzgwNGRhNWVkYTdiYWQxODQwZTM5MmIx
-					ODgyNjswMDAwMDAwMDswMDAwMDAwMDAwMDAw
+					AAADAwAAAAEAANgAAAABAgAAYjIwNDAwYmQy
+					NTEyYzNjYWFkNmVmNGRmNWM3YTJmMWQ0MDZh
+					ZjdmZDswMDAwMDAwMDswMDAwMDAwMDAwMDAw
 					MDIwO2NvbS5hcHBsZS5hcHAtc2FuZGJveC5y
-					ZWFkLXdyaXRlOzAwMDAwMDAxOzAxMDAwMDAy
+					ZWFkLXdyaXRlOzAwMDAwMDAxOzAxMDAwMDAx
 					OzAwMDAwMDAwMDQwZmQ0Mzc7L3VzZXJzL2dy
 					YW50ZGF2aXMvZ3Jhdml0eSBjb3JlIGFwcHMv
 					YnVtIGdhbWUvZG9jdW1lbnRzLWV4cG9ydC0y
@@ -982,15 +2834,15 @@
 								<key>Mask</key>
 								<integer>65535</integer>
 								<key>Name</key>
-								<string>UntitledFixture</string>
+								<string>body</string>
 								<key>Restitution</key>
 								<real>0.20000000298023224</real>
 								<key>ShapePoints</key>
 								<array>
 									<string>{0, 0}</string>
-									<string>{0, 435}</string>
-									<string>{-543, 435.00000000000006}</string>
-									<string>{-543, 2.8421709430404007e-14}</string>
+									<string>{435, 0}</string>
+									<string>{435, 543}</string>
+									<string>{0, 543}</string>
 								</array>
 								<key>ShapePositionOffset</key>
 								<string>{0, 0}</string>
@@ -998,6 +2850,126 @@
 								<integer>0</integer>
 								<key>Width</key>
 								<real>435</real>
+							</dict>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Category</key>
+								<integer>1</integer>
+								<key>Density</key>
+								<real>0.20000000298023224</real>
+								<key>Fixture</key>
+								<array>
+									<array>
+										<string>{15.88770059408148, 65.583556039563035}</string>
+										<string>{-2.2339572277259663, 65.760026534577918}</string>
+										<string>{-26.135026534577833, 59.535427722740792}</string>
+										<string>{-40.144384950466701, 54.333556039563035}</string>
+										<string>{-64, 42.625}</string>
+										<string>{-52.772727128659369, 35.407085544548181}</string>
+										<string>{27.25, 32.875}</string>
+										<string>{30.144384950466815, 55.689171089096305}</string>
+									</array>
+									<array>
+										<string>{25.75, -57.875}</string>
+										<string>{43, -34.125}</string>
+										<string>{33, -28.625}</string>
+										<string>{23, -41.625}</string>
+									</array>
+									<array>
+										<string>{-3, -34.125}</string>
+										<string>{25.75, -57.875}</string>
+										<string>{23, -41.625}</string>
+										<string>{2.25, -18.625}</string>
+									</array>
+									<array>
+										<string>{2.25, -18.625}</string>
+										<string>{14.75, -23.875}</string>
+										<string>{39.25, -3.125}</string>
+										<string>{29.217914455451819, 7.7533421781926393}</string>
+										<string>{-49.981283168222433, 12.996657821807361}</string>
+									</array>
+									<array>
+										<string>{-51.612299405918577, -3.1824867327110553}</string>
+										<string>{-53.25, -50.625}</string>
+										<string>{-43.25, -52.875}</string>
+										<string>{-37.5, -39.875}</string>
+									</array>
+									<array>
+										<string>{-51.612299405918577, -3.1824867327110553}</string>
+										<string>{-37.5, -39.875}</string>
+										<string>{-12.75, -47.625}</string>
+										<string>{-3, -34.125}</string>
+										<string>{2.25, -18.625}</string>
+										<string>{-49.981283168222433, 12.996657821807361}</string>
+									</array>
+									<array>
+										<string>{-49.981283168222433, 12.996657821807361}</string>
+										<string>{29.217914455451819, 7.7533421781926393}</string>
+										<string>{33.282085544548181, 23.625}</string>
+										<string>{27.25, 32.875}</string>
+										<string>{-52.772727128659369, 35.407085544548181}</string>
+									</array>
+								</array>
+								<key>Friction</key>
+								<real>0.20000000298023224</real>
+								<key>Group</key>
+								<integer>0</integer>
+								<key>Height</key>
+								<real>0.0</real>
+								<key>HolesPoints</key>
+								<array/>
+								<key>IsCircle</key>
+								<false/>
+								<key>IsRectangle</key>
+								<false/>
+								<key>IsSensor</key>
+								<true/>
+								<key>LHHeight</key>
+								<real>0.0</real>
+								<key>LHShapePositionOffset</key>
+								<string>{-65.5, -77.625}</string>
+								<key>LHWidth</key>
+								<real>0.0</real>
+								<key>Mask</key>
+								<integer>65535</integer>
+								<key>Name</key>
+								<string>hit</string>
+								<key>Restitution</key>
+								<real>0.20000000298023224</real>
+								<key>ShapePoints</key>
+								<array>
+									<string>{253.06417108909613, 47.459893861688357}</string>
+									<string>{157.45989386168867, 72.358289109036775}</string>
+									<string>{101.42246019813319, 93.165775841747859}</string>
+									<string>{6, 140}</string>
+									<string>{50.909091485362524, 168.87165782180733}</string>
+									<string>{62.074867327110269, 258.51336871277056}</string>
+									<string>{55.550802376325692, 323.22994693084422}</string>
+									<string>{49, 513}</string>
+									<string>{89, 522}</string>
+									<string>{112, 470}</string>
+									<string>{211, 501}</string>
+									<string>{250, 447}</string>
+									<string>{365, 542}</string>
+									<string>{434, 447}</string>
+									<string>{394, 425}</string>
+									<string>{354, 477}</string>
+									<string>{271, 385}</string>
+									<string>{321, 406}</string>
+									<string>{419, 323}</string>
+									<string>{378.87165782180728, 279.48663128722944}</string>
+									<string>{395.12834217819272, 216}</string>
+									<string>{371, 179}</string>
+									<string>{382.57753980186726, 87.743315643614721}</string>
+									<string>{325.55080237632592, 48.165775841747831}</string>
+								</array>
+								<key>ShapePositionOffset</key>
+								<string>{0, 0}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>Width</key>
+								<real>0.0</real>
 							</dict>
 						</array>
 						<key>Type</key>
@@ -1030,9 +3002,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{867, 2}, {108.75, 135.75}}</string>
+						<string>{{217, 59}, {108.75, 135.75}}</string>
 						<key>Frame-HD</key>
-						<string>{{3468, 8}, {435, 543}}</string>
+						<string>{{868, 236}, {435, 543}}</string>
 						<key>Image</key>
 						<string>sprites_Bum.png</string>
 						<key>Image-HD</key>
@@ -1042,7 +3014,7 @@
 						<key>IsDrawable</key>
 						<true/>
 						<key>IsRotated</key>
-						<true/>
+						<false/>
 						<key>IsTrimmed</key>
 						<true/>
 						<key>Name</key>
@@ -1058,7 +3030,7 @@
 						<key>OriginalSize</key>
 						<string>{530, 621}</string>
 						<key>Position</key>
-						<string>{3468, 8}</string>
+						<string>{868, 236}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -1101,12 +3073,12 @@
 					AQAANjgyQjkyNDMtN0NFNy0zRjUxLTlGQjgt
 					MkI1RkFCM0E0MkJDGAAAAAECAACBAAAAAQAI
 					AO8/AAABAAgAAAAAAAAAAAABAAAAAQEAAC8A
-					AAAEAAAAAwMAAAABAADaAAAAAQIAAGYwZGVj
-					OWJmYzMyZmEyZjE0MTUzNWRhNDk3MTk4NjVh
-					MTAxM2M5ZDY7MDAwMDAwMDA7MDAwMDAwMDAw
+					AAAEAAAAAwMAAAABAADaAAAAAQIAADMwMDFj
+					NWIyMjZkYzAwOTk1ZmQyNDAzN2JlYmE3NDRk
+					NzZjNDA3NzI7MDAwMDAwMDA7MDAwMDAwMDAw
 					MDAwMDAyMDtjb20uYXBwbGUuYXBwLXNhbmRi
 					b3gucmVhZC13cml0ZTswMDAwMDAwMTswMTAw
-					MDAwMjswMDAwMDAwMDA0MGZkNDM2Oy91c2Vy
+					MDAwMTswMDAwMDAwMDA0MGZkNDM2Oy91c2Vy
 					cy9ncmFudGRhdmlzL2dyYXZpdHkgY29yZSBh
 					cHBzL2J1bSBnYW1lL2RvY3VtZW50cy1leHBv
 					cnQtMjAxMy0wNC0wMi90aHJvdy5wbmcAAADw
@@ -1184,7 +3156,7 @@
 								<key>Mask</key>
 								<integer>65535</integer>
 								<key>Name</key>
-								<string>UntitledFixture</string>
+								<string>body</string>
 								<key>Restitution</key>
 								<real>0.20000000298023224</real>
 								<key>ShapePoints</key>
@@ -1200,6 +3172,114 @@
 								<integer>0</integer>
 								<key>Width</key>
 								<real>524</real>
+							</dict>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Category</key>
+								<integer>1</integer>
+								<key>Density</key>
+								<real>0.20000000298023224</real>
+								<key>Fixture</key>
+								<array>
+									<array>
+										<string>{43.25, -13.375}</string>
+										<string>{38, -29.875}</string>
+										<string>{65.25, -23.875}</string>
+									</array>
+									<array>
+										<string>{43.25, -13.375}</string>
+										<string>{65.25, -23.875}</string>
+										<string>{28, 31.875}</string>
+										<string>{24.25, 9.875}</string>
+									</array>
+									<array>
+										<string>{-13.25, -75.125}</string>
+										<string>{3, -71.875}</string>
+										<string>{22.75, -64.125}</string>
+										<string>{13.5, -46.125}</string>
+										<string>{-30, -34.375}</string>
+										<string>{-28.25, -72.875}</string>
+									</array>
+									<array>
+										<string>{-32.5, 5.375}</string>
+										<string>{-46.972740184120312, -14.188349085307408}</string>
+										<string>{-44.75, -34.875}</string>
+										<string>{-30, -34.375}</string>
+										<string>{24.25, 9.875}</string>
+										<string>{28, 31.875}</string>
+									</array>
+									<array>
+										<string>{-30, -34.375}</string>
+										<string>{13.5, -46.125}</string>
+										<string>{24.25, 9.875}</string>
+									</array>
+									<array>
+										<string>{23.25, 60.875}</string>
+										<string>{-7.75, 63.375}</string>
+										<string>{-39.224076909380528, 57.76352418013397}</string>
+										<string>{-48, 41.375}</string>
+										<string>{-53.267379740978527, 20.591577243303107}</string>
+										<string>{-32.5, 5.375}</string>
+										<string>{28, 31.875}</string>
+										<string>{32.179144310825791, 48.519384828868738}</string>
+									</array>
+								</array>
+								<key>Friction</key>
+								<real>0.20000000298023224</real>
+								<key>Group</key>
+								<integer>0</integer>
+								<key>Height</key>
+								<real>0.0</real>
+								<key>HolesPoints</key>
+								<array/>
+								<key>IsCircle</key>
+								<false/>
+								<key>IsRectangle</key>
+								<false/>
+								<key>IsSensor</key>
+								<true/>
+								<key>LHHeight</key>
+								<real>0.0</real>
+								<key>LHShapePositionOffset</key>
+								<string>{-65.5, -77.625}</string>
+								<key>LHWidth</key>
+								<real>0.0</real>
+								<key>Mask</key>
+								<integer>65535</integer>
+								<key>Name</key>
+								<string>hit</string>
+								<key>Restitution</key>
+								<real>0.20000000298023224</real>
+								<key>ShapePoints</key>
+								<array>
+									<string>{231, 57}</string>
+									<string>{105.10369236247789, 79.445903279464119}</string>
+									<string>{70, 145}</string>
+									<string>{48.930481036085894, 228.13369102678752}</string>
+									<string>{132, 289}</string>
+									<string>{74.109039263518753, 367.25339634122963}</string>
+									<string>{83, 450}</string>
+									<string>{142, 448}</string>
+									<string>{149, 602}</string>
+									<string>{209, 611}</string>
+									<string>{274, 598}</string>
+									<string>{353, 567}</string>
+									<string>{316, 495}</string>
+									<string>{359, 271}</string>
+									<string>{435, 364}</string>
+									<string>{414, 430}</string>
+									<string>{523, 406}</string>
+									<string>{374, 183}</string>
+									<string>{390.71657724330316, 116.42246068452499}</string>
+									<string>{355, 67}</string>
+								</array>
+								<key>ShapePositionOffset</key>
+								<string>{0, 0}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>Width</key>
+								<real>0.0</real>
 							</dict>
 						</array>
 						<key>Type</key>
@@ -1277,9 +3357,989 @@
 						<integer>0</integer>
 					</dict>
 				</dict>
+				<key>trashcan</key>
+				<dict>
+					<key>DocumentSecurityImageBookmark</key>
+					<data>
+					Ym9va9gEAAAAAAQQMAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAsAMAAAUA
+					AAABAQAAVXNlcnMAAAAKAAAAAQEAAGdyYW50
+					ZGF2aXMAAAwAAAABAQAAR29vZ2xlIERyaXZl
+					FAAAAAEBAABHcmFudCZNaWtlJlJ5YW4gR2Ft
+					ZQYAAAABAQAAQXNzZXRzAAARAAAAAQEAAHRl
+					c3Rfc3ByaXRlc19pUGFkAAAAJwAAAAEBAABz
+					cHJpdGVzX0VuZW1pZXNfUHJvamVjdGlsZXNf
+					QkdzXzRfMTJfMTMADAAAAAEBAAB0cmFzaGNh
+					bi5wbmcgAAAAAQYAAAQAAAAUAAAAKAAAADwA
+					AABYAAAAaAAAAIQAAAC0AAAACAAAAAQDAAAX
+					uxAAAAAAAAgAAAAEAwAAmd0QAAAAAAAIAAAA
+					BAMAAOk/+AMAAAAACAAAAAQDAACnYhYEAAAA
+					AAgAAAAEAwAAvmIWBAAAAAAIAAAABAMAAOdi
+					FgQAAAAACAAAAAQDAAC1yCQEAAAAAAgAAAAE
+					AwAAysgkBAAAAAAgAAAAAQYAAPAAAAAAAQAA
+					EAEAACABAAAwAQAAQAEAAFABAABgAQAACAAA
+					AAAEAABBtxh13wAAABgAAAABAgAAAQAAAAAA
+					AAAPAAAAAAAAAAAAAAAAAAAAAAAAAAEFAAAE
+					AAAAAwMAAAcAAAAEAAAAAwMAAAYAAAAIAAAA
+					BAMAAAYAAAAAAAAABAAAAAMDAAD1AQAADAAA
+					AAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAABg
+					MYFgAAAACAAAAAAEAABBtWilqQAAACQAAAAB
+					AQAANjgyQjkyNDMtN0NFNy0zRjUxLTlGQjgt
+					MkI1RkFCM0E0MkJDGAAAAAECAACBAAAAAQAI
+					AO8/AAABAAgAAAAAAAAAAAABAAAAAQEAAC8A
+					AAAEAAAAAwMAAAABAAAJAQAAAQIAAGI1YTc4
+					NmZiNjI5MGI4YzZkYTU1YzczYjE3OGVkMGFm
+					OTBhN2I0ZTk7MDAwMDAwMDA7MDAwMDAwMDAw
+					MDAwMDAyMDtjb20uYXBwbGUuYXBwLXNhbmRi
+					b3gucmVhZC13cml0ZTswMDAwMDAwMTswMTAw
+					MDAwMTswMDAwMDAwMDA0MjRjOGNhOy91c2Vy
+					cy9ncmFudGRhdmlzL2dvb2dsZSBkcml2ZS9n
+					cmFudCZtaWtlJnJ5YW4gZ2FtZS9hc3NldHMv
+					dGVzdF9zcHJpdGVzX2lwYWQvc3ByaXRlc19l
+					bmVtaWVzX3Byb2plY3RpbGVzX2Jnc180XzEy
+					XzEzL3RyYXNoY2FuLnBuZwAAAADwAAAA/v//
+					/wEAAAAAAAAAEwAAAAQQAADIAAAAAAAAAAUQ
+					AABwAQAAAAAAABAQAACoAQAAAAAAAEAQAACY
+					AQAAAAAAAFQQAADQAQAAAAAAAFUQAADcAQAA
+					AAAAAFYQAADIAQAAAAAAAAIgAACEAgAAAAAA
+					ABAgAAAEAgAAAAAAABEgAAA4AgAAAAAAABIg
+					AAAYAgAAAAAAABMgAAAoAgAAAAAAACAgAABk
+					AgAAAAAAADAgAADIAQAAAAAAAAHAAADoAQAA
+					AAAAABHAAAAUAAAAAAAAABLAAAD4AQAAAAAA
+					ABDQAACQAgAAAAAAAIDwAACcAgAAAAAAAA==
+					</data>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array>
+							<dict>
+								<key>Angle</key>
+								<integer>0</integer>
+								<key>Category</key>
+								<integer>1</integer>
+								<key>Density</key>
+								<real>0.20000000298023224</real>
+								<key>Fixture</key>
+								<array>
+									<array>
+										<string>{26.25, -39}</string>
+										<string>{35.5, 32.5}</string>
+										<string>{11.75, 42.75}</string>
+										<string>{11.5, 42.5}</string>
+										<string>{0.75, -43.5}</string>
+									</array>
+									<array>
+										<string>{-34.5, 23}</string>
+										<string>{-19, -38.25}</string>
+										<string>{0.75, -43.5}</string>
+										<string>{11.5, 42.5}</string>
+										<string>{-18.75, 39.25}</string>
+										<string>{-35.25, 30}</string>
+									</array>
+								</array>
+								<key>Friction</key>
+								<real>0.20000000298023224</real>
+								<key>Group</key>
+								<integer>0</integer>
+								<key>Height</key>
+								<real>0.0</real>
+								<key>HolesPoints</key>
+								<array/>
+								<key>IsCircle</key>
+								<false/>
+								<key>IsRectangle</key>
+								<false/>
+								<key>IsSensor</key>
+								<false/>
+								<key>LHHeight</key>
+								<real>0.0</real>
+								<key>LHShapePositionOffset</key>
+								<string>{-35.25, -42.75}</string>
+								<key>LHWidth</key>
+								<real>0.0</real>
+								<key>Mask</key>
+								<integer>65535</integer>
+								<key>Name</key>
+								<string>UntitledFixture</string>
+								<key>Restitution</key>
+								<real>0.20000000298023224</real>
+								<key>ShapePoints</key>
+								<array>
+									<string>{187, 1}</string>
+									<string>{66, 14}</string>
+									<string>{0, 51}</string>
+									<string>{3, 79}</string>
+									<string>{65, 324}</string>
+									<string>{144, 345}</string>
+									<string>{246, 327}</string>
+									<string>{283, 41}</string>
+									<string>{188, 0}</string>
+								</array>
+								<key>ShapePositionOffset</key>
+								<string>{0, 0}</string>
+								<key>Tag</key>
+								<integer>0</integer>
+								<key>Width</key>
+								<real>0.0</real>
+							</dict>
+						</array>
+						<key>Type</key>
+						<integer>0</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>Bum</string>
+					<key>SHSpriteName</key>
+					<string>trashcan</string>
+					<key>SheetImage</key>
+					<string>sprites_Bum.png</string>
+					<key>SheetImage-HD</key>
+					<string>sprites_Bum-ipadhd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{649, 157}, {71, 86.5}}</string>
+						<key>Frame-HD</key>
+						<string>{{2596, 628}, {284, 346}}</string>
+						<key>Image</key>
+						<string>sprites_Bum.png</string>
+						<key>Image-HD</key>
+						<string>sprites_Bum-ipadhd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<false/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>trashcan</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/grantdavis/Google Drive/Grant&amp;Mike&amp;Ryan Game/Assets/test_sprites_iPad/sprites_Enemies_Projectiles_BGs_4_12_13/trashcan.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../../../../../../Google%20Drive/Grant&amp;Mike&amp;Ryan%20Game/Assets/test_sprites_iPad/sprites_Enemies_Projectiles_BGs_4_12_13/trashcan.png/</string>
+						<key>OriginalRect</key>
+						<string>{{2, 4}, {284, 346}}</string>
+						<key>OriginalSize</key>
+						<string>{286, 350}</string>
+						<key>Position</key>
+						<string>{2596, 628}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{71.5, 87.5}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0.25, -0.5}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
 			</dict>
 			<key>Size</key>
 			<string>{4096, 1024}</string>
+			<key>Trim</key>
+			<true/>
+			<key>ZOrder</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>2HDSuffix</key>
+			<string>-ipadhd</string>
+			<key>AllowRotation</key>
+			<true/>
+			<key>Crop</key>
+			<false/>
+			<key>DropSprites</key>
+			<false/>
+			<key>HDSuffix</key>
+			<string>-hd</string>
+			<key>IsRendable</key>
+			<true/>
+			<key>MaxSheetSize</key>
+			<integer>4096</integer>
+			<key>NpotSize</key>
+			<string>{3856, 3992}</string>
+			<key>Padding</key>
+			<integer>8</integer>
+			<key>PixelFormat</key>
+			<integer>0</integer>
+			<key>SheetImage</key>
+			<string>sprites_Level0.png</string>
+			<key>SheetImage-HD</key>
+			<string>sprites_Level0-ipadhd.png</string>
+			<key>SheetName</key>
+			<string>Level0</string>
+			<key>SheetSceneImageName</key>
+			<string></string>
+			<key>Sheet_Sprites_Info</key>
+			<dict>
+				<key>level0-bgslice-01</key>
+				<dict>
+					<key>DocumentSecurityImageBookmark</key>
+					<data>
+					Ym9vaywEAAAAAAQQMAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAABAMAAAUA
+					AAABAQAAVXNlcnMAAAAKAAAAAQEAAGdyYW50
+					ZGF2aXMAABEAAAABAQAAR3Jhdml0eSBDb3Jl
+					IEFwcHMAAAAIAAAAAQEAAEJ1bSBHYW1lBwAA
+					AAEBAABwcmVwcGVkABUAAAABAQAAbGV2ZWww
+					LWJnc2xpY2UtMDEucG5nAAAAGAAAAAEGAAAE
+					AAAAFAAAACgAAABEAAAAVAAAAGQAAAAIAAAA
+					BAMAABe7EAAAAAAACAAAAAQDAACZ3RAAAAAA
+					AAgAAAAEAwAA/B5aAQAAAAAIAAAABAMAAKHY
+					3wMAAAAACAAAAAQDAADv2t8DAAAAAAgAAAAE
+					AwAANM0kBAAAAAAYAAAAAQYAAKQAAAC0AAAA
+					xAAAANQAAADkAAAA9AAAAAgAAAAABAAAQbcY
+					eQ8AAAAYAAAAAQIAAAEAAAAAAAAADwAAAAAA
+					AAAAAAAAAAAAAAAAAAABBQAABAAAAAMDAAAH
+					AAAABAAAAAMDAAAEAAAACAAAAAQDAAAEAAAA
+					AAAAAAQAAAADAwAA9QEAAAwAAAABAQAATWFj
+					aW50b3NoIEhECAAAAAQDAAAAYDGBYAAAAAgA
+					AAAABAAAQbVopakAAAAkAAAAAQEAADY4MkI5
+					MjQzLTdDRTctM0Y1MS05RkI4LTJCNUZBQjNB
+					NDJCQxgAAAABAgAAgQAAAAEACADvPwAAAQAI
+					AAAAAAAAAAAAAQAAAAEBAAAvAAAABAAAAAMD
+					AAAAAQAA0gAAAAECAABjZWRmMGMyOGRmOGM3
+					MDJkZTU2OTgwOWUxOThmM2YxMTY2MGE0N2Qy
+					OzAwMDAwMDAwOzAwMDAwMDAwMDAwMDAwMjA7
+					Y29tLmFwcGxlLmFwcC1zYW5kYm94LnJlYWQt
+					d3JpdGU7MDAwMDAwMDE7MDEwMDAwMDE7MDAw
+					MDAwMDAwNDI0Y2QzNDsvdXNlcnMvZ3JhbnRk
+					YXZpcy9ncmF2aXR5IGNvcmUgYXBwcy9idW0g
+					Z2FtZS9wcmVwcGVkL2xldmVsMC1iZ3NsaWNl
+					LTAxLnBuZwAAAPAAAAD+////AQAAAAAAAAAT
+					AAAABBAAAIQAAAAAAAAABRAAAAQBAAAAAAAA
+					EBAAADQBAAAAAAAAQBAAACQBAAAAAAAAVBAA
+					AFwBAAAAAAAAVRAAAGgBAAAAAAAAVhAAAFQB
+					AAAAAAAAAiAAABACAAAAAAAAECAAAJABAAAA
+					AAAAESAAAMQBAAAAAAAAEiAAAKQBAAAAAAAA
+					EyAAALQBAAAAAAAAICAAAPABAAAAAAAAMCAA
+					AFQBAAAAAAAAAcAAAHQBAAAAAAAAEcAAABQA
+					AAAAAAAAEsAAAIQBAAAAAAAAENAAABwCAAAA
+					AAAAgPAAACgCAAAAAAAA
+					</data>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array/>
+						<key>Type</key>
+						<integer>3</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>Level0</string>
+					<key>SHSpriteName</key>
+					<string>level0-bgslice-01</string>
+					<key>SheetImage</key>
+					<string>sprites_Level0.png</string>
+					<key>SheetImage-HD</key>
+					<string>sprites_Level0-ipadhd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{2, 2}, {480, 384}}</string>
+						<key>Frame-HD</key>
+						<string>{{8, 8}, {1920, 1536}}</string>
+						<key>Image</key>
+						<string>sprites_Level0.png</string>
+						<key>Image-HD</key>
+						<string>sprites_Level0-ipadhd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<false/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>level0-bgslice-01</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/grantdavis/Gravity Core Apps/Bum Game/prepped/level0-bgslice-01.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../../../../../../Gravity%20Core%20Apps/Bum%20Game/prepped/level0-bgslice-01.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {1920, 1536}}</string>
+						<key>OriginalSize</key>
+						<string>{1920, 1536}</string>
+						<key>Position</key>
+						<string>{8, 8}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{480, 384}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, -0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>level0-bgslice-02</key>
+				<dict>
+					<key>DocumentSecurityImageBookmark</key>
+					<data>
+					Ym9vaywEAAAAAAQQMAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAABAMAAAUA
+					AAABAQAAVXNlcnMAAAAKAAAAAQEAAGdyYW50
+					ZGF2aXMAABEAAAABAQAAR3Jhdml0eSBDb3Jl
+					IEFwcHMAAAAIAAAAAQEAAEJ1bSBHYW1lBwAA
+					AAEBAABwcmVwcGVkABUAAAABAQAAbGV2ZWww
+					LWJnc2xpY2UtMDIucG5nAAAAGAAAAAEGAAAE
+					AAAAFAAAACgAAABEAAAAVAAAAGQAAAAIAAAA
+					BAMAABe7EAAAAAAACAAAAAQDAACZ3RAAAAAA
+					AAgAAAAEAwAA/B5aAQAAAAAIAAAABAMAAKHY
+					3wMAAAAACAAAAAQDAADv2t8DAAAAAAgAAAAE
+					AwAASs0kBAAAAAAYAAAAAQYAAKQAAAC0AAAA
+					xAAAANQAAADkAAAA9AAAAAgAAAAABAAAQbcY
+					eSMAAAAYAAAAAQIAAAEAAAAAAAAADwAAAAAA
+					AAAAAAAAAAAAAAAAAAABBQAABAAAAAMDAAAH
+					AAAABAAAAAMDAAAEAAAACAAAAAQDAAAEAAAA
+					AAAAAAQAAAADAwAA9QEAAAwAAAABAQAATWFj
+					aW50b3NoIEhECAAAAAQDAAAAYDGBYAAAAAgA
+					AAAABAAAQbVopakAAAAkAAAAAQEAADY4MkI5
+					MjQzLTdDRTctM0Y1MS05RkI4LTJCNUZBQjNB
+					NDJCQxgAAAABAgAAgQAAAAEACADvPwAAAQAI
+					AAAAAAAAAAAAAQAAAAEBAAAvAAAABAAAAAMD
+					AAAAAQAA0gAAAAECAAA1YTY2ZmVkZGQxNjYx
+					ZGM0Njk1NzliNzRmOWJlOWVlNDZhZDIwN2Nk
+					OzAwMDAwMDAwOzAwMDAwMDAwMDAwMDAwMjA7
+					Y29tLmFwcGxlLmFwcC1zYW5kYm94LnJlYWQt
+					d3JpdGU7MDAwMDAwMDE7MDEwMDAwMDE7MDAw
+					MDAwMDAwNDI0Y2Q0YTsvdXNlcnMvZ3JhbnRk
+					YXZpcy9ncmF2aXR5IGNvcmUgYXBwcy9idW0g
+					Z2FtZS9wcmVwcGVkL2xldmVsMC1iZ3NsaWNl
+					LTAyLnBuZwAAAPAAAAD+////AQAAAAAAAAAT
+					AAAABBAAAIQAAAAAAAAABRAAAAQBAAAAAAAA
+					EBAAADQBAAAAAAAAQBAAACQBAAAAAAAAVBAA
+					AFwBAAAAAAAAVRAAAGgBAAAAAAAAVhAAAFQB
+					AAAAAAAAAiAAABACAAAAAAAAECAAAJABAAAA
+					AAAAESAAAMQBAAAAAAAAEiAAAKQBAAAAAAAA
+					EyAAALQBAAAAAAAAICAAAPABAAAAAAAAMCAA
+					AFQBAAAAAAAAAcAAAHQBAAAAAAAAEcAAABQA
+					AAAAAAAAEsAAAIQBAAAAAAAAENAAABwCAAAA
+					AAAAgPAAACgCAAAAAAAA
+					</data>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array/>
+						<key>Type</key>
+						<integer>3</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>Level0</string>
+					<key>SHSpriteName</key>
+					<string>level0-bgslice-02</string>
+					<key>SheetImage</key>
+					<string>sprites_Level0.png</string>
+					<key>SheetImage-HD</key>
+					<string>sprites_Level0-ipadhd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{484, 2}, {480, 384}}</string>
+						<key>Frame-HD</key>
+						<string>{{1936, 8}, {1920, 1536}}</string>
+						<key>Image</key>
+						<string>sprites_Level0.png</string>
+						<key>Image-HD</key>
+						<string>sprites_Level0-ipadhd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<false/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>level0-bgslice-02</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/grantdavis/Gravity Core Apps/Bum Game/prepped/level0-bgslice-02.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../../../../../../Gravity%20Core%20Apps/Bum%20Game/prepped/level0-bgslice-02.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {1920, 1536}}</string>
+						<key>OriginalSize</key>
+						<string>{1920, 1536}</string>
+						<key>Position</key>
+						<string>{1936, 8}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{480, 384}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, -0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>level0-bgslice-03</key>
+				<dict>
+					<key>DocumentSecurityImageBookmark</key>
+					<data>
+					Ym9vaywEAAAAAAQQMAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAABAMAAAUA
+					AAABAQAAVXNlcnMAAAAKAAAAAQEAAGdyYW50
+					ZGF2aXMAABEAAAABAQAAR3Jhdml0eSBDb3Jl
+					IEFwcHMAAAAIAAAAAQEAAEJ1bSBHYW1lBwAA
+					AAEBAABwcmVwcGVkABUAAAABAQAAbGV2ZWww
+					LWJnc2xpY2UtMDMucG5nAAAAGAAAAAEGAAAE
+					AAAAFAAAACgAAABEAAAAVAAAAGQAAAAIAAAA
+					BAMAABe7EAAAAAAACAAAAAQDAACZ3RAAAAAA
+					AAgAAAAEAwAA/B5aAQAAAAAIAAAABAMAAKHY
+					3wMAAAAACAAAAAQDAADv2t8DAAAAAAgAAAAE
+					AwAAYc0kBAAAAAAYAAAAAQYAAKQAAAC0AAAA
+					xAAAANQAAADkAAAA9AAAAAgAAAAABAAAQbcY
+					eTEAAAAYAAAAAQIAAAEAAAAAAAAADwAAAAAA
+					AAAAAAAAAAAAAAAAAAABBQAABAAAAAMDAAAH
+					AAAABAAAAAMDAAAEAAAACAAAAAQDAAAEAAAA
+					AAAAAAQAAAADAwAA9QEAAAwAAAABAQAATWFj
+					aW50b3NoIEhECAAAAAQDAAAAYDGBYAAAAAgA
+					AAAABAAAQbVopakAAAAkAAAAAQEAADY4MkI5
+					MjQzLTdDRTctM0Y1MS05RkI4LTJCNUZBQjNB
+					NDJCQxgAAAABAgAAgQAAAAEACADvPwAAAQAI
+					AAAAAAAAAAAAAQAAAAEBAAAvAAAABAAAAAMD
+					AAAAAQAA0gAAAAECAAA5MjUxM2QyNWZmZTkx
+					ZDM1YjA2MGEyZjUwMTkxNjgwMDIxYTdkYmZh
+					OzAwMDAwMDAwOzAwMDAwMDAwMDAwMDAwMjA7
+					Y29tLmFwcGxlLmFwcC1zYW5kYm94LnJlYWQt
+					d3JpdGU7MDAwMDAwMDE7MDEwMDAwMDE7MDAw
+					MDAwMDAwNDI0Y2Q2MTsvdXNlcnMvZ3JhbnRk
+					YXZpcy9ncmF2aXR5IGNvcmUgYXBwcy9idW0g
+					Z2FtZS9wcmVwcGVkL2xldmVsMC1iZ3NsaWNl
+					LTAzLnBuZwAAAPAAAAD+////AQAAAAAAAAAT
+					AAAABBAAAIQAAAAAAAAABRAAAAQBAAAAAAAA
+					EBAAADQBAAAAAAAAQBAAACQBAAAAAAAAVBAA
+					AFwBAAAAAAAAVRAAAGgBAAAAAAAAVhAAAFQB
+					AAAAAAAAAiAAABACAAAAAAAAECAAAJABAAAA
+					AAAAESAAAMQBAAAAAAAAEiAAAKQBAAAAAAAA
+					EyAAALQBAAAAAAAAICAAAPABAAAAAAAAMCAA
+					AFQBAAAAAAAAAcAAAHQBAAAAAAAAEcAAABQA
+					AAAAAAAAEsAAAIQBAAAAAAAAENAAABwCAAAA
+					AAAAgPAAACgCAAAAAAAA
+					</data>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array/>
+						<key>Type</key>
+						<integer>3</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>Level0</string>
+					<key>SHSpriteName</key>
+					<string>level0-bgslice-03</string>
+					<key>SheetImage</key>
+					<string>sprites_Level0.png</string>
+					<key>SheetImage-HD</key>
+					<string>sprites_Level0-ipadhd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{2, 388}, {480, 384}}</string>
+						<key>Frame-HD</key>
+						<string>{{8, 1552}, {1920, 1536}}</string>
+						<key>Image</key>
+						<string>sprites_Level0.png</string>
+						<key>Image-HD</key>
+						<string>sprites_Level0-ipadhd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<true/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>level0-bgslice-03</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/grantdavis/Gravity Core Apps/Bum Game/prepped/level0-bgslice-03.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../../../../../../Gravity%20Core%20Apps/Bum%20Game/prepped/level0-bgslice-03.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {1920, 1536}}</string>
+						<key>OriginalSize</key>
+						<string>{1920, 1536}</string>
+						<key>Position</key>
+						<string>{8, 1552}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{480, 384}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, -0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>level0-bgslice-04</key>
+				<dict>
+					<key>DocumentSecurityImageBookmark</key>
+					<data>
+					Ym9vaywEAAAAAAQQMAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAABAMAAAUA
+					AAABAQAAVXNlcnMAAAAKAAAAAQEAAGdyYW50
+					ZGF2aXMAABEAAAABAQAAR3Jhdml0eSBDb3Jl
+					IEFwcHMAAAAIAAAAAQEAAEJ1bSBHYW1lBwAA
+					AAEBAABwcmVwcGVkABUAAAABAQAAbGV2ZWww
+					LWJnc2xpY2UtMDQucG5nAAAAGAAAAAEGAAAE
+					AAAAFAAAACgAAABEAAAAVAAAAGQAAAAIAAAA
+					BAMAABe7EAAAAAAACAAAAAQDAACZ3RAAAAAA
+					AAgAAAAEAwAA/B5aAQAAAAAIAAAABAMAAKHY
+					3wMAAAAACAAAAAQDAADv2t8DAAAAAAgAAAAE
+					AwAAcs0kBAAAAAAYAAAAAQYAAKQAAAC0AAAA
+					xAAAANQAAADkAAAA9AAAAAgAAAAABAAAQbcY
+					eUYAAAAYAAAAAQIAAAEAAAAAAAAADwAAAAAA
+					AAAAAAAAAAAAAAAAAAABBQAABAAAAAMDAAAH
+					AAAABAAAAAMDAAAEAAAACAAAAAQDAAAEAAAA
+					AAAAAAQAAAADAwAA9QEAAAwAAAABAQAATWFj
+					aW50b3NoIEhECAAAAAQDAAAAYDGBYAAAAAgA
+					AAAABAAAQbVopakAAAAkAAAAAQEAADY4MkI5
+					MjQzLTdDRTctM0Y1MS05RkI4LTJCNUZBQjNB
+					NDJCQxgAAAABAgAAgQAAAAEACADvPwAAAQAI
+					AAAAAAAAAAAAAQAAAAEBAAAvAAAABAAAAAMD
+					AAAAAQAA0gAAAAECAAA4YWQ4YjIzY2Q2YmNm
+					MjIxNjE4NTRkYjRiY2ZmMWUwZWIxYmUzZWQy
+					OzAwMDAwMDAwOzAwMDAwMDAwMDAwMDAwMjA7
+					Y29tLmFwcGxlLmFwcC1zYW5kYm94LnJlYWQt
+					d3JpdGU7MDAwMDAwMDE7MDEwMDAwMDE7MDAw
+					MDAwMDAwNDI0Y2Q3MjsvdXNlcnMvZ3JhbnRk
+					YXZpcy9ncmF2aXR5IGNvcmUgYXBwcy9idW0g
+					Z2FtZS9wcmVwcGVkL2xldmVsMC1iZ3NsaWNl
+					LTA0LnBuZwAAAPAAAAD+////AQAAAAAAAAAT
+					AAAABBAAAIQAAAAAAAAABRAAAAQBAAAAAAAA
+					EBAAADQBAAAAAAAAQBAAACQBAAAAAAAAVBAA
+					AFwBAAAAAAAAVRAAAGgBAAAAAAAAVhAAAFQB
+					AAAAAAAAAiAAABACAAAAAAAAECAAAJABAAAA
+					AAAAESAAAMQBAAAAAAAAEiAAAKQBAAAAAAAA
+					EyAAALQBAAAAAAAAICAAAPABAAAAAAAAMCAA
+					AFQBAAAAAAAAAcAAAHQBAAAAAAAAEcAAABQA
+					AAAAAAAAEsAAAIQBAAAAAAAAENAAABwCAAAA
+					AAAAgPAAACgCAAAAAAAA
+					</data>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array/>
+						<key>Type</key>
+						<integer>3</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>Level0</string>
+					<key>SHSpriteName</key>
+					<string>level0-bgslice-04</string>
+					<key>SheetImage</key>
+					<string>sprites_Level0.png</string>
+					<key>SheetImage-HD</key>
+					<string>sprites_Level0-ipadhd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{388, 388}, {480, 384}}</string>
+						<key>Frame-HD</key>
+						<string>{{1552, 1552}, {1920, 1536}}</string>
+						<key>Image</key>
+						<string>sprites_Level0.png</string>
+						<key>Image-HD</key>
+						<string>sprites_Level0-ipadhd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<false/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>level0-bgslice-04</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/grantdavis/Gravity Core Apps/Bum Game/prepped/level0-bgslice-04.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../../../../../../Gravity%20Core%20Apps/Bum%20Game/prepped/level0-bgslice-04.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {1920, 1536}}</string>
+						<key>OriginalSize</key>
+						<string>{1920, 1536}</string>
+						<key>Position</key>
+						<string>{1552, 1552}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{480, 384}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, -0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>level0-bgslice-05</key>
+				<dict>
+					<key>DocumentSecurityImageBookmark</key>
+					<data>
+					Ym9vaywEAAAAAAQQMAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAABAMAAAUA
+					AAABAQAAVXNlcnMAAAAKAAAAAQEAAGdyYW50
+					ZGF2aXMAABEAAAABAQAAR3Jhdml0eSBDb3Jl
+					IEFwcHMAAAAIAAAAAQEAAEJ1bSBHYW1lBwAA
+					AAEBAABwcmVwcGVkABUAAAABAQAAbGV2ZWww
+					LWJnc2xpY2UtMDUucG5nAAAAGAAAAAEGAAAE
+					AAAAFAAAACgAAABEAAAAVAAAAGQAAAAIAAAA
+					BAMAABe7EAAAAAAACAAAAAQDAACZ3RAAAAAA
+					AAgAAAAEAwAA/B5aAQAAAAAIAAAABAMAAKHY
+					3wMAAAAACAAAAAQDAADv2t8DAAAAAAgAAAAE
+					AwAAhc0kBAAAAAAYAAAAAQYAAKQAAAC0AAAA
+					xAAAANQAAADkAAAA9AAAAAgAAAAABAAAQbcY
+					eVYAAAAYAAAAAQIAAAEAAAAAAAAADwAAAAAA
+					AAAAAAAAAAAAAAAAAAABBQAABAAAAAMDAAAH
+					AAAABAAAAAMDAAAEAAAACAAAAAQDAAAEAAAA
+					AAAAAAQAAAADAwAA9QEAAAwAAAABAQAATWFj
+					aW50b3NoIEhECAAAAAQDAAAAYDGBYAAAAAgA
+					AAAABAAAQbVopakAAAAkAAAAAQEAADY4MkI5
+					MjQzLTdDRTctM0Y1MS05RkI4LTJCNUZBQjNB
+					NDJCQxgAAAABAgAAgQAAAAEACADvPwAAAQAI
+					AAAAAAAAAAAAAQAAAAEBAAAvAAAABAAAAAMD
+					AAAAAQAA0gAAAAECAAAxYmYwMGZjYTgwZDI5
+					MGNmZDBiMGMzYWUxN2EyY2Y1NjhkMTY2MTgx
+					OzAwMDAwMDAwOzAwMDAwMDAwMDAwMDAwMjA7
+					Y29tLmFwcGxlLmFwcC1zYW5kYm94LnJlYWQt
+					d3JpdGU7MDAwMDAwMDE7MDEwMDAwMDE7MDAw
+					MDAwMDAwNDI0Y2Q4NTsvdXNlcnMvZ3JhbnRk
+					YXZpcy9ncmF2aXR5IGNvcmUgYXBwcy9idW0g
+					Z2FtZS9wcmVwcGVkL2xldmVsMC1iZ3NsaWNl
+					LTA1LnBuZwAAAPAAAAD+////AQAAAAAAAAAT
+					AAAABBAAAIQAAAAAAAAABRAAAAQBAAAAAAAA
+					EBAAADQBAAAAAAAAQBAAACQBAAAAAAAAVBAA
+					AFwBAAAAAAAAVRAAAGgBAAAAAAAAVhAAAFQB
+					AAAAAAAAAiAAABACAAAAAAAAECAAAJABAAAA
+					AAAAESAAAMQBAAAAAAAAEiAAAKQBAAAAAAAA
+					EyAAALQBAAAAAAAAICAAAPABAAAAAAAAMCAA
+					AFQBAAAAAAAAAcAAAHQBAAAAAAAAEcAAABQA
+					AAAAAAAAEsAAAIQBAAAAAAAAENAAABwCAAAA
+					AAAAgPAAACgCAAAAAAAA
+					</data>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array/>
+						<key>Type</key>
+						<integer>3</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>Level0</string>
+					<key>SHSpriteName</key>
+					<string>level0-bgslice-05</string>
+					<key>SheetImage</key>
+					<string>sprites_Level0.png</string>
+					<key>SheetImage-HD</key>
+					<string>sprites_Level0-ipadhd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{2, 870}, {127.75, 384}}</string>
+						<key>Frame-HD</key>
+						<string>{{8, 3480}, {511, 1536}}</string>
+						<key>Image</key>
+						<string>sprites_Level0.png</string>
+						<key>Image-HD</key>
+						<string>sprites_Level0-ipadhd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<true/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>level0-bgslice-05</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/grantdavis/Gravity Core Apps/Bum Game/prepped/level0-bgslice-05.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../../../../../../Gravity%20Core%20Apps/Bum%20Game/prepped/level0-bgslice-05.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {511, 1536}}</string>
+						<key>OriginalSize</key>
+						<string>{511, 1536}</string>
+						<key>Position</key>
+						<string>{8, 3480}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{127.75, 384}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, -0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+			</dict>
+			<key>Size</key>
+			<string>{4096, 4096}</string>
 			<key>Trim</key>
 			<true/>
 			<key>ZOrder</key>
@@ -1318,11 +4378,11 @@
 					ODJCOTI0My03Q0U3LTNGNTEtOUZCOC0yQjVG
 					QUIzQTQyQkMYAAAAAQIAAIEAAAABAAgA7z8A
 					AAEACAAAAAAAAAAAAAEAAAABAQAALwAAAAQA
-					AAADAwAAAAEAANgAAAABAgAAODFmMGU1ODc0
-					ZDdkMzgwNGRhNWVkYTdiYWQxODQwZTM5MmIx
-					ODgyNjswMDAwMDAwMDswMDAwMDAwMDAwMDAw
+					AAADAwAAAAEAANgAAAABAgAAYjIwNDAwYmQy
+					NTEyYzNjYWFkNmVmNGRmNWM3YTJmMWQ0MDZh
+					ZjdmZDswMDAwMDAwMDswMDAwMDAwMDAwMDAw
 					MDIwO2NvbS5hcHBsZS5hcHAtc2FuZGJveC5y
-					ZWFkLXdyaXRlOzAwMDAwMDAxOzAxMDAwMDAy
+					ZWFkLXdyaXRlOzAwMDAwMDAxOzAxMDAwMDAx
 					OzAwMDAwMDAwMDQwZmQ0Mzc7L3VzZXJzL2dy
 					YW50ZGF2aXMvZ3Jhdml0eSBjb3JlIGFwcHMv
 					YnVtIGdhbWUvZG9jdW1lbnRzLWV4cG9ydC0y
@@ -1338,11 +4398,11 @@
 					0AAAIAIAAAAAAACA8AAALAIAAAAAAAA=
 					</data>
 					<key>Frame</key>
-					<string>{{867, 2}, {108.75, 135.75}}</string>
+					<string>{{217, 59}, {108.75, 135.75}}</string>
 					<key>Frame-HD</key>
-					<string>{{3468, 8}, {435, 543}}</string>
+					<string>{{868, 236}, {435, 543}}</string>
 					<key>IsRotated</key>
-					<true/>
+					<false/>
 					<key>OriginalImage</key>
 					<string>/Users/grantdavis/Gravity Core Apps/Bum Game/documents-export-2013-04-02/run.png</string>
 					<key>SpriteSize</key>
@@ -1404,11 +4464,11 @@
 					ODJCOTI0My03Q0U3LTNGNTEtOUZCOC0yQjVG
 					QUIzQTQyQkMYAAAAAQIAAIEAAAABAAgA7z8A
 					AAEACAAAAAAAAAAAAAEAAAABAQAALwAAAAQA
-					AAADAwAAAAEAANkAAAABAgAANzgzZmI4OTQx
-					NTg5NzRjNzQ3NmI5MDhlYzVjZGMzMzM2MTgw
-					N2NiMTswMDAwMDAwMDswMDAwMDAwMDAwMDAw
+					AAADAwAAAAEAANkAAAABAgAAMDcwMDY3ZTQ2
+					NTNmYWQ3ZjgyOWQ5ZGVlNDVjNGJjMTdmNmYw
+					ZTA1NzswMDAwMDAwMDswMDAwMDAwMDAwMDAw
 					MDIwO2NvbS5hcHBsZS5hcHAtc2FuZGJveC5y
-					ZWFkLXdyaXRlOzAwMDAwMDAxOzAxMDAwMDAy
+					ZWFkLXdyaXRlOzAwMDAwMDAxOzAxMDAwMDAx
 					OzAwMDAwMDAwMDQwZmQ0MzU7L3VzZXJzL2dy
 					YW50ZGF2aXMvZ3Jhdml0eSBjb3JlIGFwcHMv
 					YnVtIGdhbWUvZG9jdW1lbnRzLWV4cG9ydC0y
@@ -1424,9 +4484,9 @@
 					AAAAENAAACACAAAAAAAAgPAAACwCAAAAAAAA
 					</data>
 					<key>Frame</key>
-					<string>{{761, 3}, {104.75, 155.75}}</string>
+					<string>{{2, 59}, {104.75, 155.75}}</string>
 					<key>Frame-HD</key>
-					<string>{{3044, 12}, {419, 621}}</string>
+					<string>{{8, 236}, {419, 621}}</string>
 					<key>IsRotated</key>
 					<false/>
 					<key>OriginalImage</key>
@@ -1490,12 +4550,12 @@
 					AQAANjgyQjkyNDMtN0NFNy0zRjUxLTlGQjgt
 					MkI1RkFCM0E0MkJDGAAAAAECAACBAAAAAQAI
 					AO8/AAABAAgAAAAAAAAAAAABAAAAAQEAAC8A
-					AAAEAAAAAwMAAAABAADaAAAAAQIAAGYwZGVj
-					OWJmYzMyZmEyZjE0MTUzNWRhNDk3MTk4NjVh
-					MTAxM2M5ZDY7MDAwMDAwMDA7MDAwMDAwMDAw
+					AAAEAAAAAwMAAAABAADaAAAAAQIAADMwMDFj
+					NWIyMjZkYzAwOTk1ZmQyNDAzN2JlYmE3NDRk
+					NzZjNDA3NzI7MDAwMDAwMDA7MDAwMDAwMDAw
 					MDAwMDAyMDtjb20uYXBwbGUuYXBwLXNhbmRi
 					b3gucmVhZC13cml0ZTswMDAwMDAwMTswMTAw
-					MDAwMjswMDAwMDAwMDA0MGZkNDM2Oy91c2Vy
+					MDAwMTswMDAwMDAwMDA0MGZkNDM2Oy91c2Vy
 					cy9ncmFudGRhdmlzL2dyYXZpdHkgY29yZSBh
 					cHBzL2J1bSBnYW1lL2RvY3VtZW50cy1leHBv
 					cnQtMjAxMy0wNC0wMi90aHJvdy5wbmcAAADw
@@ -1577,12 +4637,12 @@
 					AAAAAQEAADY4MkI5MjQzLTdDRTctM0Y1MS05
 					RkI4LTJCNUZBQjNBNDJCQxgAAAABAgAAgQAA
 					AAEACADvPwAAAQAIAAAAAAAAAAAAAQAAAAEB
-					AAAvAAAABAAAAAMDAAAAAQAA4AAAAAECAAA5
-					OWNlZGE3NGU1ZWVkY2Y0M2ViOWU5YjVmMjhl
-					Yzc4YzBlNmM2NDE4OzAwMDAwMDAwOzAwMDAw
+					AAAvAAAABAAAAAMDAAAAAQAA4AAAAAECAAA0
+					ZjE4ZjU0ZjhkOTNlMTdhYTgzODVjN2EyNDdm
+					MDkzNmJlMTQ5ODUzOzAwMDAwMDAwOzAwMDAw
 					MDAwMDAwMDAwMjA7Y29tLmFwcGxlLmFwcC1z
 					YW5kYm94LnJlYWQtd3JpdGU7MDAwMDAwMDE7
-					MDEwMDAwMDI7MDAwMDAwMDAwNDBmZDQzNDsv
+					MDEwMDAwMDE7MDAwMDAwMDAwNDBmZDQzNDsv
 					dXNlcnMvZ3JhbnRkYXZpcy9ncmF2aXR5IGNv
 					cmUgYXBwcy9idW0gZ2FtZS9kb2N1bWVudHMt
 					ZXhwb3J0LTIwMTMtMDQtMDIvYmxvY2tfZWxi
@@ -1598,9 +4658,9 @@
 					gPAAADQCAAAAAAAA
 					</data>
 					<key>Frame</key>
-					<string>{{649, 2}, {109.75, 155.75}}</string>
+					<string>{{884, 2}, {109.75, 155.75}}</string>
 					<key>Frame-HD</key>
-					<string>{{2596, 8}, {437, 621}}</string>
+					<string>{{3536, 8}, {437, 621}}</string>
 					<key>IsRotated</key>
 					<false/>
 					<key>OriginalImage</key>
@@ -1664,11 +4724,11 @@
 					ODJCOTI0My03Q0U3LTNGNTEtOUZCOC0yQjVG
 					QUIzQTQyQkMYAAAAAQIAAIEAAAABAAgA7z8A
 					AAEACAAAAAAAAAAAAAEAAAABAQAALwAAAAQA
-					AAADAwAAAAEAANkAAAABAgAANzgzZmI4OTQx
-					NTg5NzRjNzQ3NmI5MDhlYzVjZGMzMzM2MTgw
-					N2NiMTswMDAwMDAwMDswMDAwMDAwMDAwMDAw
+					AAADAwAAAAEAANkAAAABAgAAMDcwMDY3ZTQ2
+					NTNmYWQ3ZjgyOWQ5ZGVlNDVjNGJjMTdmNmYw
+					ZTA1NzswMDAwMDAwMDswMDAwMDAwMDAwMDAw
 					MDIwO2NvbS5hcHBsZS5hcHAtc2FuZGJveC5y
-					ZWFkLXdyaXRlOzAwMDAwMDAxOzAxMDAwMDAy
+					ZWFkLXdyaXRlOzAwMDAwMDAxOzAxMDAwMDAx
 					OzAwMDAwMDAwMDQwZmQ0MzU7L3VzZXJzL2dy
 					YW50ZGF2aXMvZ3Jhdml0eSBjb3JlIGFwcHMv
 					YnVtIGdhbWUvZG9jdW1lbnRzLWV4cG9ydC0y
@@ -1684,9 +4744,9 @@
 					AAAAENAAACACAAAAAAAAgPAAACwCAAAAAAAA
 					</data>
 					<key>Frame</key>
-					<string>{{761, 3}, {104.75, 155.75}}</string>
+					<string>{{2, 59}, {104.75, 155.75}}</string>
 					<key>Frame-HD</key>
-					<string>{{3044, 12}, {419, 621}}</string>
+					<string>{{8, 236}, {419, 621}}</string>
 					<key>IsRotated</key>
 					<false/>
 					<key>OriginalImage</key>
@@ -1759,10 +4819,10 @@
 	AAAAAAgAAAAEAwAABgAAAAAAAAAEAAAAAwMAAPUBAAAMAAAAAQEAAE1hY2ludG9zaCBI
 	RAgAAAAEAwAAAGAxgWAAAAAIAAAAAAQAAEG1aKWpAAAAJAAAAAEBAAA2ODJCOTI0My03
 	Q0U3LTNGNTEtOUZCOC0yQjVGQUIzQTQyQkMYAAAAAQIAAIEAAAABAAgA7z8AAAEACAAA
-	AAAAAAAAAAEAAAABAQAALwAAAAAAAAABBQAABAAAAAMDAAAAAQAAwAAAAAECAAAxOWQ4
-	ODRjYjA1ZWQ1YzJmYmJjN2E1YjhiMDcxODYyNzZkZDc4ZmJiOzAwMDAwMDAwOzAwMDAw
+	AAAAAAAAAAEAAAABAQAALwAAAAAAAAABBQAABAAAAAMDAAAAAQAAwAAAAAECAAA1ZDI2
+	ZGFlY2Y1YTRhMWMzYzU2MGMzZWNhYTEzM2NmYTMxNTM5YjhmOzAwMDAwMDAwOzAwMDAw
 	MDAwMDAwMDAwMjA7Y29tLmFwcGxlLmFwcC1zYW5kYm94LnJlYWQtd3JpdGU7MDAwMDAw
-	MDE7MDEwMDAwMDI7MDAwMDAwMDAwM2Y4ZGUzODsvdXNlcnMvZ3JhbnRkYXZpcy93b3Jr
+	MDE7MDEwMDAwMDE7MDAwMDAwMDAwM2Y4ZGUzODsvdXNlcnMvZ3JhbnRkYXZpcy93b3Jr
 	c3BhY2UvYnVtL2J1bS9idW0vcmVzb3VyY2VzL2ltYWdlcwDMAAAA/v///wEAAAAAAAAA
 	EAAAAAQQAABsAAAAAAAAAAUQAAAUAQAAAAAAABAQAABMAQAAAAAAAEAQAAA8AQAAAAAA
 	AAIgAAAIAgAAAAAAABAgAACIAQAAAAAAABEgAAC8AQAAAAAAABIgAACcAQAAAAAAABMg

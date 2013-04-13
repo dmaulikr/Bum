@@ -96,7 +96,6 @@
     
     // renderer
     LHSprite *sprite = [_loader createSpriteWithName:name fromSheet:@"Bum" fromSHFile:@"sprites"];
-    sprite.body->SetBullet(YES);
     RenderComponent *renderer = [[RenderComponent alloc] initWithNode:sprite];
     [_entityManager addComponent:renderer toEntity:entity];
     
