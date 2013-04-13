@@ -14,4 +14,8 @@
     
 }
 
+@property (nonatomic) CGPoint velocity;
+@property (nonatomic) CGFloat rotationVelocity;
+@property (nonatomic) CGFloat friction;
+
 @end

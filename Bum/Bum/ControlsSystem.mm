@@ -79,6 +79,7 @@ typedef enum CharacterMoveState {
                                                         andTagB:FLOOR
                                                      idListener:self
                                                     selListener:@selector(handleFloorCollisions:)];
+    
     [self.loader registerPostCollisionCallbackBetweenTagA:PLAYER
                                                   andTagB:FLOOR
                                                idListener:self
