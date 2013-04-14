@@ -9,8 +9,10 @@ ccbParticleFire.png
 ccbParticleSmoke.png
 ccbParticleSnow.png
 ccbParticleStars.png
+Default-568h@2x.png
 Default-Landscape~ipad.png
 Default.png
+Default@2x.png
 fps_images-hd.png
 fps_images-ipadhd.png
 fps_images.png
@@ -30,4 +32,12 @@ Icon-Small@2x.png
 Icon.png
 Icon@2x.png
 Info.plist
+level0-hd.plist
+level0-hd.png
+level0-ipad.plist
+level0-ipad.png
+level0-ipadhd.plist
+level0-ipadhd.png
 Level0.ccbi
+level0.plist
+level0.png

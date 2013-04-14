@@ -1,5 +1,5 @@
 //
-//  GameLayer.h
+//  Floor.h
 //  BumGame
 //
 //  Created by Grant Davis on 4/13/13.
@@ -9,10 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 
-@interface GameLayer : CCLayer {
-    CCSprite *_bum;
+@interface Floor : CCLayerColor {
+    
 }
-
-- (void)didLoadFromCCB;
 
 @end

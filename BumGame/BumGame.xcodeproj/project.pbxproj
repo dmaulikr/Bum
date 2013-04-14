@@ -169,6 +169,21 @@
 		77CCED76171A177900BF2BE3 /* GameLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CCED75171A177900BF2BE3 /* GameLayer.m */; };
 		77CCED79171A222500BF2BE3 /* gameobjects-ipad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77CCED77171A222500BF2BE3 /* gameobjects-ipad.plist */; };
 		77CCED7A171A222500BF2BE3 /* gameobjects-ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 77CCED78171A222500BF2BE3 /* gameobjects-ipad.png */; };
+		77CCED7E171A24D900BF2BE3 /* LevelZero.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CCED7D171A24D900BF2BE3 /* LevelZero.m */; };
+		77CCED81171A67B600BF2BE3 /* Bum.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 77CCED80171A67B600BF2BE3 /* Bum.ccbi */; };
+		77CCED88171A6DDB00BF2BE3 /* level0-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77CCED82171A6DDB00BF2BE3 /* level0-hd.plist */; };
+		77CCED89171A6DDB00BF2BE3 /* level0-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 77CCED83171A6DDB00BF2BE3 /* level0-hd.png */; };
+		77CCED8A171A6DDB00BF2BE3 /* level0-ipad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77CCED84171A6DDB00BF2BE3 /* level0-ipad.plist */; };
+		77CCED8B171A6DDB00BF2BE3 /* level0-ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 77CCED85171A6DDB00BF2BE3 /* level0-ipad.png */; };
+		77CCED8C171A6DDB00BF2BE3 /* level0-ipadhd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77CCED86171A6DDB00BF2BE3 /* level0-ipadhd.plist */; };
+		77CCED8D171A6DDB00BF2BE3 /* level0-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = 77CCED87171A6DDB00BF2BE3 /* level0-ipadhd.png */; };
+		77CCED8F171A730A00BF2BE3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77CCED8E171A730900BF2BE3 /* Default-568h@2x.png */; };
+		77CCED91171A73BF00BF2BE3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77CCED90171A73BF00BF2BE3 /* Default@2x.png */; };
+		77CCED95171A759C00BF2BE3 /* Floor.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CCED94171A759C00BF2BE3 /* Floor.m */; };
+		77CCED99171A785500BF2BE3 /* Component.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CCED98171A785500BF2BE3 /* Component.m */; };
+		77CCED9C171A786200BF2BE3 /* System.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CCED9B171A786200BF2BE3 /* System.m */; };
+		77CCED9F171A793C00BF2BE3 /* GameObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CCED9E171A793C00BF2BE3 /* GameObject.m */; };
+		77CCEDA2171A7B8E00BF2BE3 /* Bum.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CCEDA1171A7B8D00BF2BE3 /* Bum.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -508,6 +523,27 @@
 		77CCED75171A177900BF2BE3 /* GameLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameLayer.m; sourceTree = "<group>"; };
 		77CCED77171A222500BF2BE3 /* gameobjects-ipad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "gameobjects-ipad.plist"; path = "Resources/gameobjects-ipad.plist"; sourceTree = "<group>"; };
 		77CCED78171A222500BF2BE3 /* gameobjects-ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gameobjects-ipad.png"; path = "Resources/gameobjects-ipad.png"; sourceTree = "<group>"; };
+		77CCED7C171A24D900BF2BE3 /* LevelZero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelZero.h; sourceTree = "<group>"; };
+		77CCED7D171A24D900BF2BE3 /* LevelZero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelZero.m; sourceTree = "<group>"; };
+		77CCED80171A67B600BF2BE3 /* Bum.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = Bum.ccbi; path = Resources/Bum.ccbi; sourceTree = "<group>"; };
+		77CCED82171A6DDB00BF2BE3 /* level0-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "level0-hd.plist"; path = "Resources/level0-hd.plist"; sourceTree = "<group>"; };
+		77CCED83171A6DDB00BF2BE3 /* level0-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "level0-hd.png"; path = "Resources/level0-hd.png"; sourceTree = "<group>"; };
+		77CCED84171A6DDB00BF2BE3 /* level0-ipad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "level0-ipad.plist"; path = "Resources/level0-ipad.plist"; sourceTree = "<group>"; };
+		77CCED85171A6DDB00BF2BE3 /* level0-ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "level0-ipad.png"; path = "Resources/level0-ipad.png"; sourceTree = "<group>"; };
+		77CCED86171A6DDB00BF2BE3 /* level0-ipadhd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "level0-ipadhd.plist"; path = "Resources/level0-ipadhd.plist"; sourceTree = "<group>"; };
+		77CCED87171A6DDB00BF2BE3 /* level0-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "level0-ipadhd.png"; path = "Resources/level0-ipadhd.png"; sourceTree = "<group>"; };
+		77CCED8E171A730900BF2BE3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Resources/Default-568h@2x.png"; sourceTree = "<group>"; };
+		77CCED90171A73BF00BF2BE3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Resources/Default@2x.png"; sourceTree = "<group>"; };
+		77CCED93171A759C00BF2BE3 /* Floor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Floor.h; sourceTree = "<group>"; };
+		77CCED94171A759C00BF2BE3 /* Floor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Floor.m; sourceTree = "<group>"; };
+		77CCED97171A785500BF2BE3 /* Component.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Component.h; sourceTree = "<group>"; };
+		77CCED98171A785500BF2BE3 /* Component.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Component.m; sourceTree = "<group>"; };
+		77CCED9A171A786200BF2BE3 /* System.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = System.h; sourceTree = "<group>"; };
+		77CCED9B171A786200BF2BE3 /* System.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = System.m; sourceTree = "<group>"; };
+		77CCED9D171A793C00BF2BE3 /* GameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObject.h; sourceTree = "<group>"; };
+		77CCED9E171A793C00BF2BE3 /* GameObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameObject.m; sourceTree = "<group>"; };
+		77CCEDA0171A7B8D00BF2BE3 /* Bum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bum.h; sourceTree = "<group>"; };
+		77CCEDA1171A7B8D00BF2BE3 /* Bum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bum.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -566,6 +602,9 @@
 		77CCEB20171A013B00BF2BE3 /* BumGame */ = {
 			isa = PBXGroup;
 			children = (
+				77CCED96171A784100BF2BE3 /* Component Framework */,
+				77CCED92171A757800BF2BE3 /* Game Objects */,
+				77CCED7B171A24C600BF2BE3 /* Levels */,
 				77CCECA6171A014B00BF2BE3 /* Main Gameplay */,
 				77CCEC98171A013D00BF2BE3 /* AppDelegate.h */,
 				77CCEC99171A013D00BF2BE3 /* AppDelegate.m */,
@@ -579,12 +618,15 @@
 		77CCEB21171A013B00BF2BE3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				77CCED7F171A67AC00BF2BE3 /* characters */,
 				77CCED71171A13C700BF2BE3 /* levels */,
 				77CCED64171A138800BF2BE3 /* sprites */,
 				77CCED05171A063700BF2BE3 /* ccbResources */,
 				77CCED21171A063700BF2BE3 /* HelloCocosBuilder.ccbi */,
 				77CCED3E171A067400BF2BE3 /* Level0.ccbi */,
 				77CCEB22171A013B00BF2BE3 /* Default.png */,
+				77CCED90171A73BF00BF2BE3 /* Default@2x.png */,
+				77CCED8E171A730900BF2BE3 /* Default-568h@2x.png */,
 				77CCEB24171A013B00BF2BE3 /* Default-Landscape~ipad.png */,
 				77CCEB26171A013B00BF2BE3 /* fps_images.png */,
 				77CCEB28171A013B00BF2BE3 /* fps_images-hd.png */,
@@ -1112,9 +1154,56 @@
 		77CCED71171A13C700BF2BE3 /* levels */ = {
 			isa = PBXGroup;
 			children = (
+				77CCED82171A6DDB00BF2BE3 /* level0-hd.plist */,
+				77CCED83171A6DDB00BF2BE3 /* level0-hd.png */,
+				77CCED84171A6DDB00BF2BE3 /* level0-ipad.plist */,
+				77CCED85171A6DDB00BF2BE3 /* level0-ipad.png */,
+				77CCED86171A6DDB00BF2BE3 /* level0-ipadhd.plist */,
+				77CCED87171A6DDB00BF2BE3 /* level0-ipadhd.png */,
 				77CCED72171A13D100BF2BE3 /* Level0.ccbi */,
 			);
 			name = levels;
+			sourceTree = "<group>";
+		};
+		77CCED7B171A24C600BF2BE3 /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				77CCED7C171A24D900BF2BE3 /* LevelZero.h */,
+				77CCED7D171A24D900BF2BE3 /* LevelZero.m */,
+			);
+			name = Levels;
+			sourceTree = "<group>";
+		};
+		77CCED7F171A67AC00BF2BE3 /* characters */ = {
+			isa = PBXGroup;
+			children = (
+				77CCED80171A67B600BF2BE3 /* Bum.ccbi */,
+			);
+			name = characters;
+			sourceTree = "<group>";
+		};
+		77CCED92171A757800BF2BE3 /* Game Objects */ = {
+			isa = PBXGroup;
+			children = (
+				77CCED93171A759C00BF2BE3 /* Floor.h */,
+				77CCED94171A759C00BF2BE3 /* Floor.m */,
+				77CCED9D171A793C00BF2BE3 /* GameObject.h */,
+				77CCED9E171A793C00BF2BE3 /* GameObject.m */,
+				77CCEDA0171A7B8D00BF2BE3 /* Bum.h */,
+				77CCEDA1171A7B8D00BF2BE3 /* Bum.m */,
+			);
+			name = "Game Objects";
+			sourceTree = "<group>";
+		};
+		77CCED96171A784100BF2BE3 /* Component Framework */ = {
+			isa = PBXGroup;
+			children = (
+				77CCED9A171A786200BF2BE3 /* System.h */,
+				77CCED9B171A786200BF2BE3 /* System.m */,
+				77CCED97171A785500BF2BE3 /* Component.h */,
+				77CCED98171A785500BF2BE3 /* Component.m */,
+			);
+			name = "Component Framework";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1191,6 +1280,15 @@
 				77CCED73171A13D100BF2BE3 /* Level0.ccbi in Resources */,
 				77CCED79171A222500BF2BE3 /* gameobjects-ipad.plist in Resources */,
 				77CCED7A171A222500BF2BE3 /* gameobjects-ipad.png in Resources */,
+				77CCED81171A67B600BF2BE3 /* Bum.ccbi in Resources */,
+				77CCED88171A6DDB00BF2BE3 /* level0-hd.plist in Resources */,
+				77CCED89171A6DDB00BF2BE3 /* level0-hd.png in Resources */,
+				77CCED8A171A6DDB00BF2BE3 /* level0-ipad.plist in Resources */,
+				77CCED8B171A6DDB00BF2BE3 /* level0-ipad.png in Resources */,
+				77CCED8C171A6DDB00BF2BE3 /* level0-ipadhd.plist in Resources */,
+				77CCED8D171A6DDB00BF2BE3 /* level0-ipadhd.png in Resources */,
+				77CCED8F171A730A00BF2BE3 /* Default-568h@2x.png in Resources */,
+				77CCED91171A73BF00BF2BE3 /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1330,6 +1428,12 @@
 				77CCED00171A043E00BF2BE3 /* zip.c in Sources */,
 				77CCED01171A043E00BF2BE3 /* SSZipArchive.m in Sources */,
 				77CCED76171A177900BF2BE3 /* GameLayer.m in Sources */,
+				77CCED7E171A24D900BF2BE3 /* LevelZero.m in Sources */,
+				77CCED95171A759C00BF2BE3 /* Floor.m in Sources */,
+				77CCED99171A785500BF2BE3 /* Component.m in Sources */,
+				77CCED9C171A786200BF2BE3 /* System.m in Sources */,
+				77CCED9F171A793C00BF2BE3 /* GameObject.m in Sources */,
+				77CCEDA2171A7B8E00BF2BE3 /* Bum.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

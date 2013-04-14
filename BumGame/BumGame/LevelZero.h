@@ -1,5 +1,5 @@
 //
-//  GameLayer.h
+//  LevelZero.h
 //  BumGame
 //
 //  Created by Grant Davis on 4/13/13.
@@ -8,11 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
+#import "GameLayer.h"
 
-@interface GameLayer : CCLayer {
-    CCSprite *_bum;
+@interface LevelZero : GameLayer {
+    
 }
-
-- (void)didLoadFromCCB;
 
 @end
