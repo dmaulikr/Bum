@@ -13,7 +13,6 @@
 @class CCSpriteBatchNode;
 @class CCLayer;
 @class CCNode;
-@class LevelHelperLoader;
 
 @interface EntityFactory : NSObject
 
@@ -22,8 +21,8 @@
 
 @property (strong, readonly) CCLayer *layer;
 
-//- (Entity *)createHumanPlayer;
-//
+- (Entity *)createPlayerWithSprite:(CCSprite *)sprite;
+
 //- (Entity *)createBulletWithName:(NSString *)name;
 //
 //- (Entity *)createAIPlayer;

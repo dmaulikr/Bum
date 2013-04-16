@@ -33,11 +33,12 @@
         render.node.rotation += move.rotationVelocity;
     }
     
-//    NSArray *allSprites = [self.loader allSprites];
-//    for (LHSprite *sprite in allSprites) {
+//    for (Entity *entity in moveEntities) {
+//        RenderComponent *render = [entity render];
+//        CCSprite *sprite = render.node;
 //        b2Body *body = sprite.body;
 //        if (body == nil) continue;
-//        sprite.position = [LevelHelperLoader metersToPoints:body->GetPosition()];
+//        sprite.position = ccp( body->GetPosition().x * PTM_RATIO, body->GetPosition().y * PTM_RATIO);
 //        sprite.rotation = -1 * CC_RADIANS_TO_DEGREES(body->GetAngle());
 //    }
 }

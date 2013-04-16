@@ -56,8 +56,6 @@
 	
 	delete m_debugDraw;
 	m_debugDraw = NULL;
-	
-	[super dealloc];
 }
 
 
@@ -65,24 +63,31 @@
 {
     NSLog(@"GameLayer loaded with player: %@", player);
     
-    [self scheduleUpdate];
-    
     // initialize world
+    [self createEntitySystem];
+    [self createGameSystems];
+    
     [self initPhysics];
     [self initPlayer];
-    [self createGameSystems];
+    
+    [self scheduleUpdate];
 }
 
 
--(void) initPhysics
+- (void)createEntitySystem
 {
-	
+    _entityManager = [[EntityManager alloc] init];
+    _entityFactory = [[EntityFactory alloc] initWithEntityManager:_entityManager layer:self];
+}
+
+
+- (void)initPhysics
+{
 	CGSize s = [[CCDirector sharedDirector] winSize];
 	
 	b2Vec2 gravity;
 	gravity.Set(0.0f, -10.0f);
 	world = new b2World(gravity);
-	
 	
 	// Do we want to let bodies sleep?
 	world->SetAllowSleeping(true);
@@ -133,7 +138,7 @@
 
 - (void)initPlayer
 {
-    
+    [_entityFactory createPlayerWithSprite:player.sprite];
 }
 
 
@@ -199,7 +204,7 @@
     [_controlsSystem update:dt];
     
     [_actionSystem update:dt];
-//    [_cameraSystem update:dt];
+    [_cameraSystem update:dt];
 }
 
 

@@ -12,7 +12,6 @@
 #import "MovementComponent.h"
 
 @interface CameraSystem () {
-    __unsafe_unretained CCParallaxNode *_ground;
     __unsafe_unretained CCLayer *_layer;
 }
 
@@ -48,19 +47,19 @@
 
 -(void)setViewpointCenter:(CGPoint) position {
     
-//    CGSize winSize = [[CCDirector sharedDirector] winSize];
-//    CGRect worldRect = [self.loader gameWorldSize];
-//    
-//    int x = MAX(position.x, worldRect.origin.x + winSize.width / 2);
-//    int y = MAX(position.y, worldRect.origin.y + winSize.height / 2);
-//    x = MIN(x, (worldRect.origin.x + worldRect.size.width) - winSize.width / 2);
-//    y = MIN(y, (worldRect.origin.y + worldRect.size.height) - winSize.height/2);
-//    CGPoint actualPosition = ccp(x, y);
-//    
-//    CGPoint centerOfView = ccp(winSize.width/2, winSize.height/2);
-//    CGPoint viewPoint = ccpSub(centerOfView, actualPosition);
-//    
-//    _layer.position = viewPoint;
+    CGSize winSize = [[CCDirector sharedDirector] winSize];
+    CGRect worldRect = CGRectMake(0, 0, _layer.contentSize.width, _layer.contentSize.height);
+    
+    int x = MAX(position.x, worldRect.origin.x + winSize.width / 2);
+    int y = MAX(position.y, worldRect.origin.y + winSize.height / 2);
+    x = MIN(x, (worldRect.origin.x + worldRect.size.width) - winSize.width / 2);
+    y = MIN(y, (worldRect.origin.y + worldRect.size.height) - winSize.height/2);
+    CGPoint actualPosition = ccp(x, y);
+    
+    CGPoint centerOfView = ccp(winSize.width/2, winSize.height/2);
+    CGPoint viewPoint = ccpSub(centerOfView, actualPosition);
+    
+    _layer.position = viewPoint;
 }
 
 

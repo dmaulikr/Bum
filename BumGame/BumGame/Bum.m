@@ -13,8 +13,6 @@
 
 - (void)didLoadFromCCB
 {
-    NSLog(@"Bum loaded, sprite: %@", sprite);
-    [self addComponent:[[MovementComponent alloc] init]];
 }
 
 @end

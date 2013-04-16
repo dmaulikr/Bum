@@ -30,7 +30,7 @@
 				<key>displayName</key>
 				<string>CCSprite</string>
 				<key>memberVarAssignmentName</key>
-				<string>sprite</string>
+				<string>_sprite</string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>properties</key>

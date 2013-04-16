@@ -10,8 +10,9 @@
 
 @interface Bum : GameObject {
     // assigned from CCB
-    CCSprite *sprite;
+    CCSprite *_sprite;
 }
 
+@property (nonatomic,readonly) CCSprite *sprite;
 
 @end

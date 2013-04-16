@@ -19,7 +19,7 @@
 
 - (id)init
 {
-    if ((self = [super init])) {
+    if (self = [super init]) {
         _entities = [NSMutableArray array];
         _componentsByClass = [NSMutableDictionary dictionary];
         _lowestUnassignedEid = 1;
