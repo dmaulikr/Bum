@@ -11,7 +11,7 @@
 
 // GameObjects hold components which describe the nature of an object.
 // The different systems in the game interact with the components of objects
-@interface GameObject : NSObject
+@interface GameObject : CCNode
 
 - (void)addComponent:(Component *)component;
 - (void)removeComponent:(Component *)component;

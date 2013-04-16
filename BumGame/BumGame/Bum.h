@@ -8,6 +8,10 @@
 
 #import "GameObject.h"
 
-@interface Bum : GameObject
+@interface Bum : GameObject {
+    // assigned from CCB
+    CCSprite *sprite;
+}
+
 
 @end

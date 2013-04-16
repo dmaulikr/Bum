@@ -1,15 +1,24 @@
 //
 //  System.h
-//  BumGame
+//  EndlessRPG
 //
-//  Created by Grant Davis on 4/13/13.
+//  Created by Grant Davis on 3/5/13.
 //
 //
 
 #import <Foundation/Foundation.h>
-
-// Sytems manage collections of Components.
+#import "EntityManager.h"
+#import "EntityFactory.h"
 
 @interface System : NSObject
+
+@property (strong) EntityManager * entityManager;
+@property (strong) EntityFactory * entityFactory;
+
+- (id)initWithEntityManager:(EntityManager *)entityManager
+              entityFactory:(EntityFactory *)entityFactory;
+
+
+- (void)update:(float)dt;
 
 @end

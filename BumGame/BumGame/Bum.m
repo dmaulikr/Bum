@@ -7,15 +7,14 @@
 //
 
 #import "Bum.h"
+#import "MovementComponent.h"
 
 @implementation Bum
 
-- (id)init
+- (void)didLoadFromCCB
 {
-    if (self = [super init]) {
-        [self addComponent:[Component new]];
-    }
-    return self;
+    NSLog(@"Bum loaded, sprite: %@", sprite);
+    [self addComponent:[[MovementComponent alloc] init]];
 }
 
 @end

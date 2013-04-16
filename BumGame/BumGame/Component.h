@@ -1,13 +1,15 @@
 //
 //  Component.h
-//  BumGame
+//  EndlessRPG
 //
-//  Created by Grant Davis on 4/13/13.
-//
+//  Created by Grant Davis on 3/5/13.
+//  Copyright 2013 __MyCompanyName__. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface Component : NSObject
+@interface Component : NSObject {
+    
+}
 
 @end
