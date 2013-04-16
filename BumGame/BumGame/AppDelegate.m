@@ -76,7 +76,7 @@
     // Load the main menu scene from the ccbi-file
     CGSize sceneSize = CGSizeMake(glView.frame.size.height, glView.frame.size.width); // provide landscape dimensions
     
-    // here we create the scene and pass a size otherwise it will the portrait frame instead of landscape.
+    // here we create the scene and pass a size otherwise it will use the portrait frame instead of landscape.
     CCScene* mainScene = [CCBReader sceneWithNodeGraphFromFile:@"Level0.ccbi" owner:nil parentSize:sceneSize];
     
     // Then add the scene to the stack. The director will run it when it automatically when the view is displayed.
