@@ -39,6 +39,21 @@
                     <int>2048</int>
                 </QSize>
             </struct>
+            <struct type="AutoSDSettings">
+                <key>scale</key>
+                <double>0.5</double>
+                <key>extension</key>
+                <string>-ipad.</string>
+                <key>acceptFractionalValues</key>
+                <false/>
+                <key>maxTextureSize</key>
+                <QSize>
+                    <key>width</key>
+                    <int>2048</int>
+                    <key>height</key>
+                    <int>2048</int>
+                </QSize>
+            </struct>
         </array>
         <key>allowRotation</key>
         <true/>
@@ -53,7 +68,7 @@
         <key>dataFormat</key>
         <string>cocos2d</string>
         <key>textureFileName</key>
-        <filename>../BumGame/Resources/gameobjects-ipadhd.png</filename>
+        <filename>../../../../BumGame/BumGame/Resources/dpad-ui-ipadhd.png</filename>
         <key>flipPVR</key>
         <false/>
         <key>ditherType</key>
@@ -85,9 +100,9 @@
         <key>maxTextureSize</key>
         <QSize>
             <key>width</key>
-            <int>2048</int>
+            <int>4096</int>
             <key>height</key>
-            <int>2048</int>
+            <int>4096</int>
         </QSize>
         <key>fixedTextureSize</key>
         <QSize>
@@ -130,7 +145,7 @@
             <key>packageName</key>
             <string>Texture</string>
             <key>javaFileName</key>
-            <filename>gameobjects.java</filename>
+            <filename>../../../../BumGame/BumGame/Resources/dpad-ui.java</filename>
             <key>wrap</key>
             <struct type="AndEngineWrap">
                 <key>s</key>
@@ -142,7 +157,7 @@
             <enum type="AndEngine::MagFilter">MagLinear</enum>
         </struct>
         <key>dataFileName</key>
-        <filename>../BumGame/Resources/gameobjects-ipadhd.plist</filename>
+        <filename>../../../../BumGame/BumGame/Resources/dpad-ui-ipadhd.plist</filename>
         <key>mainExtension</key>
         <string>-ipadhd.</string>
         <key>forceIdenticalLayout</key>
@@ -172,21 +187,11 @@
         </struct>
         <key>fileList</key>
         <array>
-            <filename>beer_can.png</filename>
-            <filename>bottle_cap.png</filename>
-            <filename>bottle1.png</filename>
-            <filename>bottle2_broken.png</filename>
-            <filename>bum_block.png</filename>
-            <filename>bum_idle.png</filename>
-            <filename>bum_run.png</filename>
-            <filename>bum_throw.png</filename>
-            <filename>enemy_hippy-bum.png</filename>
-            <filename>enemy_mullet-hawk_dude.png</filename>
-            <filename>enemy_whore.png</filename>
-            <filename>trashcan.png</filename>
-            <filename>button-action.png</filename>
-            <filename>button-arrow.png</filename>
-            <filename>button-jump.png</filename>
+            <filename>a-button.png</filename>
+            <filename>arrow.png</filename>
+            <filename>b-button.png</filename>
+            <filename>button-ref.png</filename>
+            <filename>top-bar.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

@@ -10,6 +10,8 @@
 #import "cocos2d.h"
 
 @interface GameLayer : CCLayer {
+    CCLayer *_charactersLayer;
+    CCLayer *_uiLayer;
     CCSprite *_bum;
 }
 

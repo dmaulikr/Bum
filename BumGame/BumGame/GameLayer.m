@@ -7,6 +7,7 @@
 //
 
 #import "GameLayer.h"
+#import "CCBReader.h"
 
 @implementation GameLayer
 
@@ -14,15 +15,31 @@
 - (void)didLoadFromCCB
 {
     // initialize world
-    [self addPlayer];
+    
+    // create layers
+//    _charactersLayer = [CCLayer node];
+//    _uiLayer = [CCLayer node];
+//    [self addChild:_charactersLayer];
+//    [self addChild:_uiLayer];
+//    
+////    [self createUI];
+//    [self addPlayer];
 }
+
+
+- (void)createUI
+{
+    CCLayer *dpadLayer = (CCLayer *)[CCBReader nodeGraphFromFile:@"DPadUI.ccbi" owner:nil parentSize:self.contentSize];
+    [self addChild:dpadLayer];
+}
+
 
 - (void)addPlayer
 {
     _bum = (CCSprite *)[CCBReader nodeGraphFromFile:@"Bum.ccbi"];
     _bum.position = ccp(_bum.contentSize.width * .5, _bum.contentSize.height * .5);
     _bum.scale = .66f;
-    [self addChild:_bum];
+    [_charactersLayer addChild:_bum];
 }
 
 @end

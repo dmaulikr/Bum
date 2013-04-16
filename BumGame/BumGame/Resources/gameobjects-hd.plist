@@ -108,6 +108,45 @@
                 <key>sourceSize</key>
                 <string>{265,311}</string>
             </dict>
+            <key>button-action.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{715,2},{215,215}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{215,215}}</string>
+                <key>sourceSize</key>
+                <string>{215,215}</string>
+            </dict>
+            <key>button-arrow.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{356,937},{30,55}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{30,55}}</string>
+                <key>sourceSize</key>
+                <string>{30,55}</string>
+            </dict>
+            <key>button-jump.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{498,2},{215,215}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{215,215}}</string>
+                <key>sourceSize</key>
+                <string>{215,215}</string>
+            </dict>
             <key>enemy_hippy-bum.png</key>
             <dict>
                 <key>frame</key>
@@ -150,11 +189,11 @@
             <key>trashcan.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{498,2},{143,173}}</string>
+                <string>{{659,219},{143,173}}</string>
                 <key>offset</key>
                 <string>{0,-1}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,2},{143,173}}</string>
                 <key>sourceSize</key>
@@ -170,7 +209,7 @@
             <key>size</key>
             <string>{1024,1024}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:fc2d5c744b4d9ab6ff3f77c18cecf38b$</string>
+            <string>$TexturePacker:SmartUpdate:a8b27dc33c667ddbcedf916e8236b3cb$</string>
             <key>textureFileName</key>
             <string>gameobjects-hd.png</string>
         </dict>

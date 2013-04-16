@@ -42,7 +42,7 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>67</real>
+							<real>50</real>
 							<real>0.0</real>
 							<integer>5</integer>
 						</array>
@@ -87,10 +87,12 @@
 						<key>value</key>
 						<array>
 							<string>gameobjects.plist</string>
-							<string>bum_idle.png</string>
+							<string>enemy_hippy-bum.png</string>
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>
@@ -148,8 +150,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>selected</key>
-		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>
@@ -194,7 +194,7 @@
 			<key>length</key>
 			<real>10</real>
 			<key>name</key>
-			<string>Idle</string>
+			<string>Default Timeline</string>
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>

@@ -13,13 +13,12 @@ Default-568h@2x.png
 Default-Landscape~ipad.png
 Default.png
 Default@2x.png
+Enemy.ccbi
 fps_images-hd.png
 fps_images-ipadhd.png
 fps_images.png
 gameobjects-hd.plist
 gameobjects-hd.png
-gameobjects-ipad.plist
-gameobjects-ipad.png
 gameobjects-ipadhd.plist
 gameobjects-ipadhd.png
 gameobjects.plist
@@ -32,10 +31,9 @@ Icon-Small@2x.png
 Icon.png
 Icon@2x.png
 Info.plist
+Interface.ccbi
 level0-hd.plist
 level0-hd.png
-level0-ipad.plist
-level0-ipad.png
 level0-ipadhd.plist
 level0-ipadhd.png
 Level0.ccbi

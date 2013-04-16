@@ -7,11 +7,11 @@
             <key>beer_can.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{252,92},{40,46}}</string>
+                <string>{{252,112},{40,46}}</string>
                 <key>offset</key>
                 <string>{0,2}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,5},{40,46}}</string>
                 <key>sourceSize</key>
@@ -108,6 +108,45 @@
                 <key>sourceSize</key>
                 <string>{133,155}</string>
             </dict>
+            <key>button-action.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{362,2},{108,108}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{108,108}}</string>
+                <key>sourceSize</key>
+                <string>{108,108}</string>
+            </dict>
+            <key>button-arrow.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{32,473},{15,28}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{15,28}}</string>
+                <key>sourceSize</key>
+                <string>{15,28}</string>
+            </dict>
+            <key>button-jump.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{252,2},{108,108}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{108,108}}</string>
+                <key>sourceSize</key>
+                <string>{108,108}</string>
+            </dict>
             <key>enemy_hippy-bum.png</key>
             <dict>
                 <key>frame</key>
@@ -150,11 +189,11 @@
             <key>trashcan.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{252,2},{72,88}}</string>
+                <string>{{333,112},{72,88}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{72,88}}</string>
                 <key>sourceSize</key>
@@ -170,7 +209,7 @@
             <key>size</key>
             <string>{512,512}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:e38ac1f8f44881769c6d497ea7c3da2c$</string>
+            <string>$TexturePacker:SmartUpdate:ccab760634a207507c2c169016db1caf$</string>
             <key>textureFileName</key>
             <string>gameobjects.png</string>
         </dict>
