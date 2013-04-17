@@ -8,8 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
+#import "GameObject.h"
 
-@interface Floor : CCLayerColor {
+@interface StaticBody : GameObject {
     
 }
 

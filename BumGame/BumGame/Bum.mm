@@ -23,32 +23,20 @@
     self.entity = [self createPlayerEntityWithNode:self];
 }
 
-
 - (Entity *)createPlayerEntityWithNode:(CCNode *)node
 {
     Entity * entity = [self.manager createEntity];
     NSLog(@"bum size: %@", NSStringFromCGSize(node.contentSize));
     // create a body for the sprite
-    CGPoint p = node.position;
     
-    // bum
     [self.manager addComponent:[[RenderComponent alloc] initWithNode:node] toEntity:entity];
     
     // create the player with a default weapon
     PlayerComponent *player = [[PlayerComponent alloc] init];
     [self.manager addComponent:player toEntity:entity];
     
-    // create a body for physics interactions
-    b2BodyDef bodyDef;
-    bodyDef.type = b2_dynamicBody;
-    bodyDef.position.Set(p.x/PTM_RATIO, p.y/PTM_RATIO);
-    bodyDef.userData = (__bridge void *)node;
-    b2Body *body = self.manager.world->CreateBody(&bodyDef);
-    body->SetFixedRotation(YES);
     
-    // add the fixture definitions to the body
-    [[GB2ShapeCache sharedShapeCache] addFixturesToBody:body forShapeName:@"bum"];
-    [node setAnchorPoint:[[GB2ShapeCache sharedShapeCache] anchorPointForShape:@"bum"]];
+//    [GameObject createBodyNamed:@"bum"];
     
     // weapon
 //    LHSprite *weaponSprite = [CCBReader nodeGraphFromFile:@"cat"];

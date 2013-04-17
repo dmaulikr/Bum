@@ -7,7 +7,8 @@
 //
 
 #import "LevelZero.h"
-
+#import "Box2D.h"
+#import "GameObject.h"
 
 @implementation LevelZero
 

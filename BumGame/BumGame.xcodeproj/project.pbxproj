@@ -245,13 +245,13 @@
 		77CCED70171A13BD00BF2BE3 /* gameobjects.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77CCED6D171A13BD00BF2BE3 /* gameobjects.plist */; };
 		77CCED73171A13D100BF2BE3 /* Level0.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 77CCED72171A13D100BF2BE3 /* Level0.ccbi */; };
 		77CCED76171A177900BF2BE3 /* GameLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77CCED75171A177900BF2BE3 /* GameLayer.mm */; };
-		77CCED7E171A24D900BF2BE3 /* LevelZero.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CCED7D171A24D900BF2BE3 /* LevelZero.m */; };
+		77CCED7E171A24D900BF2BE3 /* LevelZero.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77CCED7D171A24D900BF2BE3 /* LevelZero.mm */; };
 		77CCED81171A67B600BF2BE3 /* Bum.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 77CCED80171A67B600BF2BE3 /* Bum.ccbi */; };
 		77CCED88171A6DDB00BF2BE3 /* level0-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77CCED82171A6DDB00BF2BE3 /* level0-hd.plist */; };
 		77CCED89171A6DDB00BF2BE3 /* level0-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 77CCED83171A6DDB00BF2BE3 /* level0-hd.png */; };
 		77CCED8F171A730A00BF2BE3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77CCED8E171A730900BF2BE3 /* Default-568h@2x.png */; };
 		77CCED91171A73BF00BF2BE3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77CCED90171A73BF00BF2BE3 /* Default@2x.png */; };
-		77CCED95171A759C00BF2BE3 /* Floor.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CCED94171A759C00BF2BE3 /* Floor.m */; };
+		77CCED95171A759C00BF2BE3 /* StaticBody.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77CCED94171A759C00BF2BE3 /* StaticBody.mm */; };
 		77CCED9F171A793C00BF2BE3 /* GameObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77CCED9E171A793C00BF2BE3 /* GameObject.mm */; };
 		77CCEDA2171A7B8E00BF2BE3 /* Bum.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77CCEDA1171A7B8D00BF2BE3 /* Bum.mm */; };
 		77CCEDBB171B080900BF2BE3 /* level0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77CCEDB9171B080900BF2BE3 /* level0.plist */; };
@@ -743,14 +743,14 @@
 		77CCED74171A177900BF2BE3 /* GameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameLayer.h; sourceTree = "<group>"; };
 		77CCED75171A177900BF2BE3 /* GameLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameLayer.mm; sourceTree = "<group>"; };
 		77CCED7C171A24D900BF2BE3 /* LevelZero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelZero.h; sourceTree = "<group>"; };
-		77CCED7D171A24D900BF2BE3 /* LevelZero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelZero.m; sourceTree = "<group>"; };
+		77CCED7D171A24D900BF2BE3 /* LevelZero.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LevelZero.mm; sourceTree = "<group>"; };
 		77CCED80171A67B600BF2BE3 /* Bum.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = Bum.ccbi; path = Resources/Bum.ccbi; sourceTree = "<group>"; };
 		77CCED82171A6DDB00BF2BE3 /* level0-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "level0-hd.plist"; path = "Resources/level0-hd.plist"; sourceTree = "<group>"; };
 		77CCED83171A6DDB00BF2BE3 /* level0-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "level0-hd.png"; path = "Resources/level0-hd.png"; sourceTree = "<group>"; };
 		77CCED8E171A730900BF2BE3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Resources/Default-568h@2x.png"; sourceTree = "<group>"; };
 		77CCED90171A73BF00BF2BE3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Resources/Default@2x.png"; sourceTree = "<group>"; };
-		77CCED93171A759C00BF2BE3 /* Floor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Floor.h; sourceTree = "<group>"; };
-		77CCED94171A759C00BF2BE3 /* Floor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Floor.m; sourceTree = "<group>"; };
+		77CCED93171A759C00BF2BE3 /* StaticBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaticBody.h; sourceTree = "<group>"; };
+		77CCED94171A759C00BF2BE3 /* StaticBody.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = StaticBody.mm; sourceTree = "<group>"; };
 		77CCED9D171A793C00BF2BE3 /* GameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObject.h; sourceTree = "<group>"; };
 		77CCED9E171A793C00BF2BE3 /* GameObject.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameObject.mm; sourceTree = "<group>"; };
 		77CCEDA0171A7B8D00BF2BE3 /* Bum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bum.h; sourceTree = "<group>"; };
@@ -1610,7 +1610,7 @@
 			isa = PBXGroup;
 			children = (
 				77CCED7C171A24D900BF2BE3 /* LevelZero.h */,
-				77CCED7D171A24D900BF2BE3 /* LevelZero.m */,
+				77CCED7D171A24D900BF2BE3 /* LevelZero.mm */,
 			);
 			name = Levels;
 			sourceTree = "<group>";
@@ -1629,8 +1629,8 @@
 			children = (
 				77CCED9D171A793C00BF2BE3 /* GameObject.h */,
 				77CCED9E171A793C00BF2BE3 /* GameObject.mm */,
-				77CCED93171A759C00BF2BE3 /* Floor.h */,
-				77CCED94171A759C00BF2BE3 /* Floor.m */,
+				77CCED93171A759C00BF2BE3 /* StaticBody.h */,
+				77CCED94171A759C00BF2BE3 /* StaticBody.mm */,
 				77CCEDA0171A7B8D00BF2BE3 /* Bum.h */,
 				77CCEDA1171A7B8D00BF2BE3 /* Bum.mm */,
 				77AF3EC6171DE6FB00C4AD10 /* TestEnemy.h */,
@@ -1890,8 +1890,8 @@
 				77CCED00171A043E00BF2BE3 /* zip.c in Sources */,
 				77CCED01171A043E00BF2BE3 /* SSZipArchive.m in Sources */,
 				77CCED76171A177900BF2BE3 /* GameLayer.mm in Sources */,
-				77CCED7E171A24D900BF2BE3 /* LevelZero.m in Sources */,
-				77CCED95171A759C00BF2BE3 /* Floor.m in Sources */,
+				77CCED7E171A24D900BF2BE3 /* LevelZero.mm in Sources */,
+				77CCED95171A759C00BF2BE3 /* StaticBody.mm in Sources */,
 				77CCED9F171A793C00BF2BE3 /* GameObject.mm in Sources */,
 				77CCEDA2171A7B8E00BF2BE3 /* Bum.mm in Sources */,
 				77704581171DA90600EFB883 /* GameInterface.m in Sources */,

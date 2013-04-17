@@ -8,42 +8,14 @@
 
 #import "GameLayer.h"
 #import "CCBReader.h"
-#import "Box2D.h"
-#import "GLES-Render.h"
-#import "EntityManager.h"
-#import "EntityFactory.h"
-#import "HealthSystem.h"
 #import "RenderComponent.h"
 #import "MovementComponent.h"
-#import "MovementSystem.h"
-#import "ActionSystem.h"
 #import "ActionComponent.h"
 #import "PlayerComponent.h"
-#import "CameraSystem.h"
-#import "ControlsSystem.h"
-#import "ProjectileSystem.h"
-#import "Bum.h"
 #import "GB2ShapeCache.h"
-#import "CCBReader.h"
 
 @interface GameLayer () {
-    b2World* _world;					// strong ref
-	GLESDebugDraw *m_debugDraw;		// strong ref
     
-    // set from CCB
-    Bum *player;
-    
-    // entity framework
-    EntityManager *_entityManager;
-    EntityFactory *_entityFactory;
-    
-    // game systems
-    HealthSystem *_healthSystem;
-    MovementSystem *_movementSystem;
-    ActionSystem *_actionSystem;
-    CameraSystem *_cameraSystem;
-    ControlsSystem *_controlsSystem;
-    ProjectileSystem *_projectileSystem;
 }
 
 @end
@@ -68,6 +40,7 @@
     [self createEntitySystem];
     [self createGameSystems];
     [self createInterface];
+    [self createLevelBoundaries];
     
     [self scheduleUpdate];
 }
@@ -165,6 +138,25 @@
                                                                  parentSize:CGSizeMake(s.height, s.width)];
     assert([interface isKindOfClass:[GameInterface class]]);
     [self addChild:interface];
+}
+
+- (void)createLevelBoundaries
+{
+    // make sure the boundaries name has been defined in CCB
+    assert(self.boundaryName != nil);
+    
+    NSString *shapeName = self.boundaryName;
+    if ([[GB2ShapeCache sharedShapeCache] hasBodyNamed:shapeName]) {
+        
+        // create a body for physics interactions
+        b2BodyDef bodyDef;
+        bodyDef.type = b2_staticBody;
+        b2Body *body = _world->CreateBody(&bodyDef);
+        body->SetFixedRotation(YES);
+        
+        // add the fixture definitions to the body
+        [[GB2ShapeCache sharedShapeCache] addFixturesToBody:body forShapeName:shapeName];
+    }
 }
 
 

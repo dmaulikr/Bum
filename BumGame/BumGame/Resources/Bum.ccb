@@ -73,7 +73,7 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>50</real>
+							<real>0.0</real>
 							<real>0.0</real>
 							<integer>4</integer>
 						</array>
@@ -86,7 +86,7 @@
 						<key>value</key>
 						<array>
 							<real>0.5</real>
-							<real>0.093856915831565857</real>
+							<real>0.0</real>
 						</array>
 					</dict>
 					<dict>
@@ -132,8 +132,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 				<key>seqExpanded</key>
 				<true/>
 			</dict>
