@@ -12,11 +12,9 @@
 
 
 - (id)initWithEntityManager:(EntityManager *)entityManager
-              entityFactory:(EntityFactory *)entityFactory
 {
     if ((self = [super init])) {
         self.entityManager = entityManager;
-        self.entityFactory = entityFactory;
     }
     return self;
 }

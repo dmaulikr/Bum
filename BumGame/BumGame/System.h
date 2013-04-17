@@ -8,16 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import "EntityManager.h"
-#import "EntityFactory.h"
 
 @interface System : NSObject
 
 @property (strong) EntityManager * entityManager;
-@property (strong) EntityFactory * entityFactory;
 
-- (id)initWithEntityManager:(EntityManager *)entityManager
-              entityFactory:(EntityFactory *)entityFactory;
-
+- (id)initWithEntityManager:(EntityManager *)entityManager;
 
 - (void)update:(float)dt;
 

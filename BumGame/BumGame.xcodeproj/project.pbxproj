@@ -77,7 +77,6 @@
 		777048A3171DB38000EFB883 /* Entity.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7770488D171DB37D00EFB883 /* Entity.mm */; };
 		777048A4171DB38000EFB883 /* Entity+Helpers.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7770488F171DB37E00EFB883 /* Entity+Helpers.mm */; };
 		777048A5171DB38000EFB883 /* EntityManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77704891171DB37F00EFB883 /* EntityManager.mm */; };
-		777048A6171DB38000EFB883 /* EntityFactory.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77704893171DB38000EFB883 /* EntityFactory.mm */; };
 		77AF3EC0171DB64600C4AD10 /* GameButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AF3EBF171DB64600C4AD10 /* GameButton.m */; };
 		77AF3EC3171DDA5D00C4AD10 /* GB2ShapeCache.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77AF3EC2171DDA5D00C4AD10 /* GB2ShapeCache.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		77AF3EC5171DDCE600C4AD10 /* gameobjects-physics.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77AF3EC4171DDCE600C4AD10 /* gameobjects-physics.plist */; };
@@ -398,8 +397,6 @@
 		7770488F171DB37E00EFB883 /* Entity+Helpers.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "Entity+Helpers.mm"; sourceTree = "<group>"; };
 		77704890171DB37E00EFB883 /* EntityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntityManager.h; sourceTree = "<group>"; };
 		77704891171DB37F00EFB883 /* EntityManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EntityManager.mm; sourceTree = "<group>"; };
-		77704892171DB37F00EFB883 /* EntityFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntityFactory.h; sourceTree = "<group>"; };
-		77704893171DB38000EFB883 /* EntityFactory.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EntityFactory.mm; sourceTree = "<group>"; };
 		77AF3EBE171DB64600C4AD10 /* GameButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameButton.h; sourceTree = "<group>"; };
 		77AF3EBF171DB64600C4AD10 /* GameButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameButton.m; sourceTree = "<group>"; };
 		77AF3EC1171DDA5C00C4AD10 /* GB2ShapeCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GB2ShapeCache.h; sourceTree = "<group>"; };
@@ -1650,8 +1647,6 @@
 				7770488F171DB37E00EFB883 /* Entity+Helpers.mm */,
 				77704890171DB37E00EFB883 /* EntityManager.h */,
 				77704891171DB37F00EFB883 /* EntityManager.mm */,
-				77704892171DB37F00EFB883 /* EntityFactory.h */,
-				77704893171DB38000EFB883 /* EntityFactory.mm */,
 			);
 			name = "Entity Framework";
 			sourceTree = "<group>";
@@ -1961,7 +1956,6 @@
 				777048A3171DB38000EFB883 /* Entity.mm in Sources */,
 				777048A4171DB38000EFB883 /* Entity+Helpers.mm in Sources */,
 				777048A5171DB38000EFB883 /* EntityManager.mm in Sources */,
-				777048A6171DB38000EFB883 /* EntityFactory.mm in Sources */,
 				77AF3EC0171DB64600C4AD10 /* GameButton.m in Sources */,
 				77AF3EC3171DDA5D00C4AD10 /* GB2ShapeCache.mm in Sources */,
 				77AF3EC8171DE6FB00C4AD10 /* TestEnemy.mm in Sources */,

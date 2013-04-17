@@ -15,10 +15,9 @@
 @implementation MovementSystem
 
 - (id)initWithEntityManager:(EntityManager *)entityManager
-              entityFactory:(EntityFactory *)entityFactory
                       world:(b2World *)world
 {
-    if (self = [super initWithEntityManager:entityManager entityFactory:entityFactory]) {
+    if (self = [super initWithEntityManager:entityManager]) {
         _world = world;
     }
     return self;

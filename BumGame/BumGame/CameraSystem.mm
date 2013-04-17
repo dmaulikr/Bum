@@ -20,10 +20,9 @@
 @implementation CameraSystem
 
 - (id)initWithEntityManager:(EntityManager *)entityManager
-              entityFactory:(EntityFactory *)entityFactory
                       layer:(CCLayer *)layer
 {
-    if (self = [super initWithEntityManager:entityManager entityFactory:entityFactory]) {
+    if (self = [super initWithEntityManager:entityManager]) {
         _layer = layer;
     }
     return self;

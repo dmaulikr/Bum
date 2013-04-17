@@ -12,7 +12,6 @@
 
 
 - (id)initWithEntityManager:(EntityManager *)entityManager
-              entityFactory:(EntityFactory *)entityFactory
                       layer:(CCLayer *)layer;
 
 @end

@@ -49,7 +49,6 @@
 - (void)createEntitySystem
 {
     _entityManager = [[EntityManager alloc] initWithWorld:_world];
-    _entityFactory = [[EntityFactory alloc] initWithEntityManager:_entityManager layer:self world:_world];
 }
 
 
@@ -118,12 +117,12 @@
 
 - (void)createGameSystems
 {
-    _healthSystem = [[HealthSystem alloc] initWithEntityManager:_entityManager entityFactory:_entityFactory];
-    _movementSystem = [[MovementSystem alloc] initWithEntityManager:_entityManager entityFactory:_entityFactory world:_world];
-    _actionSystem = [[ActionSystem alloc] initWithEntityManager:_entityManager entityFactory:_entityFactory];
-    _cameraSystem = [[CameraSystem alloc] initWithEntityManager:_entityManager entityFactory:_entityFactory layer:self];
-    _controlsSystem = [[ControlsSystem alloc] initWithEntityManager:_entityManager entityFactory:_entityFactory];
-    _projectileSystem = [[ProjectileSystem alloc] initWithEntityManager:_entityManager entityFactory:_entityFactory];
+    _healthSystem = [[HealthSystem alloc] initWithEntityManager:_entityManager];
+    _movementSystem = [[MovementSystem alloc] initWithEntityManager:_entityManager world:_world];
+    _actionSystem = [[ActionSystem alloc] initWithEntityManager:_entityManager];
+    _cameraSystem = [[CameraSystem alloc] initWithEntityManager:_entityManager layer:self];
+    _controlsSystem = [[ControlsSystem alloc] initWithEntityManager:_entityManager];
+    _projectileSystem = [[ProjectileSystem alloc] initWithEntityManager:_entityManager];
     
     // TODO: refactor system into a singleton manager and retrieve by class
     _controlsSystem.projectileSystem = _projectileSystem;

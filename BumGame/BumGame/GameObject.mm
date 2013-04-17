@@ -7,7 +7,6 @@
 //
 
 #import "GameObject.h"
-#import "EntityFactory.h"
 
 #pragma mark - GB2ShapeCache
 
