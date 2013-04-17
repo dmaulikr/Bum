@@ -40,7 +40,7 @@
 - (Entity *)createPlayerWithNode:(CCNode *)node
 {
     Entity * entity = [_entityManager createEntity];
-    
+    NSLog(@"bum size: %@", NSStringFromCGSize(node.contentSize));
     // create a body for the sprite
     CGPoint p = node.position;
     
