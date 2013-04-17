@@ -10,7 +10,7 @@
 
 @implementation RenderComponent
 
-- (id)initWithNode:(CCSprite *)node
+- (id)initWithNode:(CCNode *)node
 {
     if (self = [super init]) {
         _node = node;

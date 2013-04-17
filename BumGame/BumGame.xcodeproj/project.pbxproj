@@ -79,6 +79,9 @@
 		777048A5171DB38000EFB883 /* EntityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77704891171DB37F00EFB883 /* EntityManager.m */; };
 		777048A6171DB38000EFB883 /* EntityFactory.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77704893171DB38000EFB883 /* EntityFactory.mm */; };
 		77AF3EC0171DB64600C4AD10 /* GameButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AF3EBF171DB64600C4AD10 /* GameButton.m */; };
+		77AF3EC3171DDA5D00C4AD10 /* GB2ShapeCache.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77AF3EC2171DDA5D00C4AD10 /* GB2ShapeCache.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		77AF3EC5171DDCE600C4AD10 /* gameobjects-physics.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77AF3EC4171DDCE600C4AD10 /* gameobjects-physics.plist */; };
+		77AF3EC8171DE6FB00C4AD10 /* TestEnemy.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AF3EC7171DE6FB00C4AD10 /* TestEnemy.m */; };
 		77B1D463171B66E1003D991A /* Interface.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 77B1D462171B66E1003D991A /* Interface.ccbi */; };
 		77B1D465171B72E3003D991A /* Enemy.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 77B1D464171B72E3003D991A /* Enemy.ccbi */; };
 		77B1D46A171B78C6003D991A /* gameobjects-ipadhd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77B1D466171B78C6003D991A /* gameobjects-ipadhd.plist */; };
@@ -399,6 +402,11 @@
 		77704893171DB38000EFB883 /* EntityFactory.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EntityFactory.mm; sourceTree = "<group>"; };
 		77AF3EBE171DB64600C4AD10 /* GameButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameButton.h; sourceTree = "<group>"; };
 		77AF3EBF171DB64600C4AD10 /* GameButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameButton.m; sourceTree = "<group>"; };
+		77AF3EC1171DDA5C00C4AD10 /* GB2ShapeCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GB2ShapeCache.h; sourceTree = "<group>"; };
+		77AF3EC2171DDA5D00C4AD10 /* GB2ShapeCache.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GB2ShapeCache.mm; sourceTree = "<group>"; };
+		77AF3EC4171DDCE600C4AD10 /* gameobjects-physics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "gameobjects-physics.plist"; path = "Resources/gameobjects-physics.plist"; sourceTree = "<group>"; };
+		77AF3EC6171DE6FB00C4AD10 /* TestEnemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestEnemy.h; sourceTree = "<group>"; };
+		77AF3EC7171DE6FB00C4AD10 /* TestEnemy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestEnemy.m; sourceTree = "<group>"; };
 		77B1D462171B66E1003D991A /* Interface.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = Interface.ccbi; path = Resources/Interface.ccbi; sourceTree = "<group>"; };
 		77B1D464171B72E3003D991A /* Enemy.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = Enemy.ccbi; path = Resources/Enemy.ccbi; sourceTree = "<group>"; };
 		77B1D466171B78C6003D991A /* gameobjects-ipadhd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "gameobjects-ipadhd.plist"; path = "Resources/gameobjects-ipadhd.plist"; sourceTree = "<group>"; };
@@ -951,6 +959,8 @@
 				7770485E171DAD2B00EFB883 /* Constants.h */,
 				7770485F171DB1A600EFB883 /* PhysicsSprite.h */,
 				77704860171DB1A600EFB883 /* PhysicsSprite.mm */,
+				77AF3EC1171DDA5C00C4AD10 /* GB2ShapeCache.h */,
+				77AF3EC2171DDA5D00C4AD10 /* GB2ShapeCache.mm */,
 			);
 			name = App;
 			sourceTree = "<group>";
@@ -1037,8 +1047,6 @@
 			children = (
 				7770485D171DAD1100EFB883 /* App */,
 				77CCED96171A784100BF2BE3 /* Entity Framework */,
-				77CCED92171A757800BF2BE3 /* Game Objects */,
-				77CCED7B171A24C600BF2BE3 /* Levels */,
 				77CCECA6171A014B00BF2BE3 /* Main Gameplay */,
 				77CCEB21171A013B00BF2BE3 /* Resources */,
 				77CCEB3B171A013B00BF2BE3 /* libs */,
@@ -1426,6 +1434,8 @@
 		77CCECA6171A014B00BF2BE3 /* Main Gameplay */ = {
 			isa = PBXGroup;
 			children = (
+				77CCED92171A757800BF2BE3 /* Game Objects */,
+				77CCED7B171A24C600BF2BE3 /* Levels */,
 				7770457E171DA8E000EFB883 /* Interface */,
 				77CCED74171A177900BF2BE3 /* GameLayer.h */,
 				77CCED75171A177900BF2BE3 /* GameLayer.mm */,
@@ -1571,6 +1581,7 @@
 		77CCED64171A138800BF2BE3 /* sprites */ = {
 			isa = PBXGroup;
 			children = (
+				77AF3EC4171DDCE600C4AD10 /* gameobjects-physics.plist */,
 				77B1D466171B78C6003D991A /* gameobjects-ipadhd.plist */,
 				77B1D467171B78C6003D991A /* gameobjects-ipadhd.png */,
 				77CCED6B171A13BD00BF2BE3 /* gameobjects-hd.plist */,
@@ -1622,6 +1633,8 @@
 				77CCED94171A759C00BF2BE3 /* Floor.m */,
 				77CCEDA0171A7B8D00BF2BE3 /* Bum.h */,
 				77CCEDA1171A7B8D00BF2BE3 /* Bum.m */,
+				77AF3EC6171DE6FB00C4AD10 /* TestEnemy.h */,
+				77AF3EC7171DE6FB00C4AD10 /* TestEnemy.m */,
 			);
 			name = "Game Objects";
 			sourceTree = "<group>";
@@ -1738,6 +1751,7 @@
 				77704586171DAB5700EFB883 /* Controls.ccbi in Resources */,
 				7770482B171DAC6800EFB883 /* Box2DConfig.cmake in Resources */,
 				7770482C171DAC6800EFB883 /* CMakeLists.txt in Resources */,
+				77AF3EC5171DDCE600C4AD10 /* gameobjects-physics.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1949,6 +1963,8 @@
 				777048A5171DB38000EFB883 /* EntityManager.m in Sources */,
 				777048A6171DB38000EFB883 /* EntityFactory.mm in Sources */,
 				77AF3EC0171DB64600C4AD10 /* GameButton.m in Sources */,
+				77AF3EC3171DDA5D00C4AD10 /* GB2ShapeCache.mm in Sources */,
+				77AF3EC8171DE6FB00C4AD10 /* TestEnemy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

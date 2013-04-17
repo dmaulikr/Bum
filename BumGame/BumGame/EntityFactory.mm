@@ -16,34 +16,53 @@
 #import "PlayerComponent.h"
 #import "WeaponComponent.h"
 #import "ProjectileComponent.h"
+#import "GB2ShapeCache.h"
 
 @implementation EntityFactory {
     EntityManager * _entityManager;
+    b2World *_world;
 }
 
 
 - (id)initWithEntityManager:(EntityManager *)entityManager
                       layer:(CCLayer *)layer
+                      world:(b2World *)world
 {
     if ((self = [super init])) {
         _entityManager = entityManager;
         _layer = layer;
+        _world = world;
     }
     return self;
 }
 
 
-- (Entity *)createPlayerWithSprite:(CCSprite *)sprite
+- (Entity *)createPlayerWithNode:(CCNode *)node
 {
     Entity * entity = [_entityManager createEntity];
     
+    // create a body for the sprite
+    CGPoint p = node.position;
+    
     // bum
-    [_entityManager addComponent:[[RenderComponent alloc] initWithNode:sprite] toEntity:entity];
+    [_entityManager addComponent:[[RenderComponent alloc] initWithNode:node] toEntity:entity];
     
     // create the player with a default weapon
     PlayerComponent *player = [[PlayerComponent alloc] init];
     [_entityManager addComponent:player toEntity:entity];
     
+    b2BodyDef bodyDef;
+    bodyDef.type = b2_dynamicBody;
+    
+    bodyDef.position.Set(p.x/PTM_RATIO, p.y/PTM_RATIO);
+    bodyDef.userData = (__bridge void *)node;
+    b2Body *body = _world->CreateBody(&bodyDef);
+    body->SetFixedRotation(YES);
+    
+    // add the fixture definitions to the body
+    [[GB2ShapeCache sharedShapeCache] addFixturesToBody:body forShapeName:@"bum"];
+    [node setAnchorPoint:[[GB2ShapeCache sharedShapeCache] anchorPointForShape:@"bum"]];
+
     // weapon
 //    LHSprite *weaponSprite = [CCBReader nodeGraphFromFile:@"cat"];
 //    WeaponComponent *catWeapon = [[WeaponComponent alloc] initWithSprite:weaponSprite
@@ -56,7 +75,6 @@
 //    weaponSprite.position = ccp(sprite.boundingBox.size.width * catWeapon.weaponPosition.x,
 //                                sprite.boundingBox.size.height * catWeapon.weaponPosition.y);
 //    [_entityManager addComponent:catWeapon toEntity:entity];
-    
     
     // Animation Actions
     ActionComponent *actionComp = [[ActionComponent alloc] initWithMovementState:MovementStateIdle];

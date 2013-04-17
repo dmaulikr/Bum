@@ -22,6 +22,7 @@ gameobjects-hd.plist
 gameobjects-hd.png
 gameobjects-ipadhd.plist
 gameobjects-ipadhd.png
+gameobjects-physics.plist
 gameobjects.plist
 gameobjects.png
 HelloCocosBuilder.ccbi

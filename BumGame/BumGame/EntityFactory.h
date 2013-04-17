@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Box2D.h"
 
 @class Entity;
 @class EntityManager;
@@ -17,11 +18,12 @@
 @interface EntityFactory : NSObject
 
 - (id)initWithEntityManager:(EntityManager *)entityManager
-                      layer:(CCLayer *)layer;
+                      layer:(CCLayer *)layer
+                      world:(b2World *)world;
 
 @property (strong, readonly) CCLayer *layer;
 
-- (Entity *)createPlayerWithSprite:(CCSprite *)sprite;
+- (Entity *)createPlayerWithNode:(CCNode *)node;
 
 //- (Entity *)createBulletWithName:(NSString *)name;
 //

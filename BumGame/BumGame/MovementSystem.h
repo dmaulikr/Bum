@@ -17,4 +17,8 @@
 
 @property (nonatomic, unsafe_unretained) b2World *world;
 
+- (id)initWithEntityManager:(EntityManager *)entityManager
+              entityFactory:(EntityFactory *)entityFactory
+                      world:(b2World *)world;
+
 @end

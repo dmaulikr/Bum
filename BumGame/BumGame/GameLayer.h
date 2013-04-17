@@ -11,6 +11,9 @@
 
 @interface GameLayer : CCLayer {
     
+    // variables set from CCB
+    CCLayer *_level;
+    CCLayer *_boundaries;
 }
 
 - (void)didLoadFromCCB;

@@ -14,9 +14,9 @@
     
 }
 
-@property (strong, nonatomic, readonly) CCSprite *node;
+@property (strong, nonatomic, readonly) CCNode *node;
 @property (strong, nonatomic) NSString *currentAnimation;
 
-- (id)initWithNode:(CCSprite *)node;
+- (id)initWithNode:(CCNode *)node;
 
 @end
