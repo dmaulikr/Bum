@@ -37,6 +37,13 @@ typedef enum MovementState {
     MovementStateRun
 } MovementState;
 
+typedef enum GameObjectType {
+    GameObjectTypeFloor = 0,
+    GameObjectTypePlayer,
+    GameObjectTypeEnemy,
+    GameObjectTypePowerup
+} GameObjectType;
+
 // 4 - structures
 typedef struct _BoundingBox {
     CGRect actual;

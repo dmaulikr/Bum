@@ -9,6 +9,9 @@
 #import "GameObject.h"
 
 @interface Bum : GameObject {
+    
+    BOOL _isTouchingFloor;
+    
     // assigned from CCB
     CCSprite *_sprite;
 }

@@ -9,12 +9,13 @@
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 #import "Component.h"
+#import "GameObject.h"
 
 @interface RenderComponent : Component {
     
 }
 
-@property (strong, nonatomic, readonly) CCNode *node;
+@property (strong, nonatomic, readonly) GameObject *node;
 @property (strong, nonatomic) NSString *currentAnimation;
 
 - (id)initWithNode:(CCNode *)node;

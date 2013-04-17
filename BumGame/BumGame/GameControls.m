@@ -9,9 +9,9 @@
 #import "GameControls.h"
 
 @implementation GameControls
-
-- (void)didLoadFromCCB
-{
-}
+@synthesize leftArrow = _leftArrow;
+@synthesize rightArrow = _rightArrow;
+@synthesize jumpButton = _jumpButton;
+@synthesize actionButton = _actionButton;
 
 @end

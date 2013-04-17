@@ -9,5 +9,6 @@
 #import "GameInterface.h"
 
 @implementation GameInterface
+@synthesize controls = _controls;
 
 @end

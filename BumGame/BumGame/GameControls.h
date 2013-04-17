@@ -7,12 +7,18 @@
 //
 
 #import "CCLayer.h"
+#import "GameButton.h"
 
 @interface GameControls : CCLayer {
-    CCSprite *leftArrow;
-    CCSprite *rightArrow;
-    CCSprite *jumpButton;
-    CCSprite *actionButton;
+    GameButton *_leftArrow;
+    GameButton *_rightArrow;
+    GameButton *_jumpButton;
+    GameButton *_actionButton;
 }
+
+@property (strong, nonatomic) GameButton *leftArrow;
+@property (strong, nonatomic) GameButton *rightArrow;
+@property (strong, nonatomic) GameButton *jumpButton;
+@property (strong, nonatomic) GameButton *actionButton;
 
 @end

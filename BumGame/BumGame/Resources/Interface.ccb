@@ -30,7 +30,7 @@
 				<key>displayName</key>
 				<string>GameControls</string>
 				<key>memberVarAssignmentName</key>
-				<string>controls</string>
+				<string>_controls</string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>properties</key>
@@ -57,6 +57,8 @@
 						<string>Controls.ccb</string>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>

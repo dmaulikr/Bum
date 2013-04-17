@@ -18,6 +18,7 @@
 #import "Box2D.h"
 #import "GLES-Render.h"
 #import "EntityManager.h"
+#import "CollisionSystem.h"
 
 @interface GameLayer : CCLayer {
     
@@ -28,6 +29,7 @@
 	GLESDebugDraw *m_debugDraw;		// strong ref
     
     // set from CCB
+    CCNode *boundaries;
     Bum *player;
     
     // entity framework
@@ -40,6 +42,7 @@
     CameraSystem *_cameraSystem;
     ControlsSystem *_controlsSystem;
     ProjectileSystem *_projectileSystem;
+    CollisionSystem *_collisionSystem;
 }
 
 // value set from CCB. this is used to load a physics body that defines the level boundaries.

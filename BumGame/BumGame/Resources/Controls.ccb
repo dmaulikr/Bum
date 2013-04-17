@@ -5,7 +5,7 @@
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
-	<integer>0</integer>
+	<integer>1</integer>
 	<key>currentSequenceId</key>
 	<integer>0</integer>
 	<key>fileType</key>
@@ -57,7 +57,7 @@
 				<key>children</key>
 				<array/>
 				<key>customClass</key>
-				<string></string>
+				<string>GameButton</string>
 				<key>displayName</key>
 				<string>CCSprite</string>
 				<key>memberVarAssignmentName</key>
@@ -139,7 +139,7 @@
 				<key>children</key>
 				<array/>
 				<key>customClass</key>
-				<string></string>
+				<string>GameButton</string>
 				<key>displayName</key>
 				<string>CCSprite</string>
 				<key>memberVarAssignmentName</key>
@@ -222,11 +222,11 @@
 				<key>children</key>
 				<array/>
 				<key>customClass</key>
-				<string></string>
+				<string>GameButton</string>
 				<key>displayName</key>
 				<string>CCSprite</string>
 				<key>memberVarAssignmentName</key>
-				<string>actionButton</string>
+				<string>_actionButton</string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>properties</key>
@@ -239,7 +239,7 @@
 						<key>value</key>
 						<array>
 							<real>97.916664123535156</real>
-							<real>3.125</real>
+							<real>3.4375</real>
 							<integer>4</integer>
 						</array>
 					</dict>
@@ -306,11 +306,11 @@
 				<key>children</key>
 				<array/>
 				<key>customClass</key>
-				<string></string>
+				<string>GameButton</string>
 				<key>displayName</key>
 				<string>CCSprite</string>
 				<key>memberVarAssignmentName</key>
-				<string>jumpButton</string>
+				<string>_jumpButton</string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>properties</key>
@@ -323,7 +323,7 @@
 						<key>value</key>
 						<array>
 							<real>2.0833332538604736</real>
-							<real>3.3854165077209473</real>
+							<real>3.0729165077209473</real>
 							<integer>4</integer>
 						</array>
 					</dict>

@@ -60,13 +60,12 @@ typedef enum CharacterMoveState {
 }
 
 
-//- (void)setHud:(HUDLayer *)hud
-//{
-//    _hud = hud;
-//    _hud.dPad.delegate = self;
-//    _hud.jumpButton.delegate = self;
-//    _hud.runButton.delegate = self;
-//}
+- (void)setInterface:(GameInterface *)interface
+{
+    _interface = interface;
+    _interface.controls.jumpButton.delegate = self;
+    _interface.controls.actionButton.delegate = self;
+}
 
 
 
@@ -165,78 +164,37 @@ typedef enum CharacterMoveState {
 }
 
 
-#pragma mark - Character Actions
+#pragma mark - GameButtonDelegate
 
-- (void)attack
+- (void)gameButtonTouchesBegan:(GameButton *)gameButton
 {
-    NSLog(@"attacking with weapon");
-    WeaponComponent *weapon = _playerEntity.weapon;
-    [_projectileSystem throwProjectileWithWeapon:weapon direction:_direction];
-    
-}
-
-- (void)jump
-{
-    if (!_isJumping && _isTouchingFloor) {
-        _isJumping = YES;
-//        b2Body *body = _playerEntity.render.node.body;
-//        body->ApplyLinearImpulse( b2Vec2(0,PLAYER_JUMP_SPEED), body->GetWorldCenter() );
+    NSLog(@"began");
+    if (gameButton == self.interface.controls.jumpButton) {
+        
     }
 }
 
 
-#pragma mark - GameButtonDelegate
+- (void)gameButtonTouchesEnded:(GameButton *)gameButton
+{
+    NSLog(@"ended");
 
-//- (void)gameButtonTouchesBegan:(GameButton *)gameButton
-//{
-//    if (gameButton == self.hud.runButton) {
-//        _bButtonHoldDuration = 0.f;
-//    }
-//    
-//    if (gameButton == self.hud.jumpButton) {
-//        [self jump];
-//    }
-//    
-//    NSLog(@"began");
-//}
-//
-//
-//- (void)gameButtonTouchesEnded:(GameButton *)gameButton
-//{
-//    NSLog(@"ended");
-//    
-//    if (gameButton == self.hud.runButton && _bButtonHoldDuration > 0.f && _bButtonHoldDuration < HOLD_DURATION_BEFORE_RUNNING) {
-//        [self attack];
-//        _bButtonHoldDuration = 0.f;
-//        return;
-//    }
-//}
-//
-//- (void)gameButtonTouchesDidEnter:(GameButton *)gameButton
-//{
-//    NSLog(@"enter");
-//    
-//    if (gameButton == self.hud.runButton) {
-//        _bButtonHoldDuration = 0.f;
-//    }
-//    
-//    if (gameButton == self.hud.jumpButton) {
-//        [self jump];
-//    }
-//}
-//
-//- (void)gameButtonTouchesDidLeave:(GameButton *)gameButton
-//{
-//    if (gameButton == self.hud.runButton) {
-//        _bButtonHoldDuration = 0.f;
-//    }
-//    NSLog(@"leave");
-//
-//}
-//
-//
-//- (void)gameButtonIsBeingHeld:(GameButton *)gameButton
-//{
-//}
+}
+
+- (void)gameButtonTouchesDidEnter:(GameButton *)gameButton
+{
+    NSLog(@"enter");
+}
+
+- (void)gameButtonTouchesDidLeave:(GameButton *)gameButton
+{
+    NSLog(@"leave");
+
+}
+
+
+- (void)gameButtonIsBeingHeld:(GameButton *)gameButton
+{
+}
 
 @end

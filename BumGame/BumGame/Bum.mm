@@ -21,6 +21,7 @@
 {
     [super didLoadFromCCB];
     self.entity = [self createPlayerEntityWithNode:self];
+    [self scheduleUpdate];
 }
 
 - (Entity *)createPlayerEntityWithNode:(CCNode *)node
@@ -69,6 +70,47 @@
     
     return entity;
 }
+
+
+- (void)update:(ccTime)dt
+{
+    
+}
+
+
+#pragma mark - Character Actions
+
+- (void)attack
+{
+    NSLog(@"attacking with weapon");
+}
+
+- (void)jump
+{
+    if (_isTouchingFloor) {
+        self.body->ApplyLinearImpulse( b2Vec2(0,PLAYER_JUMP_SPEED), self.body->GetWorldCenter() );
+    }
+}
+
+
+#pragma mark - Character Actions
+
+- (void)didBeginContactWithObject:(CCNode *)object
+{
+    NSLog(@"Bum collided with: %@", object);
+    if (object.tag == GameObjectTypeFloor) {
+        _isTouchingFloor = YES;
+    }
+}
+
+
+- (void)didEndContactWithObject:(CCNode *)object
+{
+    if (object.tag == GameObjectTypeFloor) {
+        _isTouchingFloor = NO;
+    }
+}
+
 
 
 @end

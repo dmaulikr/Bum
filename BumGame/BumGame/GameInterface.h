@@ -10,7 +10,9 @@
 #import "GameControls.h"
 
 @interface GameInterface : CCLayer {
-    GameControls *controls;
+    GameControls *_controls;
 }
+
+@property (strong, nonatomic) GameControls *controls;
 
 @end

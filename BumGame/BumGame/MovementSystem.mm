@@ -25,23 +25,6 @@
 
 - (void)update:(float)dt
 {
-    NSArray *moveEntities = [self.entityManager getAllEntitiesPosessingComponentOfClass:[MovementComponent class]];
-    
-//    for (Entity *entity in moveEntities) {
-//        
-//        MovementComponent *move = [entity movement];
-//        RenderComponent *render = [entity render];
-//        
-//        if (!move || !render) continue;
-//        
-//        move.velocity = ccpMult(move.velocity, move.friction);
-//        move.rotationVelocity *= move.friction;
-//        
-//        // get the position from box2d to cocos2d and update the sprite
-//        render.node.position = ccpAdd(render.node.position, move.velocity);
-//        render.node.rotation += move.rotationVelocity;
-//    }
-    
     // update physics sprites in the simulation
     for(b2Body *b = _world->GetBodyList(); b; b=b->GetNext()) {
         if (b->GetUserData() != NULL) {

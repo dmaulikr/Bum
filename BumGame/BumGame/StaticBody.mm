@@ -7,7 +7,7 @@
 //
 
 #import "StaticBody.h"
-
+#import "GB2ShapeCache+Helpers.h"
 
 @implementation StaticBody
 

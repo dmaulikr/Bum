@@ -13,6 +13,7 @@
 #import "ActionComponent.h"
 #import "PlayerComponent.h"
 #import "GB2ShapeCache.h"
+#import "GB2ShapeCache+Helpers.h"
 
 @interface GameLayer () {
     
@@ -43,12 +44,6 @@
     [self createLevelBoundaries];
     
     [self scheduleUpdate];
-}
-
-
-- (void)createEntitySystem
-{
-    _entityManager = [[EntityManager alloc] initWithWorld:_world];
 }
 
 
@@ -115,6 +110,12 @@
 }
 
 
+- (void)createEntitySystem
+{
+    _entityManager = [[EntityManager alloc] initWithWorld:_world];
+}
+
+
 - (void)createGameSystems
 {
     _healthSystem = [[HealthSystem alloc] initWithEntityManager:_entityManager];
@@ -123,11 +124,13 @@
     _cameraSystem = [[CameraSystem alloc] initWithEntityManager:_entityManager layer:self];
     _controlsSystem = [[ControlsSystem alloc] initWithEntityManager:_entityManager];
     _projectileSystem = [[ProjectileSystem alloc] initWithEntityManager:_entityManager];
+    _collisionSystem = [[CollisionSystem alloc] initWithWorld:_world];
     
     // TODO: refactor system into a singleton manager and retrieve by class
     _controlsSystem.projectileSystem = _projectileSystem;
     _projectileSystem.actionSystem = _actionSystem;
 }
+
 
 - (void)createInterface
 {
@@ -137,7 +140,11 @@
                                                                  parentSize:CGSizeMake(s.height, s.width)];
     assert([interface isKindOfClass:[GameInterface class]]);
     [self addChild:interface];
+    
+    // allow controls to manage the interface
+    _controlsSystem.interface = interface;
 }
+
 
 - (void)createLevelBoundaries
 {
@@ -147,10 +154,15 @@
     NSString *shapeName = self.boundaryName;
     if ([[GB2ShapeCache sharedShapeCache] hasBodyNamed:shapeName]) {
         
+        boundaries = [CCNode node];
+        boundaries.tag = GameObjectTypeFloor;
+        [self addChild:boundaries];
+        
         // create a body for physics interactions
         b2BodyDef bodyDef;
         bodyDef.type = b2_staticBody;
         b2Body *body = _world->CreateBody(&bodyDef);
+        body->SetUserData((__bridge void *)boundaries);
         body->SetFixedRotation(YES);
         
         // add the fixture definitions to the body
