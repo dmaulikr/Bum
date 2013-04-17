@@ -14,8 +14,11 @@
     
 }
 
-@property (nonatomic) CGPoint velocity;
-@property (nonatomic) CGFloat rotationVelocity;
-@property (nonatomic) CGFloat friction;
+@property (nonatomic) CGPoint direction;
+@property (nonatomic) CGPoint target;
+@property (nonatomic) CGPoint speed;
+@property (nonatomic) CGPoint acceleration;
+
+- (id)initWithDirection:(CGPoint)direction target:(CGPoint)target speed:(CGPoint)speed acceleration:(CGPoint)accel;
 
 @end

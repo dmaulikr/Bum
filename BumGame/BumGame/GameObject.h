@@ -12,6 +12,9 @@
 #import "EntityManager.h"
 #import "GB2ShapeCache.h"
 
+
+// This is the base class for all dynamic objects in the game. Its responsible
+// for creating the physics body and stub methods for responding to collisions.
 @interface GameObject : CCSprite {
 }
 

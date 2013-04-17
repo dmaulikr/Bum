@@ -18,4 +18,7 @@
 
 @property (nonatomic,readonly) CCSprite *sprite;
 
+- (void)action;
+- (void)jump;
+
 @end

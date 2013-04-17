@@ -11,5 +11,15 @@
 
 @implementation MovementComponent
 
+- (id)initWithDirection:(CGPoint)direction target:(CGPoint)target speed:(CGPoint)speed acceleration:(CGPoint)accel
+{
+    if (self = [super init]) {
+        _direction = direction;
+        _target = target;
+        _speed = speed;
+        _acceleration = accel;
+    }
+    return self;
+}
 
 @end

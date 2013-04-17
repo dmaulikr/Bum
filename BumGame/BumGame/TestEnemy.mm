@@ -13,6 +13,7 @@
 - (void)didLoadFromCCB
 {
     [super didLoadFromCCB];
+    self.tag = GameObjectTypeEnemy;
 }
 
 @end

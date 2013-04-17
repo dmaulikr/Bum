@@ -12,10 +12,13 @@
 
 @class ProjectileSystem;
 @class ActionSystem;
+@class Bum;
 @interface ControlsSystem : System <GameButtonDelegate>
 
-@property (nonatomic, unsafe_unretained) Entity *playerEntity;
+@property (nonatomic, unsafe_unretained) Bum *player;
 @property (nonatomic, unsafe_unretained) GameInterface *interface;
 @property (nonatomic, unsafe_unretained) ProjectileSystem *projectileSystem;
+
+- (id)initWithEntityManager:(EntityManager *)entityManager player:(Bum *)player;
 
 @end

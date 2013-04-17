@@ -36,6 +36,8 @@
 
 - (void)didLoadFromCCB
 {
+    assert(player != nil);
+    
     [self initPhysics];
     
     [self createEntitySystem];
@@ -57,7 +59,7 @@
     NSLog(@"Level dimensions: %@", NSStringFromCGSize(_level.contentSize));
 	
 	b2Vec2 gravity;
-	gravity.Set(0.0f, -10.0f);
+	gravity.Set(0.0f, -30.0f);
 	_world = new b2World(gravity);
 	
 	// Do we want to let bodies sleep?
@@ -122,7 +124,7 @@
     _movementSystem = [[MovementSystem alloc] initWithEntityManager:_entityManager world:_world];
     _actionSystem = [[ActionSystem alloc] initWithEntityManager:_entityManager];
     _cameraSystem = [[CameraSystem alloc] initWithEntityManager:_entityManager layer:self];
-    _controlsSystem = [[ControlsSystem alloc] initWithEntityManager:_entityManager];
+    _controlsSystem = [[ControlsSystem alloc] initWithEntityManager:_entityManager player:player];
     _projectileSystem = [[ProjectileSystem alloc] initWithEntityManager:_entityManager];
     _collisionSystem = [[CollisionSystem alloc] initWithWorld:_world];
     

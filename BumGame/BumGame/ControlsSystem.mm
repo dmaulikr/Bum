@@ -15,6 +15,7 @@
 #import "ProjectileComponent.h"
 #import "ProjectileSystem.h"
 #import "ActionSystem.h"
+#import "Bum.h"
 
 #define WALK_ACCELERATION 4.f
 #define RUN_ACCELERATION 8.f
@@ -25,22 +26,9 @@
 
 #define HOLD_DURATION_BEFORE_RUNNING .33f
 
-typedef enum CharacterDirection {
-    CharacterDirectionNone = 0,
-    CharacterDirectionLeft,
-    CharacterDirectionRight
-} CharacterDirection;
-
-typedef enum CharacterMoveState {
-    CharacterMoveStateIdle = 0,
-    CharacterMoveStateWalking,
-    CharacterMoveStateRunning
-} CharacterMoveState;
 
 @interface ControlsSystem () {
     CGPoint _direction;
-    CharacterDirection _characterDirection;
-    CharacterMoveState _moveState;
     float _bButtonHoldDuration;
     BOOL _isTouchingFloor;
     BOOL _isJumping;
@@ -50,10 +38,10 @@ typedef enum CharacterMoveState {
 
 @implementation ControlsSystem
 
-- (id)init
+- (id)initWithEntityManager:(EntityManager *)entityManager player:(Bum *)player
 {
-    if (self = [super init]) {
-        _characterDirection = CharacterDirectionRight;
+    if (self = [super initWithEntityManager:entityManager]) {
+        _player = player;
         _isTouchingFloor = YES;
     }
     return self;
@@ -125,70 +113,34 @@ typedef enum CharacterMoveState {
 }
 
 
-#pragma mark - Character Movement
-
-- (void)walkWithDirection:(CGPoint)direction
-{
-    _moveState = CharacterMoveStateWalking;
-    _playerEntity.action.movementState = MovementStateWalk;
-    [self setDirection:direction];
-}
-
-
-- (void)runWithDirection:(CGPoint)direction
-{
-    _moveState = CharacterMoveStateRunning;
-    _playerEntity.action.movementState = MovementStateRun;
-    [self setDirection:direction];
-}
-
-- (void)setDirection:(CGPoint)direction
-{
-    _direction = direction;
-    
-    if (CGPointEqualToPoint(direction, CGPointZero)) {
-        _characterDirection = CharacterDirectionNone;
-    }
-    else if (direction.x >= 0) {
-        _characterDirection = CharacterDirectionRight;
-        if (_playerEntity.render.node.scaleX < 0.0) {
-            _playerEntity.render.node.scaleX *= -1.0;
-        }
-    }
-    else {
-        _characterDirection = CharacterDirectionLeft;
-        if (_playerEntity.render.node.scaleX > 0.0) {
-            _playerEntity.render.node.scaleX *= -1.0;
-        }
-    }
-}
-
-
 #pragma mark - GameButtonDelegate
 
 - (void)gameButtonTouchesBegan:(GameButton *)gameButton
 {
-    NSLog(@"began");
+//    NSLog(@"began");
     if (gameButton == self.interface.controls.jumpButton) {
-        
+        [_player jump];
+    }
+    if (gameButton == self.interface.controls.actionButton) {
+        [_player action];
     }
 }
 
 
 - (void)gameButtonTouchesEnded:(GameButton *)gameButton
 {
-    NSLog(@"ended");
+//    NSLog(@"ended");
 
 }
 
 - (void)gameButtonTouchesDidEnter:(GameButton *)gameButton
 {
-    NSLog(@"enter");
+//    NSLog(@"enter");
 }
 
 - (void)gameButtonTouchesDidLeave:(GameButton *)gameButton
 {
-    NSLog(@"leave");
+//    NSLog(@"leave");
 
 }
 
