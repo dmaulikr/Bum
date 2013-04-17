@@ -52,11 +52,22 @@
 - (void)initPhysics
 {
     // add shapes from PhysicsEditor
-    [[GB2ShapeCache sharedShapeCache]  addShapesWithFile:@"gameobjects-physics.plist"];
+    [[GB2ShapeCache sharedShapeCache] addShapesWithFile:@"gameobjects-physics.plist"];
     
     // create world
-	CGSize s = _level.contentSize;
-    NSLog(@"Level dimensions: %@", NSStringFromCGSize(_level.contentSize));
+    CGSize s = _level.contentSize;
+    
+    // here we adjust the size of the world to compensate for the scaling
+    // automatically done by CocosBuilder. because all levels are designed to
+    // ipad size in mind (because its the largest image size) we need to maintain
+    // a common size for the physics simulation no matter the resolution. since
+    // CocosBuilder will automatically scale down our level size to match the resolution,
+    // we need to double the world size to match the scaling down of content.
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
+        s.width  *= 2;
+        s.height  *= 2;
+    }
+    NSLog(@"Level dimensions: %@", NSStringFromCGSize(s));
 	
 	b2Vec2 gravity;
 	gravity.Set(0.0f, -30.0f);
@@ -90,25 +101,21 @@
 	// Define the ground box shape.
 	b2EdgeShape groundBox;
 	
-    //wall definitions
-	groundBox.Set(b2Vec2(0,0), b2Vec2(s.width/PTM_RATIO, 0));
+	// bottom
+	groundBox.Set(b2Vec2(0,0), b2Vec2(s.width/PTM_RATIO,0));
 	groundBody->CreateFixture(&groundBox,0);
-    
-//	// bottom
-//	groundBox.Set(b2Vec2(0,0), b2Vec2(s.width/PTM_RATIO,0));
-//	groundBody->CreateFixture(&groundBox,0);
-//	
-//	// top
+	
+	// top
 //	groundBox.Set(b2Vec2(0,s.height/PTM_RATIO), b2Vec2(s.width/PTM_RATIO,s.height/PTM_RATIO));
 //	groundBody->CreateFixture(&groundBox,0);
-//	
-//	// left
-//	groundBox.Set(b2Vec2(0,s.height/PTM_RATIO), b2Vec2(0,0));
-//	groundBody->CreateFixture(&groundBox,0);
-//	
-//	// right
-//	groundBox.Set(b2Vec2(s.width/PTM_RATIO,s.height/PTM_RATIO), b2Vec2(s.width/PTM_RATIO,0));
-//	groundBody->CreateFixture(&groundBox,0);
+	
+	// left
+	groundBox.Set(b2Vec2(0,s.height/PTM_RATIO), b2Vec2(0,0));
+	groundBody->CreateFixture(&groundBox,0);
+	
+	// right
+	groundBox.Set(b2Vec2(s.width/PTM_RATIO,s.height/PTM_RATIO), b2Vec2(s.width/PTM_RATIO,0));
+	groundBody->CreateFixture(&groundBox,0);
 }
 
 
@@ -123,7 +130,7 @@
     _healthSystem = [[HealthSystem alloc] initWithEntityManager:_entityManager];
     _movementSystem = [[MovementSystem alloc] initWithEntityManager:_entityManager world:_world];
     _actionSystem = [[ActionSystem alloc] initWithEntityManager:_entityManager];
-    _cameraSystem = [[CameraSystem alloc] initWithEntityManager:_entityManager layer:self];
+    _cameraSystem = [[CameraSystem alloc] initWithEntityManager:_entityManager layer:_level];
     _controlsSystem = [[ControlsSystem alloc] initWithEntityManager:_entityManager player:player];
     _projectileSystem = [[ProjectileSystem alloc] initWithEntityManager:_entityManager];
     _collisionSystem = [[CollisionSystem alloc] initWithWorld:_world];
@@ -183,7 +190,6 @@
 	[super draw];
 	
 	ccGLEnableVertexAttribs( kCCVertexAttribFlag_Position );
-	
 	kmGLPushMatrix();
 	
 	_world->DrawDebugData();
@@ -220,6 +226,7 @@
     [_controlsSystem update:dt];
     
     [_actionSystem update:dt];
+    
     [_cameraSystem update:dt];
 }
 

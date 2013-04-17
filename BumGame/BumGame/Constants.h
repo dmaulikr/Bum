@@ -57,3 +57,23 @@ typedef struct _BoundingBox {
 #define PLAYER_WALK_SPEED 7.5f
 #define PLAYER_RUN_SPEED 15.f
 #define PLAYER_JUMP_SPEED 500.f
+
+
+// 5 - positioning
+// these helper macros are used to correct positionnig between ipad/iphone
+/*  DETERMINE THE DEVICE USED  */
+#ifdef UI_USER_INTERFACE_IDIOM()
+#define IS_IPAD() (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#else
+#define IS_IPAD() (NO)
+#endif
+
+#define ADJUST_CCP(__p__)       \
+(IS_IPAD() == NO ?             \
+ccp( __p__.x / 2, __p__.y / 2 ) : \
+__p__)
+
+#define REVERSE_CCP(__p__)      \
+(IS_IPAD() == YES ?             \
+ccp( ( __p__.x - kXoffsetiPad ) / 2, ( __p__.y - kYoffsetiPad ) / 2 ) : \
+__p__)

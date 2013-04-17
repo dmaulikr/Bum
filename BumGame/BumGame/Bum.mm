@@ -30,7 +30,6 @@ typedef enum CharacterMoveState {
 @interface Bum () {
     CharacterDirection _characterDirection;
     CharacterMoveState _moveState;
-    BOOL _isJumping;
 }
 
 @end
@@ -58,7 +57,7 @@ typedef enum CharacterMoveState {
     [self.manager addComponent:[[PlayerComponent alloc] init] toEntity:entity];
     [self.manager addComponent:[[MovementComponent alloc] initWithDirection:CGPointMake(1.f, 0.f)
                                                                      target:CGPointZero
-                                                                      speed:CGPointMake(1.f, 0.f)
+                                                                      speed:CGPointMake(PLAYER_WALK_SPEED, 0.f)
                                                                acceleration:CGPointMake(.7f, .7f)]
                       toEntity:entity];
     
@@ -138,6 +137,16 @@ typedef enum CharacterMoveState {
 
 #pragma mark - Character Actions
 
+- (void)turnLeft
+{
+    
+}
+
+- (void)turnRight
+{
+    
+}
+
 - (void)action
 {
     NSLog(@"performing amazing bum action!");
@@ -145,9 +154,8 @@ typedef enum CharacterMoveState {
 
 - (void)jump
 {
-    if (_isTouchingFloor && !_isJumping) {
+    if (_isTouchingFloor) {
         NSLog(@"jumping");
-        _isJumping = YES;
         self.body->ApplyLinearImpulse( b2Vec2(0,PLAYER_JUMP_SPEED), self.body->GetWorldCenter() );
     }
 }
@@ -161,17 +169,17 @@ typedef enum CharacterMoveState {
     
     // floor contact
     if (object.tag == GameObjectTypeFloor) {
+        NSLog(@"touched floor");
         _isTouchingFloor = YES;
-        _isJumping = NO;
     }
 }
 
 
 - (void)didEndContactWithObject:(CCNode *)object
 {
-    
     // floor contact
     if (object.tag == GameObjectTypeFloor) {
+        NSLog(@"left floor");
         _isTouchingFloor = NO;
     }
 }
