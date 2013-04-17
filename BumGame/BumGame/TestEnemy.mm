@@ -10,4 +10,9 @@
 
 @implementation TestEnemy
 
+- (void)didLoadFromCCB
+{
+    [super didLoadFromCCB];
+}
+
 @end

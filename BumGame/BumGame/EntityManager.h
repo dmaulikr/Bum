@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Box2D.h"
 
 @class Component;
 @class Entity;
@@ -22,5 +23,12 @@
 
 - (Component *)getComponentOfClass:(Class)klass forEntity:(Entity *)entity;
 - (NSArray *)getAllEntitiesPosessingComponentOfClass:(Class)klass;
+
+
+@property (unsafe_unretained, nonatomic) b2World *world;
+
+- (id)initWithWorld:(b2World *)world;
+
++ (EntityManager *)sharedManager;
 
 @end

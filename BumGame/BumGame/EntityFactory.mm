@@ -17,6 +17,7 @@
 #import "WeaponComponent.h"
 #import "ProjectileComponent.h"
 #import "GB2ShapeCache.h"
+#import "Bum.h"
 
 @implementation EntityFactory {
     EntityManager * _entityManager;
@@ -32,66 +33,18 @@
         _entityManager = entityManager;
         _layer = layer;
         _world = world;
+        
+        factory = self;
     }
     return self;
 }
 
-
-- (Entity *)createPlayerWithNode:(CCNode *)node
+- (Entity *)entityForObjectNode:(CCNode *)node
 {
-    Entity * entity = [_entityManager createEntity];
-    NSLog(@"bum size: %@", NSStringFromCGSize(node.contentSize));
-    // create a body for the sprite
-    CGPoint p = node.position;
-    
-    // bum
-    [_entityManager addComponent:[[RenderComponent alloc] initWithNode:node] toEntity:entity];
-    
-    // create the player with a default weapon
-    PlayerComponent *player = [[PlayerComponent alloc] init];
-    [_entityManager addComponent:player toEntity:entity];
-    
-    b2BodyDef bodyDef;
-    bodyDef.type = b2_dynamicBody;
-    
-    bodyDef.position.Set(p.x/PTM_RATIO, p.y/PTM_RATIO);
-    bodyDef.userData = (__bridge void *)node;
-    b2Body *body = _world->CreateBody(&bodyDef);
-    body->SetFixedRotation(YES);
-    
-    // add the fixture definitions to the body
-    [[GB2ShapeCache sharedShapeCache] addFixturesToBody:body forShapeName:@"bum"];
-    [node setAnchorPoint:[[GB2ShapeCache sharedShapeCache] anchorPointForShape:@"bum"]];
-
-    // weapon
-//    LHSprite *weaponSprite = [CCBReader nodeGraphFromFile:@"cat"];
-//    WeaponComponent *catWeapon = [[WeaponComponent alloc] initWithSprite:weaponSprite
-//                                                                   range:100.f
-//                                                                  damage:10.f
-//                                                            areaOfEffect:NO];
-//    catWeapon.animationDuration = .25f;
-//    catWeapon.fireRate = .25;
-//    catWeapon.projectileName = @"cat";
-//    weaponSprite.position = ccp(sprite.boundingBox.size.width * catWeapon.weaponPosition.x,
-//                                sprite.boundingBox.size.height * catWeapon.weaponPosition.y);
-//    [_entityManager addComponent:catWeapon toEntity:entity];
-    
-    // Animation Actions
-    ActionComponent *actionComp = [[ActionComponent alloc] initWithMovementState:MovementStateIdle];
-    actionComp.runAnimation = @"run";
-    actionComp.walkAnimation = @"walk";
-    actionComp.idleAnimation = @"idle";
-    actionComp.attackAnimation = @"throw";
-    actionComp.spriteSheet = @"sprites";
-    [_entityManager addComponent:actionComp toEntity:entity];
-    
-    // Movement
-    MovementComponent *movement = [[MovementComponent alloc] init];
-    [_entityManager addComponent:movement toEntity:entity];
-    
-    // resources
-    [_entityManager addComponent:[[HealthComponent alloc] initWithCurrentHP:200 maxHP:200] toEntity:entity];
-    
+    Entity *entity;
+    if ([node isKindOfClass:[Bum class]]) {
+        entity = [self createPlayerEntityWithNode:node];
+    }
     return entity;
 }
 
@@ -129,5 +82,12 @@
 //    [_entityManager addComponent:[[HealthComponent alloc] initWithCurrentHP:200 maxHP:200] toEntity:entity];
 //    return entity;
 //}
+
+static EntityFactory *factory;
+
++ (EntityFactory *)sharedFactory
+{
+    return factory;
+}
 
 @end

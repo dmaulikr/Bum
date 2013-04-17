@@ -23,10 +23,15 @@
 
 @property (strong, readonly) CCLayer *layer;
 
-- (Entity *)createPlayerWithNode:(CCNode *)node;
+
+- (Entity *)entityForObjectNode:(CCNode *)node;
+
+- (Entity *)createPlayerEntityWithNode:(CCNode *)node;
 
 //- (Entity *)createBulletWithName:(NSString *)name;
 //
 //- (Entity *)createAIPlayer;
+
++ (EntityFactory *)sharedFactory;
 
 @end

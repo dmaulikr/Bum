@@ -8,7 +8,15 @@
 
 #import <Foundation/Foundation.h>
 #import "Component.h"
+#import "Entity.h"
+#import "EntityManager.h"
 
-@interface GameObject : CCNode
+@interface GameObject : CCNode {
+}
+
+@property (unsafe_unretained, nonatomic) Entity *entity;
+@property (unsafe_unretained, nonatomic) EntityManager *manager;
+
+- (void)didLoadFromCCB;
 
 @end

@@ -76,12 +76,12 @@
 		777048A2171DB38000EFB883 /* ProjectileSystem.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7770488B171DB37B00EFB883 /* ProjectileSystem.mm */; };
 		777048A3171DB38000EFB883 /* Entity.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7770488D171DB37D00EFB883 /* Entity.mm */; };
 		777048A4171DB38000EFB883 /* Entity+Helpers.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7770488F171DB37E00EFB883 /* Entity+Helpers.mm */; };
-		777048A5171DB38000EFB883 /* EntityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77704891171DB37F00EFB883 /* EntityManager.m */; };
+		777048A5171DB38000EFB883 /* EntityManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77704891171DB37F00EFB883 /* EntityManager.mm */; };
 		777048A6171DB38000EFB883 /* EntityFactory.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77704893171DB38000EFB883 /* EntityFactory.mm */; };
 		77AF3EC0171DB64600C4AD10 /* GameButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AF3EBF171DB64600C4AD10 /* GameButton.m */; };
 		77AF3EC3171DDA5D00C4AD10 /* GB2ShapeCache.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77AF3EC2171DDA5D00C4AD10 /* GB2ShapeCache.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		77AF3EC5171DDCE600C4AD10 /* gameobjects-physics.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77AF3EC4171DDCE600C4AD10 /* gameobjects-physics.plist */; };
-		77AF3EC8171DE6FB00C4AD10 /* TestEnemy.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AF3EC7171DE6FB00C4AD10 /* TestEnemy.m */; };
+		77AF3EC8171DE6FB00C4AD10 /* TestEnemy.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77AF3EC7171DE6FB00C4AD10 /* TestEnemy.mm */; };
 		77B1D463171B66E1003D991A /* Interface.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 77B1D462171B66E1003D991A /* Interface.ccbi */; };
 		77B1D465171B72E3003D991A /* Enemy.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 77B1D464171B72E3003D991A /* Enemy.ccbi */; };
 		77B1D46A171B78C6003D991A /* gameobjects-ipadhd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77B1D466171B78C6003D991A /* gameobjects-ipadhd.plist */; };
@@ -252,8 +252,8 @@
 		77CCED8F171A730A00BF2BE3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77CCED8E171A730900BF2BE3 /* Default-568h@2x.png */; };
 		77CCED91171A73BF00BF2BE3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77CCED90171A73BF00BF2BE3 /* Default@2x.png */; };
 		77CCED95171A759C00BF2BE3 /* Floor.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CCED94171A759C00BF2BE3 /* Floor.m */; };
-		77CCED9F171A793C00BF2BE3 /* GameObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CCED9E171A793C00BF2BE3 /* GameObject.m */; };
-		77CCEDA2171A7B8E00BF2BE3 /* Bum.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CCEDA1171A7B8D00BF2BE3 /* Bum.m */; };
+		77CCED9F171A793C00BF2BE3 /* GameObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77CCED9E171A793C00BF2BE3 /* GameObject.mm */; };
+		77CCEDA2171A7B8E00BF2BE3 /* Bum.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77CCEDA1171A7B8D00BF2BE3 /* Bum.mm */; };
 		77CCEDBB171B080900BF2BE3 /* level0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77CCEDB9171B080900BF2BE3 /* level0.plist */; };
 		77CCEDBC171B080900BF2BE3 /* level0.png in Resources */ = {isa = PBXBuildFile; fileRef = 77CCEDBA171B080900BF2BE3 /* level0.png */; };
 /* End PBXBuildFile section */
@@ -397,7 +397,7 @@
 		7770488E171DB37D00EFB883 /* Entity+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Entity+Helpers.h"; sourceTree = "<group>"; };
 		7770488F171DB37E00EFB883 /* Entity+Helpers.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "Entity+Helpers.mm"; sourceTree = "<group>"; };
 		77704890171DB37E00EFB883 /* EntityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntityManager.h; sourceTree = "<group>"; };
-		77704891171DB37F00EFB883 /* EntityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntityManager.m; sourceTree = "<group>"; };
+		77704891171DB37F00EFB883 /* EntityManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EntityManager.mm; sourceTree = "<group>"; };
 		77704892171DB37F00EFB883 /* EntityFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntityFactory.h; sourceTree = "<group>"; };
 		77704893171DB38000EFB883 /* EntityFactory.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EntityFactory.mm; sourceTree = "<group>"; };
 		77AF3EBE171DB64600C4AD10 /* GameButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameButton.h; sourceTree = "<group>"; };
@@ -406,7 +406,7 @@
 		77AF3EC2171DDA5D00C4AD10 /* GB2ShapeCache.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GB2ShapeCache.mm; sourceTree = "<group>"; };
 		77AF3EC4171DDCE600C4AD10 /* gameobjects-physics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "gameobjects-physics.plist"; path = "Resources/gameobjects-physics.plist"; sourceTree = "<group>"; };
 		77AF3EC6171DE6FB00C4AD10 /* TestEnemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestEnemy.h; sourceTree = "<group>"; };
-		77AF3EC7171DE6FB00C4AD10 /* TestEnemy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestEnemy.m; sourceTree = "<group>"; };
+		77AF3EC7171DE6FB00C4AD10 /* TestEnemy.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TestEnemy.mm; sourceTree = "<group>"; };
 		77B1D462171B66E1003D991A /* Interface.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = Interface.ccbi; path = Resources/Interface.ccbi; sourceTree = "<group>"; };
 		77B1D464171B72E3003D991A /* Enemy.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = Enemy.ccbi; path = Resources/Enemy.ccbi; sourceTree = "<group>"; };
 		77B1D466171B78C6003D991A /* gameobjects-ipadhd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "gameobjects-ipadhd.plist"; path = "Resources/gameobjects-ipadhd.plist"; sourceTree = "<group>"; };
@@ -752,9 +752,9 @@
 		77CCED93171A759C00BF2BE3 /* Floor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Floor.h; sourceTree = "<group>"; };
 		77CCED94171A759C00BF2BE3 /* Floor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Floor.m; sourceTree = "<group>"; };
 		77CCED9D171A793C00BF2BE3 /* GameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObject.h; sourceTree = "<group>"; };
-		77CCED9E171A793C00BF2BE3 /* GameObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameObject.m; sourceTree = "<group>"; };
+		77CCED9E171A793C00BF2BE3 /* GameObject.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameObject.mm; sourceTree = "<group>"; };
 		77CCEDA0171A7B8D00BF2BE3 /* Bum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bum.h; sourceTree = "<group>"; };
-		77CCEDA1171A7B8D00BF2BE3 /* Bum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bum.m; sourceTree = "<group>"; };
+		77CCEDA1171A7B8D00BF2BE3 /* Bum.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Bum.mm; sourceTree = "<group>"; };
 		77CCEDB9171B080900BF2BE3 /* level0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = level0.plist; path = Resources/level0.plist; sourceTree = "<group>"; };
 		77CCEDBA171B080900BF2BE3 /* level0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = level0.png; path = Resources/level0.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1628,13 +1628,13 @@
 			isa = PBXGroup;
 			children = (
 				77CCED9D171A793C00BF2BE3 /* GameObject.h */,
-				77CCED9E171A793C00BF2BE3 /* GameObject.m */,
+				77CCED9E171A793C00BF2BE3 /* GameObject.mm */,
 				77CCED93171A759C00BF2BE3 /* Floor.h */,
 				77CCED94171A759C00BF2BE3 /* Floor.m */,
 				77CCEDA0171A7B8D00BF2BE3 /* Bum.h */,
-				77CCEDA1171A7B8D00BF2BE3 /* Bum.m */,
+				77CCEDA1171A7B8D00BF2BE3 /* Bum.mm */,
 				77AF3EC6171DE6FB00C4AD10 /* TestEnemy.h */,
-				77AF3EC7171DE6FB00C4AD10 /* TestEnemy.m */,
+				77AF3EC7171DE6FB00C4AD10 /* TestEnemy.mm */,
 			);
 			name = "Game Objects";
 			sourceTree = "<group>";
@@ -1649,7 +1649,7 @@
 				7770488E171DB37D00EFB883 /* Entity+Helpers.h */,
 				7770488F171DB37E00EFB883 /* Entity+Helpers.mm */,
 				77704890171DB37E00EFB883 /* EntityManager.h */,
-				77704891171DB37F00EFB883 /* EntityManager.m */,
+				77704891171DB37F00EFB883 /* EntityManager.mm */,
 				77704892171DB37F00EFB883 /* EntityFactory.h */,
 				77704893171DB38000EFB883 /* EntityFactory.mm */,
 			);
@@ -1892,8 +1892,8 @@
 				77CCED76171A177900BF2BE3 /* GameLayer.mm in Sources */,
 				77CCED7E171A24D900BF2BE3 /* LevelZero.m in Sources */,
 				77CCED95171A759C00BF2BE3 /* Floor.m in Sources */,
-				77CCED9F171A793C00BF2BE3 /* GameObject.m in Sources */,
-				77CCEDA2171A7B8E00BF2BE3 /* Bum.m in Sources */,
+				77CCED9F171A793C00BF2BE3 /* GameObject.mm in Sources */,
+				77CCEDA2171A7B8E00BF2BE3 /* Bum.mm in Sources */,
 				77704581171DA90600EFB883 /* GameInterface.m in Sources */,
 				77704584171DA96600EFB883 /* GameControls.m in Sources */,
 				7770482D171DAC6800EFB883 /* b2BroadPhase.cpp in Sources */,
@@ -1960,11 +1960,11 @@
 				777048A2171DB38000EFB883 /* ProjectileSystem.mm in Sources */,
 				777048A3171DB38000EFB883 /* Entity.mm in Sources */,
 				777048A4171DB38000EFB883 /* Entity+Helpers.mm in Sources */,
-				777048A5171DB38000EFB883 /* EntityManager.m in Sources */,
+				777048A5171DB38000EFB883 /* EntityManager.mm in Sources */,
 				777048A6171DB38000EFB883 /* EntityFactory.mm in Sources */,
 				77AF3EC0171DB64600C4AD10 /* GameButton.m in Sources */,
 				77AF3EC3171DDA5D00C4AD10 /* GB2ShapeCache.mm in Sources */,
-				77AF3EC8171DE6FB00C4AD10 /* TestEnemy.m in Sources */,
+				77AF3EC8171DE6FB00C4AD10 /* TestEnemy.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

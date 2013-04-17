@@ -17,12 +17,28 @@
 }
 
 
+static EntityManager *manager;
++ (EntityManager *)sharedManager
+{
+    return manager;
+}
+
+- (id)initWithWorld:(b2World *)world
+{
+    if (self = [self init]) {
+        _world = world;
+    }
+    return self;
+}
+
 - (id)init
 {
     if (self = [super init]) {
         _entities = [NSMutableArray array];
         _componentsByClass = [NSMutableDictionary dictionary];
         _lowestUnassignedEid = 1;
+        
+        manager = self;
     }
     return self;
 }

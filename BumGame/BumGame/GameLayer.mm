@@ -67,16 +67,15 @@
     
     [self createEntitySystem];
     [self createGameSystems];
-    [self createControls];
+    [self createInterface];
     
-    [self initPlayer];
     [self scheduleUpdate];
 }
 
 
 - (void)createEntitySystem
 {
-    _entityManager = [[EntityManager alloc] init];
+    _entityManager = [[EntityManager alloc] initWithWorld:_world];
     _entityFactory = [[EntityFactory alloc] initWithEntityManager:_entityManager layer:self world:_world];
 }
 
@@ -144,12 +143,6 @@
 }
 
 
-- (void)initPlayer
-{
-    [_entityFactory createPlayerWithNode:player];
-}
-
-
 - (void)createGameSystems
 {
     _healthSystem = [[HealthSystem alloc] initWithEntityManager:_entityManager entityFactory:_entityFactory];
@@ -164,7 +157,7 @@
     _projectileSystem.actionSystem = _actionSystem;
 }
 
-- (void)createControls
+- (void)createInterface
 {
     CGSize s = [[CCDirector sharedDirector] winSize];
     GameInterface *interface = (GameInterface *)[CCBReader nodeGraphFromFile:@"Interface.ccbi"
