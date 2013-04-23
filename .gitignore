@@ -13,3 +13,21 @@ build/*
 xcuserdata
 profile
 *.moved-aside
+
+# Unity3D .gitignore file.
+#	 Store this file at the root of your local repository.
+.DS_Store
+BumUnity/Library/AssetImportState
+BumUnity/Library/AssetServerCacheV3
+BumUnity/Library/FailedAssetImports.txt
+BumUnity/Library/ScriptAssemblies
+BumUnity/Library/ScriptMapper
+BumUnity/Library/assetDatabase3
+BumUnity/Library/cache
+BumUnity/Library/expandedItems
+BumUnity/Library/metadata
+BumUnity/Library/previews
+BumUnity/Library/guidmapper
+BumUnity/Temp
+*.pidb
+BumUnity/Build

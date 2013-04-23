@@ -77,7 +77,12 @@
 	_world->SetAllowSleeping(true);
 	_world->SetContinuousPhysics(true);
 	
-	m_debugDraw = new GLESDebugDraw( PTM_RATIO );
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
+        m_debugDraw = new GLESDebugDraw( PTM_RATIO / 2 );
+    }
+    else {
+        m_debugDraw = new GLESDebugDraw( PTM_RATIO );
+    }
 	_world->SetDebugDraw(m_debugDraw);
 	
 	uint32 flags = 0;

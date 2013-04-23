@@ -178,22 +178,27 @@
 						<key>polygons</key>
 						<array>
 							<array>	
-								<string>{ 0.000,226.000 }</string>	
-								<string>{ -1.000,-1.000 }</string>	
-								<string>{ 5603.000,-22.000 }</string>	
-								<string>{ 2684.000,237.000 }</string>	
-								<string>{ 1012.000,269.000 }</string>
+								<string>{ 1040.000,369.000 }</string>	
+								<string>{ 971.000,259.000 }</string>	
+								<string>{ 1432.000,253.000 }</string>	
+								<string>{ 1350.000,366.000 }</string>
 							</array>
 							<array>	
-								<string>{ 1302.000,382.000 }</string>	
-								<string>{ 1012.000,269.000 }</string>	
-								<string>{ 2684.000,237.000 }</string>	
-								<string>{ 1622.000,381.000 }</string>
+								<string>{ 0.000,226.000 }</string>	
+								<string>{ -1.000,-1.000 }</string>	
+								<string>{ 1432.000,253.000 }</string>	
+								<string>{ 971.000,259.000 }</string>
 							</array>
 							<array>	
 								<string>{ 5645.000,271.000 }</string>	
-								<string>{ 2684.000,237.000 }</string>	
+								<string>{ 2888.000,249.000 }</string>	
+								<string>{ -1.000,-1.000 }</string>	
 								<string>{ 5603.000,-22.000 }</string>
+							</array>
+							<array>	
+								<string>{ 2888.000,249.000 }</string>	
+								<string>{ 1432.000,253.000 }</string>	
+								<string>{ -1.000,-1.000 }</string>
 							</array>
 						</array>
                     </dict>
