@@ -44,33 +44,93 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Orthello\Standard Assets\Editor\OTAssetPostProcessor.cs" />
-     <Compile Include="Assets\Orthello\Standard Assets\Editor\OTPrefabBreaker.cs" />
-     <None Include="Assets\Orthello\Examples\0 - Simple Examples\TextSprites\lorem.txt" />
-     <None Include="Assets\Orthello\Examples\0 - Simple Examples\TextSprites\Atlases\russian.txt" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\Camera\tk2dCameraEditor.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\Fonts\tk2dFontBuilder.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\Fonts\tk2dFontEditor.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\Fonts\tk2dTextMeshEditor.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\Runtime\tk2dResourceEditor.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\Runtime\tk2dSystemUtility.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\Sprites\Atlas\tk2dAtlasBuilder.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\Sprites\Atlas\tk2dAtlasRect.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\Sprites\Atlas\tk2dMaxRectsBinPack.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\Sprites\SpriteAnimationEditor\tk2dSpriteAnimationAnimOp.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\Sprites\SpriteAnimationEditor\tk2dSpriteAnimationClipEditor.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\Sprites\SpriteAnimationEditor\tk2dSpriteAnimationClipTimelineEditor.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\Sprites\SpriteAnimationEditor\tk2dSpriteAnimationEditor.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\Sprites\SpriteAnimationEditor\tk2dSpriteAnimationEditorPopup.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\Sprites\SpriteAnimationEditor\tk2dSpriteAnimationPreview.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\Sprites\SpriteCollectionEditor\tk2dSpriteCollectionEditor.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\Sprites\SpriteCollectionEditor\tk2dSpriteCollectionEditorFontView.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\Sprites\SpriteCollectionEditor\tk2dSpriteCollectionEditorPopup.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\Sprites\SpriteCollectionEditor\tk2dSpriteCollectionEditorProxy.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\Sprites\SpriteCollectionEditor\tk2dSpriteCollectionEditorSettingsView.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\Sprites\SpriteCollectionEditor\tk2dSpriteCollectionEditorSpriteSheetView.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\Sprites\SpriteCollectionEditor\tk2dSpriteCollectionEditorSpriteView.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\Sprites\SpriteCollectionEditor\tk2dSpriteCollectionEditorTextureView.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\Sprites\SpritePicker\tk2dSpritePickerPopup.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\Sprites\TextureProcessing\tk2dFloydSteinbergDithering.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\Sprites\Triangulator\tk2dTriangulator.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\Sprites\tk2dAnimatedSpriteEditor.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\Sprites\tk2dClippedSpriteEditor.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\Sprites\tk2dSlicedSpriteEditor.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\Sprites\tk2dSpriteCollectionBuilder.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\Sprites\tk2dSpriteCollectionBuilderDeprecated.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\Sprites\tk2dSpriteCollectionPlatformBuilder.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\Sprites\tk2dSpriteCollectionTextureWatcher.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\Sprites\tk2dSpriteEditor.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\Sprites\tk2dSpriteThumbnailCache.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\Sprites\tk2dStaticSpriteBatcherEditor.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\Sprites\tk2dTiledSpriteEditor.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\Tilemap\Importer\tk2dTileMapImporter.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\Tilemap\tk2dTileMapBrushBuilder.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\Tilemap\tk2dTileMapBrushRenderer.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\Tilemap\tk2dTileMapEditor.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\Tilemap\tk2dTileMapEditorData.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\Tilemap\tk2dTileMapEditorDataInspector.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\Tilemap\tk2dTileMapSceneGUI.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\Tilemap\tk2dTileMapUtility.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\tk2dEditorSkin.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\tk2dEditorUtility.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\tk2dGrid.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\tk2dGuiUtility.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\tk2dIndex.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\tk2dJSSupport.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\tk2dMenu.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\tk2dPreferencesEditor.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\tk2dScaleUtility.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\tk2dSpriteGuiUtility.cs" />
+     <Compile Include="Assets\TK2DROOT\tk2d\Editor\tk2dUpdateWindow.cs" />
+     <None Include="Assets\TK2DROOT\tk2d\Shaders\LitSolidVertexColor.shader" />
+     <None Include="Assets\TK2DROOT\tk2d\Goodies\TexturePacker\Exporter\2dtoolkit\exporter.xml" />
+     <None Include="Assets\TK2DROOT\tk2d\Shaders\SolidVertexColor.shader" />
      <None Include="Assets\iTween\ReadMe!\ReadMe!.txt" />
-     <None Include="Assets\Orthello\Examples\4 - Follow Target View\-orthello-config.xml" />
+     <None Include="Assets\TK2DROOT\tk2d\Shaders\LitPremulVertexColor.shader" />
+     <None Include="Assets\TK2DROOT\tk2d\Shaders\PremulVertexColor.shader" />
+     <None Include="Assets\TK2DROOT\tk2d_demo\Credits.txt" />
+     <None Include="Assets\TK2DROOT\tk2d\Shaders\goodies\PackedTextMesh.shader" />
+     <None Include="Assets\TK2DROOT\tk2d\Shaders\Blend2TexVertexColor.shader" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
-     <None Include="Assets\Orthello\-Read-Me.txt" />
-     <None Include="Assets\Orthello\Examples\0 - Simple Examples\TextSprites\orthello-font-30.txt" />
-     <None Include="Assets\Orthello\-Update-Upgrade info.txt" />
-     <None Include="Assets\Orthello\Examples\0 - Simple Examples\TextSprites\Atlases\img.xml" />
-     <None Include="Assets\Orthello\Examples\0 - Simple Examples\TextSprites\Atlases\glyph.xml" />
-     <None Include="Assets\Orthello\Examples\0 - Simple Examples\TextSprites\Atlases\chalk.xml" />
-     <None Include="Assets\Orthello\Examples\0 - Simple Examples\Multi Resolution Art\atlas.xml" />
-     <None Include="Assets\Orthello\Standard Assets\OT\_Base\TintedAlpha.shader" />
-     <None Include="Assets\Orthello\Examples\0 - Simple Examples\RotateTowards\-read-me.txt" />
-     <None Include="Assets\Orthello\Examples\0 - Simple Examples\Persistance\-read-me.txt" />
-     <None Include="Assets\Orthello\Examples\0 - Simple Examples\TextSprites\lorem-rus-utf8.txt" />
-     <None Include="Assets\Sprite Atlases\characters.xml" />
+     <None Include="Assets\TK2DROOT\tk2d\Shaders\resources\BlendVertexColor.shader" />
+     <None Include="Assets\TK2DROOT\tk2d\Shaders\LitCutoutVertexColor.shader" />
+     <None Include="Assets\TK2DROOT\tk2d\Editor\EditorUtility.shader" />
+     <None Include="Assets\TK2DROOT\tk2d\Shaders\CutoutVertexColor.shader" />
+     <None Include="Assets\TK2DROOT\tk2d_demo\demobmfont\test.fnt" />
+     <None Include="Assets\TK2DROOT\tk2d\Shaders\LitBlendVertexColor.shader" />
+     <None Include="Assets\TK2DROOT\tk2d\Shaders\AdditiveVertexColor.shader" />
+     <None Include="Assets\TK2DROOT\tk2d_demo\democameradata\source\democamerafont.fnt" />
  <Reference Include="Library\ScriptAssemblies\Assembly-UnityScript">
  <HintPath>Library\ScriptAssemblies\Assembly-UnityScript.dll</HintPath>
+ </Reference>
+ <Reference Include="Assets\TK2DROOT\tk2d\Editor\tk2dExternal">
+ <HintPath>Assets\TK2DROOT\tk2d\Editor\tk2dExternal.dll</HintPath>
  </Reference>
  <Reference Include="\Applications\Unity\Unity.app\Contents\Frameworks\Managed\UnityEditor.Graphs">
  <HintPath>\Applications\Unity\Unity.app\Contents\Frameworks\Managed\UnityEditor.Graphs.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
+      <Project>{512AD7EF-EA55-AFE2-41C8-FCD2A3D9DD32}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp-vs.csproj">
       <Project>{8A23DE2A-F847-AC1E-606C-1CC305E19073}</Project>      <Name>Assembly-CSharp-vs</Name>    </ProjectReference>
   </ItemGroup>

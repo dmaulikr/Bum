@@ -1,142 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>10.0.20506</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{512AD7EF-EA55-AFE2-41C8-FCD2A3D9DD32}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>
-    </RootNamespace>
-    <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{512AD7EF-EA55-AFE2-41C8-FCD2A3D9DD32}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_STANDALONE_OSX;ENABLE_MICROPHONE;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PHYSICS;ENABLE_TERRAIN;ENABLE_CACHING;ENABLE_SUBSTANCE;ENABLE_GENERICS;ENABLE_CLOTH;ENABLE_GAMECENTER;ENABLE_MOVIES;ENABLE_AUDIO;ENABLE_WWW;ENABLE_SHADOWS;ENABLE_DUCK_TYPING;UNITY_4_1_2;UNITY_4_1;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_EDITOR</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <NoWarn>0169</NoWarn>
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_STANDALONE_OSX;ENABLE_MICROPHONE;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PHYSICS;ENABLE_TERRAIN;ENABLE_CACHING;ENABLE_SUBSTANCE;ENABLE_GENERICS;ENABLE_CLOTH;ENABLE_GAMECENTER;ENABLE_MOVIES;ENABLE_AUDIO;ENABLE_WWW;ENABLE_SHADOWS;ENABLE_DUCK_TYPING;UNITY_4_1_2;UNITY_4_1;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_EDITOR</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>Temp\bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <NoWarn>0169</NoWarn>
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
+	<Reference Include="System" />
     <Reference Include="System.XML" />
-    <Reference Include="System.Core" />
-    <Reference Include="UnityEngine">
-      <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor">
-      <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
-    </Reference>
+	<Reference Include="System.Core" />
+	<Reference Include="UnityEngine">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+	</Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Plugins\iTween.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Graphics\OTView.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Graphics\Sprites\Atlas\OTAtlasData.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Graphics\Sprites\Atlas\OTSpriteAtlas.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Graphics\Sprites\Atlas\OTSpriteAtlasBMFontXml.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Graphics\Sprites\Atlas\OTSpriteAtlasCocos2D.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Graphics\Sprites\Atlas\OTSpriteAtlasCocos2DFnt.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Graphics\Sprites\Atlas\OTSpriteAtlasImport.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Graphics\Sprites\Atlas\OTSpriteAtlasImportText.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Graphics\Sprites\Atlas\OTSpriteAtlasImportXML.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Graphics\Sprites\Atlas\OTSpriteAtlasOGRE.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Graphics\Sprites\Atlas\OTSpriteAtlasSparrow.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Graphics\Sprites\Atlas\OTSpriteAtlasZwoptex.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Graphics\Sprites\OTAnimatingSprite.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Graphics\Sprites\OTAnimatingSpritePassive.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Graphics\Sprites\OTAnimation.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Graphics\Sprites\OTAnimationFrameset.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Graphics\Sprites\OTClipSprite.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Graphics\Sprites\OTClippingAreaSprite.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Graphics\Sprites\OTContainer.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Graphics\Sprites\OTFilledSprite.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Graphics\Sprites\OTGradientSprite.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Graphics\Sprites\OTScale9Sprite.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Graphics\Sprites\OTSprite.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Graphics\Sprites\OTSpriteSheet.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Graphics\Sprites\OTTextSprite.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Tweening\OTEase.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Tweening\OTEaseBackIn.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Tweening\OTEaseBackInOut.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Tweening\OTEaseBackOut.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Tweening\OTEaseBounceIn.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Tweening\OTEaseBounceInOut.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Tweening\OTEaseBounceOut.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Tweening\OTEaseCircIn.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Tweening\OTEaseCircInOut.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Tweening\OTEaseCircOut.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Tweening\OTEaseCubicIn.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Tweening\OTEaseCubicInOut.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Tweening\OTEaseCubicOut.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Tweening\OTEaseElasticIn.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Tweening\OTEaseElasticInOut.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Tweening\OTEaseElasticOut.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Tweening\OTEaseExpoIn.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Tweening\OTEaseExpoInOut.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Tweening\OTEaseExpoOut.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Tweening\OTEaseLinear.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Tweening\OTEaseQuadIn.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Tweening\OTEaseQuadInOut.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Tweening\OTEaseQuadOut.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Tweening\OTEaseQuartIn.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Tweening\OTEaseQuartInOut.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Tweening\OTEaseQuartOut.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Tweening\OTEaseQuintIn.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Tweening\OTEaseQuintInOut.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Tweening\OTEaseQuintOut.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Tweening\OTEaseSineIn.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Tweening\OTEaseSineInOut.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Tweening\OTEaseSineOut.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Tweening\OTEaseStrongIn.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Tweening\OTEaseStrongInOut.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Tweening\OTEaseStrongOut.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Tweening\OTEasing.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Tweening\OTTween.cs" />
-    <Compile Include="Assets\Standard Assets\OT\Tweening\OTTweenController.cs" />
-    <Compile Include="Assets\Standard Assets\OT\_Base\OT.cs" />
-    <Compile Include="Assets\Standard Assets\OT\_Base\OTController.cs" />
-    <Compile Include="Assets\Standard Assets\OT\_Base\OTDevTrace.cs" />
-    <Compile Include="Assets\Standard Assets\OT\_Base\OTHelper.cs" />
-    <Compile Include="Assets\Standard Assets\OT\_Base\OTMatRef.cs" />
-    <Compile Include="Assets\Standard Assets\OT\_Base\OTObject.cs" />
-    <Compile Include="Assets\Standard Assets\OT\_Base\OTObjectType.cs" />
-    <Compile Include="Assets\Standard Assets\OT\_Base\OTPB.cs" />
-    <Compile Include="Assets\Standard Assets\OT\_Base\OTSounds.cs" />
-    <Compile Include="Assets\Standard Assets\OT\_Base\OTTimeCycle.cs" />
-    <Compile Include="Assets\Standard Assets\OT\_Base\OTTouch.cs" />
-    <None Include="Assets\Orthello\Examples\0 - Simple Examples\TextSprites\lorem.txt" />
-    <None Include="Assets\Orthello\Examples\0 - Simple Examples\TextSprites\Atlases\russian.txt" />
-    <None Include="Assets\iTween\ReadMe!\ReadMe!.txt" />
-    <None Include="Assets\Orthello\Examples\4 - Follow Target View\-orthello-config.xml" />
-    <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
-    <None Include="Assets\Orthello\-Read-Me.txt" />
-    <None Include="Assets\Orthello\Examples\0 - Simple Examples\TextSprites\orthello-font-30.txt" />
-    <None Include="Assets\Orthello\-Update-Upgrade info.txt" />
-    <None Include="Assets\Orthello\Examples\0 - Simple Examples\TextSprites\Atlases\img.xml" />
-    <None Include="Assets\Orthello\Examples\0 - Simple Examples\TextSprites\Atlases\glyph.xml" />
-    <None Include="Assets\Orthello\Examples\0 - Simple Examples\TextSprites\Atlases\chalk.xml" />
-    <None Include="Assets\Orthello\Examples\0 - Simple Examples\Multi Resolution Art\atlas.xml" />
-    <None Include="Assets\Standard Assets\OT\_Base\TintedAlpha.shader" />
-    <None Include="Assets\Orthello\Examples\0 - Simple Examples\RotateTowards\-read-me.txt" />
-    <None Include="Assets\Orthello\Examples\0 - Simple Examples\Persistance\-read-me.txt" />
-    <None Include="Assets\Orthello\Examples\0 - Simple Examples\TextSprites\lorem-rus-utf8.txt" />
-    <None Include="Assets\Sprite Atlases\characters.xml" />
+     <Compile Include="Assets\Plugins\iTween.cs" />
+     <Compile Include="Assets\Plugins\tk2d\Camera\tk2dCamera.cs" />
+     <Compile Include="Assets\Plugins\tk2d\Camera\tk2dCameraAnchor.cs" />
+     <Compile Include="Assets\Plugins\tk2d\Fonts\tk2dFont.cs" />
+     <Compile Include="Assets\Plugins\tk2d\Fonts\tk2dFontData.cs" />
+     <Compile Include="Assets\Plugins\tk2d\Fonts\tk2dTextMesh.cs" />
+     <Compile Include="Assets\Plugins\tk2d\Gui\tk2dButton.cs" />
+     <Compile Include="Assets\Plugins\tk2d\Runtime\tk2dResource.cs" />
+     <Compile Include="Assets\Plugins\tk2d\Runtime\tk2dSystem.cs" />
+     <Compile Include="Assets\Plugins\tk2d\Sprites\tk2dAnimatedSprite.cs" />
+     <Compile Include="Assets\Plugins\tk2d\Sprites\tk2dBaseSprite.cs" />
+     <Compile Include="Assets\Plugins\tk2d\Sprites\tk2dClippedSprite.cs" />
+     <Compile Include="Assets\Plugins\tk2d\Sprites\tk2dPixelPerfectHelper.cs" />
+     <Compile Include="Assets\Plugins\tk2d\Sprites\tk2dRuntimeSpriteCollection.cs" />
+     <Compile Include="Assets\Plugins\tk2d\Sprites\tk2dSlicedSprite.cs" />
+     <Compile Include="Assets\Plugins\tk2d\Sprites\tk2dSprite.cs" />
+     <Compile Include="Assets\Plugins\tk2d\Sprites\tk2dSpriteAnimation.cs" />
+     <Compile Include="Assets\Plugins\tk2d\Sprites\tk2dSpriteCollection.cs" />
+     <Compile Include="Assets\Plugins\tk2d\Sprites\tk2dSpriteCollectionData.cs" />
+     <Compile Include="Assets\Plugins\tk2d\Sprites\tk2dSpriteCollectionInterfaces.cs" />
+     <Compile Include="Assets\Plugins\tk2d\Sprites\tk2dStaticSpriteBatcher.cs" />
+     <Compile Include="Assets\Plugins\tk2d\Sprites\tk2dTiledSprite.cs" />
+     <Compile Include="Assets\Plugins\tk2d\TileMap\tk2dTileMap.cs" />
+     <Compile Include="Assets\Plugins\tk2d\TileMap\tk2dTileMapBuilderUtil.cs" />
+     <Compile Include="Assets\Plugins\tk2d\TileMap\tk2dTileMapChunks.cs" />
+     <Compile Include="Assets\Plugins\tk2d\TileMap\tk2dTileMapColliderBuilder.cs" />
+     <Compile Include="Assets\Plugins\tk2d\TileMap\tk2dTileMapData.cs" />
+     <Compile Include="Assets\Plugins\tk2d\TileMap\tk2dTileMapMeshBuilder.cs" />
+     <None Include="Assets\TK2DROOT\tk2d\Shaders\LitSolidVertexColor.shader" />
+     <None Include="Assets\TK2DROOT\tk2d\Goodies\TexturePacker\Exporter\2dtoolkit\exporter.xml" />
+     <None Include="Assets\TK2DROOT\tk2d\Shaders\SolidVertexColor.shader" />
+     <None Include="Assets\iTween\ReadMe!\ReadMe!.txt" />
+     <None Include="Assets\TK2DROOT\tk2d\Shaders\LitPremulVertexColor.shader" />
+     <None Include="Assets\TK2DROOT\tk2d\Shaders\PremulVertexColor.shader" />
+     <None Include="Assets\TK2DROOT\tk2d_demo\Credits.txt" />
+     <None Include="Assets\TK2DROOT\tk2d\Shaders\goodies\PackedTextMesh.shader" />
+     <None Include="Assets\TK2DROOT\tk2d\Shaders\Blend2TexVertexColor.shader" />
+     <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
+     <None Include="Assets\TK2DROOT\tk2d\Shaders\resources\BlendVertexColor.shader" />
+     <None Include="Assets\TK2DROOT\tk2d\Shaders\LitCutoutVertexColor.shader" />
+     <None Include="Assets\TK2DROOT\tk2d\Editor\EditorUtility.shader" />
+     <None Include="Assets\TK2DROOT\tk2d\Shaders\CutoutVertexColor.shader" />
+     <None Include="Assets\TK2DROOT\tk2d_demo\demobmfont\test.fnt" />
+     <None Include="Assets\TK2DROOT\tk2d\Shaders\LitBlendVertexColor.shader" />
+     <None Include="Assets\TK2DROOT\tk2d\Shaders\AdditiveVertexColor.shader" />
+     <None Include="Assets\TK2DROOT\tk2d_demo\democameradata\source\democamerafont.fnt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -146,4 +99,5 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  
 </Project>
