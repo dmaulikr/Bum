@@ -27,7 +27,7 @@ function FixedUpdate() {
         var delta :Vector3 = target.position - this.transform.position;
         
         // add offset to center character in the screen
-        var offset :Vector3 = Vector3(480/3,320/4);
+        var offset :Vector3 = Vector3(480/4,320/3);
         delta -= offset;
         
         // don't move camera z
