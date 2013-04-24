@@ -5,10 +5,10 @@
 protected var sprite : tk2dAnimatedSprite;
 
 // velocity applied to character to jump
-protected var jumpForce : float = 1250.0;
+protected var jumpForce : float = 150.0;
 
 // velocity applied to character when moving
-protected var runForce : float = 4000.0;
+protected var runForce : float = 600.0;
 
 // max speed allowed
 protected var maxRunSpeed : float = 1500.0; // points per frame
@@ -103,6 +103,7 @@ private function updateMovement()
 		}
 	}
 }
+
 
 private function updateAnimation() 
 {
