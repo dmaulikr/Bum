@@ -5,13 +5,13 @@
 protected var sprite : tk2dAnimatedSprite;
 
 // velocity applied to character to jump
-protected var jumpForce : float = 150.0;
+protected var jumpForce : float = 200.0;
 
 // velocity applied to character when moving
-protected var runForce : float = 600.0;
+protected var runForce : float = 10.0;
 
 // max speed allowed
-protected var maxRunSpeed : float = 1500.0; // points per frame
+protected var maxRunSpeed : float = 300.0; // points per frame
 
 // factor applied to the x velocity when the character is not moving in any direction.
 protected var brakeFactor : float = 0.95;
@@ -33,6 +33,9 @@ private var _jumpStarted :boolean = false;
 
 private var _isAttacking :boolean = false;
 
+private var _framesElapsedSinceFloorTouch :int = 0;
+private var _floorTouchFramePadding:int = 3;
+
 
 /* GameObject =========================================================================== */
 
@@ -46,7 +49,10 @@ function Update () {
 }
 
 function FixedUpdate() {
-//	Debug.Log("velocity: " + this.rigidbody.velocity.x);
+	
+	_framesElapsedSinceFloorTouch++;
+
+	//Debug.Log("velocity: " + this.rigidbody.velocity.x);
 	updateMovement();
 	
 	// jump action
@@ -89,17 +95,12 @@ private function updateMovement()
 	}
 	else {
 	
-		var force = moveSpeed * runForce * Time.fixedDeltaTime;
+		var direction :int = _direction == MovementDirection.Left ? -1 : 1;
+		var currentSpeed :float = this.rigidbody.velocity.x;
+		var targetSpeed :float = maxRunSpeed * direction;
 		
-		// reduce for in air jumping
-		if (!_isTouchingFloor) force *= inAirVelocityReduction;
-		
-		var maxSpeed = moveSpeed < 0 ? -1 * maxRunSpeed : maxRunSpeed;
-		var sum = this.rigidbody.velocity.x + force;
-		
-		if ((_direction == MovementDirection.Left && sum > maxSpeed) 
-		|| (_direction == MovementDirection.Right && sum < maxSpeed)){
-			this.rigidbody.AddForce(Vector3(force, 0, 0), ForceMode.VelocityChange);
+		if (Mathf.Abs(currentSpeed) < Mathf.Abs(targetSpeed)) {
+			this.rigidbody.AddForce( Vector3(direction * runForce, 0, 0), ForceMode.VelocityChange);
 		}
 	}
 }
@@ -140,7 +141,7 @@ private function updateAnimation()
 
 private function jump() 
 {
-	if (_isTouchingFloor && !_jumpStarted) {
+	if (_framesElapsedSinceFloorTouch < _floorTouchFramePadding && !_jumpStarted) {
 		Debug.Log("jump");
 		_jumpStarted = true;
 		this.rigidbody.AddForce(Vector3(0,jumpForce,0), ForceMode.VelocityChange);
@@ -182,6 +183,7 @@ private function attack()
 function OnCollisionEnter( collision:Collision )
 {
 	if (collision.gameObject.tag == "Floor") {
+		_framesElapsedSinceFloorTouch = 0;
 		_isTouchingFloor = true;
 	}
 }
@@ -189,6 +191,7 @@ function OnCollisionEnter( collision:Collision )
 function OnCollisionStay( collision:Collision )
 {
 	if (collision.gameObject.tag == "Floor") {
+		_framesElapsedSinceFloorTouch = 0;
 		_isTouchingFloor = true;
 	}
 }
@@ -198,6 +201,7 @@ function OnCollisionExit( collision:Collision )
 	if (collision.gameObject.tag == "Floor") {
 		_isTouchingFloor = false;
 		_jumpStarted = false;
+		_framesElapsedSinceFloorTouch = 0;
 		Debug.Log("exit floor");
 	}
 }

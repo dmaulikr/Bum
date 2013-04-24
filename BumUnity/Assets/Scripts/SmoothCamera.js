@@ -5,16 +5,28 @@ private var velocity = Vector3.zero;
 var target : Transform;
 
 function Awake () {
-	tk2dSystem.CurrentPlatform = "1x";
+	
+	Debug.Log("camera w: " + camera.pixelWidth + ", h: + " + camera.pixelHeight);
+	if (Screen.height == 320) {
+		tk2dSystem.CurrentPlatform = "1x";
+	}
+	// ipad
+	else if (Screen.height == 728) {
+		tk2dSystem.CurrentPlatform = "2x";
+	}
+	// ipad Retina
+	else if (Screen.height == 1536) {
+		tk2dSystem.CurrentPlatform = "4x";
+	}
 }
 
-function Update() {
+function FixedUpdate() {
     if(target) {
         
         var delta :Vector3 = target.position - this.transform.position;
         
         // add offset to center character in the screen
-        var offset :Vector3 = Vector3(-camera.pixelWidth * .5, -camera.pixelHeight * .25, 0);
+        var offset :Vector3 = Vector3(-camera.pixelWidth * .5, -camera.pixelHeight * .5, 0);
         delta += offset;
         
         // don't move camera z
@@ -22,6 +34,6 @@ function Update() {
         delta.z = 0; 
         this.transform.position += delta * .2;
 		
-		Debug.Log("position: " + this.transform.position);
+		//Debug.Log("position: " + this.transform.position);
     }
 }
