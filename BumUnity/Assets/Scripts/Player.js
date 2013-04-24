@@ -96,11 +96,14 @@ private function updateMovement()
 	else {
 	
 		var direction :int = _direction == MovementDirection.Left ? -1 : 1;
+		var force :float = direction * runForce;
 		var currentSpeed :float = this.rigidbody.velocity.x;
 		var targetSpeed :float = maxRunSpeed * direction;
 		
+		if (!_isTouchingFloor) force *= inAirVelocityReduction;
+		
 		if (Mathf.Abs(currentSpeed) < Mathf.Abs(targetSpeed)) {
-			this.rigidbody.AddForce( Vector3(direction * runForce, 0, 0), ForceMode.VelocityChange);
+			this.rigidbody.AddForce( Vector3(force, 0, 0), ForceMode.VelocityChange);
 		}
 	}
 }

@@ -7,6 +7,7 @@ var target : Transform;
 function Awake () {
 	
 	Debug.Log("camera w: " + camera.pixelWidth + ", h: + " + camera.pixelHeight);
+	Debug.Log("screen w: " + Screen.width + ", h: + " + Screen.height);
 	if (Screen.height == 320) {
 		tk2dSystem.CurrentPlatform = "1x";
 	}
@@ -26,14 +27,16 @@ function FixedUpdate() {
         var delta :Vector3 = target.position - this.transform.position;
         
         // add offset to center character in the screen
-        var offset :Vector3 = Vector3(-camera.pixelWidth * .5, -camera.pixelHeight * .5, 0);
-        delta += offset;
+        var offset :Vector3 = Vector3(480/3,320/4);
+        delta -= offset;
         
         // don't move camera z
         
         delta.z = 0; 
         this.transform.position += delta * .2;
-		
+        
+        var r : Rect = camera.pixelRect;
+		print("Camera displays from " + r.xMin + " to " + r.xMax + " pixel");
 		//Debug.Log("position: " + this.transform.position);
     }
 }
