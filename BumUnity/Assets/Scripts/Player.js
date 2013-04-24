@@ -2,22 +2,22 @@
 
 /* Configurable Variables =========================================================================== */
 
-var sprite : tk2dAnimatedSprite;
+protected var sprite : tk2dAnimatedSprite;
 
 // velocity applied to character to jump
-var jumpForce : float = 1000.0;
+protected var jumpForce : float = 1250.0;
 
 // velocity applied to character when moving
-var runForce : float = 6000.0;
+protected var runForce : float = 4000.0;
 
 // max speed allowed
-var maxRunSpeed : float = 2000.0; // points per frame
+protected var maxRunSpeed : float = 1500.0; // points per frame
 
 // factor applied to the x velocity when the character is not moving in any direction.
-var brakeFactor : float = 0.95;
+protected var brakeFactor : float = 0.95;
 
 // factor applied to how much run force is applied to the character while in the air
-var inAirVelocityReduction : float = .5;
+protected var inAirVelocityReduction : float = .5;
 
 
 /* Variables =========================================================================== */
@@ -46,7 +46,7 @@ function Update () {
 }
 
 function FixedUpdate() {
-	Debug.Log("velocity: " + this.rigidbody.velocity.x);
+//	Debug.Log("velocity: " + this.rigidbody.velocity.x);
 	updateMovement();
 	
 	// jump action
@@ -131,7 +131,6 @@ private function updateAnimation()
 	// this gives the character a more natural looking animation
 	var animationSpeed :float =  Mathf.Max( .25, Mathf.Abs(Input.GetAxis("Horizontal")));
 	sprite.ClipFps = sprite.CurrentClip.fps * animationSpeed;
-	//sprite.scale = Mathf.Max( .25, Mathf.Abs(Input.GetAxis("Horizontal")));
 }
 
 
@@ -172,7 +171,7 @@ private function attack()
 	// and then set attacking to false so we can attack again. 
 	_isAttacking = true;
 	sprite.Play("Attack");
-	yield WaitForSeconds(sprite.ClipTimeSeconds);
+	yield WaitForSeconds(.2);
 	_isAttacking = false;
 }
 
