@@ -41,11 +41,22 @@ private var _floorTouchFramePadding:int = 3;
 
 function Start () {
 	sprite = this.gameObject.GetComponentInChildren(tk2dAnimatedSprite);
+	_direction = MovementDirection.None;
 }
 
-function Update () {
-	updateAnimation();
+function Update () {	
+	
+	if (Input.GetButtonDown("Left")) {
+		Debug.Log("Left");
+		setMovementDirection(MovementDirection.Left);
+	}
+	if (Input.GetButtonDown("Right")) {
+		Debug.Log("Right");
+		setMovementDirection(MovementDirection.Right);
+	}
+	
 	updateDirection();
+	updateAnimation();
 }
 
 function FixedUpdate() {
@@ -70,25 +81,17 @@ function FixedUpdate() {
 /* Updates =========================================================================== */
 
 private function updateDirection() {
-	var inputValue :float = Input.GetAxis("Horizontal");
-	if (inputValue < 0) {
-		_direction = MovementDirection.Left;
+	if (_direction == MovementDirection.Left) {
 		if (sprite.scale.x > 0) sprite.FlipX();
 	}
-	else if (inputValue > 0) {
-		_direction = MovementDirection.Right;
+	else if (_direction == MovementDirection.Right) {
 		if (sprite.scale.x < 0) sprite.FlipX();
-	}
-	else {
-		_direction = MovementDirection.None;
 	}
 }
 
 
 private function updateMovement() 
-{
-	var moveSpeed :float = Input.GetAxis("Horizontal");
-	
+{	
 	// apply the braking speed if the character is not moving in a particular direction
 	if (_direction == MovementDirection.None && Mathf.Abs(this.rigidbody.velocity.x) > 0.1) {
 		this.rigidbody.velocity.x *= brakeFactor;
@@ -134,13 +137,27 @@ private function updateAnimation()
 	
 	// adjust the speed of the animation based on how much input we're getting
 	// this gives the character a more natural looking animation
-	var animationSpeed :float =  Mathf.Max( .25, Mathf.Abs(Input.GetAxis("Horizontal")));
+	var animationSpeed :float = Mathf.Abs(this.rigidbody.velocity.x) / maxRunSpeed;
 	sprite.ClipFps = sprite.CurrentClip.fps * animationSpeed;
 }
 
 
 
 /* Actions =========================================================================== */
+
+
+// begins automatic movement in a direction
+public function startMovement() 
+{
+	setMovementDirection(MovementDirection.Right);
+}
+
+
+public function setMovementDirection( direction : MovementDirection )
+{
+	_direction = direction;
+}
+
 
 private function jump() 
 {
