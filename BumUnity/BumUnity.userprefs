@@ -1,10 +1,13 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player/PlayerUI.js">
     <Files>
-      <File FileName="Assets/Scripts/Player.js" Line="182" Column="1" />
-      <File FileName="Assets/Scripts/SmoothCamera.js" Line="19" Column="34" />
-      <File FileName="Assets/Scripts/Collectible.js" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/SmoothCamera.js" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/LevelController.js" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Player/Player.js" Line="141" Column="59" />
+      <File FileName="Assets/Scripts/Collectible.js" Line="31" Column="24" />
+      <File FileName="Assets/Scripts/Health.js" Line="4" Column="23" />
+      <File FileName="Assets/Scripts/Player/PlayerUI.js" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

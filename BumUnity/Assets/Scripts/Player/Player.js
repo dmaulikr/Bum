@@ -8,10 +8,10 @@ protected var sprite : tk2dAnimatedSprite;
 protected var jumpForce : float = 200.0;
 
 // velocity applied to character when moving
-protected var runForce : float = 10.0;
+protected var runForce : float = 15.0;
 
 // max speed allowed
-protected var maxRunSpeed : float = 300.0; // points per frame
+protected var maxRunSpeed : float = 275.0; // points per frame
 
 // factor applied to the x velocity when the character is not moving in any direction.
 protected var brakeFactor : float = 0.95;
@@ -189,6 +189,7 @@ private function attack()
 	
 	Physics.IgnoreCollision(bullet.collider, collider);
 	*/
+	
 	// here we set our attacking flag, wait for the attack animation time,
 	// and then set attacking to false so we can attack again. 
 	_isAttacking = true;
