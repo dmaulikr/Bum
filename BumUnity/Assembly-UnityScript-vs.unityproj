@@ -47,14 +47,14 @@
      <Compile Include="Assets\Scripts\Collectible.js" />
      <Compile Include="Assets\Scripts\Health.js" />
      <Compile Include="Assets\Scripts\LevelController.js" />
-     <Compile Include="Assets\Scripts\Player\Player.js" />
+     <Compile Include="Assets\Scripts\Player\PlayerControls.js" />
      <Compile Include="Assets\Scripts\Player\PlayerCurrency.js" />
      <Compile Include="Assets\Scripts\Player\PlayerHealth.js" />
      <Compile Include="Assets\Scripts\SmoothCamera.js" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\LitSolidVertexColor.shader" />
      <None Include="Assets\TK2DROOT\tk2d\Goodies\TexturePacker\Exporter\2dtoolkit\exporter.xml" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\SolidVertexColor.shader" />
-     <None Include="Assets\iTween\ReadMe!\ReadMe!.txt" />
+     <None Include="Assets\Plugins\HOTween\readme.txt" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\LitPremulVertexColor.shader" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\PremulVertexColor.shader" />
      <None Include="Assets\TK2DROOT\tk2d_demo\Credits.txt" />
@@ -70,6 +70,9 @@
      <None Include="Assets\Fonts\HeadlineA.txt" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\AdditiveVertexColor.shader" />
      <None Include="Assets\TK2DROOT\tk2d_demo\democameradata\source\democamerafont.fnt" />
+ <Reference Include="Assets\Plugins\HOTween\HOTween">
+ <HintPath>Assets\Plugins\HOTween\HOTween.dll</HintPath>
+ </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">

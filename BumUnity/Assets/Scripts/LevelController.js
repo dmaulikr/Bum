@@ -18,5 +18,5 @@ function Update () {
 
 private function startMovement():void
 {
-	_player.GetComponent(Player).startMovement();
+	_player.GetComponent(PlayerControls).startMovement();
 }

@@ -103,7 +103,7 @@
      <None Include="Assets\TK2DROOT\tk2d\Shaders\LitSolidVertexColor.shader" />
      <None Include="Assets\TK2DROOT\tk2d\Goodies\TexturePacker\Exporter\2dtoolkit\exporter.xml" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\SolidVertexColor.shader" />
-     <None Include="Assets\iTween\ReadMe!\ReadMe!.txt" />
+     <None Include="Assets\Plugins\HOTween\readme.txt" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\LitPremulVertexColor.shader" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\PremulVertexColor.shader" />
      <None Include="Assets\TK2DROOT\tk2d_demo\Credits.txt" />
@@ -119,6 +119,12 @@
      <None Include="Assets\Fonts\HeadlineA.txt" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\AdditiveVertexColor.shader" />
      <None Include="Assets\TK2DROOT\tk2d_demo\democameradata\source\democamerafont.fnt" />
+ <Reference Include="Assets\Plugins\HOTween\HOTween">
+ <HintPath>Assets\Plugins\HOTween\HOTween.dll</HintPath>
+ </Reference>
+ <Reference Include="Assets\Plugins\HOTween\Editor\HOTweenV1_Editor">
+ <HintPath>Assets\Plugins\HOTween\Editor\HOTweenV1_Editor.dll</HintPath>
+ </Reference>
  <Reference Include="Assets\TK2DROOT\tk2d\Editor\tk2dExternal">
  <HintPath>Assets\TK2DROOT\tk2d\Editor\tk2dExternal.dll</HintPath>
  </Reference>

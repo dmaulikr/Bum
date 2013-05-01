@@ -11,8 +11,6 @@ public function isDead() :boolean
 public function apply( amount : int )
 {
 	current += amount;
-	
-	// update ui
 }
 
 function Start () {

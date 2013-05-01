@@ -1,11 +1,14 @@
 #pragma strict
 
+import Holoville.HOTween;
+
 public var type :String = "can";
 public var value :int = 1;
 
 public var rewardText : GameObject;
 
-private var _player:Player;
+private var _player:GameObject;
+private var _controls:PlayerControls;
 private var _currency:PlayerCurrency;
 
 private var _rewardTextObj :GameObject;
@@ -17,8 +20,9 @@ function Awake () {
 
 function Start() 
 {
-	_player = GameObject.Find("Player").GetComponent(Player);
-	_currency = _player.gameObject.GetComponent(PlayerCurrency);
+	_player = GameObject.Find("Player");
+	_controls = _player.GetComponent(PlayerControls);
+	_currency = _player.GetComponent(PlayerCurrency);
 }
 
 function Update () {
@@ -29,23 +33,25 @@ protected function playPickupAnimation()
 {
 	// create reward clone of the reward text and set its value
 	_rewardTextObj = Instantiate(rewardText, transform.position, Quaternion.identity);
+	
+	// display our value as the text
 	_rewardTextObj.GetComponent(tk2dTextMesh).text = "+" + value;
 	
-//	// fade out
-//	iTween.FadeTo(_rewardTextObj, {
-//		"alpha": 0.0,
-//		"delay": 1.0,
-//		"duration": 2.0,
-//		"NamedValueColor" : "_color"
-//	});
-//	
-//	// then animate it up and out
-//	iTween.MoveTo(_rewardTextObj, { 
-//		"position": _rewardTextObj.transform.position + (Vector3.up *30),
-//		"duration": 2,
-//		"oncomplete": "destroy",
-//		"oncompletetarget": this.gameObject
-//	});
+	// position tween
+	var tweenProps :TweenParms = new TweenParms();
+	tweenProps.Prop("position", _rewardTextObj.transform.position + (Vector3.up *30) );
+	tweenProps.OnComplete(destroy);
+	HOTween.To(_rewardTextObj.transform, 1, tweenProps);
+	
+	// alpha tween
+	var textMesh : tk2dTextMesh = _rewardTextObj.GetComponent(tk2dTextMesh);
+	var colorTo : Color = textMesh.color;
+    colorTo.a = 0;
+    
+	tweenProps = new TweenParms();
+	tweenProps.Prop("color", colorTo);
+	tweenProps.OnUpdate(textMesh.Commit);
+	HOTween.To(textMesh, 1, tweenProps);
 	
 	// hide the can
 	this.renderer.enabled = false;
