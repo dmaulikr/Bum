@@ -11,7 +11,7 @@ protected var jumpForce : float = 200.0;
 protected var runForce : float = 15.0;
 
 // max speed allowed
-protected var maxRunSpeed : float = 275.0; // points per frame
+protected var maxRunSpeed : float = 250.0; // points per frame
 
 // factor applied to the x velocity when the character is not moving in any direction.
 protected var brakeFactor : float = 0.95;
@@ -131,7 +131,7 @@ private function updateAnimation()
 	
 	var clip:tk2dSpriteAnimationClip = sprite.GetClipByName(anim);
 	if (sprite.CurrentClip != clip && clip != null) {
-		Debug.Log("playing clip: " + anim);
+		//Debug.Log("playing clip: " + anim);
 		sprite.Play(clip, 0.0);
 	}
 	

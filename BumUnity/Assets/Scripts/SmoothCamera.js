@@ -36,8 +36,8 @@ function FixedUpdate() {
         delta.z = 0; 
         this.transform.position += delta * .2;
         
-        var r : Rect = camera.pixelRect;
-		print("Camera displays from " + r.xMin + " to " + r.xMax + " pixel");
+//        var r : Rect = camera.pixelRect;
+//		print("Camera displays from " + r.xMin + " to " + r.xMax + " pixel");
 		//Debug.Log("position: " + this.transform.position);
     }
 }
