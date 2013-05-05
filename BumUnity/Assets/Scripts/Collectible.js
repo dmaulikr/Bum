@@ -8,8 +8,8 @@ public var value :int = 1;
 public var rewardText : GameObject;
 
 private var _player:GameObject;
-private var _controls:PlayerControls;
-private var _currency:PlayerCurrency;
+private var _controls:PlayerController;
+private var _currency:Inventory;
 
 private var _rewardTextObj :GameObject;
 
@@ -21,8 +21,8 @@ function Awake () {
 function Start() 
 {
 	_player = GameObject.Find("Player");
-	_controls = _player.GetComponent(PlayerControls);
-	_currency = _player.GetComponent(PlayerCurrency);
+	_controls = _player.GetComponent(PlayerController);
+	_currency = _player.GetComponent(Inventory);
 }
 
 function Update () {

@@ -4,9 +4,6 @@
 
 protected var sprite : tk2dAnimatedSprite;
 
-// velocity applied to character to jump
-protected var jumpForce : float = 200.0;
-
 // velocity applied to character when moving
 protected var runForce : float = 15.0;
 
@@ -19,62 +16,89 @@ protected var brakeFactor : float = 0.95;
 // factor applied to how much run force is applied to the character while in the air
 protected var inAirVelocityReduction : float = .5;
 
+/* Constants =========================================================================== */
+
+enum MovementDirection { Left, Right, None }
 
 /* Variables =========================================================================== */
 
-enum MovementDirection { Left, Right, None }
 private var _direction : MovementDirection;
 
 private var _isTouchingFloor :boolean;
-
-// this tracks when a jump has been triggered, but has not yet left the floor.
-// it is then used to prevent other jumps from occuring and "double jumping"
-private var _jumpStarted :boolean = false;
-
 private var _isAttacking :boolean = false;
 
-private var _framesElapsedSinceFloorTouch :int = 0;
-private var _floorTouchFramePadding:int = 3;
+
+/* Components =========================================================================== */
+
+private var _jump :JumpAbility;
+private var _movement :Movement;
+
+/* Getters/Setters =========================================================================== */
+
+public function GetDirection():MovementDirection
+{
+	return _direction;
+}
+
+public function GetIsTouchingFloor():boolean
+{
+	return _isTouchingFloor;
+}
+
+public function GetIsAttacking():boolean
+{
+	return _isAttacking;
+}
 
 
 /* GameObject =========================================================================== */
 
 function Start () {
+
+	// get components
+	_jump = this.gameObject.GetComponent(JumpAbility);
+	_movement = this.gameObject.GetComponent(Movement);
+	
+	// get child components
 	sprite = this.gameObject.GetComponentInChildren(tk2dAnimatedSprite);
+	
+	// set defaults
 	_direction = MovementDirection.None;
 }
 
 function Update () {	
-	
-	if (Input.GetButtonDown("Left")) {
-		Debug.Log("Left");
-		setMovementDirection(MovementDirection.Left);
-	}
-	if (Input.GetButtonDown("Right")) {
-		Debug.Log("Right");
-		setMovementDirection(MovementDirection.Right);
-	}
-	
 	updateDirection();
 	updateAnimation();
 }
 
 function FixedUpdate() {
-	
-	_framesElapsedSinceFloorTouch++;
 
 	//Debug.Log("velocity: " + this.rigidbody.velocity.x);
 	updateMovement();
-	
-	// jump action
-	if (Input.GetButtonDown("Jump")) {
-		jump();
-	}
-	
-	// attack 
-	if (Input.GetButtonDown("Fire1") && !_isAttacking) {
-		attack();
-	}
+}
+
+
+public function MoveLeft()
+{
+	setMovementDirection(MovementDirection.Left);
+}
+
+
+public function MoveRight()
+{
+	setMovementDirection(MovementDirection.Right);
+}
+
+public function Jump()
+{
+	_jump.Jump();
+}
+
+
+public function Attack()
+{
+	if (_isAttacking) return;
+	attack();
 }
 
 
@@ -158,44 +182,14 @@ public function setMovementDirection( direction : MovementDirection )
 	_direction = direction;
 }
 
-
-private function jump() 
-{
-	if (_framesElapsedSinceFloorTouch < _floorTouchFramePadding && !_jumpStarted) {
-		Debug.Log("jump");
-		_jumpStarted = true;
-		this.rigidbody.AddForce(Vector3(0,jumpForce,0), ForceMode.VelocityChange);
-	}
-}
-
 private function attack() 
 {
-/*
-	var force = 2000;
-	
-	// create the speed based on the direction of the character and the current velocity
-	var speed : float = force * this.transform.localScale.x + Mathf.Abs(this.rigidbody.velocity.x);
-	
-	// create a bullet at the fire position
-	var bullet : GameObject = Instantiate(projectile, firePosition.position, firePosition.rotation);
-	
-	// determine how much force
-	var forceVec :Vector3 = Vector3(speed * Time.deltaTime,0,0);
-	
-	// here we offset the position by a minor amount to give it some randomness
-	var position :Vector3 = firePosition.position + Vector3(Random.value*20,Random.value*20,0);
-	
-	bullet.rigidbody.AddForceAtPosition(forceVec, position, ForceMode.VelocityChange);
-	
-	Physics.IgnoreCollision(bullet.collider, collider);
-	*/
-	
 	if (_isAttacking) return;
 	
 	_isAttacking = true;
 	
 	var direction :Vector3 = _direction == MovementDirection.Left ? Vector3.left : Vector3.right;
-	this.rigidbody.AddForce( direction * 200, ForceMode.VelocityChange);
+	this.rigidbody.AddForce( direction * 100, ForceMode.VelocityChange);
 	
 	sprite.Play("Attack");
 	
@@ -209,7 +203,6 @@ private function attack()
 function OnCollisionEnter( collision:Collision )
 {
 	if (collision.gameObject.tag == "Floor") {
-		_framesElapsedSinceFloorTouch = 0;
 		_isTouchingFloor = true;
 	}
 }
@@ -217,7 +210,6 @@ function OnCollisionEnter( collision:Collision )
 function OnCollisionStay( collision:Collision )
 {
 	if (collision.gameObject.tag == "Floor") {
-		_framesElapsedSinceFloorTouch = 0;
 		_isTouchingFloor = true;
 	}
 }
@@ -226,8 +218,5 @@ function OnCollisionExit( collision:Collision )
 {
 	if (collision.gameObject.tag == "Floor") {
 		_isTouchingFloor = false;
-		_jumpStarted = false;
-		_framesElapsedSinceFloorTouch = 0;
-		Debug.Log("exit floor");
 	}
 }

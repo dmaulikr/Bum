@@ -1,9 +1,9 @@
 #pragma strict
 // this class keeps track of items collected and points earned throughout the level
 
-var cansText : tk2dTextMesh;
-var cashText : tk2dTextMesh;
-var healthText : tk2dTextMesh;
+private var _cansText : tk2dTextMesh;
+private var _cashText : tk2dTextMesh;
+private var _healthText : tk2dTextMesh;
 
 // keeps track of cans collected
 var cans :int = 0;
@@ -12,6 +12,10 @@ var cans :int = 0;
 var cash :float = 0.0;
 
 function Start () {
+	
+	_cansText = GameObject.Find("Cans Text").GetComponent(tk2dTextMesh);
+	_cashText = GameObject.Find("Cash Text").GetComponent(tk2dTextMesh);
+	_healthText = GameObject.Find("Health Text").GetComponent(tk2dTextMesh);
 	
 	updateCansText();
 	updateCashText();
@@ -27,7 +31,6 @@ function addCans( amount : int )
 	
 	Debug.Log("cans: " + cans);
 	
-	// update the ui
 	updateCansText();
 }
 
@@ -37,19 +40,18 @@ function addCash( amount : float )
 	
 	Debug.Log("cash: " + cash);
 	
-	// update the ui
 	updateCashText();
 }
 
 
 private function updateCashText()
 {
-	cashText.text = "" + cash;
-	cashText.Commit();
+	_cashText.text = "" + cash;
+	_cashText.Commit();
 }
 
 private function updateCansText()
 {
-	cansText.text = "" + cans;
-	cansText.Commit();
+	_cansText.text = "" + cans;
+	_cansText.Commit();
 }

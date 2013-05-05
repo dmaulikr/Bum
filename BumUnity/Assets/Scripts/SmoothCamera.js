@@ -2,7 +2,7 @@
 
 protected var dampTime : float = 0.3; //offset from the viewport center to fix damping
 private var velocity = Vector3.zero;
-var target : Transform;
+private var target : Transform;
 
 function Awake () {
 	
@@ -21,6 +21,13 @@ function Awake () {
 	}
 	Debug.Log("Platform resolution: " + tk2dSystem.CurrentPlatform);
 }
+
+
+function Start() 
+{
+	target = GameObject.Find("Player").transform;
+}
+
 
 function FixedUpdate() {
     if(target) {
