@@ -190,11 +190,16 @@ private function attack()
 	Physics.IgnoreCollision(bullet.collider, collider);
 	*/
 	
-	// here we set our attacking flag, wait for the attack animation time,
-	// and then set attacking to false so we can attack again. 
+	if (_isAttacking) return;
+	
 	_isAttacking = true;
+	
+	var direction :Vector3 = _direction == MovementDirection.Left ? Vector3.left : Vector3.right;
+	this.rigidbody.AddForce( direction * 200, ForceMode.VelocityChange);
+	
 	sprite.Play("Attack");
-	yield WaitForSeconds(.2);
+	
+	yield WaitForSeconds(.5);
 	_isAttacking = false;
 }
 
