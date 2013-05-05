@@ -45,11 +45,11 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Collectible.js" />
+     <Compile Include="Assets\Scripts\Constants.js" />
      <Compile Include="Assets\Scripts\Controls\PCControls.js" />
      <Compile Include="Assets\Scripts\Controls\TouchControls.js" />
      <Compile Include="Assets\Scripts\Health.js" />
      <Compile Include="Assets\Scripts\LevelController.js" />
-     <Compile Include="Assets\Scripts\Movement.js" />
      <Compile Include="Assets\Scripts\Player\Inventory.js" />
      <Compile Include="Assets\Scripts\Player\JumpAbility.js" />
      <Compile Include="Assets\Scripts\Player\PlayerController.js" />

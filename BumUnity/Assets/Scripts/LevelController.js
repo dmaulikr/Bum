@@ -31,5 +31,5 @@ private function spawnPlayer() :void
 
 private function startMovement():void
 {
-	player.GetComponent(PlayerController).startMovement();
+	player.GetComponent(PlayerController).MoveRight();
 }

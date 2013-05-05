@@ -13,7 +13,6 @@ private var _floorTouchFramePadding:int = 3;
 public function Jump()
 {
 	if (_framesElapsedSinceFloorTouch < _floorTouchFramePadding && !_jumpStarted) {
-		Debug.Log("jump");
 		_jumpStarted = true;
 		this.rigidbody.AddForce(Vector3(0,jumpForce,0), ForceMode.VelocityChange);
 	}
@@ -47,6 +46,5 @@ function OnCollisionExit( collision:Collision )
 	if (collision.gameObject.tag == "Floor") {
 		_jumpStarted = false;
 		_framesElapsedSinceFloorTouch = 0;
-		Debug.Log("exit floor");
 	}
 }

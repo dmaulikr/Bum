@@ -16,10 +16,6 @@ protected var brakeFactor : float = 0.95;
 // factor applied to how much run force is applied to the character while in the air
 protected var inAirVelocityReduction : float = .5;
 
-/* Constants =========================================================================== */
-
-enum MovementDirection { Left, Right, None }
-
 /* Variables =========================================================================== */
 
 private var _direction : MovementDirection;
@@ -31,21 +27,20 @@ private var _isAttacking :boolean = false;
 /* Components =========================================================================== */
 
 private var _jump :JumpAbility;
-private var _movement :Movement;
 
 /* Getters/Setters =========================================================================== */
 
-public function GetDirection():MovementDirection
+public function Direction():MovementDirection
 {
 	return _direction;
 }
 
-public function GetIsTouchingFloor():boolean
+public function IsTouchingFloor():boolean
 {
 	return _isTouchingFloor;
 }
 
-public function GetIsAttacking():boolean
+public function IsAttacking():boolean
 {
 	return _isAttacking;
 }
@@ -57,7 +52,6 @@ function Start () {
 
 	// get components
 	_jump = this.gameObject.GetComponent(JumpAbility);
-	_movement = this.gameObject.GetComponent(Movement);
 	
 	// get child components
 	sprite = this.gameObject.GetComponentInChildren(tk2dAnimatedSprite);
@@ -72,11 +66,11 @@ function Update () {
 }
 
 function FixedUpdate() {
-
-	//Debug.Log("velocity: " + this.rigidbody.velocity.x);
 	updateMovement();
 }
 
+
+/* Public Interface =========================================================================== */
 
 public function MoveLeft()
 {
@@ -100,7 +94,6 @@ public function Attack()
 	if (_isAttacking) return;
 	attack();
 }
-
 
 /* Updates =========================================================================== */
 
@@ -170,14 +163,7 @@ private function updateAnimation()
 /* Actions =========================================================================== */
 
 
-// begins automatic movement in a direction
-public function startMovement() 
-{
-	setMovementDirection(MovementDirection.Right);
-}
-
-
-public function setMovementDirection( direction : MovementDirection )
+private function setMovementDirection( direction : MovementDirection )
 {
 	_direction = direction;
 }
