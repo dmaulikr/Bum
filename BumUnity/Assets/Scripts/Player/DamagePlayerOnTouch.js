@@ -3,7 +3,6 @@
 public var damageAmount : int = 10;
 public var bounceBackVelocity :float = 200.0;
 
-private var VELOCITY_DAMPING :float = 0.5;
 private var _player :GameObject;
 private var _health :Health;
 private var _playerController :PlayerController;

@@ -31,3 +31,5 @@ BumUnity/Library/guidmapper
 BumUnity/Temp
 *.pidb
 BumUnity/Build
+
+/BumUnityiOS/

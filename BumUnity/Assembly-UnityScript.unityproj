@@ -18,7 +18,7 @@
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
-	<DefineConstants>DEBUG;TRACE;UNITY_STANDALONE_OSX;ENABLE_MICROPHONE;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PHYSICS;ENABLE_TERRAIN;ENABLE_CACHING;ENABLE_SUBSTANCE;ENABLE_GENERICS;ENABLE_CLOTH;ENABLE_GAMECENTER;ENABLE_MOVIES;ENABLE_AUDIO;ENABLE_WWW;ENABLE_SHADOWS;ENABLE_DUCK_TYPING;UNITY_4_1_2;UNITY_4_1;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_EDITOR;Floor;Sprites;Batcher</DefineConstants>
+	<DefineConstants>DEBUG;TRACE;UNITY_IPHONE;UNITY_IPHONE_API;ENABLE_MICROPHONE;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;ENABLE_AUDIO_FMOD;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PHYSICS;ENABLE_TERRAIN;ENABLE_CACHING;ENABLE_SUBSTANCE;ENABLE_GENERICS;ENABLE_CLOTH;ENABLE_GAMECENTER;UNITY_IOS;ENABLE_AUDIO;ENABLE_WWW;ENABLE_SHADOWS;UNITY_4_1_2;UNITY_4_1;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_EDITOR</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
 	<NoWarn>0169</NoWarn>
@@ -44,30 +44,21 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Collectible.js" />
      <Compile Include="Assets\Scripts\Constants.js" />
      <Compile Include="Assets\Scripts\Controls\PCControls.js" />
      <Compile Include="Assets\Scripts\Controls\TouchControls.js" />
-     <Compile Include="Assets\Scripts\DamagePlayerOnTouch.js" />
-     <Compile Include="Assets\Scripts\Health.js" />
-     <Compile Include="Assets\Scripts\LevelController.js" />
+     <Compile Include="Assets\Scripts\Game Controller\DisplaySettings.js" />
+     <Compile Include="Assets\Scripts\Game Controller\SmoothCamera.js" />
+     <Compile Include="Assets\Scripts\Level Dynamics\Collectible.js" />
+     <Compile Include="Assets\Scripts\Level Dynamics\Health.js" />
+     <Compile Include="Assets\Scripts\Level Dynamics\LevelController.js" />
+     <Compile Include="Assets\Scripts\Level Dynamics\Weapon.js" />
+     <Compile Include="Assets\Scripts\Main Menu\MainMenuController.js" />
+     <Compile Include="Assets\Scripts\Player\DamagePlayerOnTouch.js" />
      <Compile Include="Assets\Scripts\Player\Inventory.js" />
      <Compile Include="Assets\Scripts\Player\JumpAbility.js" />
      <Compile Include="Assets\Scripts\Player\PlayerController.js" />
      <Compile Include="Assets\Scripts\Player\WeaponManager.js" />
-     <Compile Include="Assets\Scripts\SmoothCamera.js" />
-     <Compile Include="Assets\Scripts\Weapon.js" />
-     <Compile Include="Assets\Sources\CrumpleMesh.js" />
-     <Compile Include="Assets\Sources\ExtrudedMeshTrail.js" />
-     <Compile Include="Assets\Sources\FractalTexture.js" />
-     <Compile Include="Assets\Sources\HeightmapGenerator.js" />
-     <Compile Include="Assets\Sources\InitialRigidbodyVelocity.js" />
-     <Compile Include="Assets\Sources\MouseOrbit.js" />
-     <Compile Include="Assets\Sources\PaintVertices.js" />
-     <Compile Include="Assets\Sources\SinusCurveModifier.js" />
-     <Compile Include="Assets\Sources\SmoothRandomPosition.js" />
-     <Compile Include="Assets\Sources\TronTrail.js" />
-     <Compile Include="Assets\Sources\Twist.js" />
      <Compile Include="Assets\Sources\~ControlScripts\DragTransform.js" />
      <Compile Include="Assets\Sources\~ControlScripts\KeyboardOrbit.js" />
      <Compile Include="Assets\Sources\~ControlScripts\VPS.js" />
